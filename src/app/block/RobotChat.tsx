@@ -20,7 +20,10 @@ export default function HeroSection() {
                         fixed z-[100] 
                         w-[100px] h-[100px] right-[-4%] bottom-[5%] 
                         sm:w-[150px] sm:h-[150px] md:right-[1.5%] md:bottom-[4%]  
+
                     "
+                                                      onClick={() => setOpen(true)}
+
             >
                 <div
                     className="
@@ -28,7 +31,6 @@ export default function HeroSection() {
                                 sm:w-[100px] sm:h-[100px]
                                 cursor-pointer
                                 "
-                                  onClick={() => setOpen(true)}
 
                 >
                     <div
