@@ -14,7 +14,7 @@ export default function ChatPopup({bg="white",color="#1A1A1A"}) {
                 onClick={() => setOpen(true)}
                 className={`
     cursor-pointer flex my-5 flex-row justify-center items-center 
-    py-[14px] md:py-[17px] gap-[10px] 
+    py-[4px] md:py-[17px] gap-[10px] 
     w-[100px] md:w-[188px] h-[45px] md:h-[63px] 
     bg-${bg} border border-${bg} rounded-[16px] 
     text-center font-bold text-[12px] md:text-[20px] leading-[26px] md:leading-[29px] 
