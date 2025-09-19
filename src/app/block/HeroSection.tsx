@@ -18,7 +18,7 @@ export default function HeroSection() {
                     >
                         افضل شركة تسويق في الوطن العربي
                     </span>
-                    <h1 className="mt-6 md:mt-[45px] max-w-full lg:max-w-[1039.36px] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[70.63px] leading-tight md:leading-[60px] lg:leading-[101px] text-right text-[#FDFFFC] flex-none order-0 self-stretch grow-0"
+                    <h1 className="mt-6 md:mt-[45px] max-w-full lg:max-w-[1039.36px] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[55.63px] leading-tight md:leading-[60px] lg:leading-[101px] text-right text-[#FDFFFC] flex-none order-0 self-stretch grow-0"
                     >
                         نحن نصنع حضورًا رقميًا يتحدّث عنك!
                     </h1>
