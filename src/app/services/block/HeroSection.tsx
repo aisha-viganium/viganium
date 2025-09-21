@@ -40,7 +40,6 @@ export default function HeroSection() {
           </AnimatedSection>
           <AnimatedSection
             variants={fadeInUp}
-            transition={{ duration: 1 }}
             className="col-span-1 w-full h-full flex justify-center items-end order-2 lg:order-2"
           >
             <div className="lg:hidden w-full flex justify-center">

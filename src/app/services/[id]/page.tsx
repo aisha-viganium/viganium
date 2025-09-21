@@ -9,11 +9,11 @@ import Questions from "@/components/Questions/Questions";
 export default function Page() {
   return (
     <>
-<HeroSection />
-<Advantages />
-<Tools />
-<WeHear />
-<Questions />
+      <HeroSection />
+      <Advantages />
+      <Tools />
+      <WeHear />
+      <Questions />
     </>
   );
 }
