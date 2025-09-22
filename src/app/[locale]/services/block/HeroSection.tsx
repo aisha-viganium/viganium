@@ -13,6 +13,7 @@ export default function HeroSection() {
           
           <AnimatedSection
             variants={fadeInRight}
+            transition={{ duration: 0.8 }}
             className="col-span-2 flex flex-col justify-center items-start text-right order-1 lg:order-1"
           >
             <h1 className="mt-[30px] lg:mt-[50px] max-w-[1039.36px] font-bold text-3xl md:text-5xl lg:text-[70.63px] leading-tight md:leading-[60px] lg:leading-[101px] text-[#FDFFFC]">
@@ -39,7 +40,6 @@ export default function HeroSection() {
             </Link>
           </AnimatedSection>
           <AnimatedSection
-            variants={fadeInUp}
             className="col-span-1 w-full h-full flex justify-center items-end order-2 lg:order-2"
           >
             <div className="lg:hidden w-full flex justify-center">

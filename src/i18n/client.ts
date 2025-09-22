@@ -1,4 +1,3 @@
-// src/i18n/i18n-client.ts
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
@@ -12,7 +11,7 @@ if (!i18n.isInitialized) {
     .use(initReactI18next)
     .init({
       ...getOptions(),
-      debug: true, // خليها true للمساعدة في معرفة الأخطاء
+      debug: true, 
       detection: {
         order: ["cookie", "htmlTag"],
         caches: ["cookie"],

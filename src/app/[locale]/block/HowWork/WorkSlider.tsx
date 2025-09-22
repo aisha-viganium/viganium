@@ -37,20 +37,20 @@ export default function CardSlider() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-start h-[570] md:justify-center md:h-[700] overflow-hidden px-5">
+        <div className="flex flex-col items-center justify-start h-[320] md:justify-center md:h-[700] overflow-hidden px-5">
             <div className="flex gap-1 md:gap-6 mt-2 items-center">
 
                 <button
                     onClick={prevCard}
                     disabled={index === 0}
-                    className={`flex col justify-center  w-[48px] h-[48px] bg-[#FDFFFC] rounded-[10px] transition-all ${index === 0
+                    className={`flex col justify-center items-center  w-[20px] h-[20px] md:w-[48px] md:h-[48px] bg-[#FDFFFC] rounded-[3px] md:rounded-[10px] transition-all ${index === 0
                         ? "cursor-not-allowed  bg-[#FDFFFC] opacity-30"
                         : "bg-white"
                         }`}
                 >
-                    <Image src="/assets/icons/left-arrow.svg" alt="arrow" width={20} height={20} />
+                    <Image src="/assets/icons/left-arrow.svg" alt="arrow" width={20} height={20}  className="w-[8px] h-[8px] md:w-[20px] md:h-[20px]"  />
                 </button>
-                <div className="relative w-80 min-h-[470.18px]">
+                <div className="relative w-60 md:w-80 min-h-[200px] md:min-h-[470.18px] flex justify-center">
                     <AnimatePresence initial={false} mode="wait">
                         {cards.map((card, i) => {
                             const pos = (i - index + cards.length) % cards.length;
@@ -67,24 +67,61 @@ export default function CardSlider() {
                                     }
                                     exit={direction === "next" ? cardVariants.exitNext : ""}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    className={`absolute w-80  flex flex-col items-center p-[17.53px] gap-[17.53px] max-w-[356px] min-h-[470.18px] bg-[#F3F3F3] shadow-[4.38px_4.38px_4.38px_rgba(0,0,0,0.25)] rounded-[17.53px]`}
+                                    className={`absolute w-fit md:w-80 flex flex-col items-center p-[17.53px] gap-[17.53px] max-w-[356px] min-h-[200px] md:min-h-[470.18px] bg-[#F3F3F3] shadow-[4.38px_4.38px_4.38px_rgba(0,0,0,0.25)] rounded-[6.53px] md:rounded-[17.53px]`}
                                 >
                                     <div>
-                                        <div className="flex flex-row justify-between items-center gap-[17.53px] w-full h-[56px]">
-                                            <h5 className=" max-w-[127px] text-[39.43px] leading-[56px] font-semibold text-[#1A1A1A]">
+                                        <div className="flex flex-row justify-between items-center gap-[17.53px] w-full h-fit md:h-[56px]">
+                                            <h5
+                                                className="
+                                                        max-w-[127px] text-center 
+                                                        text-[14.36px] leading-[21px] font-semibold text-[#1A1A1A] 
+                                                        md:text-[39.43px] md:leading-[56px]                       
+                                                    "
+                                            >
                                                 {card.title}
                                             </h5>
+                                            <div
+                                                className="
+                                                            flex flex-col justify-center items-center 
+                                                            p-[3.99px] gap-[3.99px] 
+                                                            w-[19.15px] h-[19.15px] rounded-[11.97px] 
+                                                            bg-[#1A1A1A] 
 
-                                            <div className="flex flex-col justify-center items-center p-[10.95px] gap-[10.95px] w-[52.58px] h-[52.58px] bg-[#1A1A1A] rounded-[32.86px] flex-none order-0 grow-0">
-                                                <span className="w-[27px] h-[38px] text-center text-[26.29px] leading-[38px]  font-semibold text-[#F3F3F3] flex-none order-0 grow-0">
+                                                            md:p-[10.95px] md:gap-[10.95px] 
+                                                            md:w-[52.58px] md:h-[52.58px] md:rounded-[32.86px]
+                                                        "
+                                            >
+                                                <span
+                                                    className="
+                                                            w-[10px] h-[14px] 
+                                                            text-center font-[600] text-[9.57px] leading-[14px] text-[#F3F3F3] 
+
+                                                            md:w-[27px] md:h-[38px] 
+                                                            md:text-[26.29px] md:leading-[38px] md:font-semibold
+                                                            "
+                                                >
                                                     {card?.id?.toString()?.padStart(2, '0')}
 
                                                 </span>
                                             </div>
                                         </div>
-                                        <Image src={card.image} alt="" width={320} height={219} className="w-[320.95px] my-5 h-[219.08px] rounded-[17.53px]" />
-                                        <p className="max-w-[320.95px] text-center text-[17.53px] leading-[25px]  font-medium text-[#1A1A1A]">
-                                            {card.description}
+                                        <Image
+                                            src={card.image}
+                                            alt=""
+                                            width={320}
+                                            height={219}
+                                            className="
+                                                        w-full h-[79px] rounded-[6.38px] my-5  
+                                                        md:h-[219.08px] md:rounded-[17.53px]  
+                                                    "
+                                        />
+                                        <p
+                                            className="
+                                                        max-w-[116.93px] text-[6.38px] leading-[9px] font-medium
+                                                        md:max-w-[320.95px] text-center md:font-medium md:text-[17.53px] md:leading-[25px] text-[#1A1A1A]
+                                                    "
+                                        >   
+                                         {card.description}
                                         </p>
                                     </div>
                                 </motion.div>
@@ -95,12 +132,12 @@ export default function CardSlider() {
                 <button
                     onClick={nextCard}
                     disabled={index === cards.length - 1}
-                    className={`flex col justify-center w-[48px] h-[48px] bg-[#FDFFFC] rounded-[10px] transition-all ${index === cards.length - 1
+                    className={`flex col justify-center items-center w-[20px] h-[20px] md:w-[48px] md:h-[48px] bg-[#FDFFFC] rounded-[3px] md:rounded-[10px] transition-all ${index === cards.length - 1
                         ? "cursor-not-allowed  bg-[#FDFFFC] opacity-30"
                         : "bg-white"
                         }`}
                 >
-                    <Image src="/assets/icons/right-arrow.svg" alt="arrow" width={20} height={20} />
+                    <Image src="/assets/icons/right-arrow.svg" alt="arrow" width={20} height={20}  className="w-[8px] h-[8px] md:w-[20px] md:h-[20px]" />
 
                 </button>
 

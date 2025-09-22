@@ -10,8 +10,7 @@ html {
 
 @font-face {
     font-family: 'alfont_com_Brando';
-    src: url('../assets/fonts/alfont_com_Brando-Arabic-Bold.otf') format('opentype');
-    font-weight: 700;
+    src: url('../assets/fonts/alfont_com_Brando-Arabic-Regular.otf') format('opentype');
     font-style: normal;
     font-display: swap;
 }
@@ -78,15 +77,29 @@ body {
 }
 
 .clipPath-video {
-    clip-path: polygon(0 0, 100% 0, 100% 419px, 1025px 10019px, 100% 291px, 0 419px);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    100% 70%,
+    0 100%
+  );
 }
 
 @media only screen and (max-width:900px) {
-    .clipPath-review {
-        clip-path: unset;
-    }
+ .clipPath-video {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    100% 40%,
+    0 90%
+  );
+}
+.clipPath-review {
+    clip-path: polygon(0 0, 0 219px, 100% 131px, 100% 219px, 100% 100%, 0 100%);
 
-    .clipPath-video {
-        clip-path: unset;
-    }
+}
+
+
 }

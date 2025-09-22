@@ -8,21 +8,21 @@ export default function HeroSection() {
     const [open, setOpen] = useState(false);
     return (
         <>
-               <Image
+            <Image
                 src="/assets/icons/scroll-shape-container.svg"
                 alt="Hero"
                 width={120}
                 height={120}
-                className="absolute z-2 right-[2%] bottom-[6%] w-[120px] spin-slow sm:right-[3%] sm:bottom-[7%] sm:w-[170px]"
+                className="absolute z-2 right-[2%] bottom-[52%] w-[70px] h-[70px] spin-slow sm:right-[3%] sm:bottom-[7%] sm:w-[170px] sm:h-[170px]"
             />
             <div
                 className="
                         fixed z-[100] 
-                        w-[100px] h-[100px] right-[-4%] bottom-[5%] 
+                        w-[70px] h-[70px] right-[-2%] bottom-[50%] 
                         sm:w-[150px] sm:h-[150px] md:right-[1.5%] md:bottom-[4%]  
 
                     "
-                                                      onClick={() => setOpen(true)}
+                onClick={() => setOpen(true)}
 
             >
                 <div
@@ -35,20 +35,20 @@ export default function HeroSection() {
                 >
                     <div
                         className="
-                                    absolute right-[0%] top-[-60%] flex items-center justify-center 
-                                    px-2 py-1 gap-2 w-[70px] h-[28px] rounded-full bg-[#1A1A1A] 
+                                    absolute right-[-20%] top-[-40%] flex items-center justify-center 
+                                    px-2 py-1 gap-2 w-[60px] h-[18px] rounded-full bg-[#1A1A1A] 
                                     sm:px-[12.7px] sm:py-[7.9px] sm:w-[90.4px] sm:h-[33.87px] sm:rounded-[24px]
                                     transition-opacity duration-300 group-hover:opacity-0
                                 "
                     >
-                        <span className="font-[600] text-[10px] leading-[14px] text-[#F3F3F3] sm:text-[12.7px] sm:leading-[18px]">
+                        <span className="font-[600] text-[8px] leading-[14px] text-[#F3F3F3] sm:text-[12.7px] sm:leading-[18px]">
                             تحدث معي
                         </span>
                     </div>
 
                     <div
                         className="
-                                    absolute w-[45px] h-[45px] left-[20%] top-[30px] rounded-full shadow-[0_0_90px_#FF0000] 
+                                    absolute w-[35px] h-[35px] left-[50%] top-[10px] rounded-full shadow-[0_0_90px_#FF0000] 
                                     sm:w-[60px] sm:h-[60px] sm:shadow-[0_0_130px_#FF0000]
                                 "
                     ></div>
@@ -58,14 +58,14 @@ export default function HeroSection() {
                         alt="Hero"
                         width={80}
                         height={80}
-                        className="cursor-pointer absolute top-0 right-[-5%] w-[75px] h-[75px] object-contain transition-opacity duration-300 group-hover:opacity-0 sm:w-[95px] sm:h-[95px]"
+                        className="cursor-pointer absolute top-0 right-[-5%] w-[45px] h-[45px] object-contain transition-opacity duration-300 group-hover:opacity-0 sm:w-[95px] sm:h-[95px]"
                     />
                     <Image
                         src="/assets/icons/head.png"
                         alt="Hero Hover"
                         width={80}
                         height={80}
-                        className="cursor-pointer absolute top-0 right-[-5%] w-[75px] h-[75px] object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:w-[95px] sm:h-[95px]  pointer-events-auto"
+                        className="cursor-pointer absolute top-0 right-[-5%] w-[45px] h-[45px] object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:w-[95px] sm:h-[95px]  pointer-events-auto"
                     />
                 </div>
             </div>
