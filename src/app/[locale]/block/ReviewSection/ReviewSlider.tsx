@@ -18,10 +18,10 @@ type Review = {
 };
 export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
   return (
-    <div className="relative min-h-[100vh] overflow-hidden px-2 md:px-0">
+    <div className="relative min-h-[100vh] overflow-hidden px-2 md:px-0 ">
       <div className="absolute w-full min-h-[620px] left-0 bottom-0 bg-[url('/assets/images/RectangleBackground.svg')] bg-cover bg-center overflow-hidden"></div>
 
-      <AnimatedSection variants={fadeInUp}>
+      <AnimatedSection variants={fadeInUp} className="container mx-auto">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
@@ -101,14 +101,15 @@ export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
             </SwiperSlide>
           ))}
         </Swiper>
+              <div className="custom-prev absolute left-[3%] sm:left-[3%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] sm:w-[120px] sm:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full flex items-center justify-center z-50 cursor-pointer">
+        <Image src="/assets/icons/arrow-white.svg" alt="prev" width={25} height={25} className="sm:w-[48px] sm:h-[48px] rotate-180" />
+      </div>
+      <div className="custom-next absolute right-[3%] sm:right-[3%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] sm:w-[120px] sm:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full flex items-center justify-center z-50 cursor-pointer">
+        <Image src="/assets/icons/arrow-white.svg" alt="next" width={25} height={25} className="sm:w-[48px] sm:h-[48px]" />
+      </div>
       </AnimatedSection>
 
-      <div className="custom-prev absolute left-[3%] sm:left-[5%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] sm:w-[150px] sm:h-[150px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full flex items-center justify-center z-50 cursor-pointer">
-        <Image src="/assets/icons/arrow-white.svg" alt="prev" width={25} height={25} className="sm:w-[88px] sm:h-[88px] rotate-180" />
-      </div>
-      <div className="custom-next absolute right-[3%] sm:right-[5%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] sm:w-[150px] sm:h-[150px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full flex items-center justify-center z-50 cursor-pointer">
-        <Image src="/assets/icons/arrow-white.svg" alt="next" width={25} height={25} className="sm:w-[88px] sm:h-[88px]" />
-      </div>
     </div>
+
   );
 }

@@ -3,7 +3,7 @@ import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection
 
 export default function Services() {
   return (
-    <section className="container mx-auto py-16 bg-white">
+    <section className="container mx-auto py-16 px-5 bg-white">
       <AnimatedSection variants={slideFromTopBounce} className="border-r-[20px] border-r-[#F9C751] pr-4 mb-10">
         
         <p className="text-right text-[28px] md:text-[36px] lg:text-[48px] leading-[42px] md:leading-[52px] lg:leading-[69px] font-bold text-[#1A1A1A]">
@@ -15,7 +15,7 @@ export default function Services() {
 
         <AnimatedSection variants={slideFromTopBounce} delay={0.1} transition={{ duration: 0.1 }}
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col">
             <Image
               src="/assets/images/service1.png"
               alt="service"
@@ -35,7 +35,7 @@ export default function Services() {
 
         <AnimatedSection variants={slideFromTopBounce} delay={0.3} transition={{ duration: 0.3 }}
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col">
             <Image
               src="/assets/images/service2.png"
               alt="service"
@@ -55,7 +55,7 @@ export default function Services() {
 
         <AnimatedSection variants={slideFromTopBounce} delay={0.5} transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col">
             <Image
               src="/assets/images/service3.png"
               alt="service"

@@ -1,12 +1,17 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import AnimatedSection, { fadeInRight } from "@/animation/AnimatedSection";
-
+// import { useTranslation } from "react-i18next";
+import "@/i18n/client";
 export default function HeroSection() {
+
+//   const { t } = useTranslation();
     return (
         <section className="relative bg-[url('/assets/images/cover.png')] bg-cover bg-center overflow-hidden">
-    
-
+    {/* <h1>
+        {t(`HomePage.title`)}
+    </h1> */}
             <div className="flex flex-col-reverse md:flex-col  lg:grid lg:grid-cols-3 items-center justify-around md:pr-15 mx-auto min-h-screen md:min-h-[100vh] overflow-hidden h-full px-4 md:px-8 py-8 pb-0 lg:py-0">
                 <AnimatedSection
                     variants={fadeInRight}
@@ -18,9 +23,11 @@ export default function HeroSection() {
                     >
                         افضل شركة تسويق في الوطن العربي
                     </span>
-                    <h1 className="mt-6 md:mt-[45px] max-w-full lg:max-w-[1039.36px] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[55.63px] leading-tight md:leading-[60px] lg:leading-[101px] text-right text-[#FDFFFC] flex-none order-0 self-stretch grow-0"
-                    >
-                        نحن نصنع حضورًا رقميًا يتحدّث عنك!
+<h1 className="mt-6 md:mt-[45px] max-w-full lg:max-w-[1039.36px] font-bold 
+               text-3xl sm:text-4xl md:text-5xl 
+               lg:text-[45px] xl:text-[55px] 
+               leading-tight md:leading-[60px] lg:leading-[45px] xl:leading-[55px] 
+               text-right text-[#FDFFFC] flex-none order-0 self-stretch grow-0">                       نحن نصنع حضورًا رقميًا يتحدّث عنك!
                     </h1>
                     <p className="max-w-full lg:max-w-[763.7px] mt-4 md:mt-7 font-semibold text-lg md:text-xl lg:text-[26.49px] leading-6 md:leading-7 lg:leading-[38px] text-right text-[#FDFFFC] flex-none order-1 grow-0"
                     >
@@ -60,7 +67,7 @@ export default function HeroSection() {
                             alt="Hero"
                             width={1710}
                             height={150}
-                            className="absolute w-[85%] max-w-[1710px] h-auto left-[-405px] top-[-37px] bg-[url('/robot.png')] bg-no-repeat bg-cover slide-up"
+                            className="absolute w-[99%] max-w-[1710px] h-auto left-[-405px] top-[-37px] bg-[url('/robot.png')] bg-no-repeat bg-cover slide-up"
                             priority
                         />
                     </div>

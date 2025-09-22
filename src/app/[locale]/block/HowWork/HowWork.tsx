@@ -4,7 +4,7 @@ import WorkSlider from "./WorkSlider";
 
 export default function HowWork() {
   return (
-    <section className="py-16 bg-[#1A1A1A]">
+    <section className="py-16 bg-[#1A1A1A] px-5">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center container mx-auto">
         
         <AnimatedSection variants={slideFromRightBounce} className="lg:col-span-2 flex flex-col px-2 md:px-0">

@@ -3,6 +3,7 @@ import Links from "./blocks/Links";
 import NavBarActions from "./blocks/NavBarActions";
 import Image from "next/image";
 import Link from "next/link";
+// import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default async function NavBar() {
   return (
@@ -12,7 +13,7 @@ export default async function NavBar() {
       <Image src="/assets/logo.svg" alt="Logo" width={293} height={40} className="w-[120px] md:w-[293.59px] h-auto" />
       </Link>
       <Links />
-
+{/* <LanguageSwitcher /> */}
     </nav>
   );
 }

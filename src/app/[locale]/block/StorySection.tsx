@@ -3,7 +3,7 @@ import AnimatedSection, { slideFromRightBounce, slideFromLeftBounce } from "@/an
 
 export default function CustomSection() {
   return (
-    <section className="container mx-auto py-16 px-2 md:px-0 bg-white">
+    <section className="container mx-auto py-16 px-2 md:px-5 bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         
         <AnimatedSection variants={slideFromRightBounce}>
