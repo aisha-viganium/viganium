@@ -3,7 +3,6 @@
 import { useTranslation } from "react-i18next";
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
-import { Globe } from "lucide-react";
 // import i18n from "@/i18n/client"; // تأكد إن دا client فقط
 
 export default function LanguageSwitcher() {
@@ -31,7 +30,7 @@ export default function LanguageSwitcher() {
       <span className="text-h6 font-normal">
         {lang === "en" ? "Ar" : "Eng"}
       </span>
-      <Globe strokeWidth={1} />
+
     </button>
   );
 }

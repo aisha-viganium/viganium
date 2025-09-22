@@ -14,11 +14,13 @@ export const metadata: Metadata = {
 
 interface Props {
   children: React.ReactNode;
-  params: { locale: string };
+  // Next's generated types may use Promise<{ locale: string }>, so accept either
+  params: { locale: string } | Promise<{ locale: string }>;
 }
 
-export default function RootLayout({ children, params }: Props) {
-  const { locale } = params;
+export default async function RootLayout({ children, params }: Props) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
 
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
