@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import Chat from "./Chat";
@@ -11,7 +10,7 @@ export default function CustomSection() {
         
         <AnimatedSection 
           variants={fadeInUp} 
-          className="col-span-1 flex justify-center"
+          className="col-span-1 flex justify-center order-2 lg:order-1"
         >
           <Image
             src="/assets/images/chatRobot.png"
@@ -24,7 +23,7 @@ export default function CustomSection() {
 
         <AnimatedSection 
           variants={slideFromLeftBounce} 
-          className="col-span-2"
+          className="col-span-2 order-1 lg:order-2"
         >
           <Chat />
         </AnimatedSection>
