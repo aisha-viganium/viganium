@@ -87,6 +87,49 @@ export default function Team() {
             nameImage: "/assets/images/members/member-name.svg",
             job: "الوظيفة",
             age: "T8 سنوات",
+        },
+        {
+            id: 10,
+            name: "م/الأسم ثلاثي الأسم",
+            image: "/assets/images/members/member.png",
+            nameImage: "/assets/images/members/member-name.svg",
+            job: "الوظيفة",
+            age: "T8 سنوات",
+        },
+        {
+            id: 11,
+            name: "م/الأسم ثلاثي الأسم",
+            image: "/assets/images/members/member.png",
+            nameImage: "/assets/images/members/member-name.svg",
+            job: "الوظيفة",
+            age: "T8 سنوات",
+        },
+
+        {
+            id:12,
+            name: "م/الأسم ثلاثي الأسم",
+            image: "/assets/images/members/member.png",
+            nameImage: "/assets/images/members/member-name.svg",
+            job: "الوظيفة",
+            age: "T8 سنوات",
+        },
+
+        {
+            id: 13,
+            name: "م/الأسم ثلاثي الأسم",
+            image: "/assets/images/members/member.png",
+            nameImage: "/assets/images/members/member-name.svg",
+            job: "الوظيفة",
+            age: "T8 سنوات",
+        },
+
+        {
+            id: 14,
+            name: "م/الأسم ثلاثي الأسم",
+            image: "/assets/images/members/member.png",
+            nameImage: "/assets/images/members/member-name.svg",
+            job: "الوظيفة",
+            age: "T8 سنوات",
         }
     ];
 

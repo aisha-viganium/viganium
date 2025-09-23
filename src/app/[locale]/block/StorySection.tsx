@@ -53,22 +53,30 @@ export default function CustomSection() {
 
         <AnimatedSection variants={slideFromLeftBounce} delay={0.2}>
           <div className="flex flex-col gap-6">
-            <div className="grid grid-cols-2 gap-2 md:gap-4">
-              <Image
-                src="/assets/images/viganium-story.png"
-                alt="1"
-                width={350}
-                height={200}
-                className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
-              />
-              <Image
-                src="/assets/images/robot-story.png"
-                alt="2"
-                width={350}
-                height={200}
-                className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
-              />
-            </div>
+<div className="grid grid-cols-2 gap-2 md:gap-4">
+  <div className="relative">
+    <Image
+      src="/assets/images/viganium-story.png"
+      alt="1"
+      width={350}
+      height={200}
+      className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
+    />
+    <div className="absolute inset-0 rounded-[4px] md:rounded-[16px] bg-[linear-gradient(183deg,rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_97.51%)]"></div>
+  </div>
+
+  <div className="relative">
+    <Image
+      src="/assets/images/robot-story.png"
+      alt="2"
+      width={350}
+      height={200}
+      className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
+    />
+    <div className="absolute inset-0 rounded-[4px] md:rounded-[16px] bg-[linear-gradient(183deg,rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_97.51%)]"></div>
+  </div>
+</div>
+
             <p
               className="
     max-w-[864px] 

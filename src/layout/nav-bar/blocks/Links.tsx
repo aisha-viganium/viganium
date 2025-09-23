@@ -152,10 +152,10 @@ export default function SidebarNavbar() {
 
                 </h3>
                 <a
-                  href="mailto:info@viganium.com"
+                  href="mailto:Hello@viganium.com"
                   className="mt-5 font-200 text-sm md:text-[24px] text-center"
                 >
-                  info@viganium.com
+                  Hello@viganium.com
                 </a>
                 <div className="flex gap-[32px] mt-2 justify-center md:justify-center">
                   {["snap", "x", "insta", "face", "linkedin"].map((icon, idx) => (
