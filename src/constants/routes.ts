@@ -3,7 +3,7 @@
 export const locales = ["ar", "en"];
 export const defaultLocale = "ar";
 
-export const publicRoutes = ["/", "/about", "/contact", "/blog"];
+export const publicRoutes = ["/", "/services", "/team-work", "/blogs", "/contact-us"];
 
 export const authRoutes = ["/login", "/register", "/forgot-password"];
 
