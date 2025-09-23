@@ -46,7 +46,7 @@ export default function CustomSection() {
               alt=""
               width={526}
               height={300}
-              className=" h-[228px] md:h-[526px] rounded-[4px] md:rounded-[16px] w-full object-cover"
+              className=" h-[228px] md:h-auto rounded-[4px] md:rounded-[16px] w-full object-cover"
             />
           </div>
         </AnimatedSection>
@@ -59,14 +59,14 @@ export default function CustomSection() {
                 alt="1"
                 width={350}
                 height={200}
-                className="object-cover w-full h-[128px] md:h-[350px] rounded-[4px] md:rounded-[16px]"
+                className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
               />
               <Image
                 src="/assets/images/robot-story.png"
                 alt="2"
                 width={350}
                 height={200}
-                className="object-cover w-full h-[128px] md:h-[350px] rounded-[4px] md:rounded-[16px]"
+                className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
               />
             </div>
             <p
