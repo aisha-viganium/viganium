@@ -4,19 +4,20 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+
 html {
-    direction: rtl;
+  direction: rtl;
 }
 
 @font-face {
-    font-family: 'alfont_com_Brando';
-    src: url('../assets/fonts/alfont_com_Brando-Arabic-Regular.otf') format('opentype');
-    font-style: normal;
-    font-display: swap;
+  font-family: 'alfont_com_Brando';
+  src: url('../assets/fonts/alfont_com_Brando-Arabic-Regular.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
 }
 
 .font-brando {
-    font-family: 'alfont_com_Brando';
+  font-family: 'alfont_com_Brando';
 
 }
 
@@ -39,63 +40,59 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-    font-family: 'alfont_com_Brando' !important;
+  font-family: 'alfont_com_Brando' !important;
 }
 
 @keyframes spin-slow {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .spin-slow {
-    animation: spin-slow 8s linear infinite;
+  animation: spin-slow 8s linear infinite;
 }
 
 @keyframes slide-up {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .slide-up {
-    animation: slide-up 1.2s ease-out forwards;
+  animation: slide-up 1.2s ease-out forwards;
 }
 
 .clipPath-review {
-    clip-path: polygon(0 0, 0 219px, 100% 91px, 100% 219px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 0 219px, 100% 91px, 100% 219px, 100% 100%, 0 100%);
 }
 
 .clipPath-video {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    100% 70%,
-    0 100%
-  );
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 100%,
+      100% 70%,
+      0 100%);
 }
 
 @media only screen and (max-width:900px) {
- .clipPath-video {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    100% 40%,
-    0 90%
-  );
-}
+  .clipPath-video {
+    clip-path: polygon(0 0,
+        100% 0,
+        100% 100%,
+        100% 40%,
+        0 90%);
+  }
 
 
 

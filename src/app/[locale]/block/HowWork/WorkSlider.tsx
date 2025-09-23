@@ -5,9 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const cards = [
-    { id: 1, title: "الإستماع", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
-    { id: 2, title: "الإستماع", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
-    { id: 3, title: "الإستماع", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
+    { id: 1, title: "الإختبار", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
+    { id: 2, title: "التنفيذ", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
+    { id: 3, title: "المناقشة", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
+    { id: 4, title: "التحليل", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
+    { id: 5, title: "البحث", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
+    { id: 6, title: "الإستماع", description: " استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين بالتركيز استخدامه منذ ستينيات القرن العشرين. النص غير منطقي ولا ينقل أي معنى محدد، مما يسمح للمصممين", image: "/assets/images/item-how-we-work-image.png" },
+
 ];
 
 export default function CardSlider() {
@@ -52,7 +56,7 @@ export default function CardSlider() {
                 </button>
                 <div className="relative w-60 md:w-80 min-h-[200px] md:min-h-[470.18px] flex justify-center">
                     <AnimatePresence initial={false} mode="wait">
-                        {cards.map((card, i) => {
+                        {cards.slice().reverse().map((card, i) => {
                             const pos = (i - index + cards.length) % cards.length;
                             const isActive = pos === 0;
 
@@ -63,7 +67,7 @@ export default function CardSlider() {
                                     animate={
                                         isActive
                                             ? cardVariants.center
-                                            : { scale: 0.9, rotate: 10, x: pos * 25, opacity: 1, zIndex: cards.length - pos }
+                                            : { scale: 0.9, rotate: 10, x: pos * 8, opacity: 1, zIndex: cards.length - pos }
                                     }
                                     exit={direction === "next" ? cardVariants.exitNext : ""}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -112,7 +116,7 @@ export default function CardSlider() {
                                             height={219}
                                             className="
                                                         w-full h-[79px] rounded-[6.38px] my-5  
-                                                        md:h-[219.08px] md:rounded-[17.53px]  
+                                                        md:h-auto md:rounded-[17.53px]  
                                                     "
                                         />
                                         <p
