@@ -41,7 +41,7 @@ export default function Footer() {
               alt=""
               width={30}
               height={30}
-              className="w-[18px] h-[18px] md:w-30 md:h-30 transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert"
+              className="w-[18px] h-[18px] md:w-[30px] md:h-[30px] transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert"
             />
           </a>
 
@@ -55,7 +55,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-8 md:gap-16 align-baseline">
             {socialLinks.map((link, idx) => (
               <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer">
-                <Image src={link.icon} alt={link.name} width={43} height={43} className="w-[32px] h-[32px] md:w-43 md:h-43"/>
+                <Image src={link.icon} alt={link.name} width={43} height={43} className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]"/>
               </a>
             ))}
           </div>
@@ -68,7 +68,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-5">
             {Companies.map((c, idx) => (
-              <Image key={idx} src={c.icon} alt={c.name} width={77} height={77} className="w-[53px] h-[53px] md:w-77 md:h-77"/>
+              <Image key={idx} src={c.icon} alt={c.name} width={77} height={77} className="w-[53px] h-[53px] md:w-[77px] md:h-[77px]"/>
             ))}
           </div>
         </AnimatedSection>

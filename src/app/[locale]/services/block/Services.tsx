@@ -86,17 +86,22 @@ export default function Services() {
     ]
 
     return (
-        <section className="p-8 md:p-16 bg-[#1A1A1A]">
+        <section className="py-5 md:py-16 px-2 md:px-5 bg-[#1A1A1A]">
             <div className="container mx-auto">
-                <AnimatedSection variants={slideFromTopBounce} className="border-r-[20px] border-r-[#F9C751] pr-4 mb-6">
-                    <p className="max-w-[796px] font-bold text-[32px] md:text-[48px] leading-[45px] md:leading-[69px] text-right text-white">
+                <AnimatedSection className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px]">
+                    <p className=" max-w-[796px] 
+                        text-right 
+                        text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+                        leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
+                        font-bold 
+                        text-white">
                         الخدمات
                     </p>
+                    <TopFilter />
+
                 </AnimatedSection>
 
-                <AnimatedSection variants={slideFromTopBounce}>
-                    <TopFilter />
-                </AnimatedSection>
+
 
                 <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {services.filter(Boolean).map((service, index) => {

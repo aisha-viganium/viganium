@@ -5,28 +5,61 @@ import AnimatedSection, { fadeInUp, fadeInRight } from "@/animation/AnimatedSect
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-[url('/assets/images/services-cover.jpg')] bg-cover bg-center overflow-hidden">
+    <section className="relative bg-[url('/assets/images/services-cover.jpg')] h-[50vh] md:h-auto bg-cover bg-center overflow-hidden">
       <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="relative z-10 text-white px-4 md:px-8">
-        <div className="flex flex-col lg:grid lg:grid-cols-3 items-center pt-[180px] justify-between md:justify-around mx-auto min-h-screen md:min-h-[948px] h-full gap-8">
-          
+        <div className="flex flex-col lg:grid lg:grid-cols-3 items-center pt-[50px] justify-between md:justify-around mx-auto  md:min-h-[948px] h-[50vh] gap-8">
+
           <AnimatedSection
             variants={fadeInRight}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3 }}
             className="col-span-2 flex flex-col justify-center items-start text-right order-1 lg:order-1"
           >
-            <h1 className="mt-[30px] lg:mt-[50px] max-w-[1039.36px] font-bold text-3xl md:text-5xl lg:text-[70.63px] leading-tight md:leading-[60px] lg:leading-[101px] text-[#FDFFFC]">
-              تطوير و نجاح فكرتك , حرفتنا
+            <h1
+              className="
+                        mt-[30px] lg:mt-[50px] 
+                        max-w-[1039.36px] 
+                        font-bold 
+                        text-right 
+                        text-[14px] leading-[20px]
+                        md:text-5xl md:leading-[60px] 
+                        lg:text-[70.63px] lg:leading-[101px]
+                        text-[#FDFFFC]
+                      "
+            >              تطوير و نجاح فكرتك , حرفتنا
             </h1>
 
-            <p className="max-w-[763.7px] my-6 md:my-[40px] lg:my-[65px] font-semibold text-base md:text-xl lg:text-[26.49px] leading-6 md:leading-7 lg:leading-[38px] text-[#FDFFFC]">
-              إحنا مش بس بنصلّح، ونصمّم، ونهتم بالمواقع؛ إحنا بنبني شراكات عشان نضمن إن تواجدك على الإنترنت يشتغل بنفس قوة شغلك.
+            <p
+              className="
+                        max-w-[763.7px] 
+                        text-right 
+                        text-[#FDFFFC] 
+                        font-normal text-[12px] leading-[17px] my-6 
+                        md:my-[40px] md:text-xl md:leading-7 md:font-semibold
+                        lg:my-[65px] lg:text-[26.49px] lg:leading-[38px]
+                      "
+            >              إحنا مش بس بنصلّح، ونصمّم، ونهتم بالمواقع؛ إحنا بنبني شراكات عشان نضمن إن تواجدك على الإنترنت يشتغل بنفس قوة شغلك.
             </p>
 
             <Link href="/contact-us" className="w-full md:w-auto">
-              <button className="cursor-pointer w-full md:w-[350px] lg:w-[693px] h-[50px] md:h-[65px] bg-[#FDFFFC] rounded-[16px] flex items-center justify-center">
-                <span className="font-bold text-sm md:text-lg lg:text-[20px] text-center text-[#1A1A1A]">
+              <button
+                className="
+                            absolute flex flex-row justify-center items-center px-1 
+                            py-[10.6px] gap-[6.24px] 
+                            max-w-[72px] h-[32px] 
+                            rounded-[4px] bg-[#FDFFFC] cursor-pointer
+                            md:static md:w-[350px] md:h-[65px]  md:max-w-[unset]
+                            lg:w-[693px]
+                          "
+              >
+                <span
+                  className="
+                              font-bold text-[10px] leading-[14px] text-center text-[#1A1A1A]
+                              md:text-lg md:leading-[26px]
+                              lg:text-[20px] lg:leading-[29px]
+                            "
+                >
                   تواصل معنا
                 </span>
                 <Image
@@ -34,9 +67,10 @@ export default function HeroSection() {
                   alt="Hero"
                   width={24}
                   height={24}
-                  className="ms-2 md:ms-3"
+                  className="ms-[6px] w-[10px] h-[10px] md:w-[24px] md:h-[24px]"
                 />
               </button>
+
             </Link>
           </AnimatedSection>
           <AnimatedSection
@@ -48,7 +82,7 @@ export default function HeroSection() {
                 alt="Hero"
                 width={500}
                 height={500}
-                className="w-auto h-[50vh] object-contain mb-[-60px]"
+                className="w-[188px] md:w-auto h-[188px] md:h-[50vh] object-contain"
                 priority
               />
             </div>
