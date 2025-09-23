@@ -18,16 +18,25 @@ export function BlogCard({ blog }: { blog: Blog }) {
             height={380}
             src={blog.image}
             alt={blog.name}
-            className="w-full h-full rounded-lg object-cover"
+            className="w-full h-[257px] md:h-full rounded-lg object-cover"
             unoptimized
           />
         </div>
 
         <div className="p-2 md:p-3 text-right">
-          <h3 className="font-bold text-[20px] md:text-[32px] leading-[28px] md:leading-[46px] text-[#1A1A1A]">
+          <h3 className="
+                        font-bold text-[20px] leading-[29px] text-right text-[#1A1A1A]
+                        md:text-[32px] md:leading-[46px] 
+                      ">
             {blog.name}
           </h3>
-          <p className="font-medium text-[16px] md:text-[20px] leading-[22px] md:leading-[29px] text-[#414141] my-3 md:my-5">
+          <p
+            className="
+                    font-medium text-[14px] leading-[20px] text-right 
+                    md:text-[20px] md:leading-[29px] 
+                    text-[#414141] my-5
+                      "
+          >
             {blog.description}
           </p>
         </div>

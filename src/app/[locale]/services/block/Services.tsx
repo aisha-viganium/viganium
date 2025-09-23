@@ -100,10 +100,7 @@ export default function Services() {
                     <TopFilter />
 
                 </AnimatedSection>
-
-
-
-                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="mt-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6">
                     {services.filter(Boolean).map((service, index) => {
                         if (!service) return null;
 

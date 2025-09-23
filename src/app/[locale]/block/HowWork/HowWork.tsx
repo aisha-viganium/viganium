@@ -46,7 +46,7 @@ export default function HowWork() {
                       "
           >            في Viganium، لا نقدّم حلولاً جاهزة — بل نبدأ كل رحلة من مكان واحد فقط: صوت العميل في Viganium، لا نقدّم حلولاً جاهزة — بل نبدأ كل رحلة من مكان واحد فقط: صوت العميل.
           </p>
-          <ChatPopup />
+          <ChatPopup bg="#FFF" color="#1A1A1A" />
         </AnimatedSection>
         <AnimatedSection variants={slideFromLeftBounce} delay={0.2} className="lg:col-span-1">
           <WorkSlider />

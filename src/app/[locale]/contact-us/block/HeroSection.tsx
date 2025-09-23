@@ -3,25 +3,36 @@ import AnimatedSection, { slideFromRightBounce } from "@/animation/AnimatedSecti
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-fit md:min-h-[900px] lg:min-h-[948px]">
+    <section className="relative w-full h-[30vh] md:min-h-[948px]">
       <div
         className="absolute left-0 inset-0 bg-[url('/assets/images/contact-hero.png')] bg-cover bg-center"
       ></div>
       <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="relative z-10 p-4 md:p-8 text-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-around mx-auto min-h-[600px] lg:min-h-[948px] h-full gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-around mx-auto h-[30vh] lg:min-h-[948px] gap-8">
 
-          <div className="col-span-1 h-full flex flex-col justify-center items-start text-white text-right pr-0 lg:pr-8">
+          <div className="col-span-1 h-full flex flex-col pt-[50px] md:pt-0 justify-start md:justify-center  items-start text-white text-right pr-0 lg:pr-8">
 
             <AnimatedSection
               variants={slideFromRightBounce}
               custom={1}
               className="mb-6"
             >
-              <h1 className="max-w-full lg:max-w-[787px] font-bold text-[32px] md:text-[48px] lg:text-[64px] leading-[40px] md:leading-[70px] lg:leading-[131px] text-right text-white">
+              <h1
+                className="
+                        mt-[30px] lg:mt-[50px] 
+                        max-w-[1039.36px] 
+                        font-bold 
+                        text-right 
+                        text-[14px] leading-[20px]
+                        md:text-5xl md:leading-[60px] 
+                        lg:text-[70.63px] lg:leading-[101px]
+                        text-[#FDFFFC]
+                      "
+              >
                 و ببساطة نص شكلي (بمعنى أن الغاية هي{" "}
-                <span className="text-center px-8 gap-[10px] max-w-[181px] h-[86px] bg-[#BD171D]">
+                <span className="text-center px-2 md:px-8 gap-[10px] max-w-[44px] md:max-w-[181px] h-[86px] bg-[#BD171D]">
                   معنا
                 </span>
               </h1>
@@ -31,8 +42,16 @@ export default function HeroSection() {
               variants={slideFromRightBounce}
               custom={2}
             >
-              <p className="max-w-full lg:max-w-[1027px] font-semibold text-[16px] md:text-[24px] lg:text-[32px] leading-[20px] md:leading-[36px] lg:leading-[46px] text-right text-white">
-                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
+              <p
+                className="
+                        max-w-[763.7px] 
+                        text-right 
+                        text-[#FDFFFC] 
+                        font-normal text-[12px] leading-[17px] my-0
+                        md:my-[40px] md:text-xl md:leading-7 md:font-semibold
+                        lg:my-[65px] lg:text-[26.49px] lg:leading-[38px]
+                      "
+              >                 هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
                 هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
               </p>
             </AnimatedSection>
@@ -46,5 +65,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
-

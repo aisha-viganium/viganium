@@ -4,41 +4,46 @@ import AnimatedSection, { slideFromRightBounce, slideFromLeftBounce } from "@/an
 
 export default function Questions() {
   return (
-    <section className="container mx-auto py-16 px-4 bg-white">
+    <section className="container mx-auto py-5 md:py-16 px-2 md:px-5 bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
         <AnimatedSection
           variants={slideFromRightBounce}
           className="flex flex-col gap-6"
         >
-          <div className="border-r-[12px] lg:border-r-[20px] border-r-[#F9C751] pr-3 lg:pr-4">
-            <p className="font-bold text-[28px] md:text-[36px] lg:text-[48px] leading-[40px] md:leading-[50px] lg:leading-[69px] text-right text-[#414141]">
+
+          <div className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center  container mx-auto px-2 md:px-0">
+            <p className=" max-w-[796px] 
+                        text-right 
+                        text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+                        leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
+                        font-bold 
+                        text-[#1A1A1A]">
               الأسئلة الشائعة
             </p>
           </div>
-
           <Image
             src="/assets/images/Q&A.png"
             alt=""
             width={547}
             height={286}
-            className="h-auto w-full max-w-[547px] object-contain mx-auto"
+            className="h-[147px] md:h-auto w-full max-w-[547px] object-contain mx-auto"
           />
 
           <form className="flex flex-col gap-3">
             <label
-              className="font-bold text-[22px] md:text-[28px] lg:text-[36px] leading-[32px] md:leading-[40px] lg:leading-[51px] text-right text-[#414141]"
+              className="font-bold text-[20px] md:text-[28px] lg:text-[36px] leading-[32px] md:leading-[40px] lg:leading-[51px] text-right text-[#414141]"
               htmlFor="question"
             >
               اي السؤال الي عاوز تساله
             </label>
-            <div className="flex flex-col md:flex-row items-stretch md:items-center w-full gap-2">
+            <div className="flex md:flex-row items-stretch md:items-center w-full">
               <input
                 type="text"
                 placeholder="أكتب سؤالك هنا"
-                className="flex-1 p-4 h-[57px] bg-[#1A1A1A] border border-[#C2C2C2] rounded-lg md:rounded-r-[8px] md:rounded-l-none font-semibold text-[16px] md:text-[18px] lg:text-[20px] leading-[26px] text-white placeholder:text-white"
+                className="flex-1 p-4 h-[57px] w-[85%] bg-[#1A1A1A] border border-[#C2C2C2] rounded-lg md:rounded-r-[8px] rounded-l-none font-semibold text-[16px] md:text-[18px] lg:text-[20px] leading-[26px] text-white placeholder:text-white"
               />
-              <button className="flex justify-center items-center p-4 w-full md:w-16 h-[57px] bg-[#BD171D] rounded-lg md:rounded-l-lg md:rounded-r-none">
+              <button className="flex justify-center w-[15%] md:w-[10%] h-[57px] bg-[#BD171D] rounded-lg md:rounded-l-lg rounded-r-none">
                 <Image
                   src="/assets/icons/arrow-left-white.svg"
                   alt=""

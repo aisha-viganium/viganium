@@ -4,28 +4,28 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Chat from "./Chat";
 
-export default function ChatPopup({bg="white",color="#1A1A1A"}) {
+export default function ChatPopup({ bg = "#FFF", color = "#1A1A1A" }: { bg: string; color: string }) {
     const [open, setOpen] = useState(false);
 
     return (
         <>
 
-  <button
-  onClick={() => setOpen(true)}
-  className={`
-    cursor-pointer flex flex-row justify-center items-center my-5
-    px-0 py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[10px] leading-[14px]
+            <button
+                onClick={() => setOpen(true)}
+                className={`
+                        cursor-pointer flex flex-row justify-center items-center my-5
+                        px-0 py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[10px] leading-[14px]
 
-    md:py-[17px] md:gap-[10px] md:w-[188px] md:h-[63px] 
-    md:rounded-[16px] md:text-[20px] md:leading-[29px]
+                        md:py-[17px] md:gap-[10px] md:w-[188px] md:h-[63px] 
+                        md:rounded-[16px] md:text-[20px] md:leading-[29px]
 
-    w-[80px] h-[30px] 
-    bg-${bg} border border-${bg} 
-    text-center text-[${color}]
-    transition-all duration-300 ease-in-out
-    hover:outline-[3px] hover:outline-${bg} hover:outline-offset-4
-  `}
->
+                        w-[80px] h-[30px] 
+                        bg-[${bg}] border border-[${bg}] 
+                        text-center text-[${color}]
+                        transition-all duration-300 ease-in-out
+                        hover:outline-[3px] hover:outline-[${bg}] hover:outline-offset-4
+                    `}
+            >
 
                 كلّمنا وخلنا نبدأ
             </button>

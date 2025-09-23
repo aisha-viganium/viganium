@@ -5,25 +5,43 @@ import React from "react";
 export default function HeroSection() {
   return (
     <>
-      <section className="lg:hidden relative bg-[url('/assets/images/service-detail-cover.png')] bg-cover bg-center overflow-hidden min-h-screen">
+      <section className="lg:hidden relative bg-[url('/assets/images/service-detail-cover.png')] bg-cover bg-center overflow-hidden  h-[50vh] md:min-h-screen">
         <div className="absolute inset-0 bg-[#1A1A1A66]"></div>
-        <div className="relative z-10  p-4 text-white h-full flex items-center mt-[150px] md:mt-0">
-          <div className="flex flex-col items-center justify-end w-full gap-8 pt-16">
+        <div className="relative z-10  p-4 text-white h-full flex items-center mt-[100px] md:mt-0">
+          <div className="flex flex-col items-center justify-end w-full gap-2 md:gap-8 pt-16">
 
             <AnimatedSection variants={slideFromRightBounce} className="text-right w-full">
 
-              <h1 className="font-bold text-4xl leading-[50px] text-[#FDFFFC] mb-6">
+              <h1
+                className="
+                        mt-[30px] lg:mt-[50px] 
+                        max-w-[1039.36px] 
+                        font-bold 
+                        text-right 
+                        text-[14px] leading-[20px]
+                        md:text-5xl md:leading-[60px] 
+                        lg:text-[70.63px] lg:leading-[101px]
+                        text-[#FDFFFC]
+                      ">
                 تطوير تطبيقات الموبايل
               </h1>
-              <p className="font-semibold text-lg leading-7 text-[#FDFFFC]">
-                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
-              </p>
+              <p
+                className="
+                        max-w-[763.7px] 
+                        text-right 
+                        text-[#FDFFFC] 
+                        font-normal text-[12px] leading-[17px] my-6 
+                        md:my-[40px] md:text-xl md:leading-7 md:font-semibold
+                        lg:my-[65px] lg:text-[26.49px] lg:leading-[38px]
+                      "
+              >
+                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في  هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في               </p>
             </AnimatedSection>
 
             <AnimatedSection variants={slideFromLeftBounce} className="relative w-full h-96 flex justify-end mt-8">
 
-              <div className="relative w-80 h-80">
-                <div className="absolute w-32 h-36 left-0 top-0">
+              <div className="relative w-100 ">
+                <div className="absolute w-12 h-16 left-[25%] top-0">
                   <Image
                     src="/assets/icons/shapes-group.svg"
                     alt="Shapes"
@@ -31,7 +49,7 @@ export default function HeroSection() {
                     className="object-contain"
                   />
                 </div>
-                <div className="absolute w-86 h-64 left-16 top-10">
+                <div className="absolute w-36 h-24 right-16 top-8">
                   <Image
                     src="/assets/icons/polygon-red.svg"
                     alt="Red Polygon"
@@ -39,15 +57,15 @@ export default function HeroSection() {
                     className="object-contain"
                   />
                 </div>
-                <div className="absolute w-80 h-60 left-4 top-12">
+                <div className="absolute w-[150px] h-[105px] left-[30%] top-3">
                   <Image
                     src="/assets/images/service.png"
                     alt="Service"
                     fill
-                    className="object-cover rounded-[8px]"
+                    className="object-cover rounded-[2px] md:rounded-[8px]"
                   />
                 </div>
-                <div className="absolute w-28 h-28 left-0 top-46">
+                <div className="absolute w-14 h-14 left-[25%] top-[18%]">
                   <Image
                     src="/assets/icons/polygon.svg"
                     alt="Polygon"

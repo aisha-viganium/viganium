@@ -91,17 +91,21 @@ export default function Team() {
     ];
 
     return (
-        <section className="py-16 bg-[#F8F8F8]">
+        <section className="py-5 md:py-16 px-2 md:px-5 bg-[#F8F8F8]">
             <AnimatedSection
                 className="col-span-1"
                 variants={deckShuffle}
             >
-                <div className="px-16 mx-auto">
-                    <div className="border-r-[20px] border-r-[#F9C751] pr-4">
+                <div className="mx-auto">
 
-                        <p className=" h-[69px] text-right text-[48px] leading-[69px] font-bold text-[#1A1A1A]"
-                        >
-                            الخدمات
+                    <div className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center">
+                        <p className=" max-w-[796px] 
+                        text-right 
+                        text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+                        leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
+                        font-bold 
+                        text-[#1A1A1A]">
+                            فريق العمل
                         </p>
                     </div>
                     <div className="relative w-full mt-5">
@@ -109,7 +113,8 @@ export default function Team() {
                             modules={[Navigation, Pagination]}
                             slidesPerView={7}
                             spaceBetween={5}
-                            initialSlide={5}
+                            initialSlide={7}
+                            loop={true}
                             centeredSlides={true}
                             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                             pagination={{
@@ -124,36 +129,36 @@ export default function Team() {
                             }}
                             breakpoints={{
                                 0: {
-                                    slidesPerView: 1,
+                                    slidesPerView:3,
                                     centeredSlides: true,
-                                    spaceBetween: 10,
+                                    spaceBetween: 2,
                                 },
                                 640: {
                                     slidesPerView: 3,
                                     centeredSlides: true,
-                                    spaceBetween: 10,
+                                    spaceBetween: 2,
                                 },
                                 1024: {
                                     slidesPerView: 7,
-                                    spaceBetween: 5,
+                                    spaceBetween: 2,
                                 },
                             }}
-                            className="w-full !py-20 my-5 min-h-[520px]"
+                            className="w-full !pt-5 !pb-15 md:!py-20 my-5"
                         >
                             {slides.map((slide, idx) => (
                                 <SwiperSlide key={slide.id}>
                                     <div
-                                        className={`bg-[#EBEBEB] min-h-[320px] border border-white rounded-[16.2px] flex flex-col items-center text-center transition-all duration-500
+                                        className={`bg-[#EBEBEB] border border-white rounded-[16.2px] flex flex-col items-center text-center transition-all duration-500
                                             ${activeIndex === idx ? "scale-110 shadow-lg z-10" : "scale-90"}
                                             `}
                                     >
-                                        <div className="relative w-full min-h-[356px]">
+                                        <div className="relative w-full  min-h-[160px] md:min-h-[306px] xl:min-h-[346px]">
                                             <Image
                                                 src={slide.nameImage}
                                                 alt={slide.name}
                                                 width={200}
                                                 height={200}
-                                                className="absolute h-[308.2px] left-0 -translate-x-[1.64px] top-[-18.14px] w-[110%] max-w-[unset]"
+                                                className="absolute h-[308.2px] left-0 -translate-x-[1.64px] top-[-108.14px] md:top-[-18.14px] w-[110%] max-w-[unset]"
                                             />
                                             <Image
                                                 src="/assets/images/members/member-frame.png"
@@ -163,10 +168,10 @@ export default function Team() {
                                                 className="absolute left-0 -translate-x-[1.64px] top-[-18.14px] w-[100%] max-w-[unset]"
                                             />
                                         </div>
-                                        <h3 className="font-bold text-[18px] leading-[14px] text-[#110000]">
+                                        <h3 className="font-bold text-[8px]  md:text-[18px] leading-[14px] text-[#110000]">
                                             {slide.name}
                                         </h3>
-                                        <p className="font-medium text-[16px] leading-[13px] text-[#110000] my-3">
+                                        <p className="font-medium text-[6px] md:text-[16px] leading-[13px] text-[#110000] my-2 md:my-3">
                                             {slide.job} . {slide.age}
                                         </p>
                                     </div>

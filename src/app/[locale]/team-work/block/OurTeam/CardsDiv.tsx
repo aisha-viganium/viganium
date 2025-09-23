@@ -9,17 +9,17 @@ export default function CardsDiv() {
   ];
 
   const positions = [
-    { card: "top-[20%] left-[10%] md:top-6 md:left-20 w-[154px] h-[190px] md:w-[254px] md:h-[290px]", title: "right-0 top-[50px] md:top-[100px] text-[26px] md:text-[32px]" },
-    { card: "top-[20%] right-[10%] md:top-20 md:right-20 w-[113px] h-[142px] md:w-[213px] md:h-[242px]", title: "top-[35px] md:top-[85px] right-[30px] text-[21px] md:text-[26px] " },
-    { card: "bottom-[25%] left-[10%] md:bottom-20 md:left-20 w-[113px] h-[142px] md:w-[213px] md:h-[242px]", title: "top-[55px] md:top-[105px] right-[30px] text-[10px] md:text-[22px]" },
-    { card: "bottom-[20%] md:bottom-0 right-10 w-[154px] h-[190px] md:w-[254px] md:h-[290px]", title: "right-0 top-[50px] md:top-[90px] text-[14px] md:text-[25px]" }
+    { card: "top-[20%] left-[10%] md:top-6 md:left-20 w-[154px] h-[190px] md:w-[254px] md:h-[290px]", title: "right-4 top-[60px] md:top-[100px] text-[18px] md:text-[32px]" },
+    { card: "top-[25%] right-[10%] md:top-20 md:right-20 w-[113px] h-[142px] md:w-[213px] md:h-[242px]", title: "top-[45px] md:top-[85px] right-[15px] text-[15px] md:text-[26px] " },
+    { card: "bottom-[25%] left-[10%] md:bottom-20 md:left-20 w-[113px] h-[142px] md:w-[213px] md:h-[242px]", title: "top-[55px] md:top-[105px] right-[7px] text-[14px] md:text-[22px]" },
+    { card: "bottom-[20%] md:bottom-0 right-10 w-[154px] h-[190px] md:w-[254px] md:h-[290px]", title: "right-0 top-[50px] md:top-[90px] text-[16px] md:text-[25px]" }
   ];
 
   return (
     <div className="relative w-full max-w-[1100px] h-[680px] mx-auto mt-[-150px] md:mt-0">
       <div className="z-50 rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white w-[172px] h-[172px]  md:w-[272px] md:h-[272px] flex items-center justify-center">
         <div className="z-20 w-[130px] h-[130px] md:w-[230px] md:h-[230px]  border-[12px] border-[#F9C751] rounded-full bg-white flex items-center justify-center">
-          <span className="font-semibold text-[24px] leading-[34px] text-center text-black">مركز</span>
+          <span className="font-semibold text-[12px] md:text-[20px] leading-[34px] text-center text-black">لوريم ابسيوم</span>
         </div>
       </div>
 
