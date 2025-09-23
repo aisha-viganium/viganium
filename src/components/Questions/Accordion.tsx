@@ -56,7 +56,7 @@ export default function Accordion() {
             </span>
             <span className="w-[27px] h-[27px] md:w-10 md:h-10 lg:w-11 lg:h-11 bg-[#F9C751] rounded-full flex justify-center items-center shrink-0">
               <Image
-                src="/assets/icons/plus-question.svg"
+                src={openIndex === index ? "/assets/icons/minus.svg":"/assets/icons/plus-question.svg"}
                 alt="plus"
                 width={25}
                 height={25}
