@@ -30,7 +30,7 @@ export default function HeroSection() {
                                     h-[27px] md:min-h-[32px] 
                                     text-center 
                                     font-bold md:text-[22.07px] 
-                                    text-[12px] leading-[100%] md:leading-[32px] 
+                                    text-[10px] leading-[100%] md:leading-[32px] 
                                     text-[#BD171D] 
                                     bg-[#F8E8E8] 
                                     border border-[#E4A0A2] 
