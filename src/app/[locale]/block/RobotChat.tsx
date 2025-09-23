@@ -13,12 +13,12 @@ export default function HeroSection() {
                 alt="Hero"
                 width={120}
                 height={120}
-                className="absolute z-2 right-[2%] bottom-[52%] w-[70px] h-[70px] spin-slow md:right-[3%] md:bottom-[7%] md:w-[170px] md:h-[170px]"
+                className="absolute z-2 right-[2%] bottom-[51vh] w-[70px] h-[70px] spin-slow md:right-[3%] md:bottom-[7%] md:w-[170px] md:h-[170px]"
             />
             <div
                 className="
                         fixed z-[100] 
-                        w-[70px] h-[70px] right-[-2%] bottom-[50%] 
+                        w-[70px] h-[70px] right-[-3%] bottom-[49vh] 
                         md:w-[150px] md:h-[150px] md:right-[1.5%] md:bottom-[4%]  
 
                     "
