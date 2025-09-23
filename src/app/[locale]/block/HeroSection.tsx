@@ -75,11 +75,12 @@ export default function HeroSection() {
                     <Image
                         src="/assets/icons/star-white.svg"
                         alt="Hero"
-                        width={31}
-                        height={31}
+                        width={90}
+                        height={90}
                         className="
                                     absolute 
                                     w-[31px] h-[31px] 
+                                    md:w-[90px] md:h-[90px] 
                                     left-[80px] top-[35%] 
                                     md:bottom-[10%] md:right-[25%] 
                                     md:left-auto md:top-auto

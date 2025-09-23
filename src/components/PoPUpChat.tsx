@@ -20,10 +20,11 @@ export default function ChatPopup({ bg = "#FFF", color = "#1A1A1A" }: { bg: stri
                         md:rounded-[16px] md:text-[20px] md:leading-[29px]
 
                         w-[80px] h-[30px] 
-                        bg-[${bg}] border border-[${bg}] 
+                        bg-[${bg}] border-[${bg}] 
                         text-center text-[${color}]
                         transition-all duration-300 ease-in-out
-                        hover:outline-[3px] hover:outline-[${bg}] hover:outline-offset-4
+                        hover:outline-3 hover:outline-[${bg}]
+                        hover:outline-offset-4
                     `}
             >
 

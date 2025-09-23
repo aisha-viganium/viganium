@@ -35,7 +35,7 @@ export default function HeroSection() {
                 >
                     <div
                         className="
-                                    absolute right-[-20%] top-[-40%] flex items-center justify-center 
+                                    absolute right-[-15%] top-[-40%] md:right-[-5%]  flex items-center justify-center 
                                     px-2 py-1 gap-2 w-[60px] h-[18px] rounded-full bg-[#1A1A1A] 
                                     md:px-[12.7px] md:py-[7.9px] md:w-[90.4px] md:h-[33.87px] md:rounded-[24px]
                                     transition-opacity duration-300 group-hover:opacity-0
@@ -48,7 +48,7 @@ export default function HeroSection() {
 
                     <div
                         className="
-                                    absolute w-[35px] h-[35px] left-[50%] top-[10px] rounded-full shadow-[0_0_90px_#FF0000] 
+                                    absolute w-[35px] h-[35px] left-[50%] md:left-[30%] top-[10px] md:top-[20px] rounded-full shadow-[0_0_90px_#FF0000] 
                                     md:w-[60px] md:h-[60px] md:shadow-[0_0_130px_#FF0000]
                                 "
                     ></div>
