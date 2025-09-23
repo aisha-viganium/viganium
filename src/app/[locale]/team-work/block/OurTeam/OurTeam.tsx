@@ -22,17 +22,17 @@ export default function OurTeam() {
               />
             </span>
 
-            <h3 className="font-bold text-[36px] sm:text-[48px] leading-[46px] sm:leading-[69px] text-right text-[#1A1A1A] mt-3">
+            <h3 className="font-bold text-[36px] md:text-[48px] leading-[46px] md:leading-[69px] text-right text-[#1A1A1A] mt-3">
               اهلا بك مع اعظم فريق عمل في الوطن العربي
             </h3>
 
-            <p className="font-semibold text-[18px] sm:text-[24px] my-5 leading-[28px] sm:leading-[34px] text-right text-[#1A1A1A]">
+            <p className="font-semibold text-[18px] md:text-[24px] my-5 leading-[28px] md:leading-[34px] text-right text-[#1A1A1A]">
               هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
               هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 mt-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-5">
             {[...Array(4)].map((_, index) => (
               <div key={index} className="flex flex-row justify-start items-center gap-4">
                 <Image
@@ -40,9 +40,9 @@ export default function OurTeam() {
                   alt="Advantages"
                   width={100}
                   height={100}
-                  className="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[8px_0px_0px_0px]"
+                  className="w-[70px] md:w-[100px] h-[70px] md:h-[100px] rounded-[8px_0px_0px_0px]"
                 />
-                <p className="font-semibold text-[16px] sm:text-[24px] leading-[24px] sm:leading-[34px] text-center text-[#414141]">
+                <p className="font-semibold text-[16px] md:text-[24px] leading-[24px] md:leading-[34px] text-center text-[#414141]">
                   ببساطة نص شكلي
                 </p>
               </div>

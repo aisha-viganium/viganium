@@ -46,9 +46,9 @@ export default function HeroSection() {
                                     mt-6 md:mt-[45px] 
                                     max-w-[323px] lg:max-w-[1039.36px] 
                                     font-bold 
-                                    text-[14px] sm:text-4xl md:text-5xl 
+                                    text-[14px] md:text-4xl md:text-5xl 
                                     lg:text-[45px] xl:text-[55px] 
-                                    leading-[20px] sm:leading-tight md:leading-[60px] lg:leading-[45px] xl:leading-[55px] 
+                                    leading-[20px] md:leading-tight md:leading-[60px] lg:leading-[45px] xl:leading-[55px] 
                                     text-right text-[#FDFFFC] 
                                     flex-none order-0 self-stretch grow-0
                                 "

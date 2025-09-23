@@ -23,10 +23,10 @@ export default function Footer() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mx-auto ">
 
         <AnimatedSection variants={deckShuffle} custom={0} className="flex flex-col items-start gap-8">
-          <h3 className="font-semibold text-2xl md:text-[40px] leading-[35px] md:leading-[57px] text-[#D9D9D9]">
+          <h3 className="font-semibold text-[24px] md:text-[40px] leading-[35px] md:leading-[57px] text-[#D9D9D9]">
             نحن نود ان نسمع منك عن هدفك لتحقيقة
           </h3>
-          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
+          <p className="text-[14px] md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
             انطباع عن الشكل النهائي للمحتوى. نص لوريم إيبسوم باللغة العربية مشتق من نص لاتيني كتبه الفيلسوف الروماني شيشرون وقد تم استخدامه منذ ستينيات القرن العشرين
           </p>
           <a
@@ -41,34 +41,34 @@ export default function Footer() {
               alt=""
               width={30}
               height={30}
-              className="transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert"
+              className="w-[18px] h-[18px] md:w-30 md:h-30 transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert"
             />
           </a>
 
         </AnimatedSection>
 
         <AnimatedSection variants={deckShuffle} custom={1} className="flex flex-col items-start gap-8">
-          <h3 className="font-semibold text-2xl md:text-[40px] text-[#D9D9D9]">صفحات التواصل الإجتماعي</h3>
+          <h3 className="font-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">صفحات التواصل الإجتماعي</h3>
           <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
             انطباع عن الشكل النهائي للمحتوى. نص لوريم إيبسوم باللغة العربية مشتق من نص لاتيني كتبه الفيلسوف الروماني شيشرون وقد تم استخدامه منذ ستينيات القرن العشرين
           </p>
           <div className="flex flex-wrap gap-8 md:gap-16 align-baseline">
             {socialLinks.map((link, idx) => (
               <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer">
-                <Image src={link.icon} alt={link.name} width={43} height={43} />
+                <Image src={link.icon} alt={link.name} width={43} height={43} className="w-[32px] h-[32px] md:w-43 md:h-43"/>
               </a>
             ))}
           </div>
         </AnimatedSection>
 
         <AnimatedSection variants={deckShuffle} custom={2} className="flex flex-col items-start gap-8">
-          <h3 className="font-semibold text-2xl md:text-[40px] text-[#D9D9D9]">شركائنا في الشركات</h3>
+          <h3 className="font-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">شركائنا في الشركات</h3>
           <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
             انطباع عن الشكل النهائي للمحتوى. نص لوريم إيبسوم باللغة العربية مشتق من نص لاتيني كتبه الفيلسوف الروماني شيشرون وقد تم استخدامه منذ ستينيات القرن العشرين
           </p>
           <div className="flex gap-5">
             {Companies.map((c, idx) => (
-              <Image key={idx} src={c.icon} alt={c.name} width={77} height={77} />
+              <Image key={idx} src={c.icon} alt={c.name} width={77} height={77} className="w-[53px] h-[53px] md:w-77 md:h-77"/>
             ))}
           </div>
         </AnimatedSection>

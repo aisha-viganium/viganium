@@ -13,13 +13,13 @@ export default function HeroSection() {
                 alt="Hero"
                 width={120}
                 height={120}
-                className="absolute z-2 right-[2%] bottom-[52%] w-[70px] h-[70px] spin-slow sm:right-[3%] sm:bottom-[7%] sm:w-[170px] sm:h-[170px]"
+                className="absolute z-2 right-[2%] bottom-[52%] w-[70px] h-[70px] spin-slow md:right-[3%] md:bottom-[7%] md:w-[170px] md:h-[170px]"
             />
             <div
                 className="
                         fixed z-[100] 
                         w-[70px] h-[70px] right-[-2%] bottom-[50%] 
-                        sm:w-[150px] sm:h-[150px] md:right-[1.5%] md:bottom-[4%]  
+                        md:w-[150px] md:h-[150px] md:right-[1.5%] md:bottom-[4%]  
 
                     "
                 onClick={() => setOpen(true)}
@@ -28,7 +28,7 @@ export default function HeroSection() {
                 <div
                     className="
                                 relative top-[-10%] left-[-50%] w-[80px] h-[80px] group 
-                                sm:w-[100px] sm:h-[100px]
+                                md:w-[100px] md:h-[100px]
                                 cursor-pointer
                                 "
 
@@ -37,11 +37,11 @@ export default function HeroSection() {
                         className="
                                     absolute right-[-20%] top-[-40%] flex items-center justify-center 
                                     px-2 py-1 gap-2 w-[60px] h-[18px] rounded-full bg-[#1A1A1A] 
-                                    sm:px-[12.7px] sm:py-[7.9px] sm:w-[90.4px] sm:h-[33.87px] sm:rounded-[24px]
+                                    md:px-[12.7px] md:py-[7.9px] md:w-[90.4px] md:h-[33.87px] md:rounded-[24px]
                                     transition-opacity duration-300 group-hover:opacity-0
                                 "
                     >
-                        <span className="font-[600] text-[8px] leading-[14px] text-[#F3F3F3] sm:text-[12.7px] sm:leading-[18px]">
+                        <span className="font-[600] text-[8px] leading-[14px] text-[#F3F3F3] md:text-[12.7px] md:leading-[18px]">
                             تحدث معي
                         </span>
                     </div>
@@ -49,7 +49,7 @@ export default function HeroSection() {
                     <div
                         className="
                                     absolute w-[35px] h-[35px] left-[50%] top-[10px] rounded-full shadow-[0_0_90px_#FF0000] 
-                                    sm:w-[60px] sm:h-[60px] sm:shadow-[0_0_130px_#FF0000]
+                                    md:w-[60px] md:h-[60px] md:shadow-[0_0_130px_#FF0000]
                                 "
                     ></div>
 
@@ -58,14 +58,14 @@ export default function HeroSection() {
                         alt="Hero"
                         width={80}
                         height={80}
-                        className="cursor-pointer absolute top-0 right-[-5%] w-[45px] h-[45px] object-contain transition-opacity duration-300 group-hover:opacity-0 sm:w-[95px] sm:h-[95px]"
+                        className="cursor-pointer absolute top-0 right-[-5%] w-[45px] h-[45px] object-contain transition-opacity duration-300 group-hover:opacity-0 md:w-[95px] md:h-[95px]"
                     />
                     <Image
                         src="/assets/icons/head.png"
                         alt="Hero Hover"
                         width={80}
                         height={80}
-                        className="cursor-pointer absolute top-0 right-[-5%] w-[45px] h-[45px] object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:w-[95px] sm:h-[95px]  pointer-events-auto"
+                        className="cursor-pointer absolute top-0 right-[-5%] w-[45px] h-[45px] object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:w-[95px] md:h-[95px]  pointer-events-auto"
                     />
                 </div>
             </div>

@@ -10,19 +10,23 @@ export default function ChatPopup({bg="white",color="#1A1A1A"}) {
     return (
         <>
 
-            <button
-                onClick={() => setOpen(true)}
-                className={`
-    cursor-pointer flex my-5 flex-row justify-center items-center 
-    py-[4px] md:py-[17px] gap-[10px] 
-    w-[100px] md:w-[188px] h-[45px] md:h-[63px] 
-    bg-${bg} border border-${bg} rounded-[16px] 
-    text-center font-bold text-[12px] md:text-[20px] leading-[26px] md:leading-[29px] 
-    text-[${color}]
+  <button
+  onClick={() => setOpen(true)}
+  className={`
+    cursor-pointer flex flex-row justify-center items-center my-5
+    px-0 py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[10px] leading-[14px]
+
+    md:py-[17px] md:gap-[10px] md:w-[188px] md:h-[63px] 
+    md:rounded-[16px] md:text-[20px] md:leading-[29px]
+
+    w-[80px] h-[30px] 
+    bg-${bg} border border-${bg} 
+    text-center text-[${color}]
     transition-all duration-300 ease-in-out
-    hover:outline hover:outline-[3px] hover:outline-${bg} hover:outline-offset-4
+    hover:outline-[3px] hover:outline-${bg} hover:outline-offset-4
   `}
-            >
+>
+
                 كلّمنا وخلنا نبدأ
             </button>
 

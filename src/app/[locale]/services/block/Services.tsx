@@ -86,10 +86,10 @@ export default function Services() {
     ]
 
     return (
-        <section className="p-8 sm:p-16 bg-[#1A1A1A]">
+        <section className="p-8 md:p-16 bg-[#1A1A1A]">
             <div className="container mx-auto">
                 <AnimatedSection variants={slideFromTopBounce} className="border-r-[20px] border-r-[#F9C751] pr-4 mb-6">
-                    <p className="max-w-[796px] font-bold text-[32px] sm:text-[48px] leading-[45px] sm:leading-[69px] text-right text-white">
+                    <p className="max-w-[796px] font-bold text-[32px] md:text-[48px] leading-[45px] md:leading-[69px] text-right text-white">
                         الخدمات
                     </p>
                 </AnimatedSection>
@@ -98,7 +98,7 @@ export default function Services() {
                     <TopFilter />
                 </AnimatedSection>
 
-                <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {services.filter(Boolean).map((service, index) => {
                         if (!service) return null;
 

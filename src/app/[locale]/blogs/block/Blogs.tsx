@@ -74,7 +74,7 @@ export default async function Page() {
 
     return (
         <>
-            <section className="p-8 sm:p-16 bg-[#F8F8F8]">
+            <section className="p-8 md:p-16 bg-[#F8F8F8]">
                 <div className="container mx-auto">
 
                         <AnimatedSection variants={slideFromTopBounce} className="border-r-[20px] border-r-[#F9C751] pr-4 mb-6">
@@ -85,7 +85,7 @@ export default async function Page() {
                             </p>
                         </AnimatedSection>
                     <main className="mt-10">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
                             {blogs.filter(Boolean).map((blog, index) => {
                                 if (!blog) return null;
 

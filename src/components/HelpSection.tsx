@@ -17,7 +17,7 @@ export default function CustomSection() {
             alt="Chat Robot"
             width={497}
             height={773}
-            className="w-[280px] sm:w-[350px] md:w-[420px] lg:w-[497px] h-auto"
+            className="w-[100%] md:w-[420px] lg:w-[497px] h-auto"
           />
         </AnimatedSection>
 

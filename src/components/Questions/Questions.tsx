@@ -12,7 +12,7 @@ export default function Questions() {
           className="flex flex-col gap-6"
         >
           <div className="border-r-[12px] lg:border-r-[20px] border-r-[#F9C751] pr-3 lg:pr-4">
-            <p className="font-bold text-[28px] sm:text-[36px] lg:text-[48px] leading-[40px] sm:leading-[50px] lg:leading-[69px] text-right text-[#414141]">
+            <p className="font-bold text-[28px] md:text-[36px] lg:text-[48px] leading-[40px] md:leading-[50px] lg:leading-[69px] text-right text-[#414141]">
               الأسئلة الشائعة
             </p>
           </div>
@@ -27,18 +27,18 @@ export default function Questions() {
 
           <form className="flex flex-col gap-3">
             <label
-              className="font-bold text-[22px] sm:text-[28px] lg:text-[36px] leading-[32px] sm:leading-[40px] lg:leading-[51px] text-right text-[#414141]"
+              className="font-bold text-[22px] md:text-[28px] lg:text-[36px] leading-[32px] md:leading-[40px] lg:leading-[51px] text-right text-[#414141]"
               htmlFor="question"
             >
               اي السؤال الي عاوز تساله
             </label>
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center w-full gap-2">
+            <div className="flex flex-col md:flex-row items-stretch md:items-center w-full gap-2">
               <input
                 type="text"
                 placeholder="أكتب سؤالك هنا"
-                className="flex-1 p-4 h-[57px] bg-[#1A1A1A] border border-[#C2C2C2] rounded-lg sm:rounded-r-[8px] sm:rounded-l-none font-semibold text-[16px] sm:text-[18px] lg:text-[20px] leading-[26px] text-white placeholder:text-white"
+                className="flex-1 p-4 h-[57px] bg-[#1A1A1A] border border-[#C2C2C2] rounded-lg md:rounded-r-[8px] md:rounded-l-none font-semibold text-[16px] md:text-[18px] lg:text-[20px] leading-[26px] text-white placeholder:text-white"
               />
-              <button className="flex justify-center items-center p-4 w-full sm:w-16 h-[57px] bg-[#BD171D] rounded-lg sm:rounded-l-lg sm:rounded-r-none">
+              <button className="flex justify-center items-center p-4 w-full md:w-16 h-[57px] bg-[#BD171D] rounded-lg md:rounded-l-lg md:rounded-r-none">
                 <Image
                   src="/assets/icons/arrow-left-white.svg"
                   alt=""
