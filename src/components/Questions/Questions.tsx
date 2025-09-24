@@ -4,7 +4,7 @@ import AnimatedSection, { slideFromRightBounce, slideFromLeftBounce } from "@/an
 
 export default function Questions() {
   return (
-    <section className="container mx-auto py-5 md:py-16 px-2 md:px-5 bg-white">
+    <section className="py-5 md:py-16 px-2 md:px-16 bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
         <AnimatedSection
@@ -12,7 +12,7 @@ export default function Questions() {
           className="flex flex-col gap-6"
         >
 
-          <div className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center  container mx-auto px-2 md:px-0">
+          <div className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center px-2 md:px-16">
             <p className=" max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 

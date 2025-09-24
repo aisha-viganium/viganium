@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Questions() {
   return (
-    <section className="py-5 md:py-16 px-2 md:px-5 min-h-[628px] bg-[#FFF] md:bg-[#F3F3F3] ">
+    <section className="py-5 md:py-16 px-2 md:px-16 min-h-[628px] bg-[#FFF] md:bg-[#F3F3F3] ">
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 items-center p-0 md:p-6 lg:p-8 mx-auto min-h-[500px] md:min-h-[600px] lg:min-h-[664px] bg-[#FDFFFC] rounded-[16px]">
 
   {/* النص */}

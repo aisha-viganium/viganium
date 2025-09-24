@@ -3,7 +3,7 @@ import AnimatedSection, { slideFromRightBounce, slideFromLeftBounce } from "@/an
 
 export default function CustomSection() {
   return (
-    <section className="container mx-auto py-5 md:py-16 px-2 md:px-5 bg-white">
+    <section className="mx-auto py-5 md:py-16 px-2 md:px-16 bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-10 items-center">
 
         <AnimatedSection variants={slideFromRightBounce}>
@@ -17,7 +17,8 @@ export default function CustomSection() {
                           text-right text-[#F9C751] 
                           flex items-center gap-2
                         "
-              >                <span> قصة حياتنا</span>
+              >
+                <span> قصة حياتنا</span>
                 <Image
                   src="/assets/icons/arrow-yellow.svg"
                   alt="line"
@@ -25,8 +26,6 @@ export default function CustomSection() {
                   height={19}
                   className="w-[10px] h-[12px] md:w-[19px] md:h-[19px]"
                 />
-
-
               </span>
               <p
                 className="
@@ -79,12 +78,12 @@ export default function CustomSection() {
 
             <p
               className="
-    max-w-[864px] 
-    font-normal md:font-semibold
-    text-[14px] md:text-[18px] lg:text-[24px] 
-    leading-[18px] md:leading-[34px] 
-    text-right text-[#414141]
-  "
+                        max-w-[864px] 
+                        font-normal md:font-semibold
+                        text-[14px] md:text-[18px] lg:text-[24px] 
+                        leading-[18px] md:leading-[34px] 
+                        text-right text-[#414141]
+                      "
             >
               نؤمن بأن الابتكار هو القوة الدافعة لكل تطوّر، لذا نسعى دائماً لتجاوز المألوف وتقديم حلول غير تقليدية تصنع الفرق.
               <br />
@@ -120,7 +119,7 @@ export default function CustomSection() {
               </div>
 
               <button className="cursor-pointer flex items-center gap-1 md:gap-4">
-                <div  className="
+                <div className="
                               w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px]
                               bg-[#C83E43] 
                               border-2 border-[#414141]

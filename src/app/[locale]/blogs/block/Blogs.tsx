@@ -71,8 +71,8 @@ export default async function Page() {
     ]
     return (
         <>
-            <section className="py-5 md:py-16 px-2 md:px-5 bg-[#F8F8F8]">
-                <div className="container mx-auto">
+            <section className="py-5 md:py-16 px-2 md:px-16 bg-[#F8F8F8]">
+                <div>
                     <AnimatedSection className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center">
                         <p className=" max-w-[796px] 
                         text-right 

@@ -34,7 +34,8 @@ export default function ReviewSection() {
 
   return (
     <section className="overflow-hidden">
-      <div className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center  container mx-auto px-2 md:px-0">
+     <div className="py-5 md:py-16 px-2 md:px-16">
+       <div className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center px-2 md:px-0">
         <p className=" max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
@@ -44,6 +45,7 @@ export default function ReviewSection() {
           شركاء النجاح
         </p>
       </div>
+     </div>
 
       <ReviewSlider reviews={reviews} />
     </section>

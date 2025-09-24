@@ -4,7 +4,7 @@ import PoPUpChat from "@/components/PoPUpChat"
 import Image from "next/image";
 export default function WeHear() {
     return (
-        <section className="py-2 md:py-10 px-2 md:px-5 container mx-auto bg-white mt-5 rounded-none  md:rounded-2xl relative overflow-hidden">
+        <section className="py-2 md:py-10 px-2 md:px-16 bg-white mt-5 rounded-none  md:rounded-2xl relative overflow-hidden">
             <Image src="/assets/icons/shapes-group.svg" alt="We Hear" width={150} height={150} className="absolute top-[-42px] left-[-55px] md:top-[-40px] md:left-[-85px] -translate-y-1/2 w-[100px] md:w-[150px] h-auto" />
             <div className="flex flex-col md:flex-row justify-between gap-1 md:gap-6 w-full">
                 <AnimatedSection

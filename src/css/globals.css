@@ -97,3 +97,17 @@ body {
 
 
 }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* thin */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary); 
+  border-radius: 9999px;
+}

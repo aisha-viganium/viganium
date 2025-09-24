@@ -4,7 +4,7 @@ import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection
 export default function Details() {
   return (
     <section className="py-12 md:py-16 bg-[#F8F8F8]">
-      <div className="container mx-auto px-2 md:px-5">
+      <div className="mx-auto px-2 md:px-16">
 
         <AnimatedSection className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center">
           <p className=" max-w-[796px] 
@@ -18,7 +18,7 @@ export default function Details() {
 
         </AnimatedSection>
         <AnimatedSection
-          className="container mx-auto px-2 md:px-5"
+          className="mx-auto px-2 md:px-16"
           variants={slideFromTopBounce}
         >
           <h5 className="font-bold text-[24px] md:text-[32px] lg:text-[40px] leading-[36px] md:leading-[48px] lg:leading-[63px] text-right text-[#1A1A1A] my-6 md:my-8 lg:my-10">
@@ -34,13 +34,13 @@ export default function Details() {
         </AnimatedSection>
       </div>
         <div
-          className="container mx-auto px-2 md:px-5"
+          className=" mx-auto px-2 md:px-16"
         >
       <WeHear />
         </div>
 
       <AnimatedSection
-        className="container mx-auto px-2 md:px-5"
+        className="px-2 md:px-16"
         variants={slideFromTopBounce}
       >
         <h5 className="font-bold text-[24px] md:text-[32px] lg:text-[40px] leading-[36px] md:leading-[48px] lg:leading-[63px] text-right text-[#1A1A1A] my-6 md:my-8 lg:my-10">
@@ -54,7 +54,7 @@ export default function Details() {
         </p>
       </AnimatedSection>
         <div
-          className="container mx-auto px-2 md:px-5"
+          className=" px-2 md:px-16"
         >
       <WeHear />
       </div>

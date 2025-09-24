@@ -134,7 +134,7 @@ export default function Team() {
     ];
 
     return (
-        <section className="py-5 md:py-16 px-2 md:px-5 bg-[#F8F8F8]">
+        <section className="py-5 md:py-16 px-2 md:px-16 bg-[#F8F8F8]">
             <AnimatedSection
                 className="col-span-1"
                 variants={deckShuffle}
@@ -227,13 +227,13 @@ export default function Team() {
                         <div className="flex items-center justify-around gap-4 mt-[-50px] relative mb-6 z-40">
 
 
-                            <button className="custom-next flex justify-center items-center w-[54px] h-[42px] bg-white  border-[#EEEEEE] border-4 shadow-[0_0_11.3px_rgba(1,17,59,0.05)] rounded-[11px] p-[3px]">
+                            <button className="cursor-pointer custom-next flex justify-center items-center w-[54px] h-[42px] bg-white  border-[#EEEEEE] border-4 shadow-[0_0_11.3px_rgba(1,17,59,0.05)] rounded-[11px] p-[3px]">
                                 <Image src="/assets/icons/arrow-black.svg" alt="" width={24} height={24} className="rotate-180" />
 
                             </button>
                             <div className="swiper-pagination !static flex items-center gap-2"></div>
 
-                            <button className="custom-prev flex justify-center items-center w-[54px] h-[42px] bg-white  border-[#EEEEEE] border-4 shadow-[0_0_11.3px_rgba(1,17,59,0.05)] rounded-[11px] p-[3px]">
+                            <button className="cursor-pointer custom-prev flex justify-center items-center w-[54px] h-[42px] bg-white  border-[#EEEEEE] border-4 shadow-[0_0_11.3px_rgba(1,17,59,0.05)] rounded-[11px] p-[3px]">
                                 <Image src="/assets/icons/arrow-black.svg" alt="" width={24} height={24} />
                             </button>
 

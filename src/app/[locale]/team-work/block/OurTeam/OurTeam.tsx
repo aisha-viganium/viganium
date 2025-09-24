@@ -4,7 +4,7 @@ import AnimatedSection, { slideFromRightBounce, slideFromLeftBounce, slideFromTo
 
 export default function OurTeam() {
   return (
-    <section className="py-5 md:py-16 px-2 md:px-5 container mx-auto ">
+    <section className="py-5 md:py-16 px-2 md:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center mt-0 md:mt-20">
         <AnimatedSection
           className="col-span-1"

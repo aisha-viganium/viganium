@@ -17,9 +17,9 @@ const slides = [
 
 export default function Tools() {
     return (
-        <section className="py-12 md:py-16 container mx-auto px-4">
+        <section className="py-12 md:py-16 px-2 md:px-16">
 
-            <AnimatedSection variants={slideFromTopBounce} className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center  container mx-auto px-2 md:px-0">
+            <AnimatedSection variants={slideFromTopBounce} className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center px-2 md:px-16">
                 <p className=" max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 

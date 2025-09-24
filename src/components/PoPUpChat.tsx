@@ -9,18 +9,17 @@ export default function PoPUpChat({ bg, color, border }: { bg: string; color: st
 
     return (
         <>
-
             <button
-            onClick={() => setOpen(true)}
-            style={{
-                backgroundColor: bg,
-                color: color,
-                border: `2px solid ${border}`,
+                onClick={() => setOpen(true)}
+                style={{
+                    backgroundColor: bg,
+                    color: color,
+                    border: `2px solid ${border}`,
 
-                outline: `2px solid ${bg}`,
+                    outline: `2px solid ${bg}`,
 
-            }}
-            className="
+                }}
+                className="
                 cursor-pointer flex flex-row justify-center items-center my-5
                 px-0 py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[10px] leading-[14px]
                 md:py-[17px] md:gap-[10px] md:w-[188px] md:h-[63px] 
@@ -30,7 +29,7 @@ export default function PoPUpChat({ bg, color, border }: { bg: string; color: st
                 transition-all duration-300 ease-in-out
                 hover:outline-offset-4
             "
->
+            >
                 كلّمنا وخلنا نبدأ
             </button>
 

@@ -30,7 +30,7 @@ export default function Services() {
     },
   ];
   return (
-    <section className="container mx-auto py-5 md:py-16 px-2 md:px-5 bg-white">
+    <section className="mx-auto py-5 md:py-16 px-2 md:px-16 bg-white">
       <AnimatedSection variants={slideFromTopBounce} className="mb-5 border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center">
         <p className=" max-w-[796px] 
                         text-right 

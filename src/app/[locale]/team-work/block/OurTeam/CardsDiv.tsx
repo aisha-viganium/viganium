@@ -9,10 +9,10 @@ export default function CardsDiv() {
   ];
 
   const positions = [
-    { card: "top-[20%] left-[10%] md:top-6 md:left-20 w-[154px] h-[190px] md:w-[254px] md:h-[290px]", title: "right-4 top-[60px] md:top-[100px] text-[18px] md:text-[32px]" },
-    { card: "top-[25%] right-[10%] md:top-20 md:right-20 w-[113px] h-[142px] md:w-[213px] md:h-[242px]", title: "top-[45px] md:top-[85px] right-[15px] text-[15px] md:text-[26px] " },
-    { card: "bottom-[25%] left-[10%] md:bottom-20 md:left-20 w-[113px] h-[142px] md:w-[213px] md:h-[242px]", title: "top-[55px] md:top-[105px] right-[7px] text-[14px] md:text-[22px]" },
-    { card: "bottom-[20%] md:bottom-0 right-10 w-[154px] h-[190px] md:w-[254px] md:h-[290px]", title: "right-0 top-[50px] md:top-[90px] text-[16px] md:text-[25px]" }
+    { card: "top-[20%] left-[10%] md:top-6 md:left-30 w-[154px] h-[190px] md:w-[254px] md:h-[290px]", title: "right-4 top-[60px] md:top-[100px] text-[18px] md:text-[32px]" },
+    { card: "top-[25%] right-[10%] md:top-20 md:right-40 w-[113px] h-[142px] md:w-[213px] md:h-[242px]", title: "top-[45px] md:top-[85px] right-[15px] text-[15px] md:text-[26px] " },
+    { card: "bottom-[25%] left-[10%] md:bottom-20 md:left-30 w-[113px] h-[142px] md:w-[213px] md:h-[242px]", title: "top-[55px] md:top-[105px] right-[7px] text-[14px] md:text-[22px]" },
+    { card: "bottom-[20%] md:bottom-0 right-30 w-[154px] h-[190px] md:w-[254px] md:h-[290px]", title: "right-0 top-[50px] md:top-[90px] text-[16px] md:text-[25px]" }
   ];
 
   return (

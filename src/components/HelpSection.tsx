@@ -6,7 +6,7 @@ import AnimatedSection, { fadeInUp, slideFromLeftBounce } from "@/animation/Anim
 export default function CustomSection() {
   return (
     <section className="bg-[#1A1A1A] my-5 py-20">
-      <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center container mx-auto gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center px-2 md:px-16 gap-10">
         
         <AnimatedSection 
           variants={fadeInUp} 

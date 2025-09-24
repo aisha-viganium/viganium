@@ -73,17 +73,7 @@ export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
                   <div style={{ filter: "drop-shadow(0px 8px 20px rgba(0,0,0,0.4))" }}
                     className="relative z-10  min-h-[300px] md:min-h-[475px] py-6 px-4 md:py-8 md:px-6 bg-[#FDFFFC] shadow rounded-[20px] md:rounded-[34px] flex flex-col gap-2 md:gap-6 pt-[145px] md:pt-[150px] clipPath-review mt-[70px] md:mt-0">
                     <div className="flex items-center gap-4">
-                      <Image src={review.image} alt="person" width={60} height={60} className="
-                                                                                              border-2 
-                                                                                              md:border-4 
-                                                                                              border-[#BD171D] 
-                                                                                              rounded-full 
-                                                                                              shadow 
-                                                                                              w-[30px] 
-                                                                                              h-[30px] 
-                                                                                              md:w-[80px] 
-                                                                                              md:h-[80px]
-                                                                                            " />
+                      <Image src={review.image} alt="person" width={60} height={60} className=" border-2 md:border-4  border-[#BD171D] rounded-full w-[30px] h-[30px] md:w-[80px] md:h-[80px] shadow-[1px_1px_4px_3px_#00000040]" />
                       <div>
                         <p
                           className="
@@ -141,10 +131,10 @@ export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="hidden md:flex custom-prev absolute left-[3%] md:left-[3%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[120px] md:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
+        <div className="hidden md:flex custom-prev absolute left-[3%] md:left-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[120px] md:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
           <Image src="/assets/icons/arrow-white.svg" alt="prev" width={25} height={25} className="md:w-[48px] md:h-[48px] rotate-180" />
         </div>
-        <div className="hidden md:flex custom-next absolute right-[3%] md:right-[3%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[120px] md:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
+        <div className="hidden md:flex custom-next absolute right-[3%] md:right-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[120px] md:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
           <Image src="/assets/icons/arrow-white.svg" alt="next" width={25} height={25} className="md:w-[48px] md:h-[48px]" />
         </div>
       </AnimatedSection>
