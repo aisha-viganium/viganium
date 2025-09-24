@@ -1,5 +1,4 @@
 import ReviewSlider from "./ReviewSlider";
-import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection";
 
 export default function ReviewSection() {
   const reviews = [

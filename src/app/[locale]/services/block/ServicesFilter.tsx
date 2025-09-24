@@ -5,8 +5,14 @@ import TopFilter from "./TopFilter";
 import { ServiceCard } from "@/components/ServiceCard";
 import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection";
 import { useSearchParams, useRouter } from "next/navigation";
-
-export default function ServicesFilter({ services }: { services: any[] }) {
+export interface Services {
+  id: number;
+  name: string;
+  image: string;
+  tags: string[];
+  description: string;
+}
+export default function ServicesFilter({ services }: { services: Services[] }) {
   const searchParams = useSearchParams();
   const router = useRouter();
 

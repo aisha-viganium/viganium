@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import AnimatedSection, { fadeInUp, fadeInRight } from "@/animation/AnimatedSection";
+import AnimatedSection, { fadeInRight } from "@/animation/AnimatedSection";
 
 export default function HeroSection() {
   return (

@@ -1,8 +1,14 @@
 import AnimatedSection, { slideFromLeftBounce, slideFromRightBounce } from "@/animation/AnimatedSection";
 import Image from "next/image";
 import React from "react";
-
-export default function HeroSection({ service }: { service: any }) {
+export interface Service {
+  id: number;
+  name: string;
+  image: string;
+  tags: string[];
+  description: string;
+}
+export default function HeroSection({ service }: { service: Service }) {
   return (
     <>
       <section className="lg:hidden relative bg-[url('/assets/images/service-detail-cover.png')] bg-cover bg-center overflow-hidden  h-[50vh] md:min-h-screen">

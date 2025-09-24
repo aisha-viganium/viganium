@@ -3,16 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import "@/i18n/client";
-import { locales } from "@/constants/routes";
 export default function SidebarNavbar() {
-  const cleanPath =
-    typeof window !== "undefined"
-      ? window.location.pathname
-        .split("/")
-        .filter((part: string) => part && !locales.includes(part))
-        .join("/")
-      : "";
-  const [path, setPath] = useState("/" + cleanPath);
+
   const [isOpen, setIsOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -78,7 +70,6 @@ export default function SidebarNavbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => {
-                  setPath(link.href);
                   setIsOpen(false);
                 }}
                 className="group relative block py-2 font-semibold text-2xl md:text-[40px] lg:text-[64px] leading-snug transition-colors text-[#1A1A1A] hover:text-primary"
