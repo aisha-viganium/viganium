@@ -27,7 +27,7 @@ export default function NavBar() {
         <Logo
           width={293}
           height={40}
-          className="w-[150px] md:w-[393.59px] h-auto"
+          className="w-[150px] md:w-[493.59px] h-auto"
           fillColor={scrolled ? "#000000" : "#FDFFFC"} 
         />
       </Link>

@@ -19,18 +19,15 @@ export default function RootLayout(
   }
 ) {
   return (
-    <html className=" ">
+    <html lang="ar" dir="rtl">
       <body>
 
         <I18nProvider>
           <NavBar />
           <main className="max-w-[100vw] overflow-hidden">
-
             {children}
           </main>
-
           <Footer />
-
         </I18nProvider>
       </body>
     </html>

@@ -1,33 +1,42 @@
 "use client";
 
 import React from "react";
-export default function TopFilter() {
-  const [path, setPath] = React.useState<string | undefined>(undefined);
-  const navLinks = ["كل الخدمات", "التسويق الإلكتروني", "تطوير المواقع ", "تطوير الموبايل"];
 
+interface TopFilterProps {
+  onFilterChange: (filter: string) => void;
+}
+
+export default function TopFilter({ onFilterChange }: TopFilterProps) {
+  const [path, setPath] = React.useState<string>("كل الخدمات");
+
+  const navLinks = ["كل الخدمات", "التسويق الإلكتروني", "تطوير المواقع", "تطوير الموبايل"];
+
+  const handleClick = (link: string) => {
+    setPath(link);
+    onFilterChange(link); 
+  };
 
   return (
-    <div className="">
-      <div className="">
+    <div>
+      <div>
         {navLinks.map((link) => (
           <button
-            onClick={() => setPath(link)}
+            onClick={() => handleClick(link)}
             key={link}
-className="
-    font-semibold 
-    md:text-[20px] md:leading-[29px] md:text-right 
-    text-[12px] leading-[normal] text-left
-    relative text-[#FDFFFC] px-2 p-[16px] cursor-pointer
-  "          >
+            className={`
+              font-semibold 
+              md:text-[20px] md:leading-[29px] md:text-right 
+              text-[12px] leading-[normal] text-left
+              relative text-[#FDFFFC] px-2 p-[16px] cursor-pointer
+            `}
+          >
             {link}
             {path === link && (
-              <div className="absolute left-0 bottom-0 w-full h-[4px] bg-[#BD171D] rounded-sm "></div>
+              <div className="absolute left-0 bottom-0 w-full h-[4px] bg-[#BD171D] rounded-sm"></div>
             )}
           </button>
         ))}
-
       </div>
-
     </div>
   );
 }

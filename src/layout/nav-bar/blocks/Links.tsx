@@ -2,12 +2,20 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-
+import "@/i18n/client";
+import { locales } from "@/constants/routes";
 export default function SidebarNavbar() {
-
-  const [path, setPath] = useState("/");
+  const cleanPath =
+    typeof window !== "undefined"
+      ? window.location.pathname
+        .split("/")
+        .filter((part: string) => part && !locales.includes(part))
+        .join("/")
+      : "";
+  const [path, setPath] = useState("/" + cleanPath);
   const [isOpen, setIsOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
+
 
   const navLinks = [
     { href: "/", label: "الرئيسية" },
@@ -32,7 +40,7 @@ export default function SidebarNavbar() {
         onClick={() => setIsOpen(true)}
         className="p-3 text-gray-700 hover:text-primary focus:outline-none cursor-pointer"
       >
-        <Image src="/assets/icons/menue.svg" alt="Menu" width={40} height={40} className="w-[24px] h-[24px] md:w[40px] md:h-[40px]" />
+        <Image src="/assets/icons/menue.svg" alt="Menu" width={40} height={40} className="w-[24px] h-[24px] md:w-[40px] md:h-[40px]" />
       </button>
 
       {isOpen && (
@@ -57,7 +65,7 @@ export default function SidebarNavbar() {
           />
           <button
             onClick={() => setIsOpen(false)}
-            className="text-[#1A1A1A] hover:text-red-500 text-xl cursor-pointer"
+            className="text-[#1A1A1A] hover:text-primary text-xl cursor-pointer"
           >
             <Image src="/assets/icons/close.svg" alt="Close" width={32} height={32} />
           </button>
@@ -73,17 +81,14 @@ export default function SidebarNavbar() {
                   setPath(link.href);
                   setIsOpen(false);
                 }}
-                className={`group relative block py-2 font-semibold text-2xl md:text-[40px] lg:text-[64px] leading-snug transition-colors
-        ${path === link.href ? "text-primary" : "text-[#1A1A1A] hover:text-primary"}
-      `}
+                className="group relative block py-2 font-semibold text-2xl md:text-[40px] lg:text-[64px] leading-snug transition-colors text-[#1A1A1A] hover:text-primary"
               >
                 {link.label}
                 <span
-                  className={`absolute right-[-20px] top-1/2 -translate-y-1/2 w-3 h-3 md:w-5 md:h-5 rounded-full bg-primary transition-opacity duration-300
-          ${path === link.href ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
-        `}
+                  className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-3 h-3 md:w-5 md:h-5 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </Link>
+
             ))}
 
           </div>

@@ -1,6 +1,6 @@
 // middleware.ts
 import { NextRequest, NextResponse } from "next/server";
-import { locales, defaultLocale, authRoutes } from "@/constants/routes";
+import { locales, defaultLocale } from "@/constants/routes";
 
 function getPreferredLocale(request: NextRequest): string {
   const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
@@ -22,16 +22,6 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
-  const pathWithoutLocale = "/" + pathnameParts.slice(2).join("/");
-  const token = request.cookies.get("token")?.value;
-  const isAuth = authRoutes.includes(pathWithoutLocale);
-
-  if (isAuth && token) {
-    const redirectUrl = new URL(`/${locale}/`, request.url);
-    const response = NextResponse.redirect(redirectUrl);
-    response.cookies.set("NEXT_LOCALE", locale, { path: "/" });
-    return response;
-  }
 
   const response = NextResponse.next();
   if (!request.cookies.get("NEXT_LOCALE")) {

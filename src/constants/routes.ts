@@ -5,10 +5,4 @@ export const defaultLocale = "ar";
 
 export const publicRoutes = ["/", "/services", "/team-work", "/blogs", "/contact-us"];
 
-export const authRoutes = ["/login", "/register", "/forgot-password"];
 
-export const dashboardRoutes = [
-  "/dashboard",
-  "/dashboard/users",
-  "/dashboard/settings",
-];

@@ -2,7 +2,7 @@ import AnimatedSection, { slideFromLeftBounce, slideFromRightBounce } from "@/an
 import Image from "next/image";
 import React from "react";
 
-export default function HeroSection() {
+export default function HeroSection({ service }: { service: any }) {
   return (
     <>
       <section className="lg:hidden relative bg-[url('/assets/images/service-detail-cover.png')] bg-cover bg-center overflow-hidden  h-[50vh] md:min-h-screen">
@@ -23,7 +23,7 @@ export default function HeroSection() {
                         lg:text-[70.63px] lg:leading-[101px]
                         text-[#FDFFFC]
                       ">
-                تطوير تطبيقات الموبايل
+                 {service.name}
               </h1>
               <p
                 className="
@@ -59,7 +59,7 @@ export default function HeroSection() {
                 </div>
                 <div className="absolute w-[150px] h-[105px] left-[30%] top-3">
                   <Image
-                    src="/assets/images/service.png"
+                    src={service.image}
                     alt="Service"
                     fill
                     className="object-cover rounded-[2px] md:rounded-[8px]"
@@ -88,7 +88,7 @@ export default function HeroSection() {
             <AnimatedSection variants={slideFromRightBounce} className="col-span-1 h-full flex flex-col justify-center items-start text-white text-right pr-2">
 
               <h1 className="mt-[50px] max-w-[1039.36px] font-bold text-[70.6311px] leading-[101px] text-right text-[#FDFFFC] flex-none order-0 self-stretch grow-0">
-                تطوير تطبيقات الموبايل
+                 {service.name}
               </h1>
               <p className="max-w-[763.7px] my-[65px] font-semibold text-[26.4867px] leading-[38px] text-right text-[#FDFFFC]">
                 هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
@@ -111,7 +111,7 @@ export default function HeroSection() {
                 className="absolute w-[820.97px] h-[730.35px] left-[212px] top-[100px]"
               />
               <Image
-                src="/assets/images/service.png"
+                src={service.image}
                 alt="Hero"
                 width={842}
                 height={619}

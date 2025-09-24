@@ -25,7 +25,7 @@ export function ServiceCard({ service }: { service: Service }) {
           />
         </div>
 
-        <div className="p-3 text-right">
+        <div className="px-3 text-right">
           <h3
             className="
                         font-bold text-[20px] leading-[29px] text-right text-[#414141]
