@@ -16,7 +16,7 @@ export function middleware(request: NextRequest) {
   const locale = getPreferredLocale(request);
 
   if (!hasLocale) {
-    const redirectUrl = new URL(`/${locale}${pathname}`, request.url);
+    const redirectUrl = new URL(`/${locale}${pathname}${request.nextUrl.search}`, request.url);
     const response = NextResponse.redirect(redirectUrl);
     response.cookies.set("NEXT_LOCALE", locale, { path: "/" });
     return response;

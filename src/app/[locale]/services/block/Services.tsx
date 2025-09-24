@@ -2,9 +2,11 @@
 import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection";
 import services from "@/data/servicesData";
 import ServicesFilter from "./ServicesFilter"; 
+import WeHear from "@/components/WeHear";
 
 export default function Services() {
   return (
+    <>
     <section className="py-5 md:py-16 px-2 md:px-5 bg-[#1A1A1A]">
       <div className="container mx-auto">
         <AnimatedSection variants={slideFromTopBounce} className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px]">
@@ -21,5 +23,8 @@ export default function Services() {
         <ServicesFilter services={services} />
       </div>
     </section>
+          <WeHear/>
+
+    </>
   );
 }

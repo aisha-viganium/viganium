@@ -1,19 +1,26 @@
 "use client";
 
 import React from "react";
+import { useSearchParams } from "next/navigation";
 
 interface TopFilterProps {
   onFilterChange: (filter: string) => void;
 }
 
 export default function TopFilter({ onFilterChange }: TopFilterProps) {
-  const [path, setPath] = React.useState<string>("كل الخدمات");
+  const searchParams = useSearchParams();
+  const filterFromUrl = searchParams.get("filter") || "كل الخدمات";
+  const [path, setPath] = React.useState<string>(filterFromUrl);
+
+  React.useEffect(() => {
+    setPath(filterFromUrl);
+  }, [filterFromUrl]);
 
   const navLinks = ["كل الخدمات", "التسويق الإلكتروني", "تطوير المواقع", "تطوير الموبايل"];
 
   const handleClick = (link: string) => {
     setPath(link);
-    onFilterChange(link); 
+    onFilterChange(link);
   };
 
   return (

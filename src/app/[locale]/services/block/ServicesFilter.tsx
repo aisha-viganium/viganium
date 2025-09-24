@@ -4,9 +4,27 @@ import React from "react";
 import TopFilter from "./TopFilter";
 import { ServiceCard } from "@/components/ServiceCard";
 import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection";
+import { useSearchParams, useRouter } from "next/navigation";
 
 export default function ServicesFilter({ services }: { services: any[] }) {
-  const [selectedFilter, setSelectedFilter] = React.useState<string>("كل الخدمات");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const filterFromUrl = searchParams.get("filter") || "كل الخدمات";
+  const [selectedFilter, setSelectedFilter] = React.useState<string>(filterFromUrl);
+
+  React.useEffect(() => {
+    setSelectedFilter(filterFromUrl);
+  }, [filterFromUrl]);
+
+  const handleFilterChange = (filter: string) => {
+    setSelectedFilter(filter);
+    const newUrl =
+      filter === "كل الخدمات"
+        ? "/services"
+        : `/services?filter=${encodeURIComponent(filter)}`;
+    router.push(newUrl);
+  };
 
   const filteredServices =
     selectedFilter === "كل الخدمات"
@@ -15,7 +33,7 @@ export default function ServicesFilter({ services }: { services: any[] }) {
 
   return (
     <>
-      <TopFilter onFilterChange={setSelectedFilter} />
+      <TopFilter onFilterChange={handleFilterChange} />
 
       <div className="mt-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6">
         {filteredServices.map((service, index) => {
