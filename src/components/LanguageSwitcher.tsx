@@ -4,15 +4,13 @@ import { usePathname, useRouter } from "next/navigation";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
-  const pathname = usePathname(); // المسار الحالي، مثلا: /en/home
+  const pathname = usePathname(); 
 
-  // نحدد اللغة الحالية من أول segment
   const currentLocale = pathname.split("/")[1] || "en";
 
   const toggleLocale = () => {
     const newLocale = currentLocale === "ar" ? "en" : "ar";
 
-    // نغير المسار للغة الجديدة مع الحفاظ على باقي المسار
     const segments = pathname.split("/");
     segments[1] = newLocale;
     const newPath = segments.join("/");

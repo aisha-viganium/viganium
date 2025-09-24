@@ -16,7 +16,7 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
     setPath(filterFromUrl);
   }, [filterFromUrl]);
 
-  const navLinks = ["كل الخدمات", "التسويق الإلكتروني", "تطوير المواقع", "تطوير الموبايل"];
+  const navLinks = ["كل الخدمات", "التسويق الإلكتروني", "تطوير مواقع", "تطوير الموبايل"];
 
   const handleClick = (link: string) => {
     setPath(link);
