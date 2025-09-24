@@ -23,14 +23,14 @@ export default function HeroSection() {
                         className="
                                     flex flex-row justify-center items-center 
                                     px-[10px] md:px-[17.66px] 
-                                    py-[5px] md:py-[8.83px] 
+                                    py-[5px] md:py-[9px] 
                                     gap-[6.26px] md:gap-[11.04px] 
                                     w-full md:w-auto 
-                                    max-w-[50%] md:min-w-[294px] 
-                                    h-[27px] md:min-h-[32px] 
+                                    max-w-[50%] md:min-w-[342px] 
+                                    h-[27px] md:min-h-[50px] 
                                     text-center 
-                                    font-bold md:text-[22.07px] 
-                                    text-[10px] leading-[100%] md:leading-[32px] 
+                                    font-bold text-[10px] md:text-[26.07px] 
+                                     leading-[100%] md:leading-[32px] 
                                     text-[#BD171D] 
                                     bg-[#F8E8E8] 
                                     border border-[#E4A0A2] 

@@ -1,4 +1,4 @@
-import ChatPopup from "@/components/PoPUpChat";
+import PoPUpChat from "@/components/PoPUpChat";
 import AnimatedSection, { slideFromRightBounce, slideFromLeftBounce } from "@/animation/AnimatedSection";
 import WorkSlider from "./WorkSlider";
 
@@ -46,7 +46,7 @@ export default function HowWork() {
                       "
           >            في Viganium، لا نقدّم حلولاً جاهزة — بل نبدأ كل رحلة من مكان واحد فقط: صوت العميل في Viganium، لا نقدّم حلولاً جاهزة — بل نبدأ كل رحلة من مكان واحد فقط: صوت العميل.
           </p>
-          <ChatPopup bg="#FFF" color="#1A1A1A" />
+          <PoPUpChat bg="#FFF" color="#1A1A1A" border="#F6EDE0" />
         </AnimatedSection>
         <AnimatedSection variants={slideFromLeftBounce} delay={0.2} className="lg:col-span-1">
           <WorkSlider />

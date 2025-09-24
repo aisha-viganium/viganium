@@ -53,29 +53,29 @@ export default function CustomSection() {
 
         <AnimatedSection variants={slideFromLeftBounce} delay={0.2}>
           <div className="flex flex-col gap-6">
-<div className="grid grid-cols-2 gap-2 md:gap-4">
-  <div className="relative">
-    <Image
-      src="/assets/images/viganium-story.png"
-      alt="1"
-      width={350}
-      height={200}
-      className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
-    />
-    <div className="absolute inset-0 rounded-[4px] md:rounded-[16px] bg-[linear-gradient(183deg,rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_97.51%)]"></div>
-  </div>
+            <div className="grid grid-cols-2 gap-2 md:gap-4">
+              <div className="relative">
+                <Image
+                  src="/assets/images/viganium-story.png"
+                  alt="1"
+                  width={350}
+                  height={200}
+                  className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
+                />
+                <div className="absolute inset-0 rounded-[4px] md:rounded-[16px] bg-[linear-gradient(183deg,rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_97.51%)]"></div>
+              </div>
 
-  <div className="relative">
-    <Image
-      src="/assets/images/robot-story.png"
-      alt="2"
-      width={350}
-      height={200}
-      className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
-    />
-    <div className="absolute inset-0 rounded-[4px] md:rounded-[16px] bg-[linear-gradient(183deg,rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_97.51%)]"></div>
-  </div>
-</div>
+              <div className="relative">
+                <Image
+                  src="/assets/images/robot-story.png"
+                  alt="2"
+                  width={350}
+                  height={200}
+                  className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
+                />
+                <div className="absolute inset-0 rounded-[4px] md:rounded-[16px] bg-[linear-gradient(183deg,rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_97.51%)]"></div>
+              </div>
+            </div>
 
             <p
               className="
@@ -119,14 +119,26 @@ export default function CustomSection() {
                 />
               </div>
 
-              <button className="w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] border border-[#FDFFFC] rounded-full">
-                <Image
-                  src="/assets/icons/video-palyer.svg"
-                  alt="3"
-                  width={92}
-                  height={92}
-                  className="w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px]"
-                />
+              <button className="cursor-pointer flex items-center gap-1 md:gap-4">
+                <div  className="
+                              w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px]
+                              bg-[#C83E43] 
+                              border-2 border-[#414141]
+                              rounded-full flex items-center justify-center 
+                            ">
+                  <Image
+                    src="/assets/icons/arrow-white.svg"
+                    alt="3"
+                    width={32}
+                    height={32}
+                    className="w-[18px] md:w-[32px] h-auto rotate-180
+                    "
+                  />
+                </div>
+                <span className="
+                                font-[600] text-[12px] md:text-[20px] leading-[29px] 
+                                text-right text-black 
+                              ">مشاهدة المقدمة</span>
               </button>
             </div>
           </div>

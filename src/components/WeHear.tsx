@@ -22,7 +22,7 @@ export default function WeHear() {
                     variants={slideFromLeftBounce}
                     className="pt-0 md:pt-5"
                 >
-                <PoPUpChat bg="#1A1A1A" color="#FDFFFC" />
+                <PoPUpChat bg="#1A1A1A" color="#FDFFFC" border="#1A1A1A" />
                
                 </AnimatedSection>
             </div>
