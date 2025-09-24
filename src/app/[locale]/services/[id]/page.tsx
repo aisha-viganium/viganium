@@ -11,7 +11,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
   const service = services.find((s) => s.id.toString() === params.id);
 
   if (!service) {
-    return <div className="text-center text-red-500 p-10">الخدمة غير موجودة</div>;
+    return <div className="text-center text-primary p-10">الخدمة غير موجودة</div>;
   }
   return (
     <>

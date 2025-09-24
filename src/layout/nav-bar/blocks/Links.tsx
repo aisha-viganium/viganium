@@ -3,6 +3,11 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import "@/i18n/client";
+import ArrowUpBlack from "@/assets/SVG/ArrowUpBlack";
+import SnapNav from "@/assets/SVG/social/SnapNav";
+import FaceNav from "@/assets/SVG/social/FaceNav";
+import LinkedinNav from "@/assets/SVG/social/LinkedinNav";
+import InstaNav from "@/assets/SVG/social/InstaNav";
 export default function SidebarNavbar() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +30,12 @@ export default function SidebarNavbar() {
     { label: "كلين تكنيك - لخدمات النظافة", image: "/assets/images/rental.jpg" },
   ];
 
+  const socialLinks = [
+    { name: "snap", url: "https://www.snap.com/add/rentalgate", icon: <SnapNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> },
+    { name: "insta", url: "https://www.insta.com/add/rentalgate", icon: <InstaNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> },
+    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <FaceNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> },
+    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <LinkedinNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> }
+  ];
 
   return (
     <div className="relative z-100">
@@ -87,15 +98,9 @@ export default function SidebarNavbar() {
           <div className="w-full md:w-2/3 mt-6 md:mt-0">
             <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg">
               <div className="flex flex-col justify-between lg:w-1/3">
-                <h3 className="flex justify-center align-center gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-[#1A1A1A] mb-4">
+                <h3 className="group flex justify-center align-center gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
                   <span> سابقة الأعمال</span>
-                  <Image
-                    src="/assets/icons/arrow-up-left-black.svg"
-                    alt="arrow"
-                    width={28}
-                    height={32}
-
-                  />
+                  <ArrowUpBlack className="mt-[10px] rotate-245 transition-transform duration-300  group-hover:rotate-[215deg] fill-[#1A1A1A] group-hover:fill-primary" />
                 </h3>
                 <div className="flex flex-col items-center gap-4">
                   {sliderItems.map((item, index) => (
@@ -131,38 +136,30 @@ export default function SidebarNavbar() {
                     className="absolute object-cover rounded-[8px]"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                    <span className="text-white font-bold text-lg">التواصل معنا</span>
+                    <span className="text-white font-bold text-[62px]">التواصل معنا</span>
                   </div>
                 </div>
               </div>
 
               <div className="flex-1 flex flex-col justify-center align-center gap-4">
-                <h3 className="flex justify-center align-center gap-4 font-medium text-xl md:text-[32px] underline text-center text-[#1A1A1A] mb-4">
-                  <Image
-                    src="/assets/icons/arrow-up-right-black.svg"
-                    alt="arrow"
-                    width={28}
-                    height={32}
+                <h3 className="group flex justify-center items-center gap-4 font-medium text-xl md:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
+                  <ArrowUpBlack
+                    className="transition-transform duration-300 group-hover:text-primary group-hover:rotate-[35deg] fill-[#1A1A1A] group-hover:fill-primary"
                   />
-                  <span> التواصل معنا</span>
-
+                  <span>التواصل معنا</span>
                 </h3>
+
                 <a
                   href="mailto:Hello@viganium.com"
                   className="mt-5 font-200 text-sm md:text-[24px] text-center"
                 >
                   Hello@viganium.com
                 </a>
+
                 <div className="flex gap-[32px] mt-2 justify-center md:justify-center">
-                  {["snap", "x", "insta", "face", "linkedin"].map((icon, idx) => (
-                    <a key={idx} href="#" target="_blank" rel="noopener noreferrer">
-                      <Image
-                        src={`/assets/icons/social/${icon}-dark.svg`}
-                        alt={icon}
-                        width={32}
-                        height={32}
-                        className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]"
-                      />
+                  {socialLinks.map((link, idx) => (
+                    <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer">
+                      {link.icon}
                     </a>
                   ))}
                 </div>

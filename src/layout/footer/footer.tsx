@@ -2,14 +2,20 @@
 import React from "react";
 import Image from "next/image";
 import AnimatedSection, { deckShuffle } from "@/animation/AnimatedSection";
+import Youtube from "@/assets/SVG/social/Youtube"
+import Tiktok from "@/assets/SVG/social/Tiktok"
+import Facebook from "@/assets/SVG/social/Facebook"
+import Snap from "@/assets/SVG/social/Snap"
+import Linkedin from "@/assets/SVG/social/Linkedin"
+import ArrowUp from "@/assets/SVG/ArrowUp";
 
 export default function Footer() {
   const socialLinks = [
-    { name: "youtube", url: "https://www.snapchat.com/add/rentalgate", icon: "/assets/icons/social/youtube.svg" },
-    { name: "tiktok", url: "https://www.facebook.com/rentalgate", icon: "/assets/icons/social/tiktok.svg" },
-    { name: "facebook", url: "https://www.linkedin.com/company/rental-gate", icon: "/assets/icons/social/facebook.svg" },
-    { name: "snap", url: "https://www.linkedin.com/company/rental-gate", icon: "/assets/icons/social/snap.svg" },
-    { name: "linkedin", url: "https://www.snapchat.com/add/rentalgate", icon: "/assets/icons/social/linkedin.svg" },
+    { name: "youtube", url: "https://www.youtube.com/add/rentalgate", icon: <Youtube className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> },
+    { name: "tiktok", url: "https://www.tiktok.com/add/rentalgate", icon: <Tiktok className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> },
+    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <Facebook className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> },
+    { name: "snap", url: "https://www.snap.com/company/rental-gate", icon: <Snap className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> },
+    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <Linkedin className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> }
   ];
 
   const Companies = [
@@ -31,19 +37,16 @@ export default function Footer() {
           </p>
           <a
             href="mailto:Hello@viganuim.com"
-            className="flex flex-row items-center gap-3 transition-all duration-300 hover:scale-110 hover:text-primary group"
+            className="flex flex-row items-center gap-3 transition-all duration-300 group hover:text-primary mt-5"
           >
-            <span className="font-medium text-xl md:text-[40px] text-white group-hover:text-primary transition-colors duration-300">
+            <span className="font-medium text-xl md:text-[24px] text-white group-hover:text-primary transition-colors duration-300">
               Hello@viganuim.com
             </span>
-            <Image
-              src="/assets/icons/arrow-up.svg"
-              alt=""
-              width={30}
-              height={30}
-              className="w-[18px] h-[18px] md:w-[30px] md:h-[30px] transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert"
+            <ArrowUp
+              className="w-[10px] h-auto md:w-[21px]  text-white transition-transform duration-300 group-hover:text-primary group-hover:rotate-[-45deg] group-hover:scale-x-100"
             />
           </a>
+
 
         </AnimatedSection>
 
@@ -55,7 +58,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-8 md:gap-16 align-baseline">
             {socialLinks.map((link, idx) => (
               <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer">
-                <Image src={link.icon} alt={link.name} width={43} height={43} className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]"/>
+                {link.icon}
               </a>
             ))}
           </div>
@@ -68,7 +71,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-5">
             {Companies.map((c, idx) => (
-              <Image key={idx} src={c.icon} alt={c.name} width={77} height={77} className="w-[53px] h-[53px] md:w-[77px] md:h-[77px]"/>
+              <Image key={idx} src={c.icon} alt={c.name} width={77} height={77} className="w-[53px] h-[53px] md:w-[77px] md:h-[77px]" />
             ))}
           </div>
         </AnimatedSection>
