@@ -71,7 +71,7 @@ export default function CardSlider() {
                                     }
                                     exit={direction === "next" ? cardVariants.exitNext : ""}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    className={`absolute w-fit md:w-80 flex flex-col items-center p-[17.53px] gap-[17.53px] max-w-[356px] min-h-[200px] md:min-h-[470.18px] bg-[#F3F3F3] shadow-[4.38px_4.38px_4.38px_rgba(0,0,0,0.25)] rounded-[6.53px] md:rounded-[17.53px]`}
+                                    className={`absolute w-40 md:w-80 flex flex-col items-center p-[17.53px] gap-[17.53px] max-w-[356px] min-h-[200px] md:min-h-[470.18px] bg-[#F3F3F3] shadow-[4.38px_4.38px_4.38px_rgba(0,0,0,0.25)] rounded-[6.53px] md:rounded-[17.53px]`}
                                 >
                                     <div>
                                         <div className="flex flex-row justify-between items-center gap-[17.53px] w-full h-fit md:h-[56px]">
@@ -121,7 +121,7 @@ export default function CardSlider() {
                                         />
                                         <p
                                             className="
-                                                        max-w-[116.93px] text-[6.38px] leading-[9px] font-medium
+                                                         text-[6.38px] leading-[9px] font-medium
                                                         md:max-w-[320.95px] text-center md:font-medium md:text-[17.53px] md:leading-[25px] text-[#1A1A1A]
                                                     "
                                         >   
