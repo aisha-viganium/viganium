@@ -49,7 +49,7 @@ export default function Footer() {
             href="mailto:Hello@viganuim.com"
             className="flex flex-row items-center gap-3 transition-all duration-300 group hover:text-primary mt-5"
           >
-            <span className="font-medium text-xl md:text-[24px] text-white group-hover:text-primary transition-colors duration-300">
+            <span className="font-aileron font-medium text-xl md:text-[24px] text-white group-hover:text-primary transition-colors duration-300">
               Hello@viganuim.com
             </span>
             <ArrowUp

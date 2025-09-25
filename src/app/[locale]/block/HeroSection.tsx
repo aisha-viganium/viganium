@@ -34,7 +34,7 @@ export default function HeroSection() {
                                     text-[#BD171D] 
                                     bg-[#F8E8E8] 
                                     border border-[#E4A0A2] 
-                                    rounded-[17.5px] md:rounded-[30.90px] 
+                                    rounded-[17.5px] md:rounded-[30.90px]  md:mb-10
                                 "
                     >
                         افضل شركة تسويق في الوطن العربي

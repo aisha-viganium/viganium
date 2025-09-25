@@ -20,7 +20,16 @@ html {
   font-family: 'alfont_com_Brando';
 
 }
+@font-face {
+  font-family: 'aileron_regular';
+  src: url('../assets/fonts/aileron.regular.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
 
+.font-aileron {
+  font-family: 'aileron_regular';
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

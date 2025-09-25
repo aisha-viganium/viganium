@@ -220,7 +220,7 @@ export default function SidebarNavbar() {
 
                 <a
                   href="mailto:Hello@viganium.com"
-                  className="mt-0 md:mt-5 font-200 text-sm md:text-[24px] text-center"
+                  className="font-aileron mt-0 md:mt-5 font-200 text-sm md:text-[24px] text-center"
                 >
                   Hello@viganium.com
                 </a>
