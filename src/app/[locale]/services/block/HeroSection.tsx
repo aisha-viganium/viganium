@@ -37,7 +37,7 @@ export default function HeroSection() {
                         text-[#FDFFFC] 
                         font-normal text-[12px] leading-[17px] my-6 
                         md:my-[40px] md:text-xl md:leading-7 md:font-semibold
-                        lg:my-[65px] lg:text-[26.49px] lg:leading-[38px]
+                        lg:my-[65px] lg:text-[24px] lg:leading-[38px]
                       "
             >              إحنا مش بس بنصلّح، ونصمّم، ونهتم بالمواقع؛ إحنا بنبني شراكات عشان نضمن إن تواجدك على الإنترنت يشتغل بنفس قوة شغلك.
             </p>

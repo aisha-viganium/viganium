@@ -113,8 +113,8 @@ export default function SidebarNavbar() {
                 onClick={() => setIsOpen(false)}
                 className="group text-[#1A1A1A] hover:text-primary relative flex items-center transition-all duration-800 hover:translate-x-2 overflow-hidden h-auto md:h-[100px]"
               >
-                <div className=" w-8 h-9 flex items-center justify-center">
-                  <div className={`hidden lg:block relative transition-all duration-800 translate-y-[-100px] ${activeBall === index ? 'animate-bounce-ball' : ''
+                <div className="hidden lg:flex w-8 h-10 items-center justify-center">
+                  <div className={`relative transition-all duration-800 translate-y-[-100px] ${activeBall === index ? 'animate-bounce-ball' : ''
                     }`}>
                     <div className={`absolute transition-opacity duration-800 ${activeBall === index ? 'opacity-0' : 'opacity-100'
                       }`}>
@@ -153,7 +153,7 @@ export default function SidebarNavbar() {
 
 
           <div className="w-full md:w-2/3 mt-6 md:mt-0 flex flex-col justify-around">
-            <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg min-h-[359px]">
+            <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[359px]">
               <div className=" lg:w-1/3">
                 <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
                   <span> سابقة الأعمال</span>
@@ -181,7 +181,7 @@ export default function SidebarNavbar() {
                     animate="animate"
                     exit="exit"
                     transition={{ duration: 0.5 }}
-                    className="absolute w-full"
+                    className="absolute w-full h-full"
                   >
                     <Image
                       src={sliderItems[activeSlide].image}

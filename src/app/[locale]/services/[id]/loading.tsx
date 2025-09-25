@@ -65,7 +65,7 @@ export default function LoadingPage() {
                         />
                     ))}
                 </div>
-                 
+
 
                 <div className="relative w-[318px] h-[59px] rounded-[8px] flex items-center justify-center mx-auto 
   bg-gradient-to-t from-white/90 to-white/90 bg-primary 

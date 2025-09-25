@@ -41,7 +41,7 @@ export default function CardSlider() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-start h-[320] md:justify-center md:h-[700] overflow-hidden px-5">
+        <div className="flex flex-col items-end justify-start h-[320] md:justify-center md:h-[700] overflow-hidden px-5">
             <div className="flex gap-1 md:gap-6 mt-2 items-center">
 
                 <button
