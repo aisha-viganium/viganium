@@ -77,7 +77,7 @@ export default function ChatCard() {
                                 key={c}
                                 type="button"
                                 onClick={() => openChat()}
-                                className="cursor-pointer flex justify-center items-center py-1 px-3 md:px-4 gap-[6px] md:gap-[10px] w-[140px] md:w-[218px] h-[34px] bg-white rounded-[20px] font-medium text-[14px] md:text-[16px] leading-[20px] md:leading-[23px] text-[#1A1A1A]"
+                                className="cursor-pointer flex justify-center items-center py-1 px-3 md:px-4 gap-[6px] md:gap-[10px] w-[140px] md:w-[218px] h-[34px] bg-white rounded-[20px] font-medium text-[10px] md:text-[16px] leading-[20px] md:leading-[23px] text-[#1A1A1A]"
                             >
                                 {c}
                             </button>

@@ -43,11 +43,11 @@ export default function HeroSection() {
 
                     <h1
                         className="
-                                    mt-6 md:mt-[45px] 
+                                    mt-6 md:mt-[35px] xl:mt-[45px]
                                     max-w-[323px] lg:max-w-[1039.36px] 
                                     font-bold 
-                                    text-[14px] md:text-5xl 
-                                    lg:text-[45px] xl:text-[55px] 
+                                    text-[14px] md:text-4xl 
+                                    lg:text-[45px] xl:text-[75px] 
                                     leading-[20px] md:leading-[60px] lg:leading-[45px] xl:leading-[55px] 
                                     text-right text-[#FDFFFC] 
                                     flex-none order-0 self-stretch grow-0
@@ -59,7 +59,7 @@ export default function HeroSection() {
                     <p
                         className="
                                     max-w-[90%] lg:max-w-[763.7px] 
-                                    mt-4 md:mt-7 
+                                    mt-4 md:mt-4 xl:mt-10
                                     !font-normal md:font-semibold 
                                     text-[12px] md:text-xl lg:text-[26.49px] 
                                     leading-[normal] md:leading-7 lg:leading-[38px] 

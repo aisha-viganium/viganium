@@ -8,11 +8,12 @@ import SnapNav from "@/assets/SVG/social/SnapNav";
 import FaceNav from "@/assets/SVG/social/FaceNav";
 import LinkedinNav from "@/assets/SVG/social/LinkedinNav";
 import InstaNav from "@/assets/SVG/social/InstaNav";
+import { motion, AnimatePresence } from "framer-motion";
 export default function SidebarNavbar() {
 
   const [isOpen, setIsOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
-
+  const [activeBall, setActiveBall] = useState<number | null>(null);
 
   const navLinks = [
     { href: "/", label: "الرئيسية" },
@@ -21,7 +22,11 @@ export default function SidebarNavbar() {
     { href: "/blogs", label: "المدونات" },
     { href: "/contact-us", label: "التواصل معنا" },
   ];
-
+  const slideVariants = {
+    initial: { y: 100, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    exit: { y: -100, opacity: 0 },
+  };
   const sliderItems = [
     { label: "الغزال - لتأجير السيارات", image: "/assets/images/rental.jpg" },
     { label: "رينتال جيت - لتأجير السايرات", image: "/assets/images/website.jpg" },
@@ -36,7 +41,30 @@ export default function SidebarNavbar() {
     { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <FaceNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> },
     { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <LinkedinNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> }
   ];
+  const ballShapes = {
+    normal: (
+      <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 15.8532C32 24.6087 24.8366 36 16 36C7.16344 36 0 24.6087 0 15.8532C0 7.09772 7.16344 0 16 0C24.8366 0 32 7.09772 32 15.8532Z" fill="#BD171D" />
+      </svg>
+    ),
+    squashed: (
+      <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 15.8182C32 24.5543 24.8366 29 16 29C7.16344 29 0 24.5543 0 15.8182C0 7.08204 7.16344 0 16 0C24.8366 0 32 7.08204 32 15.8182Z" fill="#BD171D" />
+      </svg>
+    ),
+    round: (
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16Z" fill="#BD171D" />
+      </svg>
+    )
+  };
+  const handleMouseEnter = (index: number) => {
+    setActiveBall(index);
+  };
 
+  const handleMouseLeave = () => {
+    setActiveBall(null);
+  };
   return (
     <div className="relative z-100">
       <button
@@ -54,7 +82,7 @@ export default function SidebarNavbar() {
       )}
 
       <div
-        className={`overflow-y-auto fixed top-0 left-0 w-full h-full bg-white shadow-xl transform transition-transform duration-300 ease-in-out
+        className={`overflow-y-auto md:overflow-y-hidden fixed top-0 left-0 w-full h-full bg-white shadow-xl transform transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-y-0" : "-translate-y-full"}
         `}
       >
@@ -75,34 +103,63 @@ export default function SidebarNavbar() {
         </div>
 
         <div className="flex flex-col md:flex-row h-auto md:h-[calc(100%-80px)]">
-          <div className="w-full md:w-1/3 px-6 md:pr-16 flex flex-col py-8  space-y-2 gap-2 md:gap-6">
-            {navLinks.map((link) => (
-              <Link
+          <div className="w-full md:w-1/3 px-6 md:pr-16 flex flex-col py-8 space-y-2 gap-2 md:gap-10 ">
+            {navLinks.map((link, index) => (
+              <a
                 key={link.href}
                 href={link.href}
-                onClick={() => {
-                  setIsOpen(false);
-                }}
-                className="group relative block py-2 font-semibold text-2xl md:text-[40px] lg:text-[64px] leading-snug transition-colors text-[#1A1A1A] hover:text-primary"
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+                onClick={() => setIsOpen(false)}
+                className="group text-[#1A1A1A] hover:text-primary relative flex items-center transition-all duration-800 hover:translate-x-2 overflow-hidden h-auto md:h-[100px]"
               >
-                {link.label}
-                <span
-                  className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-3 h-3 md:w-5 md:h-5 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                />
-              </Link>
+                <div className=" w-8 h-9 flex items-center justify-center">
+                  <div className={`hidden lg:block relative transition-all duration-800 translate-y-[-100px] ${activeBall === index ? 'animate-bounce-ball' : ''
+                    }`}>
+                    <div className={`absolute transition-opacity duration-800 ${activeBall === index ? 'opacity-0' : 'opacity-100'
+                      }`}>
+                      {ballShapes.normal}
+                    </div>
 
+                    <div className={`absolute transition-opacity duration-800 ${activeBall === index ? 'opacity-100 delay-100' : 'opacity-0'
+                      }`}>
+                      {ballShapes.squashed}
+                    </div>
+
+                    <div className={`absolute transition-opacity duration-800 ${activeBall === index ? 'opacity-100 delay-300' : 'opacity-0'
+                      }`}>
+                      {ballShapes.round}
+                    </div>
+                  </div>
+                </div>
+
+                <span className="not-italic 
+                                font-semibold 
+                                text-[18px] 
+                                md:text-[64px] 
+                                leading-[21px]
+                                md:leading-[91px] 
+                                text-center 
+                                capitalize 
+                                 hover:text-primary
+                                flex-none 
+                                order-0 
+                                grow-0 transition-colors duration-300 mr-10">
+                  {link.label}
+                </span>
+              </a>
             ))}
-
           </div>
 
-          <div className="w-full md:w-2/3 mt-6 md:mt-0">
-            <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg">
-              <div className="flex flex-col justify-between lg:w-1/3">
-                <h3 className="group flex justify-center align-center gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
+
+          <div className="w-full md:w-2/3 mt-6 md:mt-0 flex flex-col justify-around">
+            <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg min-h-[359px]">
+              <div className=" lg:w-1/3">
+                <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
                   <span> سابقة الأعمال</span>
-                  <ArrowUpBlack className="mt-[10px] rotate-245 transition-transform duration-300  group-hover:rotate-[215deg] fill-[#1A1A1A] group-hover:fill-primary" />
+                  <ArrowUpBlack className="w-[12px] md:w-[28px] mt-0 md:mt-[10px] rotate-245 transition-transform duration-300  group-hover:rotate-[215deg] fill-[#1A1A1A] group-hover:fill-primary" />
                 </h3>
-                <div className="flex flex-col items-center gap-4">
+                <div className="flex flex-col items-center gap-5 mt-5 md:mt-10 ">
                   {sliderItems.map((item, index) => (
                     <button
                       key={index}
@@ -115,20 +172,32 @@ export default function SidebarNavbar() {
                   ))}
                 </div>
               </div>
-              <div className="flex-1 flex items-center justify-center">
-                <Image
-                  src={sliderItems[activeSlide].image}
-                  alt={sliderItems[activeSlide].label}
-                  width={500}
-                  height={300}
-                  className="object-cover rounded-lg w-full max-h-[300px]"
-                />
+              <div className="flex-1 flex items-center justify-center relative w-full max-h-[375px] overflow-hidden max-w-[677px]">
+                <AnimatePresence>
+                  <motion.div
+                    key={activeSlide}
+                    variants={slideVariants}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    transition={{ duration: 0.5 }}
+                    className="absolute w-full"
+                  >
+                    <Image
+                      src={sliderItems[activeSlide].image}
+                      alt={sliderItems[activeSlide].label}
+                      width={500}
+                      height={300}
+                      className="object-cover rounded-lg w-full max-h-[300px]"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
             </div>
 
-            <div className="mt-8 p-4 flex flex-col md:flex-row gap-6 justify-center align-center">
+            <div className="p-4 flex flex-col md:flex-row gap-6 justify-center align-center">
               <div className="flex-1">
-                <div className="relative group w-full h-[250px] md:h-[375px] rounded-lg overflow-hidden cursor-pointer">
+                <div className="relative group w-full h-[250px] md:max-h-[375px] xl:h-[375px] rounded-lg overflow-hidden cursor-pointer">
                   <Image
                     src={`/assets/images/contact-us-nav.png`}
                     alt={`Contact`}
@@ -142,16 +211,16 @@ export default function SidebarNavbar() {
               </div>
 
               <div className="flex-1 flex flex-col justify-center align-center gap-4">
-                <h3 className="group flex justify-center items-center gap-4 font-medium text-xl md:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
+                <h3 className="group flex justify-center items-center gap-1 md:gap-4 font-medium text-xl md:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
                   <ArrowUpBlack
-                    className="transition-transform duration-300 group-hover:text-primary group-hover:rotate-[35deg] fill-[#1A1A1A] group-hover:fill-primary"
+                    className="w-[12px] md:w-[28px] h-auto transition-transform duration-300 group-hover:text-primary group-hover:rotate-[35deg] fill-[#1A1A1A] group-hover:fill-primary"
                   />
                   <span>التواصل معنا</span>
                 </h3>
 
                 <a
                   href="mailto:Hello@viganium.com"
-                  className="mt-5 font-200 text-sm md:text-[24px] text-center"
+                  className="mt-0 md:mt-5 font-200 text-sm md:text-[24px] text-center"
                 >
                   Hello@viganium.com
                 </a>

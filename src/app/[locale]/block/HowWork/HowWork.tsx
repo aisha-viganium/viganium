@@ -5,8 +5,8 @@ import WorkSlider from "./WorkSlider";
 export default function HowWork() {
   return (
     <section className=" bg-[#1A1A1A]  py-5 md:py-16 px-2 md:px-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center">
-        <AnimatedSection variants={slideFromRightBounce} className="lg:col-span-2 flex flex-col px-2 md:px-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <AnimatedSection variants={slideFromRightBounce} className="lg:col-span-1 flex flex-col px-2 md:px-0">
           <div className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center">
             <p
               className="

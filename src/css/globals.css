@@ -97,17 +97,38 @@ body {
 
 
 }
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 6px; /* thin */
+  width: 6px;
+  /* thin */
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff; 
+  background: #ffffff;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary); 
+  background: var(--color-primary);
   border-radius: 9999px;
 }
+
+@keyframes bounce-ball {
+  0% {
+    transform: translateY(-100px) scale(1);
+  }
+
+  50% {
+    transform: translateY(100px) scale(1.1, 0.9);
+  }
+
+  100% {
+    transform: translateY(85px) scale(1);
+  }
+}
+
+.animate-bounce-ball {
+  animation: bounce-ball 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+

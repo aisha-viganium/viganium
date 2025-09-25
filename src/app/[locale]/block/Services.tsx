@@ -62,7 +62,7 @@ export default function Services() {
                   alt={service.title}
                   width={526}
                   height={341}
-                  className="w-full h-[213px] md:h-[280px] lg:h-[341px] rounded-[8px] md:rounded-[16px] object-cover"
+                  className="w-full h-[213px] md:h-[280px] lg:h-auto rounded-[8px] md:rounded-[16px] object-cover"
                 />
                 <h5 className="text-right font-bold text-[#1A1A1A] my-3 md:my-5 text-[16px] leading-[23px] md:text-[22px] md:leading-[32px] lg:text-[24px] lg:leading-[34px]">
                   {service.title}

@@ -8,13 +8,13 @@ export default function HeroSection() {
     <section className="relative bg-[url('/assets/images/services-cover.jpg')] h-[50vh] md:h-auto bg-cover bg-center overflow-hidden">
       <div className="absolute inset-0 bg-black/60"></div>
 
-      <div className="relative z-10 text-white px-4 md:px-8">
-        <div className="flex flex-col lg:grid lg:grid-cols-3 items-center pt-[50px] justify-between md:justify-around mx-auto  md:min-h-[948px] h-[50vh] gap-8">
+      <div className="relative z-10 text-white px-4 md:px-16">
+        <div className="flex flex-col lg:grid lg:grid-cols-2  items-center pt-[50px] justify-between md:justify-around mx-auto  md:min-h-[948px] h-[50vh] gap-8">
 
           <AnimatedSection
             variants={fadeInRight}
             transition={{ duration: 0.3 }}
-            className="col-span-2 flex flex-col justify-center items-start text-right order-1 lg:order-1"
+            className="col-span-1 flex flex-col justify-center items-start text-right order-1 lg:order-1"
           >
             <h1
               className="
