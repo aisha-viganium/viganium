@@ -28,7 +28,7 @@ html {
 }
 
 .font-aileron {
-  font-family: 'aileron_regular';
+  font-family: 'aileron_regular' !important;
 }
 @theme inline {
   --color-background: var(--background);

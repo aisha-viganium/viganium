@@ -10,7 +10,7 @@ type Blog = {
 
 export function BlogCard({ blog }: { blog: Blog }) {
   return (
-    <div className="flex flex-col items-end p-4 md:p-6 gap-6 md:gap-8 min-h-[400px] md:min-h-[527px] bg-[#F3F3F3] rounded-[8px]">
+    <div className="flex flex-col items-end p-4 md:p-6 gap-6 md:gap-8 min-h-[400px] md:min-h-[427px] bg-[#F3F3F3] rounded-[8px]">
       <Link href={`blogs/${blog.id}`}>
         <div className="relative w-full h-[250px] md:h-[400px]">
           <Image

@@ -11,11 +11,11 @@ import ArrowUp from "@/assets/SVG/ArrowUp";
 
 export default function Footer() {
   const socialLinks = [
-    { name: "youtube", url: "https://www.youtube.com/add/rentalgate", icon: <Youtube className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> },
-    { name: "tiktok", url: "https://www.tiktok.com/add/rentalgate", icon: <Tiktok className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> },
-    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <Facebook className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> },
-    { name: "snap", url: "https://www.snap.com/company/rental-gate", icon: <Snap className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> },
-    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <Linkedin className="w-[32px] h-[32px] md:w-[43px] md:h-[43px]" /> }
+    { name: "youtube", url: "https://www.youtube.com/add/rentalgate", icon: <Youtube className="w-[32px] h-[32px] md:w-[60px] md:h-[42.5px]" /> },
+    { name: "tiktok", url: "https://www.tiktok.com/add/rentalgate", icon: <Tiktok className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]" /> },
+    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <Facebook className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]" /> },
+    { name: "snap", url: "https://www.snap.com/company/rental-gate", icon: <Snap className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]" /> },
+    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <Linkedin className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]" /> }
   ];
 
   const Companies = [
@@ -25,21 +25,21 @@ export default function Footer() {
   ];
 
   return (
-    <div className="py-16 px-5 bg-[#1A1A1A]">
+    <div className="py-16 px-[10px] md:px-[64px] bg-[#1A1A1A]">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mx-auto ">
 
         <AnimatedSection variants={deckShuffle} custom={0} className="flex flex-col items-start gap-8">
-         <h3
-  className="font-semibold text-[24px] md:text-[40px] leading-[35px] md:leading-[57px] text-[#D9D9D9]"
- style={{
-    textShadow: `
-      -1px -1px 0 #FFFFFF,  
-       1px -1px 0 #FFFFFF,
-      -1px  1px 0 #FFFFFF,
-       1px  1px 0 #FFFFFF
-    `
-  }}
->
+          <h3
+            className="font-semibold text-[24px] md:text-[35px] leading-[35px] md:leading-[57px] text-[#D9D9D9]"
+            style={{
+              textShadow: `
+                      -1px -1px 0 #FFFFFF,  
+                      1px -1px 0 #FFFFFF,
+                      -1px  1px 0 #FFFFFF,
+                      1px  1px 0 #FFFFFF
+                    `
+            }}
+          >
             نحن نود ان نسمع منك عن هدفك لتحقيقة
           </h3>
           <p className="text-[14px] md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">

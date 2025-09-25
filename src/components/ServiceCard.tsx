@@ -12,7 +12,7 @@ type Service = {
 
 export function ServiceCard({ service }: { service: Service }) {
   return (
-    <div className="flex flex-col items-end pt-8 pb-1 md:pb-8 pr-6 pl-6 md:pr-[29px] md:pl-[29px] gap-8 min-h-[527px] bg-[#F3F3F3] rounded-[8px]">
+    <div className="flex flex-col items-end pt-8 pb-1 md:pb-8 pr-6 pl-6 md:pr-[29px] md:pl-[29px] gap-8 min-h-[427px] bg-[#F3F3F3] rounded-[8px]">
       <Link href={`services/${service.id}`}>
         <div className="relative w-full min-h-[250px] md:min-h-[380px]">
           <Image

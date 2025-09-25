@@ -19,7 +19,7 @@ type Review = {
 export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
   return (
     <div className="relative h-[50vh] md:min-h-[105vh] mt-0 md:mt-[-150px] overflow-hidden px-2 md:px-0 ">
-      <div className="absolute w-full h-[25vh]  md:min-h-[45vh] left-0 bottom-0 bg-no-repeat bg-[url('/assets/images/RectangleBackground.svg')] bg-cover bg-center overflow-hidden"></div>
+      <div className="absolute w-full h-[25vh]  md:min-h-[75vh] left-0 bottom-0 bg-no-repeat bg-[url('/assets/images/RectangleBackground.svg')] bg-cover bg-center overflow-hidden"></div>
 
       <AnimatedSection variants={fadeInUp} className="container mx-auto">
         <Swiper
