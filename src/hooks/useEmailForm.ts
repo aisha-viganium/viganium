@@ -19,7 +19,7 @@ export const useQuestionForm = () => {
         isSubmitting: false,
         isSuccess: false,
         isError: true,
-        message: "من فضلك اكتب سؤالك",
+        message: "من فضلك اكتب بريدك الإلكتروني",
       });
       return;
     }
@@ -29,8 +29,8 @@ export const useQuestionForm = () => {
     try {
       const htmlbody = `
         <div style="font-family: Arial, sans-serif; color: #333;">
-          <h2>سؤال جديد من الموقع</h2>
-          <p><strong>السؤال:</strong></p>
+          <h2>بريد الإلكتروني جديد من الموقع</h2>
+          <p><strong>البريد الإلكتروني:</strong></p>
           <p style="background:#f9f9f9; padding:10px; border-radius:6px; border:1px solid #ddd;">
             ${question}
           </p>
@@ -50,7 +50,7 @@ export const useQuestionForm = () => {
           isSubmitting: false,
           isSuccess: true,
           isError: false,
-          message: "تم إرسال سؤالك بنجاح ",
+          message: "تم إرسال بريدك الإلكتروني بنجاح ",
         });
         setQuestion("");
       } else {
