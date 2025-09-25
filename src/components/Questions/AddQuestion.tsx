@@ -26,7 +26,7 @@ export default function AddQuestion() {
         <button
           type="submit"
           disabled={status.isSubmitting}
-          className="flex justify-center w-[15%] md:w-[10%] h-[57px] bg-[#BD171D] rounded-lg md:rounded-l-lg rounded-r-none"
+          className="cursor-pointer flex justify-center w-[15%] md:w-[10%] h-[57px] bg-[#BD171D] rounded-lg md:rounded-l-lg rounded-r-none"
         >
           <Image
             src="/assets/icons/arrow-left-white.svg"
@@ -37,11 +37,11 @@ export default function AddQuestion() {
         </button>
       </div>
 
-      {status.message && (
+      {/* {status.message && (
         <p className={`text-sm ${status.isError ? "text-red-600" : "text-green-600"}`}>
           {status.message}
         </p>
-      )}
+      )} */}
     </form>
   );
 }
