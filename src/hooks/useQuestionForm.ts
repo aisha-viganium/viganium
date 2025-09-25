@@ -40,7 +40,7 @@ export const useQuestionForm = () => {
       const encodedHtmlBody = encodeURIComponent(htmlbody);
 
       const res = await axios.post(
-        `https://viganium.com/mail_sender.php?data=${encodedHtmlBody}`,
+        `https://viganium.com/mail_test.php?data=${encodedHtmlBody}`,
         {},
         { headers: { Accept: "application/json" } }
       );
