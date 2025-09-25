@@ -26,10 +26,20 @@ export default function Footer() {
 
   return (
     <div className="py-16 px-5 bg-[#1A1A1A]">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mx-auto ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mx-auto ">
 
         <AnimatedSection variants={deckShuffle} custom={0} className="flex flex-col items-start gap-8">
-          <h3 className="font-semibold text-[24px] md:text-[40px] leading-[35px] md:leading-[57px] text-[#D9D9D9]">
+         <h3
+  className="font-semibold text-[24px] md:text-[40px] leading-[35px] md:leading-[57px] text-[#D9D9D9]"
+ style={{
+    textShadow: `
+      -1px -1px 0 #FFFFFF,  
+       1px -1px 0 #FFFFFF,
+      -1px  1px 0 #FFFFFF,
+       1px  1px 0 #FFFFFF
+    `
+  }}
+>
             نحن نود ان نسمع منك عن هدفك لتحقيقة
           </h3>
           <p className="text-[14px] md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">

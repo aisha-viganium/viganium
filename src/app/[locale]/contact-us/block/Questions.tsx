@@ -22,7 +22,7 @@ export default function Questions() {
       مجهولة برص مجموعة من الأحرف
     </p>
 
-    <form className="flex flex-col gap-3">
+    <form className="flex flex-col gap-3 md:max-w-[80%]">
       <label className="font-medium text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[26px] lg:leading-[29px] text-[#414141]">
         بريدك الإلكتروني
       </label>

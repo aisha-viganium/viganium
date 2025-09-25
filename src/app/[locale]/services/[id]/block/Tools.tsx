@@ -32,7 +32,7 @@ export default function Tools() {
             <AnimatedSection variants={deckShuffle} className="mt-8 md:mt-10">
                 <Swiper
                     modules={[Autoplay]}
-                    spaceBetween={20}
+                    spaceBetween={5}
                     autoplay={{ delay: 2000, disableOnInteraction: false }}
                     loop={true}
                     breakpoints={{
@@ -43,7 +43,10 @@ export default function Tools() {
                 >
                     {slides.map((slide) => (
                         <SwiperSlide key={slide.id}>
-                            <div className="flex flex-row justify-between w-100 items-center px-4 md:px-6 py-4 gap-2 md:gap-2.5 max-w-full md:max-w-[454px] h-[80px] md:h-[96px] bg-[#EFEFEF] rounded-[12px] md:rounded-[16px] mx-auto">
+                            <div className="flex flex-row justify-between w-100 items-center px-4 md:px-6 py-4 gap-2 md:gap-2.5 max-w-full md:max-w-[454px] h-[80px] md:h-[96px] bg-[#EFEFEF] rounded-[12px] md:rounded-[16px]">
+                                  <p className="text-[#1A1A1A] font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] text-right flex-1">
+                                    {slide.text}
+                                </p>
                                 <Image
                                     src={slide.icon}
                                     alt={`icon-${slide.id}`}
@@ -51,9 +54,7 @@ export default function Tools() {
                                     height={40}
                                     className="w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[48px] lg:h-[48px]"
                                 />
-                                <p className="text-[#1A1A1A] font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] text-left flex-1">
-                                    {slide.text}
-                                </p>
+                            
                             </div>
                         </SwiperSlide>
                     ))}

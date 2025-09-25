@@ -30,7 +30,7 @@ export default function Questions() {
             className="h-[147px] md:h-auto w-full max-w-[547px] object-contain mx-auto"
           />
 
-          <form className="flex flex-col gap-3">
+          <form className="flex flex-col gap-3 md:max-w-[80%]">
             <label
               className="font-bold text-[20px] md:text-[28px] lg:text-[36px] leading-[32px] md:leading-[40px] lg:leading-[51px] text-right text-[#414141]"
               htmlFor="question"

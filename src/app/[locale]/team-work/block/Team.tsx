@@ -195,7 +195,7 @@ export default function Team() {
                                             ${activeIndex === idx ? "scale-110 shadow-lg z-10" : "scale-90"}
                                             `}
                                     >
-                                        <div className="relative w-full  min-h-[160px] md:min-h-[306px] xl:min-h-[346px]">
+                                        <div className="relative w-full  min-h-[160px] md:min-h-[306px] xl:min-h-[356px]">
                                             <Image
                                                 src={slide.nameImage}
                                                 alt={slide.name}
@@ -240,25 +240,25 @@ export default function Team() {
                         </div>
                         {/* Pagination styling */}
                         <style jsx global>{`
-        .swiper-pagination-bullet {
-          background: #cfcfce;
-          opacity: 1;
-          border-radius: 150px;
-          width: 12px;
-          height: 12px;
-          transition: all 0.3s ease;
-          bottom: 0px !important;
-        }
-        .swiper-pagination-bullet-active {
-          background: #110000;
-          width: 21px;
-          height: 12px;
-        }
-        .swiper-pagination-bullet-prev,
-        .swiper-pagination-bullet-next {
-          transform: scale(0.8);
-        }
-      `}</style>
+                            .swiper-pagination-bullet {
+                            background: #cfcfce;
+                            opacity: 1;
+                            border-radius: 150px;
+                            width: 12px;
+                            height: 12px;
+                            transition: all 0.3s ease;
+                            bottom: 0px !important;
+                            }
+                            .swiper-pagination-bullet-active {
+                            background: #110000;
+                            width: 21px;
+                            height: 12px;
+                            }
+                            .swiper-pagination-bullet-prev,
+                            .swiper-pagination-bullet-next {
+                            transform: scale(0.8);
+                            }
+                        `}</style>
 
                     </div>
                 </div>
