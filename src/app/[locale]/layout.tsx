@@ -8,6 +8,9 @@ import "../../css/globals.css";
 export const metadata: Metadata = {
   title: "Viganium",
   description: "نحن نصنع حضورًا رقميًا يتحدّث عنك!",
+  icons: {
+    icon: "/assets/logo.svg",
+  },
 };
 
 export default function RootLayout(
