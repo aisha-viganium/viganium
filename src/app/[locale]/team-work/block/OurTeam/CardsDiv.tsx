@@ -35,7 +35,6 @@ export default function CardsDiv() {
               fill
               style={{ objectFit: "cover" }}
               className="absolute inset-0"
-              priority={false}
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/10" />

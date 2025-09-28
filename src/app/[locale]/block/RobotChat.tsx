@@ -59,6 +59,7 @@ export default function HeroSection() {
                         width={80}
                         height={80}
                         className="cursor-pointer absolute top-0 right-[-5%] w-[45px] h-[45px] object-contain transition-opacity duration-300 group-hover:opacity-0 md:w-[95px] md:h-[95px]"
+                        priority
                     />
                     <Image
                         src="/assets/icons/head.png"
@@ -66,6 +67,7 @@ export default function HeroSection() {
                         width={80}
                         height={80}
                         className="cursor-pointer absolute top-0 right-[-5%] w-[45px] h-[45px] object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:w-[95px] md:h-[95px]  pointer-events-auto"
+                        priority
                     />
                 </div>
             </div>
