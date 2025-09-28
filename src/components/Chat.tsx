@@ -139,7 +139,7 @@ export default function ChatCard() {
           />
           <div
             ref={messagesContainerRef}
-            className="p-0 pt-10 md:p-10 flex-1 overflow-y-auto overscroll-contain space-y-3"
+            className="p-0 pt-10 md:p-10 flex-1 overflow-y-auto overscroll-contain space-y-3 z-40"
           >
             {messages.map((m) => (
               <div key={m.id}>
