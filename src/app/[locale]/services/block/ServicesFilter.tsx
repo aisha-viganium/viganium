@@ -4,7 +4,8 @@ import React from "react";
 import TopFilter from "./TopFilter";
 import { ServiceCard } from "@/components/ServiceCard";
 import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+
 export interface Services {
   id: number;
   name: string;
@@ -12,10 +13,9 @@ export interface Services {
   tags: string[];
   description: string;
 }
+
 export default function ServicesFilter({ services }: { services: Services[] }) {
   const searchParams = useSearchParams();
-  const router = useRouter();
-
   const filterFromUrl = searchParams.get("filter") || "كل الخدمات";
   const [selectedFilter, setSelectedFilter] = React.useState<string>(filterFromUrl);
 
@@ -25,11 +25,6 @@ export default function ServicesFilter({ services }: { services: Services[] }) {
 
   const handleFilterChange = (filter: string) => {
     setSelectedFilter(filter);
-    const newUrl =
-      filter === "كل الخدمات"
-        ? "/services"
-        : `/services?filter=${encodeURIComponent(filter)}`;
-    router.push(newUrl);
   };
 
   const filteredServices =

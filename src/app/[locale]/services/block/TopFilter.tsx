@@ -14,34 +14,35 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
 
   React.useEffect(() => {
     setPath(filterFromUrl);
+    onFilterChange(filterFromUrl);
   }, [filterFromUrl]);
 
   const navLinks = ["كل الخدمات", "التسويق الإلكتروني", "تطوير مواقع", "تطوير الموبايل"];
 
   const handleClick = (link: string) => {
     setPath(link);
-    onFilterChange(link);
+    onFilterChange(link); // هنا مش هيعمل param
   };
 
   return (
-      <div className="mb-2">
-        {navLinks.map((link) => (
-          <button
-            onClick={() => handleClick(link)}
-            key={link}
-            className={`
-              font-semibold 
-              md:text-[20px] md:leading-[29px] md:text-right 
-              text-[12px] leading-[normal] text-left
-              relative text-[#FDFFFC] px-2 p-[16px] cursor-pointer
-            `}
-          >
-            {link}
-            {path === link && (
-              <div className="absolute left-0 bottom-0 w-full h-[4px] bg-[#BD171D] rounded-sm"></div>
-            )}
-          </button>
-        ))}
-      </div>
+    <div className="mb-2">
+      {navLinks.map((link) => (
+        <button
+          onClick={() => handleClick(link)}
+          key={link}
+          className={`
+            font-semibold 
+            md:text-[20px] md:leading-[29px] md:text-right 
+            text-[12px] leading-[normal] text-left
+            relative text-[#FDFFFC] px-2 p-[16px] cursor-pointer
+          `}
+        >
+          {link}
+          {path === link && (
+            <div className="absolute left-0 bottom-0 w-full h-[4px] bg-[#BD171D] rounded-sm"></div>
+          )}
+        </button>
+      ))}
+    </div>
   );
 }
