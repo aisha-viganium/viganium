@@ -9,27 +9,32 @@ interface TopFilterProps {
 
 export default function TopFilter({ onFilterChange }: TopFilterProps) {
   const searchParams = useSearchParams();
-  const filterFromUrl = searchParams.get("filter") || "كل الخدمات";
-  const [path, setPath] = React.useState<string>(filterFromUrl);
+  const filterFromUrl = searchParams.get("filter") || "AllServices";
+  const [activeFilter, setActiveFilter] = React.useState<string>(filterFromUrl);
 
   React.useEffect(() => {
-    setPath(filterFromUrl);
+    setActiveFilter(filterFromUrl);
     onFilterChange(filterFromUrl);
   }, [filterFromUrl]);
 
-  const navLinks = ["كل الخدمات", "التسويق الإلكتروني", "تطوير مواقع", "تطوير الموبايل"];
+  const navLinks = [
+    { label: "كل الخدمات", value: "AllServices" },
+    { label: "التسويق الإلكتروني", value: "DigitalMarketing" },
+    { label: "تطوير مواقع", value: "WebDevelopment" },
+    { label: "تطوير الموبايل", value: "MobileDevelopment" },
+  ];
 
-  const handleClick = (link: string) => {
-    setPath(link);
-    onFilterChange(link); // هنا مش هيعمل param
+  const handleClick = (value: string) => {
+    setActiveFilter(value);
+    onFilterChange(value); // بيرجع بالإنجليزي بدون مسافات
   };
 
   return (
-    <div className="mb-2">
+    <div className="mb-2 flex flex-wrap gap-2">
       {navLinks.map((link) => (
         <button
-          onClick={() => handleClick(link)}
-          key={link}
+          onClick={() => handleClick(link.value)}
+          key={link.value}
           className={`
             font-semibold 
             md:text-[20px] md:leading-[29px] md:text-right 
@@ -37,8 +42,8 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
             relative text-[#FDFFFC] px-2 p-[16px] cursor-pointer
           `}
         >
-          {link}
-          {path === link && (
+          {link.label}
+          {activeFilter === link.value && (
             <div className="absolute left-0 bottom-0 w-full h-[4px] bg-[#BD171D] rounded-sm"></div>
           )}
         </button>

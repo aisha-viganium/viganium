@@ -8,6 +8,7 @@ type Service = {
   description: string;
   image: string;
   tags: string[];
+  tagsDisplayed?: string[]; 
 };
 
 export function ServiceCard({ service }: { service: Service }) {
@@ -43,9 +44,9 @@ export function ServiceCard({ service }: { service: Service }) {
           >
             {service.description}
           </p>
-          {service.tags && (
+          {service.tagsDisplayed && (
             <div className="grid grid-cols-2 gap-2 mb-4 md:grid-cols-2 2xl:grid-cols-3">
-              {service.tags.map((tag, index) => (
+              {service.tagsDisplayed.map((tag, index) => (
                 <span
                   key={index}
                   className="

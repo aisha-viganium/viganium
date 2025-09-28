@@ -10,15 +10,15 @@ export default function Services() {
       description:
         "باعتبارنا شركة برمجة تطبيقات في السعودية، نُدرك احتياجات السوق المحلي ونقدّم حلول برمجية مرنة ومخصصة، تدعم سير العمل والتحوّل الرقمي بكفاءة عالية. في Viganium، نؤمن أن الأنظمة البرمجية القوية تُبنى خصيصًا لتحقيق أهداف محددة بدقة.",
       image: "/assets/images/service1.png",
-      tag: "تطوير الموبايل"
+      tag: "MobileDevelopment", // فلترة بالإنجليزي
     },
     {
       id: 2,
       title: "خدمات IT",
       description:
-        "نحن شركة برمجة تطبيقات في السعودية متخصصة في تصميم تطبيقات موبايل احترافية، توفّر تجربة سلسة وفعالة على منصّات iOS وAndroid، وتدعم أهداف الأعمال بمختلف أنواعها. في Viganium، نقدّم حلول ذكية تجمع بين الأداء العالي والتصميم الجذّاب، ",
+        "نحن شركة برمجة تطبيقات في السعودية متخصصة في تصميم تطبيقات موبايل احترافية، توفّر تجربة سلسة وفعالة على منصّات iOS وAndroid، وتدعم أهداف الأعمال بمختلف أنواعها. في Viganium، نقدّم حلول ذكية تجمع بين الأداء العالي والتصميم الجذّاب.",
       image: "/assets/images/service2.png",
-      tag: "تطوير مواقع"
+      tag: "WebDevelopment",
     },
     {
       id: 3,
@@ -26,23 +26,29 @@ export default function Services() {
       description:
         "باعتبارنا شركة برمجة تطبيقات في السعودية، نُدرك احتياجات السوق المحلي ونقدّم حلول برمجية مرنة ومخصصة، تدعم سير العمل والتحوّل الرقمي بكفاءة عالية.في Viganium، نؤمن أن الأنظمة البرمجية القوية تُبنى خصيصًا لتحقيق أهداف محددة بدقة.",
       image: "/assets/images/service3.png",
-      tag: "التسويق الإلكتروني"
+      tag: "DigitalMarketing",
     },
   ];
+
   return (
     <section className="mx-auto py-5 md:py-16 px-2 md:px-16 bg-white">
-      <AnimatedSection variants={slideFromTopBounce} className="mb-5 border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center">
-        <p className=" max-w-[796px] 
-                        text-right 
-                        text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
-                        leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
-                        font-bold 
-                        text-[#1A1A1A]">
+      <AnimatedSection
+        variants={slideFromTopBounce}
+        className="mb-5 border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center"
+      >
+        <p
+          className="max-w-[796px] 
+                      text-right 
+                      text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+                      leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
+                      font-bold 
+                      text-[#1A1A1A]"
+        >
           الخدمات
         </p>
       </AnimatedSection>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start px-2 md:px-0">
 
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start px-2 md:px-0">
         {services.map((service, index) => (
           <AnimatedSection
             key={service.id}
@@ -53,7 +59,7 @@ export default function Services() {
             <Link
               href={{
                 pathname: "/services",
-                query: { filter: service.tag },
+                query: { filter: service.tag }, // هنا بالإنجليزي
               }}
             >
               <div className="flex flex-col cursor-pointer">
@@ -74,7 +80,6 @@ export default function Services() {
             </Link>
           </AnimatedSection>
         ))}
-
       </div>
     </section>
   );

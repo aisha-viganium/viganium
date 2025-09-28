@@ -10,13 +10,13 @@ export interface Services {
   id: number;
   name: string;
   image: string;
-  tags: string[];
+  tags: string[]; // مهم تكون tags عندك إنجليزي زى ["WebDevelopment", "MobileDevelopment"]
   description: string;
 }
 
 export default function ServicesFilter({ services }: { services: Services[] }) {
   const searchParams = useSearchParams();
-  const filterFromUrl = searchParams.get("filter") || "كل الخدمات";
+  const filterFromUrl = searchParams.get("filter") || "AllServices";
   const [selectedFilter, setSelectedFilter] = React.useState<string>(filterFromUrl);
 
   React.useEffect(() => {
@@ -28,12 +28,13 @@ export default function ServicesFilter({ services }: { services: Services[] }) {
   };
 
   const filteredServices =
-    selectedFilter === "كل الخدمات"
+    selectedFilter === "AllServices"
       ? services
       : services.filter((s) => s.tags.includes(selectedFilter));
 
   return (
     <>
+      {/* TopFilter دلوقتي هيبعت القيمة الإنجليزية (value) */}
       <TopFilter onFilterChange={handleFilterChange} />
 
       <div className="mt-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6">

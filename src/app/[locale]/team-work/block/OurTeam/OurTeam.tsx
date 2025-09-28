@@ -32,40 +32,40 @@ export default function OurTeam() {
             </p>
           </div>
 
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 mt-2 md:mt-10 gap-6">
-          {[...Array(4)].map((_, i) => {
-            const columns = 3;
-            const row = Math.floor(i / columns);
-            const col = i % columns;
-            const customMap = [1, 2, 3];
-            const custom = customMap[col] ?? 1;
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 mt-2 md:mt-10 gap-6">
+            {[...Array(4)].map((_, i) => {
+              const columns = 3;
+              const row = Math.floor(i / columns);
+              const col = i % columns;
+              const customMap = [1, 2, 3];
+              const custom = customMap[col] ?? 1;
 
-            return (
-              <AnimatedSection
-                key={i}
-                variants={slideFromTopBounce}
-                custom={custom + row * 3}
-                className="flex gap-1 md:gap-5 items-center text-right "
-              >
-                <Image
-                  src="/assets/images/ICON-BACKGROUND.png"
-                  alt="Advantages"
-                  width={100}
-                  height={100}
-                  className="w-[48px] md:w-[100px] h-[48px] md:h-[100px] rounded-tl-[8px]"
-                />
+              return (
+                <AnimatedSection
+                  key={i}
+                  variants={slideFromTopBounce}
+                  custom={custom + row * 3}
+                  className="flex gap-1 md:gap-5 items-center text-right "
+                >
+                  <Image
+                    src="/assets/images/ICON-BACKGROUND.png"
+                    alt="Advantages"
+                    width={100}
+                    height={100}
+                    className="w-[48px] md:w-[100px] h-[48px] md:h-[100px] rounded-tl-[8px]"
+                  />
 
-                <h5 className="font-semibold w-fit text-[14px] md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-[#414141] pb-1 my-3">
-                  لوريم ابسيوم
-                </h5>
-
-        
-              </AnimatedSection>
-            );
-          })}
+                  <h5 className="font-semibold w-fit text-[14px] md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-[#414141] pb-1 my-3">
+                    لوريم ابسيوم
+                  </h5>
 
 
-        </div>
+                </AnimatedSection>
+              );
+            })}
+
+
+          </div>
         </AnimatedSection>
         <AnimatedSection
           className="col-span-1 mt-10 lg:mt-0"
