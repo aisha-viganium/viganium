@@ -12,7 +12,7 @@ export default function HeroSection() {
             {/* <h1>
                 {t(`HomePage.title`)}
             </h1> */}
-            <div className="flex flex-col-reverse md:flex-col  lg:grid lg:grid-cols-3 items-center justify-around md:pr-15 mx-auto h-[50vh] md:min-h-[100vh] overflow-hidden  px-4 md:px-8 py-8 pb-0 lg:py-0">
+            <div className="flex flex-col-reverse md:flex-col  lg:grid lg:grid-cols-3 items-center justify-around md:pr-15 mx-auto h-[50vh] md:min-h-[100vh] overflow-hidden px-2 md:px-8 py-8 pb-0 lg:py-0">
                 <AnimatedSection
                     variants={fadeInRight}
                     transition={{ duration: 0.8 }}

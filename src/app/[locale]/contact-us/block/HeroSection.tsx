@@ -9,7 +9,7 @@ export default function HeroSection() {
       ></div>
       <div className="absolute inset-0 bg-black/40"></div>
 
-      <div className="relative z-10 p-4 md:p-8 text-white">
+      <div className="relative z-10 py-4 px-2 md:p-8 text-white">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-around mx-auto h-[30vh] md:min-h-[100vh] 2xl:min-h-[948px] gap-8">
 
           <div className="col-span-1 h-full flex flex-col pt-[50px] md:pt-0 justify-start md:justify-center  items-start text-white text-right pr-0 lg:pr-8">
