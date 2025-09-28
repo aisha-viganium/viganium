@@ -87,7 +87,7 @@ export default function HeroSection({ service }: { service: Service }) {
         </div>
       </section>
 
-      <section className="hidden lg:block relative bg-[url('/assets/images/service-detail-cover.png')] bg-cover bg-center overflow-hidden min-h-[948px]">
+      <section className="hidden lg:block relative bg-[url('/assets/images/service-detail-cover.png')] bg-cover bg-center overflow-hidden min-h-screen 2xl:min-h-[948px]">
         <div className="absolute inset-0 bg-[#1A1A1A66]"></div>
         <div className="relative z-10 p-8 text-white">
           <div className="grid grid-cols-2 items-center justify-around mx-auto min-h-[948px] overflow-hidden h-full">
@@ -96,7 +96,7 @@ export default function HeroSection({ service }: { service: Service }) {
               <h1 className="mt-[50px] max-w-[1039.36px] font-bold text-[70.6311px] leading-[101px] text-right text-[#FDFFFC] flex-none order-0 self-stretch grow-0">
                  {service.name}
               </h1>
-              <p className="max-w-[763.7px] my-[65px] font-semibold text-[26.4867px] leading-[38px] text-right text-[#FDFFFC]">
+              <p className="max-w-[563.7px] 2xl:max-w-[763.7px] my-[65px] font-semibold text-[26.4867px] leading-[38px] text-right text-[#FDFFFC]">
                 هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
               </p>
             </AnimatedSection>
@@ -107,28 +107,28 @@ export default function HeroSection({ service }: { service: Service }) {
                 alt="Hero"
                 width={226}
                 height={268}
-                className="absolute w-[226px] h-[268px] left-0 top-[58.46px]"
+                className="absolute w-[226px] h-[268px] left-0 top-[98.46px] 2xl:top-[58.46px]"
               />
               <Image
                 src="/assets/icons/polygon-red.svg"
                 alt="Hero"
                 width={821}
                 height={730}
-                className="absolute w-[820.97px] h-[730.35px] left-[212px] top-[100px]"
+                className="absolute w-[620.97px] h-[530.35px] 2xl:w-[820.97px] 2xl:h-[730.35px] left-[112px] 2xl:left-[212px] top-[100px]"
               />
               <Image
                 src={service.image}
                 alt="Hero"
                 width={842}
                 height={619}
-                className="absolute w-[842px] h-[619px] left-[68px] top-[162.46px] rounded-[8px]"
+                className="absolute w-[642px] h-[419px] 2xl:w-[842px] 2xl:h-[619px] left-[28px] 2xl:left-[68px] top-[162.46px] rounded-[8px]"
               />
               <Image
                 src="/assets/icons/polygon.svg"
                 alt="Hero"
                 width={246}
                 height={250}
-                className="absolute w-[246px] h-[250px] left-0 top-[451.46px]"
+                className="absolute w-[146px] h-[250px] 2xl:w-[246px] 2xl:h-[250px] left-0 2xl:left-0 top-[401.46px] 2xl:top-[451.46px]"
               />
             </AnimatedSection>
 

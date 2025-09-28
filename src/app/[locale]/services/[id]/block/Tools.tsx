@@ -38,12 +38,14 @@ export default function Tools() {
                     breakpoints={{
                         0: { slidesPerView: 1.2 },
                         640: { slidesPerView: 2 },
-                        1024: { slidesPerView:4},
+                        1024: { slidesPerView:3},
+                        1440: { slidesPerView:4},
+
                     }}
                 >
                     {slides.map((slide) => (
                         <SwiperSlide key={slide.id}>
-                            <div className="flex flex-row justify-between w-100 items-center px-4 md:px-6 py-4 gap-2 md:gap-2.5 max-w-full md:max-w-[454px] h-[80px] md:h-[96px] bg-[#EFEFEF] rounded-[12px] md:rounded-[16px]">
+                            <div className="flex flex-row justify-between w-100 items-center px-4 md:px-6 py-4 gap-2 md:gap-2.5 max-w-full 2xl:max-w-[454px] h-[80px] md:h-[96px] bg-[#EFEFEF] rounded-[12px] md:rounded-[16px]">
                                   <p className="text-[#1A1A1A] font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] text-right flex-1">
                                     {slide.text}
                                 </p>

@@ -195,7 +195,7 @@ export default function Team() {
                                             ${activeIndex === idx ? "scale-110 shadow-lg z-10" : "scale-90"}
                                             `}
                                     >
-                                        <div className="relative w-full  min-h-[160px] md:min-h-[306px] xl:min-h-[356px]">
+                                        <div className="relative w-full  min-h-[160px] md:min-h-[226px] 2xl:min-h-[356px]">
                                             <Image
                                                 src={slide.nameImage}
                                                 alt={slide.name}
