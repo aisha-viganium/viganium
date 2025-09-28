@@ -10,7 +10,7 @@ export default function Services() {
       description:
         "باعتبارنا شركة برمجة تطبيقات في السعودية، نُدرك احتياجات السوق المحلي ونقدّم حلول برمجية مرنة ومخصصة، تدعم سير العمل والتحوّل الرقمي بكفاءة عالية. في Viganium، نؤمن أن الأنظمة البرمجية القوية تُبنى خصيصًا لتحقيق أهداف محددة بدقة.",
       image: "/assets/images/service1.png",
-      tag: "MobileDevelopment", // فلترة بالإنجليزي
+      tag: "MobileDevelopment", 
     },
     {
       id: 2,

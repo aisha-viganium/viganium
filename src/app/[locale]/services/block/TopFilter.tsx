@@ -26,7 +26,7 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
 
   const handleClick = (value: string) => {
     setActiveFilter(value);
-    onFilterChange(value); // بيرجع بالإنجليزي بدون مسافات
+    onFilterChange(value); 
   };
 
   return (

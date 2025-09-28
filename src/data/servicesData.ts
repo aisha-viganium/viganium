@@ -3,8 +3,8 @@ const services = [
         id: 1,
         name: "تطوير البرمجيات المخصصة",
         image: "/assets/images/services/customized-programming.png",
-        tags: ["WebDesign", "WebDevelopment", "DigitalMarketing"],
-        tagsDisplayed: ["تصميم مواقع", "تطوير مواقع", "التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
 
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
@@ -40,8 +40,8 @@ const services = [
         id: 5,
         name: "التخزين باستخدام البلوك تشين",
         image: "/assets/images/services/block-chain.png",
-        tags: ["WebDesign", "WebDevelopment", "DigitalMarketing"],
-        tagsDisplayed: ["تصميم مواقع", "تطوير مواقع", "التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
     },
@@ -49,8 +49,8 @@ const services = [
         id: 6,
         name: "أستشارات الأمنية السيبرانية",
         image: "/assets/images/services/cyber-security.png",
-        tags: ["WebDesign", "WebDevelopment", "DigitalMarketing"],
-        tagsDisplayed: ["تصميم مواقع", "تطوير مواقع", "التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
     }
@@ -59,8 +59,8 @@ const services = [
         id: 7,
         name: "خدمات تكنولوجيا المعلومات",
         image: "/assets/images/services/technology-services.png",
-        tags: ["WebDesign", "WebDevelopment", "DigitalMarketing"],
-        tagsDisplayed: ["تصميم مواقع", "تطوير مواقع", "التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
     },
@@ -68,8 +68,8 @@ const services = [
         id: 8,
         name: "أتممتة الذكاء الاصطناعي",
         image: "/assets/images/services/automation.png",
-        tags: ["WebDesign", "WebDevelopment", "DigitalMarketing"],
-        tagsDisplayed: ["تصميم مواقع", "تطوير مواقع", "التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
     },
@@ -77,8 +77,8 @@ const services = [
         id: 9,
         name: "وكيل الذكاء الإصطناعي",
         image: "/assets/images/services/AI-agent.png",
-        tags: ["WebDesign", "WebDevelopment", "DigitalMarketing"],
-        tagsDisplayed: ["تصميم مواقع", "تطوير مواقع", "التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
     },
@@ -86,7 +86,8 @@ const services = [
         id: 10,
         name: "التسويق الإلكتروني",
         image: "/assets/images/services/marketing.png",
-        tags: ["التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
     },
@@ -94,8 +95,8 @@ const services = [
         id: 11,
         name: "التسليمات البرمجية",
         image: "/assets/images/services/programming.png",
-        tags: ["WebDesign", "WebDevelopment", "DigitalMarketing"],
-        tagsDisplayed: ["تصميم مواقع", "تطوير مواقع", "التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
     },
@@ -103,8 +104,8 @@ const services = [
         id: 12,
         name: "أختبار البرمجيات",
         image: "/assets/images/services/testing.png",
-        tags: ["WebDesign", "WebDevelopment", "DigitalMarketing"],
-        tagsDisplayed: ["تصميم مواقع", "تطوير مواقع", "التسويق الإلكتروني"],
+        tags: ["MobileDevelopment", "WebDevelopment", "DigitalMarketing"],
+        tagsDisplayed: ["تطوير الموبايل", "تطوير مواقع", "التسويق الإلكتروني"],
         description:
             "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في ",
     }

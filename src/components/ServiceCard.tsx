@@ -5,10 +5,11 @@ import Link from "next/link";
 type Service = {
   id: number | string;
   name: string;
-  description: string;
   image: string;
   tags: string[];
-  tagsDisplayed?: string[]; 
+  tagsDisplayed: string[]; 
+  description: string;
+
 };
 
 export function ServiceCard({ service }: { service: Service }) {

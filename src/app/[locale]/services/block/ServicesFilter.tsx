@@ -10,7 +10,8 @@ export interface Services {
   id: number;
   name: string;
   image: string;
-  tags: string[]; // مهم تكون tags عندك إنجليزي زى ["WebDevelopment", "MobileDevelopment"]
+  tags: string[];
+  tagsDisplayed: string[];
   description: string;
 }
 
@@ -34,7 +35,6 @@ export default function ServicesFilter({ services }: { services: Services[] }) {
 
   return (
     <>
-      {/* TopFilter دلوقتي هيبعت القيمة الإنجليزية (value) */}
       <TopFilter onFilterChange={handleFilterChange} />
 
       <div className="mt-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6">
