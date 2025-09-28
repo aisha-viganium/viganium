@@ -103,7 +103,7 @@ export default function SidebarNavbar() {
         </div>
 
         <div className="flex flex-col md:flex-row h-auto md:h-[calc(100%-80px)]">
-          <div className="w-full md:w-1/3 px-6 md:pr-16 flex flex-col py-8 space-y-2 gap-2 md:gap-10 ">
+          <div className="w-full md:w-1/3 px-6 md:pr-2 2xl:pr-16 flex flex-col py-8 space-y-2 gap-2 2xl:gap-10">
             {navLinks.map((link, index) => (
               <a
                 key={link.href}
@@ -135,8 +135,9 @@ export default function SidebarNavbar() {
 
                 <span className="not-italic 
                                 font-semibold 
-                                text-[18px] 
-                                md:text-[64px] 
+                                text-[18px]
+                                md:text-[40px]  
+                                2xl:text-[64px] 
                                 leading-[21px]
                                 md:leading-[91px] 
                                 text-center 
@@ -197,7 +198,7 @@ export default function SidebarNavbar() {
 
             <div className="p-4 flex flex-col md:flex-row gap-6 justify-center align-center">
               <div className="flex-1">
-                <div className="relative group w-full h-[250px] md:max-h-[375px] xl:h-[375px] rounded-lg overflow-hidden cursor-pointer">
+                <div className="relative group w-full h-[250px] md:max-h-[305px] 2xl:h-[375px] rounded-lg overflow-hidden cursor-pointer">
                   <Image
                     src={`/assets/images/contact-us-nav.png`}
                     alt={`Contact`}

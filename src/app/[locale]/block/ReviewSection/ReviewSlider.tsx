@@ -18,7 +18,7 @@ type Review = {
 };
 export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
   return (
-    <div className="relative h-[50vh] md:min-h-[105vh] mt-0 md:mt-[-150px] overflow-hidden px-2 md:px-0 ">
+    <div className="relative h-[50vh] md:min-h-[125vh] 2xl:min-h-[105vh] mt-0 md:mt-[-150px] overflow-hidden px-2 md:px-0 ">
       <div className="absolute w-full h-[25vh]  md:min-h-[75vh] left-0 bottom-0 bg-no-repeat bg-[url('/assets/images/RectangleBackground.svg')] bg-cover bg-center overflow-hidden"></div>
 
       <AnimatedSection variants={fadeInUp} className="container mx-auto">
@@ -131,10 +131,10 @@ export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="hidden md:flex custom-prev absolute left-[3%] md:left-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[120px] md:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
+        <div className="hidden md:flex custom-prev absolute left-[1%] 2xl:left-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[100px] md:h-[100px] 2xl:w-[120px] 2xl:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
           <Image src="/assets/icons/arrow-white.svg" alt="prev" width={25} height={25} className="md:w-[48px] md:h-[48px] rotate-180" />
         </div>
-        <div className="hidden md:flex custom-next absolute right-[3%] md:right-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[120px] md:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
+        <div className="hidden md:flex custom-next absolute right-[1%] 2xl:right-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[100px] md:h-[100px] 2xl:w-[120px] 2xl:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
           <Image src="/assets/icons/arrow-white.svg" alt="next" width={25} height={25} className="md:w-[48px] md:h-[48px]" />
         </div>
       </AnimatedSection>

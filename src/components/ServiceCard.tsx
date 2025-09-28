@@ -14,7 +14,7 @@ export function ServiceCard({ service }: { service: Service }) {
   return (
     <div className="flex flex-col items-end pt-8 pb-1 md:pb-8 pr-6 pl-6 md:pr-[29px] md:pl-[29px] gap-8 min-h-[427px] bg-[#F3F3F3] rounded-[8px]">
       <Link href={`services/${service.id}`}>
-        <div className="relative w-full min-h-[250px] md:min-h-[380px]">
+        <div className="relative w-full min-h-[250px] 2xl:min-h-[380px]">
           <Image
             width={380}
             height={380}
@@ -29,9 +29,10 @@ export function ServiceCard({ service }: { service: Service }) {
           <h3
             className="
                         font-bold text-[20px] leading-[29px] text-right text-[#414141]
-                        md:text-[32px] md:leading-[46px] 
+                        md:text-[28px] 2xl:text-[32px] md:leading-[46px] 
                       "
-          >            {service.name}
+          >
+            {service.name}
           </h3>
           <p
             className="
@@ -39,10 +40,11 @@ export function ServiceCard({ service }: { service: Service }) {
                     md:text-[20px] md:leading-[29px] 
                     text-[#414141] my-5
                       "
-          >            {service.description}
+          >
+            {service.description}
           </p>
           {service.tags && (
-            <div className="grid grid-cols-2 gap-2 mb-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-2 mb-4 md:grid-cols-2 2xl:grid-cols-3">
               {service.tags.map((tag, index) => (
                 <span
                   key={index}

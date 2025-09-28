@@ -30,11 +30,11 @@ export default function HeroSection() {
                                     h-[27px] md:min-h-[50px] 
                                     text-center 
                                     font-bold text-[10px] md:text-[26.07px] 
-                                     leading-[100%] md:leading-[32px] 
+                                    leading-[100%] md:leading-[32px] 
                                     text-[#BD171D] 
                                     bg-[#F8E8E8] 
                                     border border-[#E4A0A2] 
-                                    rounded-[17.5px] md:rounded-[30.90px]  md:mb-10
+                                    rounded-[17.5px] md:rounded-[30.90px] md:mb-2 2xl:mb-10
                                 "
                     >
                         افضل شركة تسويق في الوطن العربي
@@ -43,14 +43,15 @@ export default function HeroSection() {
 
                     <h1
                         className="
-                                    mt-6 md:mt-[35px] xl:mt-[45px]
+                                    mt-6 md:mt-[25px] 2xl:mt-[45px]
                                     max-w-[323px] lg:max-w-[1039.36px] 
                                     font-bold 
-                                    text-[14px] md:text-4xl 
-                                    lg:text-[45px] xl:text-[75px] 
+                                    text-[14px] md:text-[45px]
+                                     2xl:text-[75px] 
                                     leading-[20px] md:leading-[60px] lg:leading-[45px] xl:leading-[55px] 
                                     text-right text-[#FDFFFC] 
                                     flex-none order-0 self-stretch grow-0
+                                
                                 "
                     >
                         نحن نصنع حضورًا رقميًا يتحدّث عنك!
@@ -58,10 +59,10 @@ export default function HeroSection() {
 
                     <p
                         className="
-                                    max-w-[90%] lg:max-w-[763.7px] 
-                                    mt-4 md:mt-4 xl:mt-10
+                                    max-w-[90%] 2xl:max-w-[763.7px] 
+                                    mt-4 md:mt-4 2xl:mt-10
                                     !font-normal md:font-semibold 
-                                    text-[12px] md:text-xl lg:text-[24px] 
+                                    text-[12px] md:text-xl md:text-[16px]  2xl:text-[24px] 
                                     leading-[normal] md:leading-7 lg:leading-[38px] 
                                     text-right text-[#FDFFFC] 
                                     flex-none order-1 grow-0

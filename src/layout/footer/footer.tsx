@@ -11,11 +11,11 @@ import ArrowUp from "@/assets/SVG/ArrowUp";
 
 export default function Footer() {
   const socialLinks = [
-    { name: "youtube", url: "https://www.youtube.com/add/rentalgate", icon: <Youtube className="w-[32px] h-[32px] md:w-[60px] md:h-[42.5px]" /> },
-    { name: "tiktok", url: "https://www.tiktok.com/add/rentalgate", icon: <Tiktok className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]" /> },
-    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <Facebook className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]" /> },
-    { name: "snap", url: "https://www.snap.com/company/rental-gate", icon: <Snap className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]" /> },
-    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <Linkedin className="w-[32px] h-[32px] md:w-[48px] md:h-[48px]" /> }
+    { name: "youtube", url: "https://www.youtube.com/add/rentalgate", icon: <Youtube className="w-[32px] h-[32px] md:w-[50px] md:h-[32.5px] 2xl:w-[60px] 2xl:h-[42.5px]" /> },
+    { name: "tiktok", url: "https://www.tiktok.com/add/rentalgate", icon: <Tiktok className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
+    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <Facebook className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
+    { name: "snap", url: "https://www.snap.com/company/rental-gate", icon: <Snap className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
+    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <Linkedin className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> }
   ];
 
   const Companies = [
@@ -65,7 +65,7 @@ export default function Footer() {
           <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
             انطباع عن الشكل النهائي للمحتوى. نص لوريم إيبسوم باللغة العربية مشتق من نص لاتيني كتبه الفيلسوف الروماني شيشرون وقد تم استخدامه منذ ستينيات القرن العشرين
           </p>
-          <div className="flex flex-wrap gap-8 md:gap-16 align-baseline">
+          <div className="flex flex-wrap gap-8 md:gap-5 2xl:gap-16 align-baseline">
             {socialLinks.map((link, idx) => (
               <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer">
                 {link.icon}

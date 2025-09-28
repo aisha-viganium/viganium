@@ -50,7 +50,7 @@ export default function HeroSection() {
                             max-w-[72px] h-[32px] 
                             rounded-[4px] bg-[#FDFFFC] cursor-pointer
                             md:static md:w-[350px] md:h-[65px]  md:max-w-[unset]
-                            lg:w-[693px]
+                            2xl:w-[693px]
                           "
               >
                 <span
@@ -93,7 +93,7 @@ export default function HeroSection() {
                 alt="Hero"
                 width={922}
                 height={922}
-                className="absolute w-[922px] h-[922px] left-[50px] bottom-0 object-cover"
+                className="absolute w-[822px] h-[822px] 2xl:w-[922px] 2xl:h-[922px] left-[50px] md:left-[0px] 2xl:left-[50px] bottom-0 object-cover"
                 priority
               />
             </div>

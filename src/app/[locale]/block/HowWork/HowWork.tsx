@@ -25,12 +25,12 @@ export default function HowWork() {
             className="
                       max-w-[260px] md:max-w-[876px]  
                       text-right 
-                      text-[16px] md:text-[22px] lg:text-[32px] xl:text-[48px] 
-                      leading-[23px] md:leading-[32px] lg:leading-[45px] xl:leading-[69px] 
+                      text-[16px] md:text-[40px] 2xl:text-[48px] 
+                      leading-[23px] md:leading-[32px] 2xl:leading-[45px] xl:leading-[69px] 
                       font-bold 
                       text-[#FDFFFC] 
                       my-2
-                      md:my-5
+                      2xl:my-5
                     "
           >            رحلتك تبدأ من صوتك , فلا تحرمنا من سماع اخبار مشروعك العظيم
           </h5>
