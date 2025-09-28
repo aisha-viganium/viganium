@@ -24,8 +24,7 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
   };
 
   return (
-    <div>
-      <div>
+      <div className="mb-2">
         {navLinks.map((link) => (
           <button
             onClick={() => handleClick(link)}
@@ -44,6 +43,5 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
           </button>
         ))}
       </div>
-    </div>
   );
 }
