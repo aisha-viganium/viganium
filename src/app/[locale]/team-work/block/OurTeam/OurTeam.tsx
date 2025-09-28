@@ -45,23 +45,21 @@ export default function OurTeam() {
                 key={i}
                 variants={slideFromTopBounce}
                 custom={custom + row * 3}
-                className="flex flex-col items-start text-right"
+                className="flex gap-5 items-center text-right "
               >
                 <Image
                   src="/assets/images/ICON-BACKGROUND.png"
                   alt="Advantages"
-                  width={58}
-                  height={58}
-                  className="w-[48px] md:w-[58px] h-[48px] md:h-[58px] rounded-tl-[8px]"
+                  width={100}
+                  height={100}
+                  className="w-[48px] md:w-[100px] h-[48px] md:h-[100px] rounded-tl-[8px]"
                 />
 
-                <h5 className="font-semibold w-fit text-lg md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-[#414141] pb-1 my-3 border-b-4 border-b-[#C83E43]">
+                <h5 className="font-semibold w-fit text-lg md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-[#414141] pb-1 my-3">
                   لوريم ابسيوم
                 </h5>
 
-                <p className="font-medium text-sm md:text-[12px] lg:text-[16px] leading-relaxed md:leading-[23px] text-[#414141]">
-                  هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى
-                </p>
+        
               </AnimatedSection>
             );
           })}
