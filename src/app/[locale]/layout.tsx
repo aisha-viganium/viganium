@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Viganium",
   description: "نحن نصنع حضورًا رقميًا يتحدّث عنك!",
   icons: {
-    icon: "/assets/logo.svg",
+    icon: "/assets/logo-icon.svg",
   },
 };
 
