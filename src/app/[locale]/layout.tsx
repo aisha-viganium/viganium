@@ -1,9 +1,9 @@
-// app/layout.tsx
 import NavBar from "@/layout/nav-bar/nav-bar";
 import type { Metadata } from "next";
 import Footer from "@/layout/footer/footer";
 import I18nProvider from "@/providers/i18n-provider";
 import "../../css/globals.css";
+import ClientLayout from "./client-layout";
 
 export const metadata: Metadata = {
   title: "Viganium",
@@ -13,23 +13,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout(
-  {
-    children,
-  }: {
-    children: React.ReactNode;
-
-  }
-) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="ar" dir="rtl">
       <body>
-
         <I18nProvider>
           <NavBar />
-          <main className="max-w-[100vw] overflow-hidden">
-            {children}
-          </main>
+          <ClientLayout>{children}</ClientLayout>
           <Footer />
         </I18nProvider>
       </body>
