@@ -196,8 +196,8 @@ export default function SidebarNavbar() {
               </div>
             </div>
 
-            <div className="p-4 flex flex-col md:flex-row gap-6 justify-center align-center">
-              <div className="flex-1">
+            <div className="p-4 flex flex-col md:flex-row gap-6 justify-center align-center"> 
+              <Link href="/contact-us" className="flex-1"                 onClick={() => setIsOpen(false)}>
                 <div className="relative group w-full h-[250px] md:max-h-[305px] 2xl:h-[375px] rounded-lg overflow-hidden cursor-pointer">
                   <Image
                     src={`/assets/images/contact-us-nav.png`}
@@ -209,8 +209,7 @@ export default function SidebarNavbar() {
                     <span className="text-white font-bold text-[62px]">التواصل معنا</span>
                   </div>
                 </div>
-              </div>
-
+              </Link>
               <div className="flex-1 flex flex-col justify-center align-center gap-4">
                 <h3 className="group flex justify-center items-center gap-1 md:gap-4 font-medium text-xl md:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
                   <ArrowUpBlack
