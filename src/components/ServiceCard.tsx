@@ -30,7 +30,7 @@ export function ServiceCard({ service }: { service: Service }) {
         <div className="px-3 text-right">
           <h3
             className="
-                        font-bold text-[20px] leading-[29px] text-right text-[#414141]
+                        font-bold text-[20px] leading-[29px] text-right text-secondry-200
                         md:text-[28px] 2xl:text-[32px] md:leading-[46px] 
                       "
           >
@@ -40,7 +40,7 @@ export function ServiceCard({ service }: { service: Service }) {
             className="
                     font-medium text-[14px] leading-[20px] text-right 
                     md:text-[20px] md:leading-[29px] 
-                    text-[#414141] my-5
+                    text-secondry-200 my-5
                       "
           >
             {service.description}
@@ -55,7 +55,7 @@ export function ServiceCard({ service }: { service: Service }) {
                             py-2 px-3 
                             min-h-[40px] md:min-h-[47px] 
                             border-2 border-[#1A1A1A] rounded-[37px] 
-                            font-medium text-[14px] md:text-[16px] text-[#414141]
+                            font-medium text-[14px] md:text-[16px] text-secondry-200
                           "
                 >
                   {tag}

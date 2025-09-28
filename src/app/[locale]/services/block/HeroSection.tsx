@@ -55,7 +55,7 @@ export default function HeroSection() {
               >
                 <span
                   className="
-                              font-bold text-[10px] leading-[14px] text-center text-[#1A1A1A]
+                              font-bold text-[10px] leading-[14px] text-center text-secondry
                               md:text-lg md:leading-[26px]
                               lg:text-[20px] lg:leading-[29px]
                             "

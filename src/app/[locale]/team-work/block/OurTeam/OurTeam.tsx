@@ -22,11 +22,11 @@ export default function OurTeam() {
               />
             </span>
 
-            <h3 className="font-bold text-[20px] md:text-[36px] lg:text-[48px] leading-[29px] md:leading-[46px] lg:leading-[69px] text-right text-[#1A1A1A] mt-3">
+            <h3 className="font-bold text-[20px] md:text-[36px] lg:text-[48px] leading-[29px] md:leading-[46px] lg:leading-[69px] text-right text-secondry mt-3">
               اهلا بك مع اعظم فريق عمل في الوطن العربي
             </h3>
 
-            <p className="font-normal text-[14px] leading-[20px] md:font-semibold md:text-[18px] md:leading-[28px] lg:text-[24px] lg:leading-[34px] text-right text-[#1A1A1A] my-5">
+            <p className="font-normal text-[14px] leading-[20px] md:font-semibold md:text-[18px] md:leading-[28px] lg:text-[24px] lg:leading-[34px] text-right text-secondry my-5">
               هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
               هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
             </p>
@@ -55,7 +55,7 @@ export default function OurTeam() {
                     className="w-[48px] md:w-[100px] h-[48px] md:h-[100px] rounded-tl-[8px]"
                   />
 
-                  <h5 className="font-semibold w-fit text-[14px] md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-[#414141] pb-1 my-3">
+                  <h5 className="font-semibold w-fit text-[14px] md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-secondry-200 pb-1 my-3">
                     لوريم ابسيوم
                   </h5>
 

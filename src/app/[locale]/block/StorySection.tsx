@@ -33,7 +33,7 @@ export default function CustomSection() {
                           font-normal md:font-bold
                           text-[12px] md:text-[24px] lg:text-[36px] 
                           leading-[100%] md:leading-[42px] lg:leading-[51px] 
-                          text-right text-[#1A1A1A] mt-3 
+                          text-right text-secondry mt-3 
                         "
               >
                 في Viganium، نحن أكثر من مجرد شركة تقنية — نحن شغف يتحوّل إلى حلول، وابتكار يُترجم إلى قيمة.
@@ -82,7 +82,7 @@ export default function CustomSection() {
                         font-normal md:font-semibold
                         text-[14px] md:text-[18px] lg:text-[24px] 
                         leading-[18px] md:leading-[34px] 
-                        text-right text-[#414141]
+                        text-right text-secondry-200
                       "
             >
               نؤمن بأن الابتكار هو القوة الدافعة لكل تطوّر، لذا نسعى دائماً لتجاوز المألوف وتقديم حلول غير تقليدية تصنع الفرق.

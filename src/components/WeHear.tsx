@@ -11,7 +11,7 @@ export default function WeHear() {
                     variants={slideFromRightBounce}
                     className="flex flex-col text-right md:items-start"
                 >
-                    <p className="font-bold text-[14px] md:text-[24px] leading-[30px] md:leading-[34px] text-[#1A1A1A]">
+                    <p className="font-bold text-[14px] md:text-[24px] leading-[30px] md:leading-[34px] text-secondry">
                         إحنا بنحب نسمع, خلينا نشوف فكرتك
                     </p>
                     <h2 className="font-bold text-[16px] md:text-[32px] leading-[32px] md:leading-[46px] text-[#987931] max-w-[783px] mt-4">

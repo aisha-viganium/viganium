@@ -16,7 +16,7 @@ export default function AddQuestion() {
   return (
     <>
     <form onSubmit={handleSubmit} className="flex flex-col gap-3 md:max-w-[80%]">
-      <label className="font-medium text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[26px] lg:leading-[29px] text-[#414141]">
+      <label className="font-medium text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[26px] lg:leading-[29px] text-secondry-200">
         بريدك الإلكتروني
       </label>
 

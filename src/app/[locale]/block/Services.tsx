@@ -42,7 +42,7 @@ export default function Services() {
                       text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                       leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
                       font-bold 
-                      text-[#1A1A1A]"
+                      text-secondry"
         >
           الخدمات
         </p>
@@ -70,10 +70,10 @@ export default function Services() {
                   height={341}
                   className="w-full h-[213px] md:h-[280px] lg:h-auto rounded-[8px] md:rounded-[16px] object-cover"
                 />
-                <h5 className="text-right font-bold text-[#1A1A1A] my-3 md:my-5 text-[16px] leading-[23px] md:text-[22px] md:leading-[32px] lg:text-[24px] lg:leading-[34px]">
+                <h5 className="text-right font-bold text-secondry my-3 md:my-5 text-[16px] leading-[23px] md:text-[22px] md:leading-[32px] lg:text-[24px] lg:leading-[34px]">
                   {service.title}
                 </h5>
-                <p className="text-right text-[#1A1A1A] font-[Brando Arabic] font-normal text-[14px] leading-[20px] md:text-[15px] md:leading-[23px] lg:text-[16px] lg:leading-[23px]">
+                <p className="text-right text-secondry font-[Brando Arabic] font-normal text-[14px] leading-[20px] md:text-[15px] md:leading-[23px] lg:text-[16px] lg:leading-[23px]">
                   {service.description}
                 </p>
               </div>

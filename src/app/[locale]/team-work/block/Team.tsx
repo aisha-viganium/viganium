@@ -147,7 +147,7 @@ export default function Team() {
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                         leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
                         font-bold 
-                        text-[#1A1A1A]">
+                        text-secondry">
                             فريق العمل
                         </p>
                     </div>

@@ -101,7 +101,7 @@ export default function ChatCard() {
                 key={c}
                 type="button"
                 onClick={() => openChat()}
-                className="cursor-pointer flex justify-center items-center py-1 px-3 md:px-4 gap-[6px] md:gap-[10px] w-[140px] md:w-[218px] h-[34px] bg-white rounded-[20px] font-medium text-[10px] md:text-[16px] leading-[20px] md:leading-[23px] text-[#1A1A1A]"
+                className="cursor-pointer flex justify-center items-center py-1 px-3 md:px-4 gap-[6px] md:gap-[10px] w-[140px] md:w-[218px] h-[34px] bg-white rounded-[20px] font-medium text-[10px] md:text-[16px] leading-[20px] md:leading-[23px] text-secondry"
               >
                 {c}
               </button>
@@ -146,7 +146,7 @@ export default function ChatCard() {
                 {m.from === "user" && (
                   <div className="flex justify-end">
                     <div className="p-3 md:p-4 w-fit max-w-[80%] bg-white border border-[#E8E8E8] rounded-[12px] md:rounded-[30px]">
-                      <p className="font-medium text-[14px] md:text-[20px] text-right text-[#414141]">
+                      <p className="font-medium text-[14px] md:text-[20px] text-right text-secondry-200">
                         {m.text}
                       </p>
                     </div>
@@ -155,7 +155,7 @@ export default function ChatCard() {
                 {m.from === "bot" && (
                   <div className="flex justify-start">
                     <div className="p-3 md:p-4 w-fit max-w-[80%] bg-white border border-[#E8E8E8] rounded-[12px] md:rounded-[30px]">
-                      <p className="font-medium text-[14px] md:text-[20px] text-left text-[#414141]">
+                      <p className="font-medium text-[14px] md:text-[20px] text-left text-secondry-200">
                         {m.text}
                       </p>
                     </div>

@@ -34,7 +34,7 @@ export default function Accordion() {
               onClick={() => toggle(index)}
               className="cursor-pointer flex justify-between w-full items-center p-3 md:p-4 min-h-[45px] border-r-[6px] md:border-r-[8px] border-[#F9C751] rounded-lg transition-colors duration-300"
             >
-              <span className="font-semibold text-[10px] md:text-[18px] lg:text-[20px] leading-[24px] md:leading-[27px] lg:leading-[29px] text-right text-[#414141]">
+              <span className="font-semibold text-[10px] md:text-[18px] lg:text-[20px] leading-[24px] md:leading-[27px] lg:leading-[29px] text-right text-secondry-200">
                 {item.question}
               </span>
               <span className="w-[27px] h-[27px] md:w-10 md:h-10 lg:w-11 lg:h-11 bg-[#F9C751] rounded-full flex justify-center items-center shrink-0 transition-transform duration-300">

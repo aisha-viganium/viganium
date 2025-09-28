@@ -18,7 +18,7 @@ export default function AddQuestion() {
     <>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3 md:max-w-[80%]">
         <label
-          className="font-bold text-[20px] md:text-[28px] lg:text-[36px] leading-[32px] md:leading-[40px] lg:leading-[51px] text-right text-[#414141]"
+          className="font-bold text-[20px] md:text-[28px] lg:text-[36px] leading-[32px] md:leading-[40px] lg:leading-[51px] text-right text-secondry-200"
           htmlFor="question"
         >
           اي السؤال الي عاوز تساله

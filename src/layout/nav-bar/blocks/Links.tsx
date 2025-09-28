@@ -96,7 +96,7 @@ export default function SidebarNavbar() {
           />
           <button
             onClick={() => setIsOpen(false)}
-            className="text-[#1A1A1A] hover:text-primary text-xl cursor-pointer"
+            className="text-secondry hover:text-primary text-xl cursor-pointer"
           >
             <Image src="/assets/icons/close.svg" alt="Close" width={32} height={32} />
           </button>
@@ -111,7 +111,7 @@ export default function SidebarNavbar() {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 onClick={() => setIsOpen(false)}
-                className="group text-[#1A1A1A] hover:text-primary relative flex items-center transition-all duration-800 hover:translate-x-2 overflow-hidden h-auto md:h-[100px]"
+                className="group text-secondry hover:text-primary relative flex items-center transition-all duration-800 hover:translate-x-2 overflow-hidden h-auto md:h-[100px]"
               >
                 <div className="hidden lg:flex w-8 h-10 items-center justify-center">
                   <div className={`relative transition-all duration-800 translate-y-[-100px] ${activeBall === index ? 'animate-bounce-ball' : ''
@@ -156,7 +156,7 @@ export default function SidebarNavbar() {
           <div className="w-full md:w-2/3 mt-6 md:mt-0 flex flex-col justify-around">
             <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[359px]">
               <div className=" lg:w-1/3">
-                <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
+                <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
                   <span> سابقة الأعمال</span>
                   <ArrowUpBlack className="w-[12px] md:w-[28px] mt-0 md:mt-[10px] rotate-245 transition-transform duration-300  group-hover:rotate-[215deg] fill-[#1A1A1A] group-hover:fill-primary" />
                 </h3>
@@ -212,7 +212,7 @@ export default function SidebarNavbar() {
               </div>
 
               <div className="flex-1 flex flex-col justify-center align-center gap-4">
-                <h3 className="group flex justify-center items-center gap-1 md:gap-4 font-medium text-xl md:text-[32px] underline text-center text-[#1A1A1A] hover:text-primary mb-4">
+                <h3 className="group flex justify-center items-center gap-1 md:gap-4 font-medium text-xl md:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
                   <ArrowUpBlack
                     className="w-[12px] md:w-[28px] h-auto transition-transform duration-300 group-hover:text-primary group-hover:rotate-[35deg] fill-[#1A1A1A] group-hover:fill-primary"
                   />

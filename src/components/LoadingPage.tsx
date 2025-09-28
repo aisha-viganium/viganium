@@ -69,7 +69,7 @@ export default function LoadingPage() {
 
                 <div className="relative w-[318px] h-[59px] rounded-[8px] flex items-center justify-center mx-auto 
   bg-gradient-to-t from-white/90 to-white/90 bg-primary 
-  not-italic font-medium text-[20px] leading-[29px] text-right text-[#1A1A1A]">
+  not-italic font-medium text-[20px] leading-[29px] text-right text-secondry">
 
                     <span className="absolute top-[5px] left-[5px] w-3 h-3 border-t-2 border-l-2 border-primary rounded-tl"></span>
                     <span className="absolute top-[5px] right-[5px] w-3 h-3 border-t-2 border-r-2 border-primary rounded-tr"></span>

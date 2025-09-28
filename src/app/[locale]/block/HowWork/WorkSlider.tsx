@@ -78,7 +78,7 @@ export default function CardSlider() {
                                             <h5
                                                 className="
                                                         max-w-[127px] text-center 
-                                                        text-[14.36px] leading-[21px] font-semibold text-[#1A1A1A] 
+                                                        text-[14.36px] leading-[21px] font-semibold text-secondry 
                                                         md:text-[39.43px] md:leading-[56px]                       
                                                     "
                                             >
@@ -122,7 +122,7 @@ export default function CardSlider() {
                                         <p
                                             className="
                                                          text-[6.38px] leading-[9px] font-medium
-                                                        md:max-w-[320.95px] text-center md:font-medium md:text-[17.53px] md:leading-[25px] text-[#1A1A1A]
+                                                        md:max-w-[320.95px] text-center md:font-medium md:text-[17.53px] md:leading-[25px] text-secondry
                                                     "
                                         >   
                                          {card.description}

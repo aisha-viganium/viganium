@@ -40,13 +40,13 @@ export default function Popup({ image, title, paragraph, onClose }: PopupProps) 
                     text-[36px] 
                     leading-[51px] 
                     text-center 
-                    text-[#1A1A1A] ">{title}</h2>
+                    text-secondry ">{title}</h2>
 
                 <p className="font-normal 
                             text-[24px] 
                             leading-[34px] 
                             text-center 
-                            text-[#1A1A1A]">{paragraph}</p>
+                            text-secondry">{paragraph}</p>
             </div>
         </div>
     );

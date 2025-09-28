@@ -25,7 +25,7 @@ export default function Tools() {
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                         leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
                         font-bold 
-                        text-[#1A1A1A]">
+                        text-secondry">
                     الأدوات المستخدمة
                 </p>
             </AnimatedSection>
@@ -46,7 +46,7 @@ export default function Tools() {
                     {slides.map((slide) => (
                         <SwiperSlide key={slide.id}>
                             <div className="flex flex-row justify-between w-100 items-center px-4 md:px-6 py-4 gap-2 md:gap-2.5 max-w-full 2xl:max-w-[454px] h-[80px] md:h-[96px] bg-[#EFEFEF] rounded-[12px] md:rounded-[16px]">
-                                  <p className="font-aileron text-[#1A1A1A] font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] text-right flex-1">
+                                  <p className="font-aileron text-secondry font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] text-right flex-1">
                                     {slide.text}
                                 </p>
                                 <Image

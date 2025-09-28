@@ -12,10 +12,10 @@ export default function Questions() {
           variants={slideFromRightBounce}
           className="flex flex-col gap-4 md:gap-6 order-2 lg:order-1"
         >
-          <h3 className="font-bold text-[28px] md:text-[36px] lg:text-[48px] leading-[36px] md:leading-[50px] lg:leading-[69px] text-right text-[#1A1A1A]">
+          <h3 className="font-bold text-[28px] md:text-[36px] lg:text-[48px] leading-[36px] md:leading-[50px] lg:leading-[69px] text-right text-secondry">
             لمعرفة المزيد من أخبارنا
           </h3>
-          <p className="font-normal text-[14px] leading-[20px] md:font-semibold md:text-[16px] md:leading-[22px] lg:text-[24px] lg:leading-[34px] text-right text-[#1A1A1A] my-5">
+          <p className="font-normal text-[14px] leading-[20px] md:font-semibold md:text-[16px] md:leading-[22px] lg:text-[24px] lg:leading-[34px] text-right text-secondry my-5">
             لوريم إيبسومLorem Ipsum هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل
             وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم
             ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة

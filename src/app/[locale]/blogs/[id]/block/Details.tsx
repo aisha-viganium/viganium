@@ -12,7 +12,7 @@ export default function Details() {
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                         leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
                         font-bold 
-                        text-[#1A1A1A]">
+                        text-secondry">
             المقالات
           </p>
 
@@ -21,10 +21,10 @@ export default function Details() {
           className="mx-auto px-2 md:px-16"
           variants={slideFromTopBounce}
         >
-          <h5 className="font-bold text-[24px] md:text-[32px] lg:text-[40px] leading-[36px] md:leading-[48px] lg:leading-[63px] text-right text-[#1A1A1A] my-6 md:my-8 lg:my-10">
+          <h5 className="font-bold text-[24px] md:text-[32px] lg:text-[40px] leading-[36px] md:leading-[48px] lg:leading-[63px] text-right text-secondry my-6 md:my-8 lg:my-10">
             عنوان البلوج عنوان البلوج
           </h5>
-          <p className="font-medium text-[14px] md:text-[15px] lg:text-[16px] leading-[22px] md:leading-[24px] lg:leading-[26px] text-right text-[#1A1A1A]">
+          <p className="font-medium text-[14px] md:text-[15px] lg:text-[16px] leading-[22px] md:leading-[24px] lg:leading-[26px] text-right text-secondry">
             هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
             القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
             التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
@@ -43,10 +43,10 @@ export default function Details() {
         className="px-2 md:px-16"
         variants={slideFromTopBounce}
       >
-        <h5 className="font-bold text-[24px] md:text-[32px] lg:text-[40px] leading-[36px] md:leading-[48px] lg:leading-[63px] text-right text-[#1A1A1A] my-6 md:my-8 lg:my-10">
+        <h5 className="font-bold text-[24px] md:text-[32px] lg:text-[40px] leading-[36px] md:leading-[48px] lg:leading-[63px] text-right text-secondry my-6 md:my-8 lg:my-10">
           عنوان البلوج عنوان البلوج
         </h5>
-        <p className="font-medium text-[14px] md:text-[15px] lg:text-[16px] leading-[22px] md:leading-[24px] lg:leading-[26px] text-right text-[#1A1A1A]">
+        <p className="font-medium text-[14px] md:text-[15px] lg:text-[16px] leading-[22px] md:leading-[24px] lg:leading-[26px] text-right text-secondry">
           هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
           القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
           التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ

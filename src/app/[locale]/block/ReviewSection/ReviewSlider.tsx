@@ -82,7 +82,7 @@ export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
                             leading-[16px] 
                             text-right
                             md:text-[20px] 
-                            md:text-[#1A1A1A]
+                            md:text-secondry
                           "
                         >{review.name}</p>
                         <p
@@ -94,7 +94,7 @@ export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
                               text-right
                               md:font-bold 
                               md:text-[18px] 
-                              md:text-[#1A1A1A]
+                              md:text-secondry
                             "
                         >{review.email}</p>
                       </div>
@@ -118,7 +118,7 @@ export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
                       {Array.from({ length: review.rating }, (_, i) => (
                         <Image key={i} src="/assets/icons/star.svg" width={10} height={10} className="md:w-[28px] md:h-[28px]" alt="star" />
                       ))}
-                      <p className="font-normal text-[14px] md:text-[18px] text-[#1A1A1A]">منذ 1 يوم</p>
+                      <p className="font-normal text-[14px] md:text-[18px] text-secondry">منذ 1 يوم</p>
                     </div>
                   </div>
 

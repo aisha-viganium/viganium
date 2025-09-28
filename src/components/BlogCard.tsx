@@ -25,7 +25,7 @@ export function BlogCard({ blog }: { blog: Blog }) {
 
         <div className="p-2 md:p-3 text-right">
           <h3 className="
-                        font-bold text-[20px] leading-[29px] text-right text-[#1A1A1A]
+                        font-bold text-[20px] leading-[29px] text-right text-secondry
                         md:text-[32px] md:leading-[46px] 
                       ">
             {blog.name}
@@ -34,7 +34,7 @@ export function BlogCard({ blog }: { blog: Blog }) {
             className="
                     font-medium text-[14px] leading-[20px] text-right 
                     md:text-[20px] md:leading-[29px] 
-                    text-[#414141] my-5
+                    text-secondry-200 my-5
                       "
           >
             {blog.description}
