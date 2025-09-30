@@ -20,6 +20,7 @@ html {
   font-family: 'alfont_com_Brando';
 
 }
+
 @font-face {
   font-family: 'aileron_regular';
   src: url('../assets/fonts/aileron.regular.otf') format('opentype');
@@ -30,6 +31,7 @@ html {
 .font-aileron {
   font-family: 'aileron_regular' !important;
 }
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -51,6 +53,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'alfont_com_Brando' !important;
+}
+
+html[lang="en"] body {
+  font-family: 'aileron_regular' !important;
+  direction: ltr;
 }
 
 @keyframes spin-slow {
@@ -107,7 +114,27 @@ body {
 
 
 }
+html[lang="en"] .clipPath-review {
+  clip-path: polygon(100% 0, 100% 219px, 0 91px, 0 219px, 0 100%, 100% 100%);
+}
 
+html[lang="en"] .clipPath-video {
+  clip-path: polygon(100% 0,
+      0 0,
+      0 100%,
+      0 70%,
+      100% 100%);
+}
+
+@media only screen and (max-width:900px) {
+  html[lang="en"] .clipPath-video {
+    clip-path: polygon(100% 0,
+        0 0,
+        0 100%,
+        0 40%,
+        100% 90%);
+  }
+}
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -141,4 +168,3 @@ body {
 .animate-bounce-ball {
   animation: bounce-ball 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
-

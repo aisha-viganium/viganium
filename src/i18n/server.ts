@@ -25,7 +25,6 @@ export async function getTranslation(locale: string) {
       },
     });
 
-  return {
-    t: i18nInstance.getFixedT(locale),
-  };
+  return i18nInstance.getFixedT(locale); // ✅ function
 }
+

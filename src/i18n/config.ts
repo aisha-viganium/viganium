@@ -1,6 +1,8 @@
 // i18n/config.ts
+
 export const defaultNS = "translation";
-export const fallbackLng = "ar";
+// خلي اللغة الافتراضية English أو Arabic حسب ما تحبى
+export const fallbackLng = "en";  
 
 export const languages = ["en", "ar"];
 
@@ -14,11 +16,11 @@ export const i18nOptions = {
     escapeValue: false,
   },
 };
+
 export function getOptions(lng?: string, ns = "translation") {
-  // only include `lng` if it was passed so the client-side language detector can work
   return {
-    supportedLngs: ["en", "ar"],
-    fallbackLng: "ar",
+    supportedLngs: languages,
+    fallbackLng,
     ...(lng ? { lng } : {}),
     ns: [ns],
     defaultNS: ns,

@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Chat from "./Chat";
-
+import { useTranslation } from "react-i18next";
+import "@/i18n/client";
 export default function PoPUpChat({ bg, color, border }: { bg: string; color: string; border: string }) {
     const [open, setOpen] = useState(false);
+    const { t } = useTranslation();
 
     return (
         <>
@@ -30,7 +32,7 @@ export default function PoPUpChat({ bg, color, border }: { bg: string; color: st
                 hover:outline-offset-4
             "
             >
-                كلّمنا وخلنا نبدأ
+                {t("common.lets_talk")}
             </button>
 
 

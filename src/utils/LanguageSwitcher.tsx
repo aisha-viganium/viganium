@@ -12,11 +12,20 @@ export default function LanguageSwitcher() {
 
   const toggleLanguage = () => {
     const newLang = lang === "en" ? "ar" : "en";
-    setLang(newLang);
-    i18nextClient.changeLanguage(newLang);
-    const segments = pathname.split("/");
-    segments[1] = newLang; 
-    router.push(segments.join("/"));
+    // Ensure i18next actually switched language before navigating so
+    // components reading `i18n.language` see the updated value.
+    (async () => {
+      try {
+        await i18nextClient.changeLanguage(newLang);
+      } catch (e) {
+        // ignore
+      }
+      // update local state from the i18next instance (more reliable)
+      setLang(i18nextClient.language || newLang);
+      const segments = pathname.split("/");
+      segments[1] = newLang;
+      router.push(segments.join("/"));
+    })();
   };
 
   return (

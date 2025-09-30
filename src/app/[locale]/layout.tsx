@@ -13,15 +13,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }> | { locale: string };
 }) {
+  const resolvedParams = params instanceof Promise ? await params : params;
+  const locale = resolvedParams?.locale || "ar";
+  const dir = locale === "ar" ? "rtl" : "ltr";
+
+
   return (
-    <html lang="ar" dir="rtl">
+    <html lang={locale} dir={dir}>
       <body>
-        <I18nProvider>
+        <I18nProvider locale={locale}>
           <NavBar />
           <ClientLayout>{children}</ClientLayout>
           <Footer />

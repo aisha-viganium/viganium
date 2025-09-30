@@ -6,19 +6,20 @@ import ReviewSection from "./block/ReviewSection/ReviewSection";
 import HelpSection from "@/components/HelpSection";
 import HeroSection from "./block/HeroSection";
 import RobotChat from "./block/RobotChat";
+import { getTranslation } from "@/i18n/server"; 
 
-
-export default async function page() {
-
+export default async function Page({ params }: { params: { locale: string } }) {
+  const locale = params?.locale || "ar";
+  const t = await getTranslation(locale);
   return (
     <>
       <RobotChat />
-      <HeroSection />
-      <StorySection />
-      <HowWork />
-      <Services />
-      <ReviewSection />
-      <HelpSection />
+      <HeroSection locale={locale} t={t} />
+      <StorySection locale={locale} t={t}/>
+      <HowWork locale={locale} t={t}/>
+      <Services locale={locale} t={t} />
+      <ReviewSection locale={locale} t={t}/>
+      <HelpSection locale={locale} t={t} />
     </>
   );
 }

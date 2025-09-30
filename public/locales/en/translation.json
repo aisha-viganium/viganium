@@ -1,5 +1,102 @@
 {
+  "common": {
+    "lets_talk": "lets talk"
+  },
   "HomePage": {
-    "title": "Hيبلبيبليello world!"
+    "bestCompany": "The Best Marketing Company in the Middle East",
+    "title": "We create a digital presence that speaks for you!",
+    "description": "We do not embellish, but rather plan, analyze, and implement based on a clear vision and numbers that guide the decision. If you are looking for long-term impact, your journey starts here."
+  },
+  "ChatSection": {
+    "button": "Chat me"
+  },
+  "story": {
+    "title": "Our Story",
+    "description": "At Viganium, we are more than just a tech company — we are passion transformed into solutions, and innovation translated into value.",
+    "details": "We believe innovation is the driving force behind every advancement, so we always strive to go beyond the ordinary and deliver unconventional solutions that make a difference.\nWe are committed to the highest standards of quality and precision at every stage of our work, ensuring reliable and sustainable project delivery.\nWe operate with transparency and integrity, building long-term relationships with our clients based on mutual trust.",
+    "watchIntro": "Watch Intro"
+  },
+  "howWork": {
+    "title": "How We Work",
+    "subtitle": "Your journey begins with your voice, so don’t deprive us of hearing about your great project.",
+    "description": "At Viganium, we don’t offer ready-made solutions — every journey starts from one place: the client’s voice.",
+    "cards": [
+      {
+        "id": 1,
+        "title": "Listening",
+        "description": "We carefully listen to understand our clients’ needs before any step.",
+        "image": "/assets/images/work/hear.png"
+      },
+      {
+        "id": 2,
+        "title": "Research",
+        "description": "We conduct research and analysis to discover the best possible solutions.",
+        "image": "/assets/images/work/search.png"
+      },
+      {
+        "id": 3,
+        "title": "Analysis",
+        "description": "We analyze data and insights to reach accurate decisions.",
+        "image": "/assets/images/work/analysing.png"
+      },
+      {
+        "id": 4,
+        "title": "Discussion",
+        "description": "We exchange ideas and perspectives with our team and clients.",
+        "image": "/assets/images/work/discussion.png"
+      },
+      {
+        "id": 5,
+        "title": "Execution",
+        "description": "We turn plans into reality with well-structured steps.",
+        "image": "/assets/images/work/working.png"
+      },
+      {
+        "id": 6,
+        "title": "Testing",
+        "description": "We test the results to ensure quality and success.",
+        "image": "/assets/images/work/test.png"
+      }
+    ]
+  },
+   "Services": {
+    "title": "Services",
+    "solutionTitle": "Software Solutions",
+    "solutionDescription": "As a leading app development company in Saudi Arabia, we understand the needs of the local market and deliver flexible, customized software solutions that enhance workflows and enable efficient digital transformation. At Viganium, we believe that strong systems are built with precision to achieve specific goals.",
+    "itTitle": "IT Services",
+    "itDescription": "We are a Saudi-based mobile app development company specialized in creating professional mobile applications that provide a smooth and efficient experience on both iOS and Android platforms, supporting business objectives of all kinds. At Viganium, we deliver smart solutions that combine high performance with attractive design.",
+    "marketingTitle": "Marketing",
+    "marketingDescription": "As a Saudi-based app development company, we understand the needs of the local market and deliver flexible, customized software solutions that support workflows and digital transformation efficiently. At Viganium, we believe that strong software systems are built specifically to achieve precise goals."
+  },
+  "ReviewSection": {
+    "title": "Success Partners",
+    "review1": "Lorem Ipsum text is more than just filler; it is a tool for designers to shape their ideas and visualize the final product. By providing a neutral base, designers can experiment with different layouts while maintaining focus on typography, spacing, and alignment.",
+    "review2": "This is an alternative English text for the second review, showing how placeholder content can be used in apps and websites to illustrate customer feedback.",
+    "review3": "English text for the third review, focusing on how to display reviews and ratings in an organized and visually appealing way.",
+    "time1":"1 year ago",
+    "time2":"6 months ago", 
+    "time3":"3 months ago"
+  },
+  "HelpSection": {
+    "chatRobotAlt": "Chat Robot"
+  },
+  "ChatCard": {
+    "welcome": "Hello! How can I assist you today?",
+    "webDev": "Website Development",
+    "cyberConsult": "Cybersecurity Consulting",
+    "mobileApps": "Mobile App Development",
+    "customSoftware": "Custom Software Development",
+    "softwareDelivery": "Software Deliverables",
+    "ITServices": "IT Services",
+    "AIAgent": "AI Agent",
+    "digitalMarketing": "Digital Marketing",
+    "AIAutomation": "AI Automation",
+    "blockStorage": "Blockchain Storage",
+    "autoReply": "Auto-reply to:",
+    "frameAlt": "Frame",
+    "logoAlt": "Chat Logo",
+    "introText": "Welcome to the AI-powered chat",
+    "helpTitle": "How can I help you?",
+    "askQuestion": "Ask me any question you want"
   }
 }
