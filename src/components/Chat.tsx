@@ -4,8 +4,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "@/i18n/client";
 export default function ChatCard() {
-  const { t } = useTranslation();
-  const locale = t("i18n.language") || "ar";
+  const { t,i18n } = useTranslation();
+  const locale = i18n.language || "ar";
   const isArabic = locale === "ar";
 
   const [view, setView] = useState<"card" | "chat">("card");
@@ -125,7 +125,7 @@ export default function ChatCard() {
                 width={24}
                 className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]"
               />
-              <span className="font-semibold text-[16px] md:text-[24px] leading-[26px] md:leading-[34px] text-white">
+              <span className={`font-semibold text-[16px] md:text-[24px] leading-[26px] md:leading-[34px] text-white ${isArabic ? "text-right placeholder:text-right" : "text-left placeholder:text-left"}`}>
                 {t("ChatCard.askQuestion") || "اسألني اي سؤال تريده ؟"}
               </span>
             </button>
@@ -164,7 +164,7 @@ export default function ChatCard() {
                 <input
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  className={`flex-1 bg-transparent font-semibold text-[16px] md:text-[24px] ${isArabic ? "text-right" : "text-left"} text-white placeholder:text-white outline-none`}
+                  className={`flex-1 bg-transparent font-semibold text-[16px] md:text-[24px] ${isArabic ? "text-right placeholder:text-right" : "text-left placeholder:text-left"} text-white placeholder:text-white outline-none`}
                   placeholder={t("ChatCard.askQuestion") || "اسألني اي سؤال تريده ؟"}
                 />
               </div>

@@ -10,7 +10,9 @@ import { getTranslation } from "@/i18n/server";
 
 export default async function Page({ params }: { params: { locale: string } }) {
   const locale = params?.locale || "ar";
-  const t = await getTranslation(locale);
+  const t = getTranslation(locale);
+
+
   return (
     <>
       <RobotChat />
@@ -19,7 +21,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
       <HowWork locale={locale} t={t}/>
       <Services locale={locale} t={t} />
       <ReviewSection locale={locale} t={t}/>
-      <HelpSection locale={locale} t={t} />
+      <HelpSection  />
     </>
   );
 }

@@ -1,14 +1,13 @@
-import Image from "next/image";
 import React from "react";
+
+import Image from "next/image";
 import Chat from "./Chat";
 import AnimatedSection, { fadeInUp, slideFromLeftBounce } from "@/animation/AnimatedSection";
 
-export default function HelpSection({ locale, t }: { locale: string; t: (key: string) => string }) {
-  const isArabic = locale === "ar";
 
+export default function HelpSection() {
   return (
     <section
-      dir={isArabic ? "rtl" : "ltr"}
       className="bg-[#1A1A1A] my-5 py-20"
     >
       <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center px-2 md:px-16 gap-10">
@@ -19,7 +18,7 @@ export default function HelpSection({ locale, t }: { locale: string; t: (key: st
         >
           <Image
             src="/assets/images/chatRobot.png"
-            alt={t("HelpSection.chatRobotAlt") || "Chat Robot"}
+            alt={ "Chat Robot"}
             width={497}
             height={773}
             className="w-[100%] md:w-[420px] lg:w-[497px] h-auto"

@@ -1,25 +1,18 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import HttpBackend from "i18next-http-backend";
-import { getOptions } from "./config";
+import arTranslation from "@/locales/ar/translation.json";
+import enTranslation from "@/locales/en/translation.json";
 
-if (!i18n.isInitialized) {
-  i18n
-    .use(HttpBackend)
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-      ...getOptions(),
-      debug: true, 
-      detection: {
-        order: ["cookie", "htmlTag"],
-        caches: ["cookie"],
-      },
-      backend: {
-        loadPath: "/locales/{{lng}}/{{ns}}.json",
-      },
-    });
-}
+i18n
+  .use(initReactI18next)
+  .init({
+    resources: {
+      ar: { translation: arTranslation },
+      en: { translation: enTranslation },
+    },
+    lng: "en",
+    fallbackLng: "en",
+    interpolation: { escapeValue: false },
+  });
 
 export default i18n;
