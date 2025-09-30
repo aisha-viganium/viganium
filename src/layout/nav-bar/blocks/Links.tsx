@@ -3,36 +3,41 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import "@/i18n/client";
+import { useTranslation } from "react-i18next";
 import ArrowUpBlack from "@/assets/SVG/ArrowUpBlack";
 import SnapNav from "@/assets/SVG/social/SnapNav";
 import FaceNav from "@/assets/SVG/social/FaceNav";
 import LinkedinNav from "@/assets/SVG/social/LinkedinNav";
 import InstaNav from "@/assets/SVG/social/InstaNav";
 import { motion, AnimatePresence } from "framer-motion";
+
 export default function SidebarNavbar() {
+  const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
   const [activeBall, setActiveBall] = useState<number | null>(null);
 
   const navLinks = [
-    { href: "/", label: "الرئيسية" },
-    { href: "/services", label: "الخدمات" },
-    { href: "/team-work", label: "البيئة و فريق العمل" },
-    { href: "/blogs", label: "المدونات" },
-    { href: "/contact-us", label: "التواصل معنا" },
+    { href: "/", label: t("NavbarSection.Navbar.home") },
+    { href: "/services", label: t("NavbarSection.Navbar.services") },
+    { href: "/team-work", label: t("NavbarSection.Navbar.teamWork") },
+    { href: "/blogs", label: t("NavbarSection.Navbar.blogs") },
+    { href: "/contact-us", label: t("NavbarSection.Navbar.contact") },
   ];
+
   const slideVariants = {
     initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1 },
     exit: { y: -100, opacity: 0 },
   };
+
   const sliderItems = [
-    { label: "الغزال - لتأجير السيارات", image: "/assets/images/rental.jpg" },
-    { label: "رينتال جيت - لتأجير السايرات", image: "/assets/images/website.jpg" },
-    { label: "المقام - لتأجير السيارات", image: "/assets/images/rental.jpg" },
-    { label: "بلد الوليد -للموقاولات العقارية", image: "/assets/images/website.jpg" },
-    { label: "كلين تكنيك - لخدمات النظافة", image: "/assets/images/rental.jpg" },
+    { label: t("NavbarSection.Projects.item1"), image: "/assets/images/rental.jpg" },
+    { label: t("NavbarSection.Projects.item2"), image: "/assets/images/website.jpg" },
+    { label: t("NavbarSection.Projects.item3"), image: "/assets/images/rental.jpg" },
+    { label: t("NavbarSection.Projects.item4"), image: "/assets/images/website.jpg" },
+    { label: t("NavbarSection.Projects.item5"), image: "/assets/images/rental.jpg" },
   ];
 
   const socialLinks = [
@@ -41,6 +46,7 @@ export default function SidebarNavbar() {
     { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <FaceNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> },
     { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <LinkedinNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> }
   ];
+
   const ballShapes = {
     normal: (
       <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,6 +64,7 @@ export default function SidebarNavbar() {
       </svg>
     )
   };
+
   const handleMouseEnter = (index: number) => {
     setActiveBall(index);
   };
@@ -157,7 +164,7 @@ export default function SidebarNavbar() {
             <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[359px]">
               <div className=" lg:w-1/3">
                 <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
-                  <span> سابقة الأعمال</span>
+                  <span>  {t("NavbarSection.Projects.title")} </span>
                   <ArrowUpBlack className="w-[12px] md:w-[28px] mt-0 md:mt-[10px] rotate-245 transition-transform duration-300  group-hover:rotate-[215deg] fill-[#1A1A1A] group-hover:fill-primary" />
                 </h3>
                 <div className="flex flex-col items-center gap-5 mt-5 md:mt-10 ">
@@ -215,7 +222,7 @@ export default function SidebarNavbar() {
                   <ArrowUpBlack
                     className="w-[12px] md:w-[28px] h-auto transition-transform duration-300 group-hover:text-primary group-hover:rotate-[35deg] fill-[#1A1A1A] group-hover:fill-primary"
                   />
-                  <span>التواصل معنا</span>
+                  <span> {t("NavbarSection.Contact.title")}</span>
                 </h3>
 
                 <a

@@ -3,25 +3,19 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-type Review = {
-    id: number;
-    title: string;
-    description: string;
-    image: string;
-};
+import { useTranslation } from "react-i18next";
 
-export default function CardSlider({
-    cards,
-    locale,
-}: {
-    cards: Review[];
-    locale: string;
-}) {
+export default function CardSlider() {
     const [index, setIndex] = useState(0);
     const [direction, setDirection] = useState<"next" | "prev">("next");
-    const isArabic = locale === "ar";
-
-
+    const { t, i18n } = useTranslation();
+    const isArabic = i18n.language === "ar";
+    const cards = t("howWork.cards", { returnObjects: true }) as {
+        id: number;
+        title: string;
+        description: string;
+        image: string;
+    }[];
 
     const nextCard = () => {
         if (index < cards.length - 1) {
@@ -58,7 +52,7 @@ export default function CardSlider({
                         }`}
                 >
                     <Image
-                        src={isArabic ? "/assets/icons/left-arrow.svg" : "/assets/icons/right-arrow.svg"}
+                        src={isArabic ?  "/assets/icons/left-arrow.svg" : "/assets/icons/right-arrow.svg"}
                         alt="arrow"
                         width={20}
                         height={20}

@@ -5,44 +5,7 @@ import WorkSlider from "./WorkSlider";
 
 export default function HowWork({ locale, t }: { locale: string; t: (key: string) => string }) {
   const isArabic = locale === "ar";
-  const cards =  [
-      {
-        "id": 1,
-        "title": "الإستماع",
-        "description": "نستمع باهتمام لفهم احتياجات عملائنا قبل أي خطوة.",
-        "image": "/assets/images/work/hear.png"
-      },
-      {
-        "id": 2,
-        "title": "البحث",
-        "description": "نقوم بالبحث والتحليل لاكتشاف أفضل الحلول الممكنة.",
-        "image": "/assets/images/work/search.png"
-      },
-      {
-        "id": 3,
-        "title": "التحليل",
-        "description": "نحلل البيانات والمعطيات للوصول إلى قرارات دقيقة.",
-        "image": "/assets/images/work/analysing.png"
-      },
-      {
-        "id": 4,
-        "title": "المناقشة",
-        "description": "نشارك الأفكار ونتبادل وجهات النظر مع فريقنا وعملائنا.",
-        "image": "/assets/images/work/discussion.png"
-      },
-      {
-        "id": 5,
-        "title": "التنفيذ",
-        "description": "نحوّل الخطط إلى واقع عملي بخطوات مدروسة.",
-        "image": "/assets/images/work/working.png"
-      },
-      {
-        "id": 6,
-        "title": "الإختبار",
-        "description": "نختبر النتائج لضمان الجودة وتحقيق النجاح.",
-        "image": "/assets/images/work/test.png"
-      }
-    ]
+
   return (
     <section
       dir={isArabic ? "rtl" : "ltr"}
@@ -54,8 +17,9 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
           className={`lg:col-span-1 flex flex-col px-2 md:px-0`}
         >
           <div
-            className={`${isArabic ? "border-r-[13px] md:border-r-[20px] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] pl-2 md:pl-4"
-              } border-[#F9C751] min-h-[33px] flex items-center`}
+            className={`${
+              isArabic ? "border-r-[13px] md:border-r-[20px] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] pl-2 md:pl-4"
+            } border-[#F9C751] min-h-[33px] flex items-center`}
           >
             <p
               className={`
@@ -107,7 +71,7 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
           delay={0.2}
           className="lg:col-span-1"
         >
-          <WorkSlider locale={locale} cards={cards} />
+          <WorkSlider />
         </AnimatedSection>
       </div>
     </section>

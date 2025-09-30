@@ -59,7 +59,7 @@
       }
     ]
   },
-   "Services": {
+  "Services": {
     "title": "Services",
     "solutionTitle": "Software Solutions",
     "solutionDescription": "As a leading app development company in Saudi Arabia, we understand the needs of the local market and deliver flexible, customized software solutions that enhance workflows and enable efficient digital transformation. At Viganium, we believe that strong systems are built with precision to achieve specific goals.",
@@ -73,9 +73,9 @@
     "review1": "Lorem Ipsum text is more than just filler; it is a tool for designers to shape their ideas and visualize the final product. By providing a neutral base, designers can experiment with different layouts while maintaining focus on typography, spacing, and alignment.",
     "review2": "This is an alternative English text for the second review, showing how placeholder content can be used in apps and websites to illustrate customer feedback.",
     "review3": "English text for the third review, focusing on how to display reviews and ratings in an organized and visually appealing way.",
-    "time1":"1 year ago",
-    "time2":"6 months ago", 
-    "time3":"3 months ago"
+    "time1": "1 year ago",
+    "time2": "6 months ago",
+    "time3": "3 months ago"
   },
   "HelpSection": {
     "chatRobotAlt": "Chat Robot"
@@ -98,5 +98,33 @@
     "introText": "Welcome to the AI-powered chat",
     "helpTitle": "How can I help you?",
     "askQuestion": "Ask me any question you want"
+  },
+  "Footer": {
+    "contactTitle": "We’d love to hear about your goals",
+    "contactDescription": "An impression of the final content look...",
+    "socialTitle": "Social Media Pages",
+    "socialDescription": "Follow us on social media...",
+    "partnersTitle": "Our Partners",
+    "partnersDescription": "We are proud of our partnerships with global companies."
+  },
+  "NavbarSection": {
+    "Navbar": {
+      "home": "Home",
+      "services": "Services",
+      "teamWork": "Team & Work",
+      "blogs": "Blogs",
+      "contact": "Contact Us"
+    },
+    "Projects": {
+      "title": "Our Projects",
+      "item1": "Al Ghazal - Car Rental",
+      "item2": "Rental Gate - Car Rental",
+      "item3": "Al Maqam - Car Rental",
+      "item4": "Balad Al-Waleed - Real Estate Contracting",
+      "item5": "Clean Technique - Cleaning Services"
+    },
+    "Contact": {
+      "title": "Contact Us"
+    }
   }
 }

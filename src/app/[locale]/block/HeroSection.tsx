@@ -28,7 +28,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             max-w-[50%] md:max-w-unset md:min-w-[342px] 
                             h-[27px] md:min-h-[50px] 
                             text-center 
-                            font-bold text-[10px] md:text-[26.07px] 
+                            font-bold text-[10px] md:text-[16.07px] 2xl:text-[24px]
                             leading-[100%] md:leading-[32px] 
                             text-[#BD171D] 
                             bg-[#F8E8E8] 
@@ -99,7 +99,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             width={1710}
                             height={150}
                             className={`absolute w-[38%] max-w-[1710px] h-auto 
-                                ${isArabic ? "left-[105px]" : "right-[-105px]"} 
+                                ${isArabic ? "left-[105px]" : "right-[15px]"} 
                                 top-[37px] slide-up`}
                             priority
                         />
