@@ -12,20 +12,19 @@ import InstaNav from "@/assets/SVG/social/InstaNav";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function SidebarNavbar() {
-  const { t } = useTranslation();
-
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
   const [isOpen, setIsOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
   const [activeBall, setActiveBall] = useState<number | null>(null);
-
+  const currentLocale = i18n.language;
   const navLinks = [
-    { href: "/", label: t("NavbarSection.Navbar.home") },
-    { href: "/services", label: t("NavbarSection.Navbar.services") },
-    { href: "/team-work", label: t("NavbarSection.Navbar.teamWork") },
-    { href: "/blogs", label: t("NavbarSection.Navbar.blogs") },
-    { href: "/contact-us", label: t("NavbarSection.Navbar.contact") },
-  ];
-
+    { href: `/${currentLocale}`, label: t("NavbarSection.Navbar.home") },
+    { href: `/${currentLocale}/services`, label: t("NavbarSection.Navbar.services") },
+    { href: `/${currentLocale}/team-work`, label: t("NavbarSection.Navbar.teamWork") },
+    { href: `/${currentLocale}/blogs`, label: t("NavbarSection.Navbar.blogs") },
+    { href: `/${currentLocale}/contact-us`, label: t("NavbarSection.Navbar.contact") },
+  ]
   const slideVariants = {
     initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1 },
@@ -112,13 +111,14 @@ export default function SidebarNavbar() {
         <div className="flex flex-col md:flex-row h-auto md:h-[calc(100%-80px)]">
           <div className="w-full md:w-1/3 px-6 md:pr-2 2xl:pr-16 flex flex-col py-8 space-y-2 gap-2 2xl:gap-10">
             {navLinks.map((link, index) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
+                locale={i18n.language}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 onClick={() => setIsOpen(false)}
-                className="group text-secondry hover:text-primary relative flex items-center transition-all duration-800 hover:translate-x-2 overflow-hidden h-auto md:h-[100px]"
+                className={`group text-secondry hover:text-primary relative flex items-center transition-all duration-800 hover:translate-x-2 overflow-hidden h-auto md:h-[100px]`}
               >
                 <div className="hidden lg:flex w-8 h-10 items-center justify-center">
                   <div className={`relative transition-all duration-800 translate-y-[-100px] ${activeBall === index ? 'animate-bounce-ball' : ''
@@ -140,7 +140,7 @@ export default function SidebarNavbar() {
                   </div>
                 </div>
 
-                <span className="not-italic 
+                <span className={`
                                 font-semibold 
                                 text-[18px]
                                 md:text-[40px]  
@@ -150,12 +150,10 @@ export default function SidebarNavbar() {
                                 text-center 
                                 capitalize 
                                  hover:text-primary
-                                flex-none 
-                                order-0 
-                                grow-0 transition-colors duration-300 mr-10">
+                                transition-colors duration-300 ${isArabic ? "mr-10" : "ml-5"} `}>
                   {link.label}
                 </span>
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -203,8 +201,8 @@ export default function SidebarNavbar() {
               </div>
             </div>
 
-            <div className="p-4 flex flex-col md:flex-row gap-6 justify-center align-center"> 
-              <Link href="/contact-us" className="flex-1"                 onClick={() => setIsOpen(false)}>
+            <div className="p-4 flex flex-col md:flex-row gap-6 justify-center align-center">
+              <Link href={`/${currentLocale}/contact-us`} className="flex-1" onClick={() => setIsOpen(false)}>
                 <div className="relative group w-full h-[250px] md:max-h-[305px] 2xl:h-[375px] rounded-lg overflow-hidden cursor-pointer">
                   <Image
                     src={`/assets/images/contact-us-nav.png`}

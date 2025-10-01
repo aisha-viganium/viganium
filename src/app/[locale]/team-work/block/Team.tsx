@@ -8,130 +8,15 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { useState } from "react";
 import AnimatedSection, { deckShuffle } from "@/animation/AnimatedSection";
+import { useTranslation } from "react-i18next";
+import members from "@/data/teamData";
 
 export default function Team() {
     const [activeIndex, setActiveIndex] = useState(0);
+    const { t, i18n } = useTranslation();
+    const isArabic = i18n.language === "ar";
+    const membersData = members[isArabic ? "ar" : "en"];
 
-    const slides = [
-        {
-            id: 1,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-        {
-            id: 2,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-        {
-            id: 3,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-        {
-            id: 4,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-        {
-            id: 5,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-        {
-            id: 6,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-
-        {
-            id: 7,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-
-        {
-            id: 8,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-
-        {
-            id: 9,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-        {
-            id: 10,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-        {
-            id: 11,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-
-        {
-            id:12,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-
-        {
-            id: 13,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        },
-
-        {
-            id: 14,
-            name: "م/الأسم ثلاثي الأسم",
-            image: "/assets/images/members/member.png",
-            nameImage: "/assets/images/members/member-name.svg",
-            job: "الوظيفة",
-            age: "T8 سنوات",
-        }
-    ];
 
     return (
         <section className="py-5 md:py-16 px-2 md:px-16 bg-[#F8F8F8]">
@@ -141,14 +26,14 @@ export default function Team() {
             >
                 <div className="mx-auto">
 
-                    <div className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center">
+                    <div className={`${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}  min-h-[33px] flex items-center`}>
                         <p className=" max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                         leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
                         font-bold 
                         text-secondry">
-                            فريق العمل
+                            {t("TeamWorkPage.our_team")}
                         </p>
                     </div>
                     <div className="relative w-full mt-5">
@@ -172,7 +57,7 @@ export default function Team() {
                             }}
                             breakpoints={{
                                 0: {
-                                    slidesPerView:3,
+                                    slidesPerView: 3,
                                     centeredSlides: true,
                                     spaceBetween: 2,
                                 },
@@ -188,8 +73,8 @@ export default function Team() {
                             }}
                             className="w-full !pt-5 !pb-15 md:!py-20 my-5"
                         >
-                            {slides.map((slide, idx) => (
-                                <SwiperSlide key={slide.id}>
+                            {membersData.map((member, idx) => (
+                                <SwiperSlide key={member.id}>
                                     <div
                                         className={`bg-[#EBEBEB] border border-white rounded-[16.2px] flex flex-col items-center text-center transition-all duration-500
                                             ${activeIndex === idx ? "scale-110 shadow-lg z-10" : "scale-90"}
@@ -197,8 +82,8 @@ export default function Team() {
                                     >
                                         <div className="relative w-full  min-h-[160px] md:min-h-[226px] 2xl:min-h-[356px]">
                                             <Image
-                                                src={slide.nameImage}
-                                                alt={slide.name}
+                                                src={member.nameImage}
+                                                alt={member.name}
                                                 width={200}
                                                 height={200}
                                                 className="absolute h-[308.2px] left-0 -translate-x-[1.64px] top-[-108.14px] md:top-[-18.14px] w-[110%] max-w-[unset]"
@@ -212,10 +97,10 @@ export default function Team() {
                                             />
                                         </div>
                                         <h3 className="font-bold text-[8px]  md:text-[18px] leading-[14px] text-[#110000]">
-                                            {slide.name}
+                                            {member.name}
                                         </h3>
                                         <p className="font-medium text-[6px] md:text-[16px] leading-[13px] text-[#110000] my-2 md:my-3">
-                                            {slide.job} . {slide.age}
+                                            {member.job} . {member.age}
                                         </p>
                                     </div>
                                 </SwiperSlide>
@@ -224,7 +109,7 @@ export default function Team() {
 
 
                         {/* Navigation */}
-                        <div className="flex items-center justify-around gap-4 mt-[-50px] relative mb-6 z-40">
+                        <div className={`${isArabic ? "" : "flex-row-reverse"} flex items-center justify-around gap-4 mt-[-50px] relative mb-6 z-40`}>
 
 
                             <button className="cursor-pointer custom-next flex justify-center items-center w-[54px] h-[42px] bg-white  border-[#EEEEEE] border-4 shadow-[0_0_11.3px_rgba(1,17,59,0.05)] rounded-[11px] p-[3px]">

@@ -1,6 +1,10 @@
 {
   "common": {
-    "lets_talk": "lets talk"
+    "lets_talk": "lets talk",
+    "WeHear": {
+      "subtitle": "We Hear You",
+      "title": "It simply means placeholder text, used to focus on layout rather than content."
+    }
   },
   "HomePage": {
     "bestCompany": "The Best Marketing Company in the Middle East",
@@ -125,6 +129,102 @@
     },
     "Contact": {
       "title": "Contact Us"
+    }
+  },
+  "ServicesPage": {
+    "HeroSection": {
+      "title": "And simply dummy text (meaning that the ",
+      "description": "It is simply dummy text (meaning that the goal is the form and not the content) and is used as a placeholder. It is simply dummy text (meaning that the goal is the form and not the content) and is used as a placeholder.",
+      "contact_us": "Contact Us"
+    },
+    "ServicesSection": {
+      "title": "Services"
+    }
+  },
+  "ContactUsPage": {
+    "HeroSection": {
+      "title": "Simply dummy text (meaning the purpose is",
+      "highlight": "Meaning",
+      "description": "It is simply dummy text (meaning the purpose is the form, not the content) and it is used as a placeholder. It is simply dummy text (meaning the purpose is the form, not the content) and it is used as a placeholder."
+    },
+    "QuestionsSection": {
+      "Questions": {
+        "title": "Stay Updated With Our News",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text since the 15th century when an unknown printer took a galley of type.",
+        "emailLabel": "Your Email",
+        "emailPlaceholder": "Enter your email",
+        "popupTitle": "Thank You For Contacting Us",
+        "popupParagraph": "It has been used since the 1960s. The text is nonsensical and carries no specific meaning, allowing designers to focus purely on layout."
+      },
+      "Buttons": {
+        "submit": "Send"
+      },
+      "Status": {
+        "success": "Submitted successfully",
+        "error": "An error occurred, please try again later"
+      }
+    }
+  },
+  "TeamWorkPage": {
+    "HeroSection": {
+      "title": "Simply dummy text (meaning the purpose is",
+      "highlight": "Meaning",
+      "description": "It is simply dummy text (meaning the purpose is the form, not the content) and it is used as a placeholder. It is simply dummy text (meaning the purpose is the form, not the content) and it is used as a placeholder."
+    },
+    "OurTeamSection": {
+      "subtitle": "Our Team",
+      "title": "Welcome to the Greatest Team in the Arab World",
+      "description": "It is simply dummy text (meaning the goal is the form, not the content) and has been used in It is simply dummy text (meaning the goal is the form, not the content) and has been used in",
+      "items": [
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum",
+        "Lorem Ipsum"
+      ],
+      "centerTitle": "Commitment and Responsibility"
+    },
+    "our_team": "Our Team"
+  },
+  "BlogsPage": {
+    "HeroSection": {
+      "title": "And simply dummy text (meaning the purpose is",
+      "highlight": "with us",
+      "description": "It is simply dummy text (meaning the purpose is form and not content) and is used in It is simply dummy text (meaning the purpose is form and not content) and is used in"
+    },
+    "BlogsSection": {
+      "title": "Articles"
+    }
+  },
+  "ServiceDetailPage": {
+    "Advantages": {
+      "title": "Service Advantages",
+      "subTitle": "We have amazing technological features",
+      "highlight": "We Have",
+      "descriptionTitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "cardTitle": "Lorem Ipsum",
+      "cardDescription": "It is simply dummy text (the purpose is the form, not the content)"
+    },
+    "Tools": {
+      "title": "Tools"
+    },
+    "Questions": {
+      "title": "Frequently Asked Questions"
+    },
+    "AddQuestion": {
+      "label": "What question would you like to ask?",
+      "placeholder": "Write your question here",
+      "successTitle": "Thank you for your question",
+      "successParagraph": "It has been used since the 1960s. The text is meaningless and conveys no specific message, allowing designers freedom.",
+      "errorMessage": "An error occurred while submitting your question",
+      "successMessage": "Your question was submitted successfully"
+    }
+  },
+  "BlogDetailPage": {
+    "title": "Articles",
+    "BlogsSection": {
+      "title": "Blog Title Blog Title",
+      "description": "It is simply dummy text (meaning that the purpose is form, not content) and has been used as placeholder text. It is simply dummy text (meaning that the purpose is form, not content) and has been used as placeholder text."
     }
   }
 }

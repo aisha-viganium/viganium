@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useSearchParams } from "next/navigation";
+import { useTranslation } from "react-i18next";
 
 interface TopFilterProps {
   onFilterChange: (filter: string) => void;
@@ -11,22 +12,23 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
   const searchParams = useSearchParams();
   const filterFromUrl = searchParams.get("filter") || "AllServices";
   const [activeFilter, setActiveFilter] = React.useState<string>(filterFromUrl);
-
+  const { i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
   React.useEffect(() => {
     setActiveFilter(filterFromUrl);
     onFilterChange(filterFromUrl);
   }, [filterFromUrl]);
 
   const navLinks = [
-    { label: "كل الخدمات", value: "AllServices" },
-    { label: "التسويق الإلكتروني", value: "DigitalMarketing" },
-    { label: "تطوير مواقع", value: "WebDevelopment" },
-    { label: "تطوير الموبايل", value: "MobileDevelopment" },
+    { label_ar: "كل الخدمات", label_en: "All Services", value: "AllServices" },
+    { label_ar: "التسويق الإلكتروني", label_en: "Digital Marketing", value: "DigitalMarketing" },
+    { label_ar: "تطوير مواقع", label_en: "Web Development", value: "WebDevelopment" },
+    { label_ar: "تطوير الموبايل", label_en: "Mobile Development", value: "MobileDevelopment" }
   ];
 
   const handleClick = (value: string) => {
     setActiveFilter(value);
-    onFilterChange(value); 
+    onFilterChange(value);
   };
 
   return (
@@ -42,7 +44,7 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
             relative text-[#FDFFFC] px-2 p-[16px] cursor-pointer
           `}
         >
-          {link.label}
+          {isArabic ? link.label_ar : link.label_en}
           {activeFilter === link.value && (
             <div className="absolute left-0 bottom-0 w-full h-[4px] bg-[#BD171D] rounded-sm"></div>
           )}

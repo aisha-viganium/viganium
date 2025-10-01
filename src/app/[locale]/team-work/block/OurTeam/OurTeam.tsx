@@ -2,7 +2,9 @@ import Image from "next/image";
 import CardsDiv from "./CardsDiv";
 import AnimatedSection, { slideFromRightBounce, slideFromLeftBounce, slideFromTopBounce } from "@/animation/AnimatedSection";
 
-export default function OurTeam() {
+export default function OurTeam({ locale, t }: { locale: string; t: (key: string) => string }) {
+  const isArabic = locale === "ar";
+
   return (
     <section className="py-5 md:py-16 px-2 md:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center mt-0 md:mt-20">
@@ -12,7 +14,7 @@ export default function OurTeam() {
         >
           <div>
             <span className="font-semibold text-[14px] leading-[20px] md:text-[24px] md:leading-[34px] text-right text-[#F9C751] flex items-center gap-2">
-              <span>فريق عملنا</span>
+              <span> {t("TeamWorkPage.OurTeamSection.subtitle")}</span>
               <Image
                 src="/assets/icons/arrow-yellow.svg"
                 alt="line"
@@ -22,13 +24,12 @@ export default function OurTeam() {
               />
             </span>
 
-            <h3 className="font-bold text-[20px] md:text-[36px] lg:text-[48px] leading-[29px] md:leading-[46px] lg:leading-[69px] text-right text-secondry mt-3">
-              اهلا بك مع اعظم فريق عمل في الوطن العربي
+            <h3 className={`${isArabic ? "text-right" : "text-left"} font-bold text-[20px] md:text-[36px] lg:text-[48px] leading-[29px] md:leading-[46px] lg:leading-[69px]  text-secondry mt-3`}>
+              {t("TeamWorkPage.OurTeamSection.title")}
             </h3>
 
-            <p className="font-normal text-[14px] leading-[20px] md:font-semibold md:text-[18px] md:leading-[28px] lg:text-[24px] lg:leading-[34px] text-right text-secondry my-5">
-              هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
-              هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
+            <p className={`${isArabic ? "text-right" : "text-left"} font-normal text-[14px] leading-[20px] md:font-semibold md:text-[18px] md:leading-[28px] lg:text-[24px] lg:leading-[34px] text-secondry my-5`}>
+              {t("TeamWorkPage.OurTeamSection.description")}
             </p>
           </div>
 
@@ -56,7 +57,7 @@ export default function OurTeam() {
                   />
 
                   <h5 className="font-semibold w-fit text-[14px] md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-secondry-200 pb-1 my-3">
-                    لوريم ابسيوم
+                    {t("TeamWorkPage.OurTeamSection.items." + (i))}
                   </h5>
 
 
@@ -71,7 +72,7 @@ export default function OurTeam() {
           className="col-span-1 mt-10 lg:mt-0"
           variants={slideFromLeftBounce}
         >
-          <CardsDiv />
+          <CardsDiv locale={locale} t={t} />
         </AnimatedSection>
       </div>
     </section>

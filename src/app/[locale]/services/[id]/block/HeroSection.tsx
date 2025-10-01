@@ -8,7 +8,9 @@ export interface Service {
   tags: string[];
   description: string;
 }
-export default function HeroSection({ service }: { service: Service }) {
+export default function HeroSection({ service, locale, t }: { service: Service; locale: string; t: (key: string) => string }) {
+    const isArabic = locale === "ar";
+
   return (
     <>
       <section className="lg:hidden relative bg-[url('/assets/images/service-detail-cover.png')] bg-cover bg-center overflow-hidden  h-[50vh] md:min-h-screen">
@@ -19,29 +21,30 @@ export default function HeroSection({ service }: { service: Service }) {
             <AnimatedSection variants={slideFromRightBounce} className="text-right w-full">
 
               <h1
-                className="
+                className={`
                         mt-[30px] lg:mt-[50px] 
                         max-w-[1039.36px] 
                         font-bold 
-                        text-right 
+                        ${isArabic ? "text-right" : "text-left"} 
                         text-[14px] leading-[20px]
                         md:text-5xl md:leading-[60px] 
                         lg:text-[70.63px] lg:leading-[101px]
                         text-[#FDFFFC]
-                      ">
-                 {service.name}
+                      `}>
+                {service.name}
               </h1>
               <p
-                className="
+                className={`
                         max-w-[763.7px] 
-                        text-right 
+                        ${isArabic ? "text-right" : "text-left"} 
                         text-[#FDFFFC] 
                         font-normal text-[12px] leading-[17px] my-6 
                         md:my-[40px] md:text-xl md:leading-7 md:font-semibold
                         lg:my-[65px] lg:text-[24px] lg:leading-[38px]
-                      "
+                      `}
               >
-                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في  هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في               </p>
+                {service.description}
+              </p>
             </AnimatedSection>
 
             <AnimatedSection variants={slideFromLeftBounce} className="relative w-full h-96 flex justify-end mt-8">
@@ -93,11 +96,11 @@ export default function HeroSection({ service }: { service: Service }) {
           <div className="grid grid-cols-2 items-center justify-around mx-auto min-h-[948px] overflow-hidden h-full">
             <AnimatedSection variants={slideFromRightBounce} className="col-span-1 h-full flex flex-col justify-center items-start text-white text-right pr-2">
 
-              <h1 className="mt-[50px] max-w-[1039.36px] font-bold text-[70.6311px] leading-[101px] text-right text-[#FDFFFC] flex-none order-0 self-stretch grow-0">
-                 {service.name}
+              <h1 className={`${isArabic ? "text-right" : "text-left"} mt-[50px] max-w-[1039.36px] font-bold text-[70.6311px] leading-[101px] text-[#FDFFFC]`}>
+                {service.name}
               </h1>
-              <p className="max-w-[563.7px] 2xl:max-w-[763.7px] my-[65px] font-semibold text-[26.4867px] leading-[38px] text-right text-[#FDFFFC]">
-                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
+              <p className={`${isArabic ? "text-right" : "text-left"} max-w-[563.7px] 2xl:max-w-[763.7px] my-[65px] font-semibold text-[26.4867px] leading-[38px] text-[#FDFFFC]`}>
+                {service.description}
               </p>
             </AnimatedSection>
             <AnimatedSection variants={slideFromLeftBounce} className="col-span-1 w-full h-full relative mt-20">

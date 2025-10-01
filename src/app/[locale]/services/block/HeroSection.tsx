@@ -3,7 +3,8 @@ import Link from "next/link";
 import React from "react";
 import AnimatedSection, { fadeInRight } from "@/animation/AnimatedSection";
 
-export default function HeroSection() {
+export default function HeroSection({ locale, t }: { locale: string; t: (key: string) => string }) {
+  const isArabic = locale === "ar";
   return (
     <section className="relative bg-[url('/assets/images/services-cover.jpg')] h-[50vh] md:h-auto bg-cover bg-center overflow-hidden">
       <div className="absolute inset-0 bg-black/60"></div>
@@ -17,29 +18,31 @@ export default function HeroSection() {
             className="col-span-1 flex flex-col justify-center items-start text-right order-1 lg:order-1"
           >
             <h1
-              className="
+              className={`
                         mt-[30px] lg:mt-[50px] 
                         max-w-[1039.36px] 
                         font-bold 
-                        text-right 
+                        ${isArabic ? "text-right" : "text-left"}
                         text-[14px] leading-[20px]
                         md:text-5xl md:leading-[60px] 
                         lg:text-[70.63px] lg:leading-[101px]
                         text-[#FDFFFC]
-                      "
-            >              تطوير و نجاح فكرتك , حرفتنا
+              `}
+            >
+              {t("ServicesPage.HeroSection.title")}
             </h1>
 
             <p
-              className="
+              className={`
                         max-w-[763.7px] 
-                        text-right 
+                        ${isArabic ? "text-right" : "text-left"}
                         text-[#FDFFFC] 
                         font-normal text-[12px] leading-[17px] my-6 
                         md:my-[40px] md:text-xl md:leading-7 md:font-semibold
                         lg:my-[65px] lg:text-[24px] lg:leading-[38px]
-                      "
-            >              إحنا مش بس بنصلّح، ونصمّم، ونهتم بالمواقع؛ إحنا بنبني شراكات عشان نضمن إن تواجدك على الإنترنت يشتغل بنفس قوة شغلك.
+                      `}
+            >
+              {t("ServicesPage.HeroSection.description")}
             </p>
 
             <Link href="/contact-us" className="w-full md:w-auto">
@@ -58,16 +61,20 @@ export default function HeroSection() {
                               font-bold text-[10px] leading-[14px] text-center text-secondry
                               md:text-lg md:leading-[26px]
                               lg:text-[20px] lg:leading-[29px]
+                              
                             "
                 >
-                  تواصل معنا
+                  {t("ServicesPage.HeroSection.contact_us")}
+
+
                 </span>
                 <Image
                   src="/assets/icons/arrow-black.svg"
                   alt="Hero"
                   width={24}
                   height={24}
-                  className="ms-[6px] w-[10px] h-[10px] md:w-[24px] md:h-[24px]"
+                  className={`ms-[6px] w-[10px] h-[10px] md:w-[24px] md:h-[24px]  ${isArabic ? "" : "rotate-y-180"}
+`}
                 />
               </button>
 

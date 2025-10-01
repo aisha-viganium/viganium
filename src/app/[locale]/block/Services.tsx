@@ -66,7 +66,7 @@ export default function Services({
           >
             <Link
               href={{
-                pathname: "/services",
+                pathname: `${locale}/services`,
                 query: { filter: service.tag },
               }}
             >

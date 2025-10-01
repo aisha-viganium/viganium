@@ -15,7 +15,7 @@ export interface Services {
   description: string;
 }
 
-export default function ServicesFilter({ services }: { services: Services[] }) {
+export default function ServicesFilter({ services,locale }: {services: Services[]; locale: string; } ) {
   const searchParams = useSearchParams();
   const filterFromUrl = searchParams.get("filter") || "AllServices";
   const [selectedFilter, setSelectedFilter] = React.useState<string>(filterFromUrl);
@@ -51,7 +51,7 @@ export default function ServicesFilter({ services }: { services: Services[] }) {
               variants={slideFromTopBounce}
               custom={custom + row * 3}
             >
-              <ServiceCard service={service} />
+              <ServiceCard service={service}  locale={locale}  />
             </AnimatedSection>
           );
         })}

@@ -1,7 +1,5 @@
-// i18n/config.ts
 
 export const defaultNS = "translation";
-// خلي اللغة الافتراضية English أو Arabic حسب ما تحبى
 export const fallbackLng = "en";  
 
 export const languages = ["en", "ar"];
@@ -27,7 +25,6 @@ export function getOptions(lng?: string, ns = "translation") {
   } as const;
 }
 
-// Next.js App Router passes params directly (not a Promise). Keep this simple and correct.
 export interface PageProps {
   params: { locale: string };
 }

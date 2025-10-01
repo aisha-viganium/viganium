@@ -4,13 +4,16 @@ import Links from "./blocks/Links";
 import NavBarActions from "./blocks/NavBarActions";
 import Logo from "../../assets/SVG/Logo";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
+  const { i18n } = useTranslation();
+  const currentLocale = i18n.language;
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // بعد 50px من النزول يبدأ يتغير
+      setScrolled(window.scrollY > 50); 
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -23,7 +26,7 @@ export default function NavBar() {
       }`}
     >
       <NavBarActions  />
-      <Link href="/">
+      <Link href={`/${currentLocale}`}>
         <Logo
           width={293}
           height={40}

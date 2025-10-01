@@ -5,6 +5,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
 import AnimatedSection, { deckShuffle, slideFromTopBounce } from "@/animation/AnimatedSection";
+import { useTranslation } from "react-i18next";
 
 const slides = [
     { id: 1, icon: "/assets/icons/html.svg", text: "HTML" },
@@ -16,17 +17,19 @@ const slides = [
 ];
 
 export default function Tools() {
+    const { t, i18n } = useTranslation();
+    const isArabic = i18n.language === "ar";
     return (
         <section className="py-12 md:py-16 px-2 md:px-16">
 
-            <AnimatedSection variants={slideFromTopBounce} className="border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 min-h-[33px] flex items-center px-2 md:px-16">
+            <AnimatedSection variants={slideFromTopBounce} className={`  ${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"} min-h-[33px] flex items-center px-2 md:px-16`}>
                 <p className=" max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                         leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
                         font-bold 
                         text-secondry">
-                    الأدوات المستخدمة
+                    {t("ServiceDetailPage.Tools.title")}
                 </p>
             </AnimatedSection>
             <AnimatedSection variants={deckShuffle} className="mt-8 md:mt-10">
@@ -38,15 +41,15 @@ export default function Tools() {
                     breakpoints={{
                         0: { slidesPerView: 1.2 },
                         640: { slidesPerView: 2 },
-                        1024: { slidesPerView:3},
-                        1440: { slidesPerView:4},
+                        1024: { slidesPerView: 3 },
+                        1440: { slidesPerView: 4 },
 
                     }}
                 >
                     {slides.map((slide) => (
                         <SwiperSlide key={slide.id}>
                             <div className="flex flex-row justify-between w-100 items-center px-4 md:px-6 py-4 gap-2 md:gap-2.5 max-w-full 2xl:max-w-[454px] h-[80px] md:h-[96px] bg-[#EFEFEF] rounded-[12px] md:rounded-[16px]">
-                                  <p className="font-aileron text-secondry font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] text-right flex-1">
+                                <p className={`font-aileron text-secondry font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] ${isArabic ? "text-right" : ""} flex-1`}>
                                     {slide.text}
                                 </p>
                                 <Image
@@ -56,7 +59,7 @@ export default function Tools() {
                                     height={40}
                                     className="w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[48px] lg:h-[48px]"
                                 />
-                            
+
                             </div>
                         </SwiperSlide>
                     ))}

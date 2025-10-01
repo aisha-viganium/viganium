@@ -2,14 +2,17 @@ import React from "react";
 import HeroSection from "./block/HeroSection";
 import HelpSection from "@/components/HelpSection";
 import Questions from "./block/Questions";
+import { getTranslation } from "@/i18n/server"; 
 
 
-export default async function Page() {
+export default async function Page({ params }: { params: { locale: string } }) {
+  const locale = params?.locale || "ar";
+  const t = getTranslation(locale);
   return(
     <>
-      <HeroSection />
+      <HeroSection locale={locale} t={t}/>
       <HelpSection />
-      <Questions />
+      <Questions locale={locale} t={t}/>
     </>
   );
 }
