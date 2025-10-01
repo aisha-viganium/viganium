@@ -24,7 +24,6 @@ export default function LanguageSwitcher() {
       <div  style={{
                     backgroundColor: "#FFF",
                     border: `2px solid #FFF`,
-
                     outline: `2px solid #FFF`,
 
                 }}
@@ -40,7 +39,7 @@ export default function LanguageSwitcher() {
             ">
         <button
           onClick={() => toggleLocale()}
-          className={` cursor-pointer w-[75px] h-[50px] flex items-center justify-center rounded-lg font-semibold text-[16px] ${
+          className={` cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
             currentLocale === "ar"
               ? "bg-[#BD171D] text-white"
               : "bg-transparent text-[#414141]"
@@ -50,7 +49,7 @@ export default function LanguageSwitcher() {
         </button>
         <button
           onClick={() => toggleLocale()}
-          className={`font-aileron cursor-pointer w-[75px] h-[50px] flex items-center justify-center rounded-lg font-semibold text-[16px] ${
+          className={`font-aileron cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
             currentLocale === "en"
               ? "bg-[#BD171D] text-white"
               : "bg-transparent text-[#414141]"
