@@ -68,7 +68,7 @@ export default function ReviewSlider({
                       alt="Play"
                       height={100}
                       width={100}
-                      className="md:w-[220px] md:h-[220px]"
+                      className="md:w-[220px] md:h-[220px] rotate-y-180"
                     />
                   </div>
                 </div>

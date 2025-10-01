@@ -17,7 +17,7 @@ export default function ReviewSection({
       review: t("ReviewSection.review1"),
       rating: 4,
       image: "/assets/images/person1.jpg",
-      video: "/assets/images/video.mp4",
+      video: "https://viganium.com/videos/1.mp4",
       time: t("ReviewSection.time1")
     },
     {
@@ -27,7 +27,7 @@ export default function ReviewSection({
       review: t("ReviewSection.review2"),
       rating: 4,
       image: "/assets/images/person1.jpg",
-      video: "/assets/images/video.mp4",
+      video: "https://viganium.com/videos/1.mp4",
       time: t("ReviewSection.time2")
 
     },
@@ -38,7 +38,7 @@ export default function ReviewSection({
       review: t("ReviewSection.review3"),
       rating: 4,
       image: "/assets/images/person1.jpg",
-      video: "/assets/images/video.mp4",
+      video: "https://viganium.com/videos/1.mp4",
       time: t("ReviewSection.time3")
 
     },
