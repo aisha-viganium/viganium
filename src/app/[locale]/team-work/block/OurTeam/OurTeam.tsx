@@ -16,7 +16,7 @@ export default function OurTeam({ locale, t }: { locale: string; t: (key: string
             <span className="font-semibold text-[14px] leading-[20px] md:text-[24px] md:leading-[34px] text-right text-[#F9C751] flex items-center gap-2">
               <span> {t("TeamWorkPage.OurTeamSection.subtitle")}</span>
               <Image
-                src="/assets/icons/arrow-yellow.svg"
+                src={isArabic?"/assets/icons/arrow-yellow.svg":"/assets/icons/arrow-yellow-en.svg"}
                 alt="line"
                 width={10}
                 height={10}

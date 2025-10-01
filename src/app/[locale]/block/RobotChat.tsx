@@ -15,7 +15,7 @@ export default function HeroSection() {
     return (
         <>
             <Image
-                src="/assets/icons/scroll-shape-container.svg"
+                src={isArabic?"/assets/icons/scroll-shape-container.svg":"/assets/icons/scroll-shape-container-en.svg"}
                 alt="Hero"
                 width={120}
                 height={120}

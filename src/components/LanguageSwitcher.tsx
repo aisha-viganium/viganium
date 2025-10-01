@@ -50,7 +50,7 @@ export default function LanguageSwitcher() {
         </button>
         <button
           onClick={() => toggleLocale()}
-          className={`cursor-pointer w-[75px] h-[50px] flex items-center justify-center rounded-lg font-semibold text-[16px] ${
+          className={`font-aileron cursor-pointer w-[75px] h-[50px] flex items-center justify-center rounded-lg font-semibold text-[16px] ${
             currentLocale === "en"
               ? "bg-[#BD171D] text-white"
               : "bg-transparent text-[#414141]"
