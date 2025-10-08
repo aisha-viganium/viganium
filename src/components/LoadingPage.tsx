@@ -16,15 +16,14 @@ export default function LoadingPage() {
     const filledBlocks = Math.floor((progress / 100) * totalBlocks);
     const sentences = {
         ar: [
-            "لوريم ابسيوم شكلك فاهم يا نصصه",
-            "لوريم ابسيوم شكلك فاهم يا نصصه",
-            "لوريم ابسيوم شكلك فاهم يا نصصه"
+            "نبني المستقبل",
+            "التقنية تفكّر",
+            "واجهة تليق بك"
         ],
         en: [
-            "Lorem Ipsum, you seem to get it, buddy",
-            "Lorem Ipsum, you seem to get it, buddy",
-            "Lorem Ipsum, you seem to get it, buddy",
-
+            "Building the Future",
+            "Technology Thinks",
+            "An Interface That Suits You"
         ]
     };
     const sentencesData = sentences[isArabic ? "ar" : "en"];
@@ -52,7 +51,7 @@ export default function LoadingPage() {
                 setCharIndex((prev) => prev - 1);
             } else if (!deleting && charIndex === currentSentence.length) {
                 setDeleting(true);
-                typingSpeed = 1500; // pause before deleting
+                typingSpeed = 1500;
             } else if (deleting && charIndex === 0) {
                 setDeleting(false);
                 setSentenceIndex((prev) => (prev + 1) % sentencesData.length);

@@ -36,7 +36,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                   text-[#FDFFFC]
                 `}
               >
-                {t("ContactUsPage.HeroSection.title")}{" "}
+                {t("BlogsPage.HeroSection.title")}{" "}
         
               </h1>
             </AnimatedSection>
@@ -52,7 +52,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                   2xl:my-[15px] lg:text-[24px] lg:leading-[38px]
                 `}
               >
-                {t("ContactUsPage.HeroSection.description")}
+                {t("BlogsPage.HeroSection.description")}
               </p>
             </AnimatedSection>
           </div>
