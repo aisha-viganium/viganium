@@ -28,9 +28,9 @@ export default function NavBar() {
       <NavBarActions  />
       <Link href={`/${currentLocale}`}>
         <Logo
-          width={293}
-          height={40}
-          className="w-[150px] md:w-[493.59px] h-auto"
+          width={374}
+          height={81}
+          className="w-[150px] md:w-[274px] 2xl:w-[374px] h-auto"
           fillColor={scrolled ? "#000000" : "#FDFFFC"} 
         />
       </Link>

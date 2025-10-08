@@ -9,7 +9,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
         <section
             className="relative bg-[url('/assets/images/cover.png')] bg-cover bg-center overflow-hidden"
         >
-            <div className="flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-3 items-center justify-around md:pr-15 mx-auto h-[50vh] md:min-h-[100vh] overflow-hidden px-2 md:px-8 py-8 pb-0 lg:py-0">
+            <div className="flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-3 items-center justify-around md:pr-12 mx-auto h-[50vh] md:min-h-[100vh] overflow-hidden px-2 md:px-0 py-8 pb-0 lg:py-0">
 
                 <AnimatedSection
                     variants={fadeInRight}
@@ -25,7 +25,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             py-[5px] md:py-[9px] 
                             gap-[6.26px] md:gap-[11.04px] 
                             w-full md:w-auto 
-                            max-w-[50%] md:max-w-unset md:min-w-[342px] 
+                            max-w-[50%] md:max-w-unset md:min-w-[342px] 2xl:w-[354px]
                             h-[27px] md:min-h-[50px] 
                             text-center 
                             font-bold text-[10px] md:text-[16.07px] 2xl:text-[24px]
@@ -33,7 +33,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             text-[#BD171D] 
                             bg-[#F8E8E8] 
                             border border-[#E4A0A2] 
-                            rounded-[17.5px] md:rounded-[30.90px] md:mb-2 2xl:mb-10
+                            rounded-[17.5px] md:rounded-[30.90px] md:mb-2 
                         "
                     >
                         {t("HomePage.bestCompany")}
@@ -46,7 +46,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             font-bold md:leading-[60px]
                             text-[14px] md:text-[45px] 2xl:text-[75px] 
                             leading-[20px]  lg:leading-[45px] xl:leading-[55px] 
-                            ${isArabic ? "text-right xl:leading-[55px] 2xl:mt-[45px]" : "text-left xl:leading-[75px] 2xl:mt-[5px]"} text-[#FDFFFC]
+                            ${isArabic ? "text-right xl:leading-[55px] 2xl:mt-[79px]" : "text-left xl:leading-[75px] 2xl:mt-[5px]"} text-[#FDFFFC]
                         `}
                     >
                         {t("HomePage.title")}
@@ -55,7 +55,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                     <p
                         className={`
                             max-w-[90%] 2xl:max-w-[763.7px] 
-                            mt-4 md:mt-4 2xl:mt-10
+                            mt-4 md:mt-4 2xl:mt-[35px]
                             !font-normal md:font-semibold 
                             text-[12px] md:text-[16px]  2xl:text-[24px] 
                             leading-[normal] md:leading-7 lg:leading-[38px] 

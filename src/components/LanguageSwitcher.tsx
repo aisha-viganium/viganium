@@ -29,8 +29,8 @@ export default function LanguageSwitcher() {
                 }}
                 className="
                 cursor-pointer flex flex-row justify-center items-center my-5
-                px-0 py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[10px] leading-[14px]
-                md:py-[17px] md:gap-[10px] md:w-[188px] md:h-[63px] 
+                px-[6.46px] py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[10px] leading-[14px]
+                md:py-[17px] md:gap-[10px] md:w-[170.92px] md:h-[63px] 
                 md:rounded-[16px] md:text-[20px] md:leading-[29px]
                 w-[80px] h-[30px] 
                 text-center 
@@ -39,7 +39,7 @@ export default function LanguageSwitcher() {
             ">
         <button
           onClick={() => toggleLocale()}
-          className={` cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
+          className={`!font-brando cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
             currentLocale === "ar"
               ? "bg-[#BD171D] text-white"
               : "bg-transparent text-[#414141]"
@@ -49,7 +49,7 @@ export default function LanguageSwitcher() {
         </button>
         <button
           onClick={() => toggleLocale()}
-          className={`font-aileron cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
+          className={`!font-aileron cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
             currentLocale === "en"
               ? "bg-[#BD171D] text-white"
               : "bg-transparent text-[#414141]"

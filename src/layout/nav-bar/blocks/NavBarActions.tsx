@@ -14,7 +14,7 @@ export default function NavBarActions() {
   // };
 
   return (
-    <div className="flex items-center gap-3 max-w-[130px]">
+    <div className="flex items-center gap-[16PX] max-w-[130px]">
       <LanguageSwitcher />
 
       <div className="flex items-center gap-2 pe-3">

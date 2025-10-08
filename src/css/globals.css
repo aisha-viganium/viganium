@@ -17,7 +17,7 @@ html {
 }
 
 .font-brando {
-  font-family: 'alfont_com_Brando';
+  font-family: 'alfont_com_Brando' !important;
 
 }
 

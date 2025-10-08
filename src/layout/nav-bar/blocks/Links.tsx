@@ -77,7 +77,7 @@ export default function SidebarNavbar() {
         onClick={() => setIsOpen(true)}
         className="p-3 text-gray-700 hover:text-primary focus:outline-none cursor-pointer"
       >
-        <Image src="/assets/icons/menue.svg" alt="Menu" width={40} height={40} className="w-[24px] h-[24px] md:w-[40px] md:h-[40px]" />
+        <Image src="/assets/icons/menue.svg" alt="Menu" width={50} height={50} className="w-[24px] h-[24px] md:w-[50px] md:h-[50px]" />
       </button>
 
       {isOpen && (
