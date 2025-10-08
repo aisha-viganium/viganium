@@ -17,13 +17,13 @@ export function ServiceCard({ service, locale }: { service: Service; locale: str
   return (
     <div className="flex flex-col items-end pt-8 pb-1 md:pb-8 pr-6 pl-6 md:pr-[29px] md:pl-[29px] gap-8 min-h-[427px] bg-[#F3F3F3] rounded-[8px]">
       <Link href={`services/${service.id}`}>
-        <div className="relative w-full min-h-[250px] 2xl:min-h-[380px]">
+        <div className="relative w-full h-[250px] 2xl:h-[380px] mb-4">
           <Image
             width={380}
             height={380}
             src={service.image}
             alt={service.name}
-            className="w-full h-full rounded-[8px] object-cover"
+            className="w-full h-[250px] md:h-[380px] rounded-[8px] object-cover"
             unoptimized
           />
         </div>
@@ -42,7 +42,7 @@ export function ServiceCard({ service, locale }: { service: Service; locale: str
             className={`
                     font-medium text-[14px] leading-[20px]  ${isArabic ? "text-right" : "text-left"}
                     md:text-[20px] md:leading-[29px] 
-                    text-secondry-200 my-5
+                    text-secondry-200 my-8
                       `}
           >
             {service.description}
