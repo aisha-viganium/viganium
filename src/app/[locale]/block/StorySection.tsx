@@ -12,7 +12,7 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
         <AnimatedSection variants={slideFromRightBounce}>
           <div className="flex flex-col gap-6">
             <div className={` ${isArabic ? "border-r-[#F9C751] pr-4 border-r-[13px] md:border-r-[20px]" : " border-l-[#F9C751] pl-4 border-l-[13px] md:border-l-[20px]"}`}>
-              <span className="font-semibold text-[14px] md:text-[24px] leading-[100%] md:leading-[34px] text-right text-[#F9C751] flex items-center gap-2">
+              <span className="font-semibold text-[14px] md:text-[24px] leading-[100%] md:leading-[34px] text-right text-[#F9C751] flex items-end gap-2">
                 <span>{t("story.title")}</span>
                 <Image
                   src={isArabic?"/assets/icons/arrow-yellow.svg":"/assets/icons/arrow-yellow-en.svg"}

@@ -40,7 +40,7 @@ export default function CardSlider() {
     return (
         <div
             dir={isArabic ? "rtl" : "ltr"}
-            className="flex flex-col items-center md:items-end justify-start h-[320] md:justify-center md:h-[700] overflow-hidden px-5"
+            className="flex flex-col items-center md:items-end justify-start h-[320] md:justify-center md:h-[571px] overflow-hidden px-5"
         >
             <div className="flex gap-1 md:gap-6 mt-2 items-center">
                 <button
@@ -62,7 +62,7 @@ export default function CardSlider() {
 
                 <div className="relative w-60 md:w-80 min-h-[200px] md:min-h-[470.18px] flex justify-center">
                     <AnimatePresence initial={false} mode="wait">
-                        {cards.map((card, i) => {
+                        {cards.slice().reverse().map((card, i) => {
                             const pos = (i - index + cards.length) % cards.length;
                             const isActive = pos === 0;
 

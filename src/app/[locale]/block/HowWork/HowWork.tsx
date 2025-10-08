@@ -8,8 +8,7 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
 
   return (
     <section
-      dir={isArabic ? "rtl" : "ltr"}
-      className="bg-[#1A1A1A] py-5 md:py-16 px-2 md:px-16"
+      className="bg-[#1A1A1A] py-4  px-2 md:px-16"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <AnimatedSection
@@ -43,7 +42,7 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
               leading-[23px] md:leading-[32px] 2xl:leading-[45px] 
               font-bold 
               text-[#FDFFFC] 
-              my-2 2xl:my-5
+              my-2 2xl:mt-[45px]
             `}
           >
             {t("howWork.subtitle")}
@@ -51,7 +50,7 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
 
           <p
             className={`
-              my-3 md:my-10 
+              my-3 md:mt-[32px] md:mb-[42px]
               max-w-[359px] md:max-w-[847px] 
               ${isArabic ? "text-right" : "text-left"} 
               text-[12px] md:text-[16px] lg:text-[20px] xl:text-[24px] 
