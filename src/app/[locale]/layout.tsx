@@ -29,9 +29,11 @@ export default async function RootLayout({
     <html lang={locale} dir={dir}>
       <body>
         <I18nProvider locale={locale}>
-          <NavBar />
-          <ClientLayout>{children}</ClientLayout>
-          <Footer />
+          <ClientLayout>
+            <NavBar />
+            {children}
+            <Footer />
+          </ClientLayout>
         </I18nProvider>
       </body>
     </html>
