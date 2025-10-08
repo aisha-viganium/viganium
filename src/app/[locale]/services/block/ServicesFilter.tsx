@@ -48,7 +48,7 @@ export default function ServicesFilter({
           const columns = 3;
           const row = Math.floor(index / columns);
           const col = index % columns;
-          const custom = col + row * 3 + 1;
+          const custom = col + row * 3 + 0.1;
 
           return (
             <AnimatedSection
