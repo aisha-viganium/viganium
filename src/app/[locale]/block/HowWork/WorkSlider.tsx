@@ -40,7 +40,7 @@ export default function CardSlider() {
     return (
         <div
             dir={isArabic ? "rtl" : "ltr"}
-            className="flex flex-col items-center md:items-end justify-start h-[320] md:justify-center md:h-[571px] overflow-hidden px-5"
+            className="flex flex-col items-center md:items-end justify-start h-[320] md:justify-center md:h-[700px]  2xl:h-[571px] overflow-hidden px-5"
         >
             <div className="flex gap-1 md:gap-6 mt-2 items-center">
                 <button

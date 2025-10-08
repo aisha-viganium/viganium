@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import AnimatedSection, { fadeInUp } from "@/animation/AnimatedSection";
+import QuoteUp from "@/assets/SVG/QuoteUp";
+import QuoteDown from "@/assets/SVG/QuoteDown";
 
 type Review = {
   id: number;
@@ -90,26 +92,17 @@ export default function ReviewSlider({
                   />
 
 
-                  <span className={`absolute top-[40%] md:top-10  flex gap-1 md:gap-2 z-50 ${isArabic ? "right-0" : "left-0 rotate-y-180"}`}>
-                    <Image
-                      src="/assets/icons/quote.svg"
-                      alt="quote"
-                      width={100}
-                      height={100}
-                      className="w-auto h-[25px] md:h-[100px] [filter:drop-shadow(-8.53px_8.53px_23.41px_rgba(0,0,0,0.25))]"
-                    />
-                    <Image
-                      src="/assets/icons/quote.svg"
-                      alt="quote"
-                      width={100}
-                      height={100}
-                      className="w-auto h-[25px] md:h-[100px] [filter:drop-shadow(-8.53px_8.53px_23.41px_rgba(0,0,0,0.25))]"
-                    />
+                  <span className={`absolute top-[40%] md:top-10  flex gap-1 md:gap-4 z-50 [filter:drop-shadow(-8.53px_8.53px_23.41px_rgba(0,0,0,0.25))] ${isArabic ? "right-0" : "left-0 rotate-y-180"}`}>
+                    
+                    <QuoteUp className="w-auto h-[25px] md:h-[100px]"/>
+                    
+                    <QuoteUp className="w-auto h-[25px] md:h-[100px]"/>
+
                   </span>
 
                   <div
                     style={{ filter: "drop-shadow(0px 8px 20px rgba(0,0,0,0.4))" }}
-                    className="relative z-10 min-h-[300px] md:min-h-[475px] py-6 px-4 md:py-8 md:px-6 bg-[#FDFFFC] shadow rounded-[20px] md:rounded-[34px] flex flex-col gap-2 md:gap-6 pt-[145px] md:pt-[150px] clipPath-review mt-[70px] md:mt-0"
+                    className="relative z-10 min-h-[300px] md:min-h-[475px] py-6 px-4 md:py-8 md:px-6 bg-[#FDFFFC] shadow rounded-[20px] md:rounded-[34px] flex flex-col gap-4 md:gap-6 pt-[145px] md:pt-[150px] clipPath-review mt-[70px] md:mt-0"
                   >
                     <div className="flex items-center gap-4">
                       <Image
@@ -157,21 +150,12 @@ export default function ReviewSlider({
                     </div>
                   </div>
 
-                  <span className={`absolute -bottom-2 md:-bottom-10  rotate-180 flex gap-1 md:gap-2 z-50 ${isArabic ? "left-0" : "right-0 rotate-y-180"}`}>
-                    <Image
-                      src="/assets/icons/quote.svg"
-                      alt="quote"
-                      width={100}
-                      height={100}
-                      className="w-auto h-[25px] md:h-[100px] [filter:drop-shadow(-8.53px_8.53px_23.41px_rgba(0,0,0,0.25))]"
-                    />
-                    <Image
-                      src="/assets/icons/quote.svg"
-                      alt="quote"
-                      width={100}
-                      height={100}
-                      className="w-auto h-[25px] md:h-[100px] [filter:drop-shadow(-8.53px_8.53px_23.41px_rgba(0,0,0,0.25))]"
-                    />
+                  <span className={`absolute -bottom-2 md:-bottom-10  rotate-180 flex gap-1 md:gap-4 z-50 [filter:drop-shadow(-8.53px_8.53px_23.41px_rgba(0,0,0,0.25))] ${isArabic ? "left-0" : "right-0 rotate-y-180"}`}>
+                
+                                                           <QuoteUp className="w-auto h-[25px] md:h-[100px] "/>
+
+                                        <QuoteUp className="w-auto h-[25px] md:h-[100px] "/>
+
                   </span>
                 </div>
               </div>
