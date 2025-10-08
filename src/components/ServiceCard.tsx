@@ -6,7 +6,7 @@ type Service = {
   id: number | string;
   name: string;
   image: string;
-  tags: string[];
+  tags: number[];
   tagsDisplayed: string[];
   description: string;
 

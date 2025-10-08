@@ -6,30 +6,36 @@ import { ServiceCard } from "@/components/ServiceCard";
 import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection";
 import { useSearchParams } from "next/navigation";
 
-export interface Services {
+export interface Service {
   id: number;
   name: string;
   image: string;
-  tags: string[];
+  tags: number[];
   tagsDisplayed: string[];
   description: string;
 }
 
-export default function ServicesFilter({ services,locale }: {services: Services[]; locale: string; } ) {
+export default function ServicesFilter({
+  services,
+  locale,
+}: {
+  services: Service[];
+  locale: string;
+}) {
   const searchParams = useSearchParams();
-  const filterFromUrl = searchParams.get("filter") || "AllServices";
-  const [selectedFilter, setSelectedFilter] = React.useState<string>(filterFromUrl);
+  const filterFromUrl = Number(searchParams.get("filter")) || 0;
+  const [selectedFilter, setSelectedFilter] = React.useState<number>(filterFromUrl);
 
   React.useEffect(() => {
     setSelectedFilter(filterFromUrl);
   }, [filterFromUrl]);
 
   const handleFilterChange = (filter: string) => {
-    setSelectedFilter(filter);
+    setSelectedFilter(Number(filter));
   };
 
   const filteredServices =
-    selectedFilter === "AllServices"
+    selectedFilter === 0
       ? services
       : services.filter((s) => s.tags.includes(selectedFilter));
 
@@ -42,16 +48,15 @@ export default function ServicesFilter({ services,locale }: {services: Services[
           const columns = 3;
           const row = Math.floor(index / columns);
           const col = index % columns;
-          const customMap = [1, 2, 3];
-          const custom = customMap[col] ?? 1;
+          const custom = col + row * 3 + 1;
 
           return (
             <AnimatedSection
               key={service.id}
               variants={slideFromTopBounce}
-              custom={custom + row * 3}
+              custom={custom}
             >
-              <ServiceCard service={service}  locale={locale}  />
+              <ServiceCard service={service} locale={locale} />
             </AnimatedSection>
           );
         })}

@@ -22,10 +22,10 @@ export default async function ServiceDetailPage({ params }: { params: { id: stri
 
   return (
     <>
-      <HeroSection service={service} locale={locale} t={t} />
-      <Advantages locale={locale} t={t}/>
-      <Tools />
-      <WeHear locale={locale} t={t}/>
+      <HeroSection service={service} locale={locale} />
+      <Advantages locale={locale} t={t} service={service}/>
+      <Tools service={service}/>
+      <WeHear locale={locale} t={t} />
       <Questions locale={locale} t={t}/>
     </>
   );

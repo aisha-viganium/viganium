@@ -1,7 +1,15 @@
 import Image from "next/image";
 import AnimatedSection, { slideFromRightBounce, slideFromTopBounce } from "@/animation/AnimatedSection";
-
-export default function Advantages({ locale, t }: { locale: string; t: (key: string) => string }) {
+export interface Service {
+  id: number;
+  serviceDescriptionTitle: string;
+  serviceDescriptionParagraph: string;
+  list: {
+    title: string;
+    description: string;
+  }[];
+}
+export default function Advantages({ service, locale, t }: { service: Service; locale: string; t: (key: string) => string }) {
   const isArabic = locale === "ar";
 
   return (
@@ -12,7 +20,7 @@ export default function Advantages({ locale, t }: { locale: string; t: (key: str
       <AnimatedSection
         variants={slideFromTopBounce}
         className={`
-          ${isArabic?"border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 text-right":"border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"} 
+          ${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"} 
           min-h-[33px] flex items-center px-2 md:px-16
         `}
       >
@@ -56,7 +64,8 @@ export default function Advantages({ locale, t }: { locale: string; t: (key: str
               ${isArabic ? "text-right" : "text-left"}
             `}
           >
-            {t("ServiceDetailPage.Advantages.descriptionTitle")}
+            {service.serviceDescriptionTitle}
+
           </h5>
 
           <p
@@ -68,18 +77,17 @@ export default function Advantages({ locale, t }: { locale: string; t: (key: str
               ${isArabic ? "text-right" : "text-left"}
             `}
           >
-            {t("ServiceDetailPage.Advantages.description")}
+            {service.serviceDescriptionParagraph}
           </p>
         </AnimatedSection>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[...Array(6)].map((_, i) => {
+          {service.list.map((item, i) => {
             const columns = 3;
             const row = Math.floor(i / columns);
             const col = i % columns;
             const customMap = [1, 2, 3];
             const custom = customMap[col] ?? 1;
-
             return (
               <AnimatedSection
                 key={i}
@@ -103,11 +111,12 @@ export default function Advantages({ locale, t }: { locale: string; t: (key: str
                     border-b-4 border-b-[#C83E43]
                   "
                 >
-                  {t("ServiceDetailPage.Advantages.cardTitle")}
+                  {item.title}
                 </h5>
 
                 <p className="font-medium text-sm md:text-[12px] lg:text-[16px] leading-relaxed md:leading-[23px] text-secondry-200">
-                  {t("ServiceDetailPage.Advantages.cardDescription")}
+                  {item.description}
+
                 </p>
               </AnimatedSection>
             );

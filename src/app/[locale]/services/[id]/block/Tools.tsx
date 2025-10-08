@@ -6,17 +6,16 @@ import "swiper/css";
 import Image from "next/image";
 import AnimatedSection, { deckShuffle, slideFromTopBounce } from "@/animation/AnimatedSection";
 import { useTranslation } from "react-i18next";
+export interface Service {
+  id: number;
+  tools: {
+    title: string;
+    image: string;
+  }[];
+}
 
-const slides = [
-    { id: 1, icon: "/assets/icons/html.svg", text: "HTML" },
-    { id: 2, icon: "/assets/icons/html.svg", text: "HTML" },
-    { id: 3, icon: "/assets/icons/html.svg", text: "HTML" },
-    { id: 4, icon: "/assets/icons/html.svg", text: "HTML" },
-    { id: 5, icon: "/assets/icons/html.svg", text: "HTML" },
-    { id: 6, icon: "/assets/icons/html.svg", text: "HTML" },
-];
 
-export default function Tools() {
+export default function Tools({ service }: { service: Service;}) {
     const { t, i18n } = useTranslation();
     const isArabic = i18n.language === "ar";
     return (
@@ -46,15 +45,15 @@ export default function Tools() {
 
                     }}
                 >
-                    {slides.map((slide) => (
-                        <SwiperSlide key={slide.id}>
+                {service.tools.map((slide, i) => (
+                        <SwiperSlide key={i}>
                             <div className="flex flex-row justify-between w-100 items-center px-4 md:px-6 py-4 gap-2 md:gap-2.5 max-w-full 2xl:max-w-[454px] h-[80px] md:h-[96px] bg-[#EFEFEF] rounded-[12px] md:rounded-[16px]">
                                 <p className={`font-aileron text-secondry font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] ${isArabic ? "text-right" : ""} flex-1`}>
-                                    {slide.text}
+                                    {slide.title}
                                 </p>
                                 <Image
-                                    src={slide.icon}
-                                    alt={`icon-${slide.id}`}
+                                    src={slide.image}
+                                    alt={slide.title}
                                     width={40}
                                     height={40}
                                     className="w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[48px] lg:h-[48px]"

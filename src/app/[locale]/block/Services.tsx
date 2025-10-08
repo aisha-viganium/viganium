@@ -17,21 +17,21 @@ export default function Services({
       title: t("Services.solutionTitle"),
       description: t("Services.solutionDescription"),
       image: "/assets/images/service1.png",
-      tag: "MobileDevelopment",
+      tag: 1,
     },
     {
       id: 2,
       title: t("Services.itTitle"),
       description: t("Services.itDescription"),
       image: "/assets/images/service2.png",
-      tag: "WebDevelopment",
+      tag: 2,
     },
     {
       id: 3,
       title: t("Services.marketingTitle"),
       description: t("Services.marketingDescription"),
       image: "/assets/images/service3.png",
-      tag: "DigitalMarketing",
+      tag: 3,
     },
   ];
 
@@ -42,15 +42,19 @@ export default function Services({
     >
       <AnimatedSection
         variants={slideFromTopBounce}
-        className={`mb-5  min-h-[33px] flex items-center 
-           ${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4":"border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}`}
+        className={`mb-5 min-h-[33px] flex items-center 
+          ${
+            isArabic
+              ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4"
+              : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"
+          }`}
       >
         <p
-          className={`max-w-[796px] 
-            ${isArabic ? "text-right" : "text-left"} 
-            text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
-            leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
-            font-bold text-secondry`}
+          className={`max-w-[796px] ${
+            isArabic ? "text-right" : "text-left"
+          } text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+          leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
+          font-bold text-secondry`}
         >
           {t("Services.title")}
         </p>
@@ -66,8 +70,8 @@ export default function Services({
           >
             <Link
               href={{
-                pathname: `${locale}/services`,
-                query: { filter: service.tag },
+                pathname: `/${locale}/services`,
+                query: { filter: service.tag.toString() },
               }}
             >
               <div className="flex flex-col cursor-pointer">

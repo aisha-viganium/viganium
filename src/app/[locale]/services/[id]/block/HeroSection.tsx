@@ -5,10 +5,9 @@ export interface Service {
   id: number;
   name: string;
   image: string;
-  tags: string[];
   description: string;
 }
-export default function HeroSection({ service, locale, t }: { service: Service; locale: string; t: (key: string) => string }) {
+export default function HeroSection({ service, locale }: { service: Service; locale: string;}) {
     const isArabic = locale === "ar";
 
   return (
