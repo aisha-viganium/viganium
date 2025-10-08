@@ -16,6 +16,7 @@ export default function CardSlider() {
         description: string;
         image: string;
     }[];
+    const shift = isArabic ? -8 : 8;
 
     const nextCard = () => {
         if (index < cards.length - 1) {
@@ -62,7 +63,7 @@ export default function CardSlider() {
 
                 <div className="relative w-60 md:w-80 min-h-[200px] md:min-h-[470.18px] flex justify-center">
                     <AnimatePresence initial={false} mode="wait">
-                        {cards.slice().reverse().map((card, i) => {
+                        {cards.map((card, i) => {
                             const pos = (i - index + cards.length) % cards.length;
                             const isActive = pos === 0;
 
@@ -76,7 +77,7 @@ export default function CardSlider() {
                                             : {
                                                 scale: 0.9,
                                                 rotate: 15,
-                                                x: pos * 8,
+                                                x: pos * shift,
                                                 opacity: 1,
                                                 zIndex: cards.length - pos,
                                             }

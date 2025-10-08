@@ -92,7 +92,7 @@ export default function ReviewSlider({
                   />
 
 
-                  <span className={`absolute top-[40%] md:top-10  flex gap-1 md:gap-4 z-50 [filter:drop-shadow(-8.53px_8.53px_23.41px_rgba(0,0,0,0.25))] ${isArabic ? "right-0" : "left-0 rotate-y-180"}`}>
+                  <span className={`absolute top-[40%] md:top-10  flex gap-1 md:gap-4 z-50 [filter:drop-shadow(-8.53px_8.53px_23.41px_rgba(0,0,0,0.25))] ${isArabic ? "right-[-30px]" : "left-0 rotate-y-180"}`}>
                     
                     <QuoteUp className="w-auto h-[25px] md:h-[100px]"/>
                     

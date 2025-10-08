@@ -5,25 +5,25 @@ export default function CardsDiv({ locale, t }: { locale: string; t: (key: strin
     {
       id: 1,
       img: "/assets/icons/card.svg",
-      title_ar: "المرونة وحل المشكلات",
+      title_ar: "المرونة وحلّ المشكلات",
       title_en: "Flexibility and Problem Solving"
     },
     {
       id: 2,
       img: "/assets/icons/card.svg",
-      title_ar: "التواصل الفعال",
+      title_ar: "التواصل الفعّال",
       title_en: "Communication"
     },
     {
       id: 3,
       img: "/assets/icons/card.svg",
-      title_ar: "التعاون و روح الفريق",
+      title_ar: "التعاون وروح الفريق",
       title_en: "Collaboration and Team Spirit"
     },
     {
       id: 4,
       img: "/assets/icons/card.svg",
-      title_ar: "الإلتزام وتحمل السمسؤلية",
+      title_ar: "الإلتزام وتحمل المسؤولية",
       title_en: "Commitment and Responsibility"
     },
   ];

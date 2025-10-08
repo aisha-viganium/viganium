@@ -31,15 +31,13 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                   font-bold 
                   ${isArabic ? "text-right" : "text-left"} 
                   text-[14px] leading-[20px]
-                  md:text-5xl md:leading-[40px] 2xl:leading-[120px] 
+                  md:text-5xl md:leading-[40px] 2xl:leading-auto
                   md:text-[40.63px] 2xl:text-[70.63px] lg:leading-[101px]
                   text-[#FDFFFC]
                 `}
               >
                 {t("ContactUsPage.HeroSection.title")}{" "}
-                <span className="text-center px-2 md:px-8 gap-[10px] max-w-[44px] md:max-w-[181px] h-[86px] bg-[#BD171D]">
-                  {t("ContactUsPage.HeroSection.highlight")}
-                </span>
+        
               </h1>
             </AnimatedSection>
 

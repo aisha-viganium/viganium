@@ -63,7 +63,7 @@ export default function LoadingPage() {
     }, [charIndex, deleting, sentenceIndex]);
 
     return (
-        <div className="relative flex flex-col items-center justify-center min-h-[105vh] text-white space-y-8 bg-[url('/assets/images/cover.png')] bg-cover bg-center">
+        <div className="relative flex flex-col items-center justify-center h-[100vh] text-white bg-[url('/assets/images/cover.png')] bg-cover bg-center">
             <div className="absolute inset-0 bg-black/50 z-0"></div>
             <div className="relative z-10 flex flex-col items-center space-y-6">
                 <Logo width={200} height={60} fillColor="#FFFFFF" />
