@@ -7,13 +7,13 @@ import Image from "next/image";
 export default function WeHear({ locale, t ,bg="white"}: { locale: string; t: (key: string) => string; bg: string }) {
 
   return (
-    <section className={`py-2 md:py-16 px-2 md:px-16 bg-[${bg}] rounded-none md:rounded-2xl relative overflow-hidden ml-16`}>
+    <section className={`py-2 md:py-16 px-2 md:px-16 rounded-none md:rounded-2xl relative overflow-hidden mx-16`} style={{backgroundColor: bg }}>
       <Image
         src="/assets/icons/shapes-group.svg"
         alt="We Hear"
         width={150}
         height={150}
-        className="absolute top-[-42px] left-[-55px] md:top-[-40px] md:left-[-85px] -translate-y-1/2 w-[100px] md:w-[150px] h-auto"
+        className="absolute top-[-42px] left-[-45px] md:top-[-35px] md:left-[-85px] -translate-y-1/2 w-[100px] md:w-[150px] h-auto"
       />
       <div className="flex flex-col md:flex-row justify-between gap-1 md:gap-6 w-full">
         <AnimatedSection
