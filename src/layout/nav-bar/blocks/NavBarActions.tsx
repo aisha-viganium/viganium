@@ -2,7 +2,6 @@
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 // import { useState } from "react";
 import PoPUpChat from "@/components/PoPUpChat";
-import { useTranslation } from "react-i18next";
 
 export default function NavBarActions() {
   // const { i18n } = useTranslation();

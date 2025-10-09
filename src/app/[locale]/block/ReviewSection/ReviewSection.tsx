@@ -48,7 +48,7 @@ export default function ReviewSection({
     <section dir={isArabic ? "rtl" : "ltr"} className="overflow-hidden">
       <div className="py-5 md:py-16 px-2 md:px-16">
         <div
-          className={` min-h-[33px] flex items-center px-2 md:px-0 ${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4":"border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}`}
+          className={` min-h-[33px] flex items-center px-2 md:px-0 ${isArabic ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4":"border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}`}
 
         >
           <p

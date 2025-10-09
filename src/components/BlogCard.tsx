@@ -8,7 +8,7 @@ type Blog = {
   image: string;
 };
 
-export function BlogCard({ blog, locale, t }: { blog: Blog; locale: string; t: (key: string) => string }) {
+export function BlogCard({ blog, locale }: { blog: Blog; locale: string; }) {
   const isArabic = locale === "ar";
 
   return (

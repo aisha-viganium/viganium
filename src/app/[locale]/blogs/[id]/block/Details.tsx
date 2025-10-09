@@ -8,7 +8,7 @@ export default function Details({ locale, t }: { locale: string; t: (key: string
     <section className="py-12 md:py-16 bg-[#F8F8F8]">
       <div className="mx-auto px-2 md:px-16">
 
-        <AnimatedSection className={` ${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"}  min-h-[33px] flex items-center`}>
+        <AnimatedSection className={` ${isArabic ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"}  min-h-[33px] flex items-center`}>
           <p className=" max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 

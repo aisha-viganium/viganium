@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
@@ -11,11 +11,11 @@ interface TopFilterProps {
 export default function TopFilter({ onFilterChange }: TopFilterProps) {
   const searchParams = useSearchParams();
   const filterFromUrl = searchParams.get("filter") || "0";
-  const [activeFilter, setActiveFilter] = React.useState<string>(filterFromUrl);
+  const [activeFilter, setActiveFilter] = useState<string>(filterFromUrl);
   const { i18n } = useTranslation();
   const isArabic = i18n.language === "ar";
 
-  React.useEffect(() => {
+  useEffect(() => {
     setActiveFilter(filterFromUrl);
     onFilterChange(filterFromUrl);
   }, [filterFromUrl]);

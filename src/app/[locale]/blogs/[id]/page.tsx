@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import HeroSection from "./block/HeroSection";
 import Details from "./block/Details";

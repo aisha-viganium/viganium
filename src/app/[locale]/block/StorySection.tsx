@@ -6,8 +6,8 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
   const isArabic = locale === "ar";
 
   return (
-    <section className="mx-auto py-5 md:py-16 px-2 md:px-16 bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-10 items-center">
+    <section className="mx-auto py-5 md:py-8 px-2 md:px-16 bg-white">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-16">
 
         <AnimatedSection variants={slideFromRightBounce}>
           <div className="flex flex-col gap-6">

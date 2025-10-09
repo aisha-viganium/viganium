@@ -45,7 +45,7 @@ export default function Services({
         className={`mb-5 min-h-[33px] flex items-center 
           ${
             isArabic
-              ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4"
+              ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4"
               : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"
           }`}
       >
@@ -83,14 +83,14 @@ export default function Services({
                   className="w-full h-[213px] md:h-[280px] lg:h-auto rounded-[8px] md:rounded-[16px] object-cover"
                 />
                 <h5
-                  className={`font-bold text-secondry my-3 md:my-5 
+                  className={`font-bold text-secondry my-3 md:mt-[24px] md:mb-[16px]
                     text-[16px] leading-[23px] md:text-[22px] md:leading-[32px] lg:text-[24px] lg:leading-[34px] 
                     ${isArabic ? "text-right" : "text-left"}`}
                 >
                   {service.title}
                 </h5>
                 <p
-                  className={`text-secondry font-[Brando Arabic] font-normal 
+                  className={`text-secondry font-normal 
                     text-[14px] leading-[20px] md:text-[15px] md:leading-[23px] lg:text-[16px] lg:leading-[23px] 
                     ${isArabic ? "text-right" : "text-left"}`}
                 >

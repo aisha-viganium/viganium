@@ -26,7 +26,7 @@ export default function Team() {
             >
                 <div className="mx-auto">
 
-                    <div className={`${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}  min-h-[33px] flex items-center`}>
+                    <div className={`${isArabic ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}  min-h-[33px] flex items-center`}>
                         <p className=" max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 

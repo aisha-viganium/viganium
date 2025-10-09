@@ -1,42 +1,63 @@
 "use client";
 
-import { useTranslation } from "react-i18next";
-import { useRouter, usePathname } from "next/navigation";
-import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function LanguageSwitcher() {
-  const { i18n: i18nextClient } = useTranslation();
   const router = useRouter();
-  const pathname = usePathname();
-  const [lang, setLang] = useState(i18nextClient.language || "en");
+  const pathname = usePathname(); 
 
-  const toggleLanguage = () => {
-    const newLang = lang === "en" ? "ar" : "en";
-    // Ensure i18next actually switched language before navigating so
-    // components reading `i18n.language` see the updated value.
-    (async () => {
-      try {
-        await i18nextClient.changeLanguage(newLang);
-      } catch (e) {
-        // ignore
-      }
-      // update local state from the i18next instance (more reliable)
-      setLang(i18nextClient.language || newLang);
-      const segments = pathname.split("/");
-      segments[1] = newLang;
-      router.push(segments.join("/"));
-    })();
+  const currentLocale = pathname.split("/")[1] || "en";
+
+  const toggleLocale = () => {
+    const newLocale = currentLocale === "ar" ? "en" : "ar";
+
+    const segments = pathname.split("/");
+    segments[1] = newLocale;
+    const newPath = segments.join("/");
+
+    router.push(newPath);
   };
 
   return (
-    <button
-      onClick={toggleLanguage}
-      className="flex cursor-pointer  border-s  ps-2 h-auto m-0 items-center gap-1 border-gray-300  bg-white text-sm"
-    >
-      <span className="text-h6 font-normal">
-        {lang === "en" ? "Ar" : "Eng"}
-      </span>
+    <>
 
-    </button>
+      <div  style={{
+                    backgroundColor: "#FFF",
+                    border: `2px solid #FFF`,
+                    outline: `2px solid #FFF`,
+
+                }}
+                className="
+                cursor-pointer flex flex-row justify-center items-center my-5
+                px-[6.46px] py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[10px] leading-[14px]
+                md:py-[17px] md:gap-[10px] md:w-[170.92px] md:h-[63px] 
+                md:rounded-[16px] md:text-[20px] md:leading-[29px]
+                w-[80px] h-[30px] 
+                text-center 
+                transition-all duration-300 ease-in-out
+                hover:outline-offset-4
+            ">
+        <button
+          onClick={() => toggleLocale()}
+          className={`!font-brando cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
+            currentLocale === "ar"
+              ? "bg-[#BD171D] text-white"
+              : "bg-transparent text-[#414141]"
+          }`}
+        >
+          عربي
+        </button>
+        <button
+          onClick={() => toggleLocale()}
+          className={`!font-aileron cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
+            currentLocale === "en"
+              ? "bg-[#BD171D] text-white"
+              : "bg-transparent text-[#414141]"
+          }`}
+        >
+          English
+        </button>
+      </div>
+      </>
   );
 }

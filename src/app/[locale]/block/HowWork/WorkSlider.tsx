@@ -10,14 +10,29 @@ export default function CardSlider() {
     const [direction, setDirection] = useState<"next" | "prev">("next");
     const { t, i18n } = useTranslation();
     const isArabic = i18n.language === "ar";
+
     const cards = t("howWork.cards", { returnObjects: true }) as {
         id: number;
         title: string;
         description: string;
         image: string;
     }[];
-    const shift = isArabic ? -8 : 8;
 
+    const basePositions = isArabic
+        ? [
+            { rotate: 0, x: 10},
+            { rotate: 25, x: 10},
+            { rotate: 20, x: 10},
+            { rotate: 15, x: 10},
+            { rotate: 10, x: 10},
+        ]
+        : [
+            { rotate: 0, x: 10},
+            { rotate: 25, x: 10},
+            { rotate: 20, x: 10},
+            { rotate: 15, x: 10},
+            { rotate: 10, x: 10},
+        ];
     const nextCard = () => {
         if (index < cards.length - 1) {
             setDirection("next");
@@ -34,8 +49,8 @@ export default function CardSlider() {
 
     const cardVariants = {
         enterNext: { y: 600, opacity: 0 },
-        center: { y: 0, x: 0, rotate: 0, scale: 1, opacity: 1, zIndex: 10 },
-        exitNext: { y: -600, opacity: 0, rotate: 0, transition: { duration: 0.5 } },
+        center: { y: 10, x: 0, rotate: 0, scale: 1, opacity: 1, zIndex: 10 },
+        exitNext: { y: -600, opacity: 1, rotate: 0, transition: { duration: 0.5 } },
     };
 
     return (
@@ -53,7 +68,7 @@ export default function CardSlider() {
                         }`}
                 >
                     <Image
-                        src={isArabic ?  "/assets/icons/left-arrow.svg" : "/assets/icons/right-arrow.svg"}
+                        src={isArabic ? "/assets/icons/left-arrow.svg" : "/assets/icons/right-arrow.svg"}
                         alt="arrow"
                         width={20}
                         height={20}
@@ -63,9 +78,10 @@ export default function CardSlider() {
 
                 <div className="relative w-60 md:w-80 min-h-[200px] md:min-h-[470.18px] flex justify-center">
                     <AnimatePresence initial={false} mode="wait">
-                        {cards.map((card, i) => {
+                        {cards.reverse().map((card, i) => {
                             const pos = (i - index + cards.length) % cards.length;
                             const isActive = pos === 0;
+                            const base = basePositions[pos] || basePositions[basePositions.length - 1];
 
                             return (
                                 <motion.div
@@ -76,8 +92,8 @@ export default function CardSlider() {
                                             ? cardVariants.center
                                             : {
                                                 scale: 0.9,
-                                                rotate: 15,
-                                                x: pos * shift,
+                                                rotate: base.rotate,
+                                                x: base.x,
                                                 opacity: 1,
                                                 zIndex: cards.length - pos,
                                             }

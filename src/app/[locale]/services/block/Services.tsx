@@ -12,7 +12,7 @@ export default function Services({ locale, t }: { locale: string; t: (key: strin
     <>
       <section className="py-5 md:py-16 px-2 md:px-16 bg-[#1A1A1A]">
         <div>
-          <AnimatedSection variants={slideFromTopBounce} className={` ${isArabic?"border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4":"border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}  min-h-[33px]`}>
+          <AnimatedSection variants={slideFromTopBounce} className={` ${isArabic?"border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4":"border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}  min-h-[33px]`}>
             <p className={`
               max-w-[796px] 
                

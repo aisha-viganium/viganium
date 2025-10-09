@@ -10,7 +10,7 @@ export default function LoadingPage() {
     const [sentenceIndex, setSentenceIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
     const [deleting, setDeleting] = useState(false);
-    const { t, i18n } = useTranslation();
+    const {  i18n } = useTranslation();
     const isArabic = i18n.language === "ar";
     const totalBlocks = 10;
     const filledBlocks = Math.floor((progress / 100) * totalBlocks);
@@ -21,9 +21,9 @@ export default function LoadingPage() {
             "واجهة تليق بك"
         ],
         en: [
-            "Building the Future",
-            "Technology Thinks",
-            "An Interface That Suits You"
+            "نبني المستقبل",
+            "التقنية تفكّر",
+            "واجهة تليق بك"
         ]
     };
     const sentencesData = sentences[isArabic ? "ar" : "en"];

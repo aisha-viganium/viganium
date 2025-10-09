@@ -128,7 +128,7 @@ export default async function Blogs({ locale, t }: { locale: string; t: (key: st
         <>
         <section className="py-5 md:py-16 px-2 md:px-16 bg-[#F8F8F8]">
             <div>
-                <AnimatedSection className={`${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}  min-h-[33px] flex items-center`}>
+                <AnimatedSection className={`${isArabic ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}  min-h-[33px] flex items-center`}>
                     <p className={`${isArabic ? "text-right" : "text-left"}  max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
@@ -156,7 +156,7 @@ export default async function Blogs({ locale, t }: { locale: string; t: (key: st
                                     variants={slideFromTopBounce}
                                     custom={custom + row * 3}
                                 >
-                                    <BlogCard key={blog.id} blog={blog} locale={locale} t={t} />
+                                    <BlogCard key={blog.id} blog={blog} locale={locale}  />
                                 </AnimatedSection>
                             );
                         })}

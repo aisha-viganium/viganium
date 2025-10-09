@@ -20,7 +20,7 @@ export default function Advantages({ service, locale, t }: { service: Service; l
       <AnimatedSection
         variants={slideFromTopBounce}
         className={`
-          ${isArabic ? "border-r-[13px] md:border-r-[20px] border-r-[#F9C751] pr-2 md:pr-4 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"} 
+          ${isArabic ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"} 
           min-h-[33px] flex items-center px-2 md:px-16
         `}
       >

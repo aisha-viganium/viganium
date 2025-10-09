@@ -44,7 +44,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             mt-6 md:mt-[25px] 
                             max-w-[323px] lg:max-w-[1039.36px] 
                             font-bold md:leading-[60px]
-                            text-[14px] md:text-[45px] 2xl:text-[75px] 
+                            text-[14px] md:text-[45px] 2xl:text-[70px] 
                             leading-[20px]  lg:leading-[45px] xl:leading-auto
                             ${isArabic ? "text-right xl:leading-[55px] 2xl:mt-[79px]" : "text-left xl:leading-[75px] 2xl:mt-[5px]"} text-[#FDFFFC]
                         `}
@@ -98,8 +98,8 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             alt="Hero"
                             width={1710}
                             height={150}
-                            className={`absolute w-[35%] max-w-[1710px] h-auto 
-                                ${isArabic ? "left-[105px]" : "right-[15px]"} 
+                            className={`absolute w-[38%] max-w-[1710px] h-auto 
+                                ${isArabic ? "left-[55px]" : "right-[15px]"} 
                                 top-[37px] slide-up`}
                             priority
                         />

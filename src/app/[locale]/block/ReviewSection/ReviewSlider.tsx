@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import AnimatedSection, { fadeInUp } from "@/animation/AnimatedSection";
 import QuoteUp from "@/assets/SVG/QuoteUp";
-import QuoteDown from "@/assets/SVG/QuoteDown";
 
 type Review = {
   id: number;

@@ -239,7 +239,7 @@ const services = {
             image: "/assets/images/services/marketing.png",
             tags: [3, 2],
             tagsDisplayed: ["التسويق الذكي", "الابتكار الرقمي"],
-            description: "التقنية بدون تسويق… مثل فكرة حلوة ما حد سمع عنها.",
+            description: "التقنية بدون تسويق مثل فكرة حلوة ما حد سمع عنها.",
             serviceDescriptionTitle:
                 "في فيجانيوم نمزج بين الذكاء التحليلي والإبداع البصري. \n نصمم حملات تسويقية مدروسة مبنية على تحليل السوق والسلوك الرقمي للجمهور، \n عشان نوصلك لعملاءك الحقيقيين بأقل تكلفة وأعلى عائد.",
             serviceDescriptionParagraph:
@@ -303,7 +303,7 @@ const services = {
             image: "/assets/images/services/automation.png",
             tags: [1, 4, 2],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي", "الابتكار الرقمي"],
-            description: "السرعة اليوم ما هي ميزة… هي ضرورة، والتشغيل الذكي يحققها.",
+            description: "السرعة اليوم ما هي ميزة هي ضرورة، والتشغيل الذكي يحققها.",
             serviceDescriptionTitle:
                 "نوفّر حلول تشغيل مدعومة بالذكاء الاصطناعي تساعد مؤسستك تنجز أكثر بوقت أقل. نستخدم خوارزميات Machine Learning لتبسيط العمليات وتقليل الأخطاء البشرية، عشان تقدر تركز على النمو بدل المهام الروتينية.",
             serviceDescriptionParagraph:
@@ -359,7 +359,7 @@ const services = {
             image: "/assets/images/services/testing.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
-            description: "لأن الجودة ما هي خيار… هي التزام.",
+            description: "لأن الجودة ما هي خيار هي التزام.",
             serviceDescriptionTitle:
                 "في فيجانيوم نوفّر اختبارات شاملة للبرمجيات تضمن إن منتجك التقني يشتغل بثبات ودقة في كل الظروف.\n نهتم بالتفاصيل الصغيرة اللي تصنع تجربة مستخدم خالية من الأخطاء.",
             serviceDescriptionParagraph:
@@ -423,7 +423,7 @@ const services = {
             image: "/assets/images/services/video-AI.png",
             tags: [2, 3],
             tagsDisplayed: ["الابتكار الرقمي", "التسويق الذكي"],
-            description: "خلّي فكرتك تتكلم… واحنا بثواني ننفذها.",
+            description: "خلّي فكرتك تتكلم واحنا بثواني ننفذها.",
             serviceDescriptionTitle:
                 "زمن السرعة، الفيديو هو اللغة اللي يفهمها الكل. \n في فيجانيوم نحول الأفكار والبيانات إلى محتوى بصري جذّاب باستخدام أدوات الذكاء الاصطناعي الحديثة. \n سواء فيديوهات تسويقية أو تعليمية أو داخلية للشركات، نضمن لك محتوى احترافي يظهر هويتك بأفضل شكل.",
             serviceDescriptionParagraph:
@@ -542,7 +542,7 @@ const services = {
             image: "/assets/images/services/cyber-security.png",
             tags: [4, 1],
             tagsDisplayed: ["الأمان والتشغيل الذكي", "التطوير التقني"],
-            description: "لأن حماية بياناتك مو رفاهية… هي أولوية.",
+            description: "لأن حماية بياناتك مو رفاهية هي أولوية.",
             serviceDescriptionTitle:
                 "في فيجانيوم نحميك من التهديدات الرقمية بخطط أمنية ذكية وتحليلات واقعية. \nنقدّم استشارات سيبرانية مبنية على خبرة وتقنيات متقدمة لضمان أمان معلوماتك واستمرارية أعمالك.",
             serviceDescriptionParagraph:
@@ -570,7 +570,7 @@ const services = {
             image: "/assets/images/services/technology-services.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
-            description: "التقنية أساس عملك… وإحنا نحافظ عليها تشتغل بأعلى أداء.",
+            description: "التقنية أساس عملك وإحنا نحافظ عليها تشتغل بأعلى أداء.",
             serviceDescriptionTitle:
                 "في فيجانيوم نوفر إدارة شاملة للبنية التحتية التقنية لمؤسستك. \nمن الخوادم إلى الشبكات والأمان نضمن التشغيل المستقر، الأداء العالي، والدعم المستمر.",
             serviceDescriptionParagraph:
@@ -626,7 +626,7 @@ const services = {
             image: "/assets/images/services/technology-services.png",
             tags: [2, 3],
             tagsDisplayed: ["الابتكار الرقمي", "التسويق الذكي"],
-            description: "الانطباع الأول ما يتكرر… وهدفنا نخليه يعلق في الذهن.",
+            description: "الانطباع الأول ما يتكرر وهدفنا نخليه يعلق في الذهن.",
             serviceDescriptionTitle:
                 "في فيجانيوم نؤمن إن الهوية البصرية القوية هي أساس أي نجاح. \nنصمم شعارات وهوية متكاملة تعبّر عنك، وتخلي علامتك تتكلم بصريًا على كل المنصات.",
             serviceDescriptionParagraph:
@@ -654,7 +654,7 @@ const services = {
             image: "/assets/images/services/technology-services.png",
             tags: [2, 3],
             tagsDisplayed: ["الابتكار الرقمي", "التسويق الذكي"],
-            description: "خيالك… نحوله لمشهد ينبض بالحياة.",
+            description: "خيالك نحوله لمشهد ينبض بالحياة.",
             serviceDescriptionTitle:
                 "نستخدم تقنيات CGI المتقدمة لإنتاج تصاميم ثلاثية الأبعاد واقعية تخدم المجالات المعمارية، الصناعية، والإبداعية. \nهدفنا إن كل مشهد نحكيه بالبكسل يكون تجربة بصرية تترك أثر.",
             serviceDescriptionParagraph:
@@ -682,7 +682,7 @@ const services = {
             image: "/assets/images/services/technology-services.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
-            description: "النجاح ما يصير صدفة… يصير بخطة.",
+            description: "النجاح ما يصير صدفة يصير بخطة.",
             serviceDescriptionTitle:
                 "نؤمن إن كل مشروع يحتاج تخطيط ذكي وتنفيذ منظم. \nندير مشاريعك التقنية من البداية للنهاية، ونضمن إن كل خطوة تمشي حسب الخطة والجودة المتوقعة.",
             serviceDescriptionParagraph:
@@ -710,7 +710,7 @@ const services = {
             image: "/assets/images/services/technology-services.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
-            description: "حلول ذكية… تشتغل من أي مكان وفي أي وقت.",
+            description: "حلول ذكية تشتغل من أي مكان وفي أي وقت.",
             serviceDescriptionTitle:
                 "نطوّر منصات SaaS متكاملة تساعد الشركات تشتغل بسهولة وتوسّع عملياتها بدون تعقيد. \nنبني أنظمة سحابية مرنة، سريعة، وآمنة، تناسب احتياجك وتنمو مع عملك.",
             serviceDescriptionParagraph:
@@ -738,7 +738,7 @@ const services = {
             image: "/assets/images/services/technology-services.png",
             tags: [1, 3, 4],
             tagsDisplayed: ["التطوير التقني", "التسويق الذكي", "الأمان والتشغيل الذكي"],
-            description: "التقنية تتغيّر كل يوم… وقراراتك لازم تواكبها.",
+            description: "التقنية تتغيّر كل يوم وقراراتك لازم تواكبها.",
             serviceDescriptionTitle:
                 "في فيجانيوم نساعدك تتخذ قرارات تقنية ذكية مبنية على تحليل دقيق وخبرة عملية. \nنوفر استشارات استراتيجية تساعدك تبني بنية تقنية مستدامة وتخطط لتحوّلك الرقمي بثقة.",
             serviceDescriptionParagraph:
@@ -767,7 +767,7 @@ const services = {
             image: "/assets/images/services/cyber-security.png",
             tags: [4, 1],
             tagsDisplayed: ["الأمان والتشغيل الذكي", "التطوير التقني"],
-            description: "لأن حماية بياناتك مو رفاهية… هي أولوية.",
+            description: "لأن حماية بياناتك مو رفاهية هي أولوية.",
             serviceDescriptionTitle:
                 "في فيجانيوم نحميك من التهديدات الرقمية بخطط أمنية ذكية وتحليلات واقعية. \nنقدّم استشارات سيبرانية مبنية على خبرة وتقنيات متقدمة لضمان أمان معلوماتك واستمرارية أعمالك.",
             serviceDescriptionParagraph:
@@ -795,7 +795,7 @@ const services = {
             image: "/assets/images/services/it-services.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
-            description: "التقنية أساس عملك… وإحنا نحافظ عليها تشتغل بأعلى أداء.",
+            description: "التقنية أساس عملك وإحنا نحافظ عليها تشتغل بأعلى أداء.",
             serviceDescriptionTitle:
                 "في فيجانيوم نوفر إدارة شاملة للبنية التحتية التقنية لمؤسستك. \nمن الخوادم إلى الشبكات والأمان نضمن التشغيل المستقر، الأداء العالي، والدعم المستمر.",
             serviceDescriptionParagraph:
@@ -851,7 +851,7 @@ const services = {
             image: "/assets/images/services/branding.png",
             tags: [2, 3],
             tagsDisplayed: ["الابتكار الرقمي", "التسويق الذكي"],
-            description: "الانطباع الأول ما يتكرر… وهدفنا نخليه يعلق في الذهن.",
+            description: "الانطباع الأول ما يتكرر وهدفنا نخليه يعلق في الذهن.",
             serviceDescriptionTitle:
                 "في فيجانيوم نؤمن إن الهوية البصرية القوية هي أساس أي نجاح. \nنصمم شعارات وهوية متكاملة تعبّر عنك، وتخلي علامتك تتكلم بصريًا على كل المنصات.",
             serviceDescriptionParagraph:
@@ -879,7 +879,7 @@ const services = {
             image: "/assets/images/services/cgi.png",
             tags: [2, 3],
             tagsDisplayed: ["الابتكار الرقمي", "التسويق الذكي"],
-            description: "خيالك… نحوله لمشهد ينبض بالحياة.",
+            description: "خيالك نحوله لمشهد ينبض بالحياة.",
             serviceDescriptionTitle:
                 "نستخدم تقنيات CGI المتقدمة لإنتاج تصاميم ثلاثية الأبعاد واقعية تخدم المجالات المعمارية، الصناعية، والإبداعية. \nهدفنا إن كل مشهد نحكيه بالبكسل يكون تجربة بصرية تترك أثر.",
             serviceDescriptionParagraph:
@@ -907,7 +907,7 @@ const services = {
             image: "/assets/images/services/project-management.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
-            description: "النجاح ما يصير صدفة… يصير بخطة.",
+            description: "النجاح ما يصير صدفة يصير بخطة.",
             serviceDescriptionTitle:
                 "نؤمن إن كل مشروع يحتاج تخطيط ذكي وتنفيذ منظم. \nندير مشاريعك التقنية من البداية للنهاية، ونضمن إن كل خطوة تمشي حسب الخطة والجودة المتوقعة.",
             serviceDescriptionParagraph:
@@ -935,7 +935,7 @@ const services = {
             image: "/assets/images/services/saas.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
-            description: "حلول ذكية… تشتغل من أي مكان وفي أي وقت.",
+            description: "حلول ذكية تشتغل من أي مكان وفي أي وقت.",
             serviceDescriptionTitle:
                 "نطوّر منصات SaaS متكاملة تساعد الشركات تشتغل بسهولة وتوسّع عملياتها بدون تعقيد. \nنبني أنظمة سحابية مرنة، سريعة، وآمنة، تناسب احتياجك وتنمو مع عملك.",
             serviceDescriptionParagraph:
@@ -963,7 +963,7 @@ const services = {
             image: "/assets/images/services/tech-consulting.png",
             tags: [1, 3, 4],
             tagsDisplayed: ["التطوير التقني", "التسويق الذكي", "الأمان والتشغيل الذكي"],
-            description: "التقنية تتغيّر كل يوم… وقراراتك لازم تواكبها.",
+            description: "التقنية تتغيّر كل يوم وقراراتك لازم تواكبها.",
             serviceDescriptionTitle:
                 "في فيجانيوم نساعدك تتخذ قرارات تقنية ذكية مبنية على تحليل دقيق وخبرة عملية. \nنوفر استشارات استراتيجية تساعدك تبني بنية تقنية مستدامة وتخطط لتحوّلك الرقمي بثقة.",
             serviceDescriptionParagraph:

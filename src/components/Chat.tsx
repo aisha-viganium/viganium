@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "@/i18n/client";
 export default function ChatCard() {
-  const { t,i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const locale = i18n.language || "ar";
   const isArabic = locale === "ar";
 
@@ -16,16 +16,20 @@ export default function ChatCard() {
   const messagesContainerRef = useRef<HTMLDivElement | null>(null);
 
   const categories = [
-    t("ChatCard.webDev") || "برمجة المواقع الإلأكترونية",
-    t("ChatCard.cyberConsult") || "إستشارات الأمن السيبرانية",
-    t("ChatCard.mobileApps") || "برمجة تطبيقات الجوال",
     t("ChatCard.customSoftware") || "تطوير البرمجيات المخصصة",
-    t("ChatCard.softwareDelivery") || "التسليمات البرمجية",
-    t("ChatCard.ITServices") || "خدمات تكنولوجيا المعلومات",
-    t("ChatCard.AIAgent") || "وكيل الذكاء الإصطناعي",
-    t("ChatCard.digitalMarketing") || "التسويق الإلكتروني",
-    t("ChatCard.AIAutomation") || "اتممة الذكاء الإصطناعي",
-    t("ChatCard.blockStorage") || "التخزين بواطة البلوك اتشين",
+    t("ChatCard.mobileApps") || "برمجة تطبيقات الجوال",
+    t("ChatCard.webDev") || "تطوير المواقع الإلكترونية",
+    t("ChatCard.uiuxDesign") || "تصميم واجهات وتجربة المستخدم (UI/UX)",
+    t("ChatCard.digitalMarketing") || "التسويق الرقمي الذكي",
+    t("ChatCard.aiVideo") || "إنتاج الفيديو بالذكاء الاصطناعي",
+    t("ChatCard.graphicDesign") || "تصميم الجرافيك والهوية البصرية",
+    t("ChatCard.AIAgent") || "وكيل الذكاء الاصطناعي",
+    t("ChatCard.AIOperations") || "التشغيل الذكي بالذكاء الاصطناعي",
+    t("ChatCard.blockchainStorage") || "تخزين البيانات بتقنية البلوك تشين",
+    t("ChatCard.ITServices") || "خدمات تكنولوجيا المعلومات (IT Services)",
+    t("ChatCard.cyberConsult") || "استشارات الأمن السيبراني",
+    t("ChatCard.techConsult") || "استشارات البرمجيات والتقنية",
+    t("ChatCard.projectManagement") || "إدارة المشاريع التقنية",
   ];
 
   function openChat() {
@@ -106,7 +110,7 @@ export default function ChatCard() {
                 key={c}
                 type="button"
                 onClick={() => openChat()}
-                className={`${isArabic ?"md:text-[16px]":"md:text-[12px]"} cursor-pointer flex justify-center items-center py-1 px-3 md:px-4 gap-[6px] md:gap-[10px] w-[140px] md:w-[218px] h-[34px] bg-white rounded-[20px] font-medium text-[10px]  leading-[20px] md:leading-[23px] text-secondry`}
+                className={`${isArabic ? "md:text-[16px]" : "md:text-[12px]"} cursor-pointer flex justify-center items-center py-1 px-3 md:px-4 gap-[6px] md:gap-[10px] w-[140px] md:w-[218px] h-[34px] bg-white rounded-[20px] font-medium text-[10px]  leading-[20px] md:leading-[23px] text-secondry`}
               >
                 {c}
               </button>

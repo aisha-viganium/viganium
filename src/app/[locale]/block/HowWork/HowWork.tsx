@@ -8,7 +8,7 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
 
   return (
     <section
-      className="bg-[#1A1A1A] py-4  px-2 md:px-16"
+      className="bg-[#1A1A1A]  px-2 md:px-16"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <AnimatedSection
@@ -17,7 +17,7 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
         >
           <div
             className={`${
-              isArabic ? "border-r-[13px] md:border-r-[20px] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] pl-2 md:pl-4"
+              isArabic ? "border-r-[13px] md:border-r-[36px] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] pl-2 md:pl-4"
             } border-[#F9C751] min-h-[33px] flex items-center`}
           >
             <p
@@ -37,9 +37,8 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
           <h5
             className={`
               max-w-[260px] md:max-w-[876px]  
-              ${isArabic ? "text-right xl:leading-[69px] " : "text-left xl:leading-[109px] "} 
+              ${isArabic ? "text-right " : "text-left "} 
               text-[16px] md:text-[40px] 2xl:text-[48px] 
-              leading-[23px] md:leading-[32px] 2xl:leading-[45px] 
               font-bold 
               text-[#FDFFFC] 
               my-2 2xl:mt-[45px]
