@@ -56,7 +56,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                         className={`
                             max-w-[90%] 2xl:max-w-[763.7px] 
                             mt-4 md:mt-4 2xl:mt-[36px]
-                            !font-normal md:font-semibold 
+                            !font-normal md:font-semibold md:font-brando-semibold 
                             text-[12px] md:text-[16px]  2xl:text-[24px] 
                             leading-[normal] md:leading-7 lg:leading-[38px] 
                             ${isArabic ? "text-right" : "text-left"} text-[#FDFFFC]

@@ -25,9 +25,9 @@ export default function HeroSection({ service, locale }: { service: Service; loc
                         max-w-[1039.36px] 
                         font-bold 
                         ${isArabic ? "text-right" : "text-left"} 
-                        text-[14px] leading-[20px]
-                        md:text-5xl md:leading-[60px] 
-                        lg:text-[70.63px] lg:leading-[101px]
+                        text-[14px] 
+                        md:text-5xl 
+                        lg:text-[70.63px] 
                         text-[#FDFFFC]
                       `}>
                 {service.name}
@@ -38,11 +38,10 @@ export default function HeroSection({ service, locale }: { service: Service; loc
                         ${isArabic ? "text-right" : "text-left"} 
                         text-[#FDFFFC] 
                         font-normal text-[12px] leading-[17px] my-6 
-                        md:my-[40px] md:text-xl md:leading-7 md:font-semibold
-                        lg:my-[65px] lg:text-[24px] lg:leading-[38px]
+                        md:my-[40px] md:text-xl md:leading-7 md:font-semibold md:font-brando-semibold
+                        lg:my-[32px] lg:text-[24px] lg:leading-[38px]
                       `}
               >
-                {service.description}
               </p>
             </AnimatedSection>
 
@@ -95,10 +94,10 @@ export default function HeroSection({ service, locale }: { service: Service; loc
           <div className="grid grid-cols-2 items-center justify-around mx-auto min-h-[948px] overflow-hidden h-full">
             <AnimatedSection variants={slideFromRightBounce} className="col-span-1 h-full flex flex-col justify-center items-start text-white text-right pr-2">
 
-              <h1 className={`${isArabic ? "text-right" : "text-left"} mt-[50px] max-w-[1039.36px] font-bold text-[70.6311px] leading-[101px] text-[#FDFFFC]`}>
+              <h1 className={`${isArabic ? "text-right" : "text-left"} mt-[50px] max-w-[1039.36px] font-bold font-brando-bold text-[70.6311px] text-[#FDFFFC]`}>
                 {service.name}
               </h1>
-              <p className={`${isArabic ? "text-right" : "text-left"} max-w-[563.7px] 2xl:max-w-[763.7px] my-[65px] font-semibold text-[26.4867px] leading-[38px] text-[#FDFFFC]`}>
+              <p className={`${isArabic ? "text-right" : "text-left"} max-w-[563.7px] 2xl:max-w-[763.7px] my-[32px] font-semibold font-brando-semibold  text-[26.4867px] leading-[38px] text-[#FDFFFC]`}>
                 {service.description}
               </p>
             </AnimatedSection>

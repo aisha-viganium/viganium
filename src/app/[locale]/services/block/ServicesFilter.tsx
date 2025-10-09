@@ -43,7 +43,7 @@ export default function ServicesFilter({
     <>
       <TopFilter onFilterChange={handleFilterChange} />
 
-      <div className="mt-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6">
+      <div className="mt-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
         {filteredServices.map((service, index) => {
           const columns = 3;
           const row = Math.floor(index / columns);

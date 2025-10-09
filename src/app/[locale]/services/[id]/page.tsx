@@ -25,7 +25,7 @@ export default async function ServiceDetailPage({ params }: { params: { id: stri
       <HeroSection service={service} locale={locale} />
       <Advantages locale={locale} t={t} service={service}/>
       <Tools service={service}/>
-      <WeHear locale={locale} t={t} />
+      <WeHear locale={locale} t={t} bg="#F5F3F3" />
       <Questions locale={locale} t={t}/>
     </>
   );

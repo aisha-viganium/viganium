@@ -15,18 +15,17 @@ export default function Questions({ locale, t }: { locale: string; t: (key: stri
           className="flex flex-col gap-6"
         >
           <div
-            className={`
-              
-               min-h-[33px] flex items-center px-2 md:px-16
-              ${isArabic ? "text-right border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4" : "text-left border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}
-            `}
+                 className={`
+          ${isArabic ? " border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-8 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-8 text-left"} 
+          min-h-[33px] md:minh-[69px] flex items-center px-2 md:px-16
+        `}
           >
             <p
               className="
                 max-w-[796px] 
                 text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                 leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
-                font-bold text-secondry
+                font-bold text-[#414141] font-brando-bold
               "
             >
               {t("ServiceDetailPage.Questions.title")}

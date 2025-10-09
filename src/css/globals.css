@@ -8,19 +8,44 @@
 html {
   direction: rtl;
 }
-
+html, body {
+  cursor: none !important;
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'alfont_com_Brando' !important;
+}
 @font-face {
   font-family: 'alfont_com_Brando';
   src: url('../assets/fonts/alfont_com_Brando-Arabic-Regular.otf') format('opentype');
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: 'alfont_com_Brando_bold';
+  src: url('../assets/fonts/fonnts.com-Brando_Arabic_Bold.otf') format('opentype');
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'alfont_com_Brando_semibold';
+  src: url('../assets/fonts/fonnts.com-Brando_Arabic_SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+}
 .font-brando {
   font-family: 'alfont_com_Brando' !important;
 
 }
+.font-brando-bold {
+  font-family: 'alfont_com_Brando_bold' !important;
 
+}
+.font-brando-semibold {
+  font-family: 'alfont_com_Brando_semibold' !important;
+
+}
 @font-face {
   font-family: 'aileron_regular';
   src: url('../assets/fonts/aileron.regular.otf') format('opentype');
@@ -48,14 +73,7 @@ html {
     --foreground: #ededed;
   }
 } */
-html, body {
-  cursor: none !important;
-}
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'alfont_com_Brando' !important;
-}
+
 
 html[lang="en"] body {
   font-family: 'aileron_regular' !important;
@@ -170,4 +188,3 @@ html[lang="en"] .clipPath-video {
 .animate-bounce-ball {
   animation: bounce-ball 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
-

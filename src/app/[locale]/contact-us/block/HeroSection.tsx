@@ -48,7 +48,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                   ${isArabic ? "text-right" : "text-left"} 
                   text-[#FDFFFC] 
                   font-normal text-[12px] leading-[17px] my-0
-                  md:my-[10px] md:text-xl md:leading-7 md:font-semibold
+                  md:my-[10px] md:text-xl md:leading-7 md:font-semibold md:font-brando-semibold
                   2xl:my-[15px] lg:text-[24px] lg:leading-[38px]
                 `}
               >

@@ -20,8 +20,8 @@ export default function Advantages({ service, locale, t }: { service: Service; l
       <AnimatedSection
         variants={slideFromTopBounce}
         className={`
-          ${isArabic ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"} 
-          min-h-[33px] flex items-center px-2 md:px-16
+          ${isArabic ? "font-bold text-[#414141] font-brando-bold border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-8 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-8 text-left"} 
+          min-h-[33px] md:minh-[69px] flex items-center px-2 md:px-16
         `}
       >
         <p
@@ -29,8 +29,7 @@ export default function Advantages({ service, locale, t }: { service: Service; l
             max-w-[796px] 
             text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
             leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
-            font-bold 
-            text-secondry
+            font-bold text-[#414141] font-brando-bold
           "
         >
           {t("ServiceDetailPage.Advantages.title")}
@@ -42,7 +41,7 @@ export default function Advantages({ service, locale, t }: { service: Service; l
 
           <h3
             className={`
-              flex flex-wrap gap-3 md:gap-5 items-center font-bold 
+              flex flex-wrap gap-3 md:gap-5 items-center font-bold  font-brando-bold
               text-[16px] md:text-2xl lg:text-[32px] 
               leading-tight lg:leading-[46px] text-secondry
               justify-start
@@ -57,10 +56,11 @@ export default function Advantages({ service, locale, t }: { service: Service; l
 
           <h5
             className={`
-              font-bold 
+              font-bold font-brando-bold
               text-[20px] md:text-[24px] lg:text-[40px] 
               leading-[33px] md:leading-[40px] lg:leading-[63px] 
               text-secondry my-6 md:my-8 lg:my-10
+              max-w-[906px]
               ${isArabic ? "text-right" : "text-left"}
             `}
           >
@@ -74,6 +74,7 @@ export default function Advantages({ service, locale, t }: { service: Service; l
               text-[14px] md:text-[16px] 
               leading-[26px] 
               text-secondry
+              max-w-[864px]
               ${isArabic ? "text-right" : "text-left"}
             `}
           >
@@ -105,16 +106,16 @@ export default function Advantages({ service, locale, t }: { service: Service; l
 
                 <h5
                   className="
-                    font-semibold w-fit text-lg md:text-xl lg:text-[24px] 
+                    font-semibold font-brando-semibold w-fit text-lg md:text-xl lg:text-[24px] 
                     leading-tight lg:leading-[34px] text-secondry-200 
-                    py-2 md:py-3 my-3 md:my-5 
+                    pb-2 md:pb-4 mt-2 md:mt-4 
                     border-b-4 border-b-[#C83E43]
                   "
                 >
                   {item.title}
                 </h5>
 
-                <p className="font-medium text-sm md:text-[12px] lg:text-[16px] leading-relaxed md:leading-[23px] text-secondry-200">
+                <p className="font-medium text-sm md:text-[12px] lg:text-[16px] mt-4 leading-relaxed md:leading-[23px] text-secondry-200">
                   {item.description}
 
                 </p>

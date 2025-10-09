@@ -141,7 +141,7 @@ export default function SidebarNavbar() {
                 </div>
 
                 <span className={`
-                                font-semibold 
+                                font-semibold font-brando-semibold 
                                 text-[18px]
                                 md:text-[40px]  
                                 2xl:text-[64px] 

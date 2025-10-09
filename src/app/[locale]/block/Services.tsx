@@ -42,17 +42,15 @@ export default function Services({
     >
       <AnimatedSection
         variants={slideFromTopBounce}
-        className={`mb-5 min-h-[33px] flex items-center 
-          ${
-            isArabic
-              ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4"
-              : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"
+        className={`mb-5 min-h-[33px] flex items-center  md:min-h-[93px] 
+          ${isArabic
+            ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4"
+            : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"
           }`}
       >
         <p
-          className={`max-w-[796px] ${
-            isArabic ? "text-right" : "text-left"
-          } text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+          className={`max-w-[796px] ${isArabic ? "text-right" : "text-left"
+            } text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
           leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
           font-bold text-secondry`}
         >
@@ -74,23 +72,26 @@ export default function Services({
                 query: { filter: service.tag.toString() },
               }}
             >
-              <div className="flex flex-col cursor-pointer">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  width={526}
-                  height={341}
-                  className="w-full h-[213px] md:h-[280px] lg:h-auto rounded-[8px] md:rounded-[16px] object-cover"
-                />
+              <div className="flex flex-col cursor-pointer bg-[#FDFFFC] md:h-[516px]">
+                <div className="relative  w-full h-[213px] md:h-[341px] lg:h-auto">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={526}
+                    height={341}
+                    className="relative w-full h-[213px] md:h-[341px] lg:h-auto rounded-[8px] md:rounded-[16px] object-cover"
+                  />
+                  <div className="absolute bottom-0  w-full h-[213px] md:h-[341px] lg:h-auto inset-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.9)] rounded-[8px] md:rounded-[16px] " />
+                </div>
                 <h5
-                  className={`font-bold text-secondry my-3 md:mt-[24px] md:mb-[16px]
+                  className={`font-brando-bold font-bold text-secondry my-3 md:mt-[24px] md:mb-[16px]
                     text-[16px] leading-[23px] md:text-[22px] md:leading-[32px] lg:text-[24px] lg:leading-[34px] 
                     ${isArabic ? "text-right" : "text-left"}`}
                 >
                   {service.title}
                 </h5>
                 <p
-                  className={`text-secondry font-normal 
+                  className={`font-brando-semibold text-secondry font-normal 
                     text-[14px] leading-[20px] md:text-[15px] md:leading-[23px] lg:text-[16px] lg:leading-[23px] 
                     ${isArabic ? "text-right" : "text-left"}`}
                 >

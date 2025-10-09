@@ -23,9 +23,9 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                         max-w-[1039.36px] 
                         font-bold 
                         ${isArabic ? "text-right" : "text-left"}
-                        text-[14px] leading-[20px]
-                        md:text-5xl md:leading-[60px] 
-                        lg:text-[70.63px] lg:leading-[101px]
+                        text-[14px] 
+                        md:text-5xl 
+                        lg:text-[70.63px] 
                         text-[#FDFFFC]
               `}
             >
@@ -39,7 +39,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                         text-[#FDFFFC] 
                         font-normal text-[12px] leading-[17px] my-6 
                         md:my-[40px] md:text-xl md:leading-7 md:font-semibold
-                        lg:my-[65px] lg:text-[24px] lg:leading-[38px]
+                        lg:my-[32px] lg:text-[24px] lg:leading-[38px]
                       `}
             >
               {t("ServicesPage.HeroSection.description")}
@@ -54,8 +54,10 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             rounded-[4px] bg-[#FDFFFC] cursor-pointer
                             md:static md:w-[350px] md:h-[65px]  md:max-w-[unset]
                             2xl:w-[693px]
+                            font-bold font-brando-bold 
                           "
               >
+                
                 <span
                   className="
                               font-bold text-[10px] leading-[14px] text-center text-secondry

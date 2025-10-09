@@ -33,7 +33,7 @@ export default function Footer() {
 
         <AnimatedSection variants={deckShuffle} custom={0} className={`flex flex-col gap-8 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
           <h3
-            className="font-semibold text-[24px] md:text-[35px] leading-[35px] md:leading-[57px] text-[#D9D9D9]"
+            className="font-semibold font-brando-semibold text-[24px] md:text-[35px] leading-[35px] md:leading-[57px] text-[#D9D9D9]"
             style={{
               textShadow: `
                 -1px -1px 0 #FFFFFF,  
@@ -60,7 +60,7 @@ export default function Footer() {
         </AnimatedSection>
 
         <AnimatedSection variants={deckShuffle} custom={1} className={`flex flex-col gap-8 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
-          <h3 className="font-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
+          <h3 className="font-semibold font-brando-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
             {t("Footer.socialTitle")}
           </h3>
           <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
@@ -76,7 +76,7 @@ export default function Footer() {
         </AnimatedSection>
 
         <AnimatedSection variants={deckShuffle} custom={2} className={`flex flex-col gap-8 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
-          <h3 className="font-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
+          <h3 className="font-semibold font-brando-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
             {t("Footer.partnersTitle")}
           </h3>
           <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">

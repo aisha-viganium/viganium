@@ -7,27 +7,30 @@ import Image from "next/image";
 import AnimatedSection, { deckShuffle, slideFromTopBounce } from "@/animation/AnimatedSection";
 import { useTranslation } from "react-i18next";
 export interface Service {
-  id: number;
-  tools: {
-    title: string;
-    image: string;
-  }[];
+    id: number;
+    tools: {
+        title: string;
+        image: string;
+    }[];
 }
 
 
-export default function Tools({ service }: { service: Service;}) {
+export default function Tools({ service }: { service: Service; }) {
     const { t, i18n } = useTranslation();
     const isArabic = i18n.language === "ar";
     return (
-        <section className="py-12 md:py-16 px-2 md:px-16">
+        <section className="pb-12 md:pb-16 px-2 md:px-16">
 
-            <AnimatedSection variants={slideFromTopBounce} className={`  ${isArabic ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4 text-left"} min-h-[33px] flex items-center px-2 md:px-16`}>
+            <AnimatedSection variants={slideFromTopBounce}        className={`
+          ${isArabic ? " border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-8 text-right" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-8 text-left"} 
+          min-h-[33px] md:minh-[69px] flex items-center px-2 md:px-16
+        `}>
                 <p className=" max-w-[796px] 
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                         leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
-                        font-bold 
-                        text-secondry">
+                        font-bold text-[#414141] font-brando-bold
+                       ">
                     {t("ServiceDetailPage.Tools.title")}
                 </p>
             </AnimatedSection>
@@ -45,7 +48,7 @@ export default function Tools({ service }: { service: Service;}) {
 
                     }}
                 >
-                {service.tools.map((slide, i) => (
+                    {service.tools.map((slide, i) => (
                         <SwiperSlide key={i}>
                             <div className="flex flex-row justify-between w-100 items-center px-4 md:px-6 py-4 gap-2 md:gap-2.5 max-w-full 2xl:max-w-[454px] h-[80px] md:h-[96px] bg-[#EFEFEF] rounded-[12px] md:rounded-[16px]">
                                 <p className={`font-aileron text-secondry font-medium text-sm md:text-base lg:text-[16px] leading-5 md:leading-[26px] ${isArabic ? "text-right" : ""} flex-1`}>

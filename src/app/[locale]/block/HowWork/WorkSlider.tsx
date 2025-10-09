@@ -21,17 +21,17 @@ export default function CardSlider() {
     const basePositions = isArabic
         ? [
             { rotate: 0, x: 10},
-            { rotate: 25, x: 10},
-            { rotate: 20, x: 10},
-            { rotate: 15, x: 10},
             { rotate: 10, x: 10},
+            { rotate: 15, x: 10},
+            { rotate: 20, x: 10},
+            { rotate: 25, x: 10},
         ]
         : [
             { rotate: 0, x: 10},
-            { rotate: 25, x: 10},
-            { rotate: 20, x: 10},
-            { rotate: 15, x: 10},
             { rotate: 10, x: 10},
+            { rotate: 15, x: 10},
+            { rotate: 20, x: 10},
+            { rotate: 25, x: 10},
         ];
     const nextCard = () => {
         if (index < cards.length - 1) {
@@ -100,11 +100,11 @@ export default function CardSlider() {
                                     }
                                     exit={direction === "next" ? cardVariants.exitNext : ""}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    className="absolute w-40 md:w-80 flex flex-col items-center p-[17.53px] gap-[17.53px] max-w-[356px] min-h-[200px] md:min-h-[470.18px] bg-[#F3F3F3] shadow-[4.38px_4.38px_4.38px_rgba(0,0,0,0.25)] rounded-[6.53px] md:rounded-[17.53px]"
+                                    className="absolute  w-40 md:w-80 flex flex-col items-center p-[17.53px] gap-[17.53px] max-w-[356px] min-h-[200px] md:min-h-[470.18px] bg-[#F3F3F3] shadow-[4.38px_4.38px_4.38px_0px_#00000040] rounded-[6.53px] md:rounded-[17.53px]"
                                 >
                                     <div>
                                         <div className="flex flex-row justify-between items-center gap-[17.53px] w-full h-fit md:h-[56px]">
-                                            <h5 className="max-w-[127px] text-center text-[14.36px] leading-[21px] font-semibold text-secondry md:text-[39.43px] md:leading-[56px]">
+                                            <h5 className="max-w-[127px] text-center text-[14.36px] leading-[21px] font-semibold font-brando-semibold text-secondry md:text-[39.43px] md:leading-[56px]">
                                                 {card.title}
                                             </h5>
                                             <div className="flex flex-col justify-center items-center p-[3.99px] gap-[3.99px] w-[19.15px] h-[19.15px] rounded-[11.97px] bg-[#1A1A1A] md:p-[10.95px] md:gap-[10.95px] md:w-[52.58px] md:h-[52.58px] md:rounded-[32.86px]">

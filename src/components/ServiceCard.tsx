@@ -15,7 +15,7 @@ type Service = {
 export function ServiceCard({ service, locale }: { service: Service; locale: string; }) {
   const isArabic = locale === "ar";
   return (
-    <div className="flex flex-col items-end pt-8 pb-1 md:pb-8 pr-6 pl-6 md:pr-[29px] md:pl-[29px] gap-8 min-h-[427px] bg-[#F3F3F3] rounded-[8px]">
+    <div className="flex flex-col pt-8 pb-1 md:pb-8 pr-6 pl-6 md:pr-[29px] md:pl-[29px] gap-8 min-h-[427px] 2xl:min-h-[626px] bg-[#F3F3F3] rounded-[8px]">
       <Link href={`services/${service.id}`}>
         <div className="relative w-full h-[250px] 2xl:h-[380px] mb-4">
           <Image
@@ -28,7 +28,7 @@ export function ServiceCard({ service, locale }: { service: Service; locale: str
           />
         </div>
 
-        <div className={`px-3 ${isArabic ? "text-right" : "text-left"}`}>
+        <div className={` ${isArabic ? "text-right" : "text-left"}`}>
           <h3
             className={`
               ${isArabic ? "text-right" : "text-left"}
@@ -58,7 +58,7 @@ export function ServiceCard({ service, locale }: { service: Service; locale: str
                             py-2 px-3 
                             min-h-[40px] md:min-h-[47px] 
                             border-2 border-[#1A1A1A] rounded-[37px] 
-                            font-medium  text-secondry-200
+                            font-semibold font-brando-semibold  text-secondry-200
                           `}
                 >
                   {tag}

@@ -4,10 +4,10 @@ import AnimatedSection, { slideFromRightBounce, slideFromLeftBounce } from "@/an
 import PoPUpChat from "@/components/PoPUpChat";
 import Image from "next/image";
 
-export default function WeHear({ locale, t }: { locale: string; t: (key: string) => string }) {
+export default function WeHear({ locale, t ,bg="white"}: { locale: string; t: (key: string) => string; bg: string }) {
 
   return (
-    <section className="py-2 md:py-10 px-2 md:px-16 bg-white mt-5 rounded-none md:rounded-2xl relative overflow-hidden">
+    <section className={`py-2 md:py-16 px-2 md:px-16 bg-[${bg}] rounded-none md:rounded-2xl relative overflow-hidden ml-16`}>
       <Image
         src="/assets/icons/shapes-group.svg"
         alt="We Hear"

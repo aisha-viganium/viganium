@@ -12,7 +12,7 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
         <AnimatedSection variants={slideFromRightBounce}>
           <div className="flex flex-col gap-6">
             <div className={` ${isArabic ? "border-r-[#F9C751] pr-4 border-r-[13px] md:border-r-[20px]" : " border-l-[#F9C751] pl-4 border-l-[13px] md:border-l-[20px]"}`}>
-              <span className="font-semibold text-[14px] md:text-[24px] leading-[100%] md:leading-[34px] text-right text-[#F9C751] flex items-end gap-2">
+              <span className="font-semibold font-brando-semibold text-[14px] md:text-[24px] leading-[100%] md:leading-[34px] text-right text-[#F9C751] flex items-end gap-2">
                 <span>{t("story.title")}</span>
                 <Image
                   src={isArabic?"/assets/icons/arrow-yellow.svg":"/assets/icons/arrow-yellow-en.svg"}
@@ -23,7 +23,7 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
                 />
               </span>
 
-              <p className={`max-w-[796px] font-normal md:font-bold text-[12px] md:text-[24px] lg:text-[36px] leading-[100%] md:leading-[42px] lg:leading-[51px] ${isArabic ? "text-right" : "text-left"} text-secondry mt-3`}>
+              <p className={`max-w-[864px] font-normal md:font-bold text-[12px] md:text-[24px] lg:text-[36px] leading-[100%] md:leading-[42px] lg:leading-[51px] ${isArabic ? "text-right" : "text-left"} text-secondry mt-3`}>
                 {t("story.description")}
               </p>
             </div>
@@ -70,9 +70,9 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
 
             <div className="flex items-center gap-4">
               <div className="flex">
-                <Image src="/assets/images/person1.jpg" alt="1" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] border border-[#FDFFFC] rounded-full ml-[-25px]  ${isArabic ? "md:ml-[-45px]" : "md:mr-[-35px]"}`} />
-                <Image src="/assets/images/person2.jpg" alt="2" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] border border-[#FDFFFC] rounded-full ml-[-25px]  ${isArabic ? "md:ml-[-45px]" : "md:mr-[-35px]"}`} />
-                <Image src="/assets/images/person3.jpg" alt="3" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] border border-[#FDFFFC] rounded-full `} />
+                <Image src="/assets/images/person1.jpg" alt="1" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] outline-[1.37px] outline-[#FDFFFC] rounded-full ml-[-25px]  ${isArabic ? "md:ml-[-45px]" : "md:mr-[-35px]"}`} />
+                <Image src="/assets/images/person2.jpg" alt="2" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] outline-[1.37px] outline-[#FDFFFC] rounded-full ml-[-25px]  ${isArabic ? "md:ml-[-45px]" : "md:mr-[-35px]"}`} />
+                <Image src="/assets/images/person3.jpg" alt="3" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] outline-[1.37px] border-[#FDFFFC] rounded-full `} />
               </div>
 
               <button className="cursor-pointer flex items-center gap-1 md:gap-4">

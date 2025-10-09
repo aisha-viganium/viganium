@@ -59,7 +59,7 @@ export default function Details({ locale, t }: { locale: string; t: (key: string
       <div
         className=" px-2 md:px-16 py-5"
       >
-        <WeHear locale={locale} t={t} />
+        <WeHear locale={locale} t={t} bg="#FFF" />
       </div>
     </section>
   );

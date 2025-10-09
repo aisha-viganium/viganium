@@ -13,7 +13,7 @@ export default function OurTeam({ locale, t }: { locale: string; t: (key: string
           variants={slideFromRightBounce}
         >
           <div>
-            <span className="font-semibold text-[14px] leading-[20px] md:text-[24px] md:leading-[34px] text-right text-[#F9C751] flex items-center gap-2">
+            <span className="font-semibold font-brando-semibold text-[14px] leading-[20px] md:text-[24px] md:leading-[34px] text-right text-[#F9C751] flex items-center gap-2">
               <span> {t("TeamWorkPage.OurTeamSection.subtitle")}</span>
               <Image
                 src={isArabic?"/assets/icons/arrow-yellow.svg":"/assets/icons/arrow-yellow-en.svg"}
@@ -28,7 +28,7 @@ export default function OurTeam({ locale, t }: { locale: string; t: (key: string
               {t("TeamWorkPage.OurTeamSection.title")}
             </h3>
 
-            <p className={`${isArabic ? "text-right" : "text-left"} font-normal text-[14px] leading-[20px] md:font-semibold md:text-[18px] md:leading-[28px] lg:text-[24px] lg:leading-[34px] text-secondry my-5`}>
+            <p className={`${isArabic ? "text-right" : "text-left"} font-normal text-[14px] leading-[20px] md:font-semibold font-brando-semibold md:text-[18px] md:leading-[28px] lg:text-[24px] lg:leading-[34px] text-secondry my-5`}>
               {t("TeamWorkPage.OurTeamSection.description")}
             </p>
           </div>
@@ -56,7 +56,7 @@ export default function OurTeam({ locale, t }: { locale: string; t: (key: string
                     className="w-[48px] md:w-[100px] h-[48px] md:h-[100px] rounded-tl-[8px]"
                   />
 
-                  <h5 className="font-semibold w-fit text-[14px] md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-secondry-200 pb-1 my-3">
+                  <h5 className="font-semibold font-brando-semibold w-fit text-[14px] md:text-xl lg:text-[24px] leading-tight lg:leading-[34px] text-secondry-200 pb-1 my-3">
                     {t("TeamWorkPage.OurTeamSection.items." + (i))}
                   </h5>
 

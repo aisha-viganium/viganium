@@ -41,7 +41,7 @@ export default function CardsDiv({ locale, t }: { locale: string; t: (key: strin
     <div className="relative w-full max-w-[1100px] h-[680px] mx-auto mt-[-150px] md:mt-0">
       <div className="z-50 rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white w-[172px] h-[172px]  md:w-[272px] md:h-[272px] flex items-center justify-center">
         <div className="z-20 w-[130px] h-[130px] md:w-[230px] md:h-[230px]  border-[12px] border-[#F9C751] rounded-full bg-white flex items-center justify-center">
-          <span className="font-semibold text-[12px] md:text-[20px] leading-[34px] text-center text-black">{t("TeamWorkPage.OurTeamSection.centerTitle")} </span>
+          <span className="font-semibold font-brando-semibold text-[12px] md:text-[20px] leading-[34px] text-center text-black">{t("TeamWorkPage.OurTeamSection.centerTitle")} </span>
         </div>
       </div>
 

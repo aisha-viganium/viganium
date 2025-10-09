@@ -27,7 +27,7 @@ export default function Accordion() {
           <div key={index} className="w-full mt-4 md:mt-5">
             <button
               onClick={() => toggle(index)}
-              className="cursor-pointer flex justify-between w-full items-center p-3 md:p-4 min-h-[45px] border-r-[6px] md:border-r-[8px] border-[#F9C751] rounded-lg transition-colors duration-300"
+              className="cursor-pointer  flex justify-between w-full items-center p-3 md:p-4 h-[45px] border-r-[6px] md:border-r-[8px] border-[#F9C751] rounded-lg transition-colors duration-300"
             >
               <span className="font-semibold text-[10px] md:text-[18px] lg:text-[20px] leading-[24px] md:leading-[27px] lg:leading-[29px] text-right text-secondry-200">
                 {item.question}
@@ -50,12 +50,11 @@ export default function Accordion() {
                   ? contentRefs.current[index]?.scrollHeight + "px"
                   : "0px",
               }}
-              className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
+              className="overflow-hidden transition-[max-height] duration-500 ease-in-out border-t-1 border-t-[#A5A5A5] mt-4"
             >
               <div className=
                 {`${isArabic ? "text-right " : "text-left "}
                 mt-2
-                border-t-1 border-t-[#A5A5A5]
                 font-medium 
                 text-[8px]
                 md:text-[16px] 

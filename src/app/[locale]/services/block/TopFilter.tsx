@@ -39,7 +39,7 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
         <button
           onClick={() => handleClick(link.value)}
           key={link.value}
-          className={`font-semibold 
+          className={`font-semibold font-brando-semibold 
             md:text-[20px] md:leading-[29px] md:text-right 
             text-[12px] leading-[normal] text-left
             relative text-[#FDFFFC] px-2 p-[16px] cursor-pointer

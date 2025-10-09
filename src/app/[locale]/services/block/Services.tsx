@@ -28,7 +28,7 @@ export default function Services({ locale, t }: { locale: string; t: (key: strin
           <ServicesFilter services={servicesData} locale={locale} />
         </div>
       </section>
-      <WeHear locale={locale} t={t}/>
+      <WeHear locale={locale} t={t} bg="#FFF"/>
 
     </>
   );

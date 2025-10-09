@@ -39,7 +39,7 @@ export default function LanguageSwitcher() {
             ">
         <button
           onClick={() => toggleLocale()}
-          className={`!font-brando cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
+          className={`!font-brando cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold font-brando-semibold ${
             currentLocale === "ar"
               ? "bg-[#BD171D] text-white"
               : "bg-transparent text-[#414141]"
