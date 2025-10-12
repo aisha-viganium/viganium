@@ -44,11 +44,9 @@ useEffect(() => {
   };
 
   const sliderItems = [
-    { label: t("NavbarSection.Projects.item1"), image: "/assets/images/rental.jpg" },
-    { label: t("NavbarSection.Projects.item2"), image: "/assets/images/website.jpg" },
-    { label: t("NavbarSection.Projects.item3"), image: "/assets/images/rental.jpg" },
-    { label: t("NavbarSection.Projects.item4"), image: "/assets/images/website.jpg" },
-    { label: t("NavbarSection.Projects.item5"), image: "/assets/images/rental.jpg" },
+    { label: t("NavbarSection.Projects.item1"), image: "/assets/images/previous-work/Ghazal.png" },
+    { label: t("NavbarSection.Projects.item2"), image: "/assets/images/previous-work/Rental-gate.png" },
+    { label: t("NavbarSection.Projects.item3"), image: "/assets/images/previous-work/Rental-gate.png" },
   ];
 
   const socialLinks = [
@@ -169,8 +167,8 @@ useEffect(() => {
           </div>
 
 
-          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex-col justify-around hidden md:flex">
-            <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[359px] max-w-[913px]">
+          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex-col gap-[64px] hidden md:flex">
+            <div className="flex flex-col lg:flex-row gap-6 p-6 md:py-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[439px] md:max-w-[913px]">
               <div className=" lg:w-1/3">
                 <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
                   <span>  {t("NavbarSection.Projects.title")} </span>
@@ -205,7 +203,7 @@ useEffect(() => {
                       alt={sliderItems[activeSlide].label}
                       width={500}
                       height={300}
-                      className="object-cover rounded-lg w-full max-h-[300px]"
+                      className="object-cover rounded-lg w-full max-h-[375px]"
                     />
                   </motion.div>
                 </AnimatePresence>
@@ -213,13 +211,13 @@ useEffect(() => {
             </div>
 
             <div className="p-4 flex flex-col md:flex-row gap-6 justify-center align-center">
-              <Link href={`/${currentLocale}/contact-us`} className="flex-1" onClick={() => setIsOpen(false)}>
+              <Link href={`/${currentLocale}/contact-us`} className="flex-2" onClick={() => setIsOpen(false)}>
                 <div className="relative group w-full h-[250px] md:max-h-[305px] 2xl:h-[375px] rounded-lg overflow-hidden cursor-pointer">
                   <Image
                     src={`/assets/images/contact-us-nav.png`}
                     alt={`Contact`}
                     fill
-                    className="absolute object-cover rounded-[8px]"
+                    className="absolute object-cover rounded-[8px] h-[250px] md:max-h-[305px] 2xl:h-[375px]"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                     <span className="text-white font-bold text-[62px]">التواصل معنا</span>
