@@ -17,7 +17,7 @@ export default function NavBarActions() {
       <LanguageSwitcher />
 
       <div className="flex items-center gap-2 pe-3">
-        <PoPUpChat bg="#FFF" color="#1A1A1A" border="#F6EDE0" />
+        <PoPUpChat widthMob="60px" bg="#FFF" color="#1A1A1A" border="#F6EDE0" />
       </div>
 
 

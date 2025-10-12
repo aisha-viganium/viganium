@@ -29,7 +29,7 @@ export default function WeHear({ locale, t ,bg="white"}: { locale: string; t: (k
         </AnimatedSection>
 
         <AnimatedSection variants={slideFromLeftBounce} className="pt-0 md:pt-5">
-          <PoPUpChat bg="#1A1A1A" color="#FDFFFC" border="#1A1A1A" />
+          <PoPUpChat widthMob="156px" bg="#1A1A1A" color="#FDFFFC" border="#1A1A1A" />
         </AnimatedSection>
       </div>
     </section>

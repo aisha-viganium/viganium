@@ -61,7 +61,7 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
             {t("howWork.description")}
           </p>
 
-          <PoPUpChat bg="#FFF" color="#1A1A1A" border="#F6EDE0" />
+          <PoPUpChat widthMob="117px" bg="#FFF" color="#1A1A1A" border="#F6EDE0" />
         </AnimatedSection>
 
         <AnimatedSection
