@@ -56,7 +56,18 @@ body {
 .font-aileron {
   font-family: 'aileron_regular' !important;
 }
+html[lang="en"] .font-brando {
+  font-family: 'aileron_regular' !important;
 
+}
+html[lang="en"] .font-brando-bold {
+  font-family: 'aileron_regular' !important;
+
+}
+html[lang="en"] .font-brando-semibold {
+  font-family: 'aileron_regular' !important;
+
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
