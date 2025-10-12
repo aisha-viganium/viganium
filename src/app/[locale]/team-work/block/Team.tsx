@@ -108,7 +108,6 @@ export default function Team() {
                         </Swiper>
 
 
-                        {/* Navigation */}
                         <div className={`${isArabic ? "" : "flex-row-reverse"} flex items-center justify-around gap-4 mt-[-50px] relative mb-6 z-40`}>
 
 
@@ -123,7 +122,6 @@ export default function Team() {
                             </button>
 
                         </div>
-                        {/* Pagination styling */}
                         <style jsx global>{`
                             .swiper-pagination-bullet {
                             background: #cfcfce;

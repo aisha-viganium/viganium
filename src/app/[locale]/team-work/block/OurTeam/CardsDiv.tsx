@@ -5,26 +5,26 @@ export default function CardsDiv({ locale, t }: { locale: string; t: (key: strin
     {
       id: 1,
       img: "/assets/images/team/environment.png",
-      title_ar: "المرونة وحلّ المشكلات",
-      title_en: "Flexibility and Problem Solving"
+      title_ar: "البيئه",
+      title_en: "environment"
     },
     {
       id: 2,
       img: "/assets/images/team/thoughts.png",
-      title_ar: "التواصل الفعّال",
-      title_en: "Communication"
+      title_ar: " الافكار",
+      title_en: "thoughts"
     },
     {
       id: 3,
       img: "/assets/images/team/collebration.png",
       title_ar: "التعاون وروح الفريق",
-      title_en: "Collaboration and Team Spirit"
+      title_en: "collebration"
     },
     {
       id: 4,
       img: "/assets/images/team/developing.png",
-      title_ar: "الإلتزام وتحمل المسؤولية",
-      title_en: "Commitment and Responsibility"
+      title_ar: "التطوير",
+      title_en: "developing"
     },
   ];
   const isArabic = locale === "ar";

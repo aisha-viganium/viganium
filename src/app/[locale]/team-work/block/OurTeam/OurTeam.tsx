@@ -6,17 +6,17 @@ export default function OurTeam({ locale, t }: { locale: string; t: (key: string
   const isArabic = locale === "ar";
 
   return (
-    <section className="py-5 md:py-16 px-2 md:px-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center mt-0 md:mt-20">
+    <section className="py-4 md:py-8 px-2 md:px-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
         <AnimatedSection
-          className="col-span-1"
+          className="col-span-1 pt-[60px]"
           variants={slideFromRightBounce}
         >
           <div>
             <span className="font-semibold font-brando-semibold text-[14px] leading-[20px] md:text-[24px] md:leading-[34px] text-right text-[#F9C751] flex items-center gap-2">
               <span> {t("TeamWorkPage.OurTeamSection.subtitle")}</span>
               <Image
-                src={isArabic?"/assets/icons/arrow-yellow.svg":"/assets/icons/arrow-yellow-en.svg"}
+                src={isArabic ? "/assets/icons/arrow-yellow.svg" : "/assets/icons/arrow-yellow-en.svg"}
                 alt="line"
                 width={10}
                 height={10}
@@ -24,11 +24,11 @@ export default function OurTeam({ locale, t }: { locale: string; t: (key: string
               />
             </span>
 
-            <h3 className={`${isArabic ? "text-right" : "text-left"} font-bold text-[20px] md:text-[36px] lg:text-[48px] leading-[29px] md:leading-[46px] lg:leading-[69px]  text-secondry mt-3`}>
+            <h3 className={`${isArabic ? "text-right" : "text-left"} font-bold font-brando-bold text-[20px] md:text-[36px] lg:text-[48px] leading-[29px] md:leading-[46px] lg:leading-[69px]  text-secondry`}>
               {t("TeamWorkPage.OurTeamSection.title")}
             </h3>
 
-            <p className={`${isArabic ? "text-right" : "text-left"} font-normal text-[14px] leading-[20px] md:font-semibold font-brando-semibold md:text-[18px] md:leading-[28px] lg:text-[24px] lg:leading-[34px] text-secondry my-5`}>
+            <p className={`${isArabic ? "text-right" : "text-left"} font-normal text-[14px] leading-[20px] md:font-semibold font-brando-semibold md:text-[18px] md:leading-[28px] lg:text-[24px] lg:leading-[34px] text-secondry my-6 md:my-8`}>
               {t("TeamWorkPage.OurTeamSection.description")}
             </p>
           </div>

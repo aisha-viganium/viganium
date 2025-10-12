@@ -7,8 +7,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
 
   return (
     <section
-      dir={isArabic ? "rtl" : "ltr"}
-      className="relative w-full h-[30vh] md:min-h-[100vh] 2xl:min-h-[948px]"
+      className="relative w-full h-[30vh] md:min-h-[100vh] 2xl:min-h-[797px]"
     >
       <div
         className={`absolute left-0 inset-0 bg-[url('/assets/images/team.png')] bg-cover bg-center 
@@ -29,7 +28,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                 className={`
                   mt-[30px] lg:mt-[50px] 
                   max-w-[1039.36px] 
-                  font-bold 
+                  font-bold  font-brando-bold
                   ${isArabic ? "text-right" : "text-left"} 
                   text-[14px] leading-[20px]
                   md:text-5xl md:leading-[40px] 2xl:leading-auto
