@@ -33,7 +33,7 @@ export default function Questions({ locale, t }: { locale: string; t: (key: stri
             alt="news"
             width={880}
             height={455}
-            className="w-full max-w-[100%] md:max-w-[880px] h-auto object-contain"
+            className="w-full max-w-[100%] md:max-w-[880px] h-auto object-contain  rounded-[8px]"
           />
         </AnimatedSection>
       </div>

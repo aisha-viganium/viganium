@@ -12,7 +12,7 @@ export default function Questions({ locale, t }: { locale: string; t: (key: stri
 
         <AnimatedSection
           variants={slideFromRightBounce}
-          className="flex flex-col gap-6"
+          className="flex flex-col gap-10"
         >
           <div
                  className={`
@@ -37,7 +37,7 @@ export default function Questions({ locale, t }: { locale: string; t: (key: stri
             alt="Q&A"
             width={547}
             height={286}
-            className="h-[147px] md:h-auto w-full max-w-[547px] object-contain mx-auto"
+            className="h-auto w-[332px] md:w-[547px] md:h-[273px] rounded-[8px] mx-auto md:mx-[unset] object-cover"
           />
 
           <AddQuestion />

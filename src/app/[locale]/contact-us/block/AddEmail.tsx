@@ -19,7 +19,7 @@ export default function AddQuestion() {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3 md:max-w-[80%]">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-3 md:max-w-[100%]">
         <label className="font-medium text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[26px] lg:leading-[29px] text-secondry-200">
           {t("ContactUsPage.QuestionsSection.Questions.emailLabel")}
         </label>
@@ -36,7 +36,7 @@ export default function AddQuestion() {
           <button
             type="submit"
             disabled={status.isSubmitting}
-            className={`cursor-pointer flex justify-center w-[15%] md:w-[10%] h-[57px] bg-[#BD171D] rounded-lg  ${isArabic ? "md:rounded-l-lg rounded-r-none" : "md:rounded-r-lg rounded-l-none"}`}
+            className={`cursor-pointer flex justify-center w-[15%] md:w-[64px] h-[57px] bg-[#BD171D] rounded-lg  ${isArabic ? "md:rounded-l-lg rounded-r-none" : "md:rounded-r-lg rounded-l-none"}`}
           >
             <Image
               src="/assets/icons/arrow-left-white.svg"
