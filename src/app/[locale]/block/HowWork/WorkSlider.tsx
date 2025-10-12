@@ -56,9 +56,9 @@ export default function CardSlider() {
     return (
         <div
             dir={isArabic ? "rtl" : "ltr"}
-            className="flex flex-col items-center md:items-end justify-start h-[320] md:justify-center md:h-[700px]  2xl:h-[571px] overflow-hidden px-5"
+            className="flex flex-col items-center md:items-end justify-start h-[220px] md:justify-center md:h-[700px] 2xl:h-[571px] overflow-hidden px-5"
         >
-            <div className="flex gap-1 md:gap-12 mt-2 items-center">
+            <div className="flex gap-4 md:gap-12 mt-2 items-center">
                 <button
                     onClick={isArabic ? nextCard : prevCard}
                     disabled={isArabic ? index === cards.length - 1 : index === 0}
@@ -76,7 +76,7 @@ export default function CardSlider() {
                     />
                 </button>
 
-                <div className="relative w-60 md:w-[325px] min-h-[200px] md:h-[470.18px] flex justify-center">
+                <div className="relative w-[130px] h-[171px] md:w-[325px] min-h-[200px] md:h-[470.18px] flex justify-center">
                     <AnimatePresence initial={false} mode="wait">
                         {cards.map((card, i) => {
                             const pos = (i - index + cards.length) % cards.length;
@@ -100,7 +100,7 @@ export default function CardSlider() {
                                     }
                                     exit={direction === "next" ? cardVariants.exitNext : ""}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    className="absolute  w-40 md:w-[356px]  flex flex-col items-center p-[17.53px] gap-[17.53px] max-w-[356px] min-h-[200px] md:min-h-[470.18px] bg-[#F3F3F3] shadow-[4.38px_4.38px_4.38px_0px_#00000040] rounded-[6.53px] md:rounded-[17.53px]"
+                                    className="absolute w-[130px]  md:w-[356px]  flex flex-col items-center p-[6px] md:p-[17.53px] max-w-[356px] min-h-[171px] md:min-h-[470.18px] bg-[#F3F3F3] shadow-[4.38px_4.38px_4.38px_0px_#00000040] rounded-[6.53px] md:rounded-[17.53px]"
                                 >
                                     <div>
                                         <div className="flex flex-row justify-between items-center gap-[17.53px] w-full h-fit md:h-[56px]">
@@ -118,7 +118,7 @@ export default function CardSlider() {
                                             alt=""
                                             width={239}
                                             height={200}
-                                            className="w-full h-[79px]  rounded-[6.38px] my-4 md:h-[200px] md:w2-[239px] md:rounded-[17.53px] object-cover"
+                                            className="w-[117px] h-[79px]  rounded-[6.38px] my-[6px] md:my-4 md:h-[200px] md:w2-[239px] md:rounded-[17.53px] object-cover"
                                         />
                                         <p className="text-[6.38px] leading-[9px] font-medium md:max-w-[320.95px] text-center md:font-medium md:text-[17.53px] md:leading-[25px] text-secondry">
                                             {card.description}
