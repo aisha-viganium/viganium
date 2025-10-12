@@ -651,7 +651,7 @@ const services = {
         {
             id: 14,
             name: "الرسوم الحاسوبية (CGI)",
-            image: "/assets/images/cgi.png",
+            image: "/assets/images/services/cgi.png",
             tags: [2, 3],
             tagsDisplayed: ["الابتكار الرقمي", "التسويق الذكي"],
             description: "خيالك نحوله لمشهد ينبض بالحياة.",
