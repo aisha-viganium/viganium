@@ -13,7 +13,7 @@ export default function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50); 
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -21,20 +21,21 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`fixed top-0 px-2 md:px-16 w-full flex flex-row justify-between items-center p-2 gap-4 h-[50px] md:h-[121px] z-[100] transition-all duration-300 ${
-        scrolled ? "bg-black/90" : "bg-transparent"
-      }`}
+      className={`fixed top-0 px-2 md:px-16 w-full flex flex-row justify-between items-center p-2 gap-4 h-[50px] md:h-[121px] z-[100] transition-all duration-300 ${scrolled ? "bg-black/90" : "bg-transparent"
+        }`}
     >
-      <NavBarActions  />
+      <div className="hidden md:flex">
+        <NavBarActions />
+      </div>
       <Link href={`/${currentLocale}`}>
         <Logo
           width={374}
           height={81}
           className="w-[150px] md:w-[274px] 2xl:w-[374px] h-auto"
-          fillColor={scrolled ? "#000000" : "#FDFFFC"} 
+          fillColor={scrolled ? "#000000" : "#FDFFFC"}
         />
       </Link>
-      <Links/>
+      <Links />
     </nav>
   );
 }
