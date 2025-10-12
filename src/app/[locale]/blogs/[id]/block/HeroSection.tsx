@@ -37,10 +37,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                   text-[#FDFFFC]
                 `}
               >
-                {t("ContactUsPage.HeroSection.title")}
-                <span className="text-center px-2 md:px-8 gap-[10px] max-w-[44px] md:max-w-[181px] h-[86px] bg-[#BD171D]">
-                  {t("ContactUsPage.HeroSection.highlight")}
-                </span>
+                {t("ContactUsPage.HeroSection.title")}           
               </h1>
             </AnimatedSection>
 
