@@ -81,15 +81,14 @@ export default function CustomCursor({
 
   return (
     <>
-      {/* Cursor العادي */}
       <div
         ref={cursorRef}
         style={{
           position: "fixed",
           left: 0,
           top: 0,
-          width: 24,
-          height: 24,
+          width: 44,
+          height: 44,
           pointerEvents: "none",
           backgroundImage: `url(${cursorImg})`,
           backgroundRepeat: "no-repeat",
@@ -107,8 +106,8 @@ export default function CustomCursor({
           position: "fixed",
           left: 0,
           top: 0,
-          width: 32,
-          height: 32,
+          width: 54,
+          height: 54,
           pointerEvents: "none",
           backgroundImage: `url(${pointerImg})`,
           backgroundRepeat: "no-repeat",
