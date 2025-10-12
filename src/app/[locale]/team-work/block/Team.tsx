@@ -19,7 +19,7 @@ export default function Team() {
 
 
     return (
-        <section className="py-5 md:py-16 px-2 md:px-16 bg-[#F8F8F8]">
+        <section className="py-5 md:py-4 px-2 md:px-16 bg-[#F8F8F8]">
             <AnimatedSection
                 className="col-span-1"
                 variants={deckShuffle}
@@ -31,8 +31,8 @@ export default function Team() {
                         text-right 
                         text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
                         leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
-                        font-bold 
-                        text-secondry">
+                        font-bold font-brando-bold
+                        text-[#414141]">
                             {t("TeamWorkPage.our_team")}
                         </p>
                     </div>

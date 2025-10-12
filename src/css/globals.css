@@ -10,6 +10,11 @@ html {
 }
 html, body {
   cursor: none !important;
+  
+}
+a,button{
+  cursor: none !important;
+
 }
 body {
   background: var(--background);

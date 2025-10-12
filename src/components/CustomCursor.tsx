@@ -40,7 +40,22 @@ export default function CustomCursor({
     const hoverableSelector =
       "a, button, input, textarea, select, [data-cursor='pointer'], .cursor-pointer";
 
-    const setHover = () => setIsPointer(true);
+    const setHover = (e: Event) => {
+      const target = e.target as HTMLElement;
+      
+      // منع ظهور الـ pointer على الصور
+      if (target.tagName === 'IMG') {
+        return;
+      }
+      
+      // منع ظهور الـ pointer على العناصر اللي فيها class بيمنع الـ pointer
+      if (target.closest('.no-cursor-pointer')) {
+        return;
+      }
+      
+      setIsPointer(true);
+    };
+    
     const unsetHover = () => setIsPointer(false);
 
     const attachHoverEvents = () => {
