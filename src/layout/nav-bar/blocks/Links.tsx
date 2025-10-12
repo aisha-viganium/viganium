@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import "@/i18n/client";
 import { useTranslation } from "react-i18next";
@@ -18,6 +18,18 @@ export default function SidebarNavbar() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [activeBall, setActiveBall] = useState<number | null>(null);
   const currentLocale = i18n.language;
+
+useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [isOpen]);
   const navLinks = [
     { href: `/${currentLocale}`, label: t("NavbarSection.Navbar.home") },
     { href: `/${currentLocale}/services`, label: t("NavbarSection.Navbar.services") },
