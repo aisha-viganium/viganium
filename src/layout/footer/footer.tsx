@@ -31,7 +31,7 @@ export default function Footer() {
     <div className="py-16 px-[10px] md:px-[64px] bg-[#1A1A1A]">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mx-auto">
 
-        <AnimatedSection variants={deckShuffle} custom={0} className={`flex flex-col gap-16 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
+        <AnimatedSection variants={deckShuffle} custom={0} className={`flex flex-col gap-4 md:gap-16 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
           <h3
             className="font-semibold font-brando-semibold text-[24px] md:text-[35px] leading-[35px] md:leading-[57px] text-[#D9D9D9]"
             style={{
@@ -59,7 +59,7 @@ export default function Footer() {
           </a>
         </AnimatedSection>
 
-        <AnimatedSection variants={deckShuffle} custom={1} className={`flex flex-col gap-16 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
+        <AnimatedSection variants={deckShuffle} custom={1} className={`flex flex-col gap-4 md:gap-16 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
           <h3 className="font-semibold font-brando-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
             {t("Footer.socialTitle")}
           </h3>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection variants={deckShuffle} custom={2} className={`flex flex-col gap-16 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
+        <AnimatedSection variants={deckShuffle} custom={2} className={`flex flex-col gap-4 md:gap-16 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
           <h3 className="font-semibold font-brando-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
             {t("Footer.partnersTitle")}
           </h3>
