@@ -118,7 +118,7 @@ export default function CardSlider() {
                                             alt=""
                                             width={239}
                                             height={200}
-                                            className="w-[117px] h-[79px]  rounded-[6.38px] my-[6px] md:my-4 md:h-[200px] md:w2-[239px] md:rounded-[17.53px] object-cover"
+                                            className="w-[117px] h-[79px]  rounded-[6.38px] my-[6px] md:my-4 md:h-[219px] md:w-[320px] md:rounded-[17.53px] object-cover"
                                         />
                                         <p className="text-[6.38px] leading-[9px] font-medium md:max-w-[320.95px] text-center md:font-medium md:text-[17.53px] md:leading-[25px] text-secondry">
                                             {card.description}
