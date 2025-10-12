@@ -8,7 +8,7 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
 
   return (
     <section
-      className="bg-[#1A1A1A]  px-2 md:px-16"
+      className="bg-[#1A1A1A] py-2  px-2 md:px-16"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <AnimatedSection
