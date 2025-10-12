@@ -29,7 +29,7 @@ export default function Team() {
                     <div className={`${isArabic ? "border-r-[13px] md:border-r-[36px] border-r-[#F9C751] pr-2 md:pr-4" : "border-l-[13px] md:border-l-[20px] border-l-[#F9C751] pl-2 md:pl-4"}  min-h-[33px] flex items-center`}>
                         <p className=" max-w-[796px] 
                         text-right 
-                        text-[14px] md:text-[28px] lg:text-[36px] xl:text-[48px] 
+                        text-[14px] md:text-[28px] lg:text-[36px] 2xl:text-[48px] 
                         leading-[100%] md:leading-[42px] lg:leading-[52px] xl:leading-[69px] 
                         font-bold font-brando-bold
                         text-[#414141]">
@@ -71,7 +71,7 @@ export default function Team() {
                                     spaceBetween: 2,
                                 },
                             }}
-                            className="w-full !pt-5 !pb-15 md:!py-20 my-5"
+                            className="w-full !pt-4 !pb-15 md:!pb-20 my-5"
                         >
                             {membersData.map((member, idx) => (
                                 <SwiperSlide key={member.id}>

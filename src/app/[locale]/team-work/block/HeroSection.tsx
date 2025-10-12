@@ -23,7 +23,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
               ${isArabic ? "items-start text-right" : "items-start text-left"} 
               text-white pr-0 lg:pr-8`}
           >
-            <AnimatedSection variants={slideFromRightBounce} custom={1} className="mb-6">
+            <AnimatedSection variants={slideFromRightBounce} custom={1} className="mb-3">
               <h1
                 className={`
                   mt-[30px] lg:mt-[50px] 
@@ -31,8 +31,8 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                   font-bold  font-brando-bold
                   ${isArabic ? "text-right" : "text-left"} 
                   text-[14px] leading-[20px]
-                  md:text-5xl md:leading-[40px] 2xl:leading-auto
-                  md:text-[40.63px] 2xl:text-[70.63px] lg:leading-[101px]
+                  md:text-5xl md:leading-auto
+                  md:text-[40.63px] 2xl:text-[64px] lg:leading-[101px]
                   text-[#FDFFFC]
                 `}
               >
