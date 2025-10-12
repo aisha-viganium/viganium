@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function WeHear({ locale, t ,bg="white"}: { locale: string; t: (key: string) => string; bg: string }) {
 
   return (
-    <section className={`py-2 md:py-16 px-2 md:px-16 rounded-none md:rounded-2xl relative overflow-hidden mx-16`} style={{backgroundColor: bg }}>
+    <section className={`py-2 md:py-16 px-2 md:px-16 rounded-none md:rounded-2xl relative overflow-hidden mx-2 md:mx-16`} style={{backgroundColor: bg }}>
       <Image
         src="/assets/icons/shapes-group.svg"
         alt="We Hear"
