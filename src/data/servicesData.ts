@@ -567,7 +567,7 @@ const services = {
         {
             id: 11,
             name: "خدمات تكنولوجيا المعلومات (IT Services)",
-            image: "/assets/images/services/technology-services.png",
+            image: "/assets/images/services/IT.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
             description: "التقنية أساس عملك وإحنا نحافظ عليها تشتغل بأعلى أداء.",
@@ -595,7 +595,7 @@ const services = {
         {
             id: 12,
             name: "تصميم واجهات وتجربة المستخدم (UI/UX)",
-            image: "/assets/images/services/technology-services.png",
+            image: "/assets/images/services/Ui-Ux.png",
             tags: [2, 1],
             tagsDisplayed: ["الابتكار الرقمي", "التطوير التقني"],
             description: "لأن أول انطباع يحدد التجربة كلها.",
@@ -623,7 +623,7 @@ const services = {
         {
             id: 13,
             name: "تصميم الجرافيك والهوية البصرية",
-            image: "/assets/images/services/technology-services.png",
+            image: "/assets/images/services/Graphic-design.png",
             tags: [2, 3],
             tagsDisplayed: ["الابتكار الرقمي", "التسويق الذكي"],
             description: "الانطباع الأول ما يتكرر وهدفنا نخليه يعلق في الذهن.",
@@ -651,7 +651,7 @@ const services = {
         {
             id: 14,
             name: "الرسوم الحاسوبية (CGI)",
-            image: "/assets/images/services/technology-services.png",
+            image: "/assets/images/cgi.png",
             tags: [2, 3],
             tagsDisplayed: ["الابتكار الرقمي", "التسويق الذكي"],
             description: "خيالك نحوله لمشهد ينبض بالحياة.",
@@ -679,7 +679,7 @@ const services = {
         {
             id: 15,
             name: "إدارة المشاريع التقنية",
-            image: "/assets/images/services/technology-services.png",
+            image: "/assets/images/services/Technical-Project-Management.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
             description: "النجاح ما يصير صدفة يصير بخطة.",
@@ -707,7 +707,7 @@ const services = {
         {
             id: 16,
             name: "منصات SaaS",
-            image: "/assets/images/services/technology-services.png",
+            image: "/assets/images/services/Saas.png",
             tags: [1, 4],
             tagsDisplayed: ["التطوير التقني", "الأمان والتشغيل الذكي"],
             description: "حلول ذكية تشتغل من أي مكان وفي أي وقت.",
@@ -735,7 +735,7 @@ const services = {
         {
             id: 17,
             name: "استشارات البرمجيات والتقنية",
-            image: "/assets/images/services/technology-services.png",
+            image: "/assets/images/services/Software-and-Technology-Consulting.png",
             tags: [1, 3, 4],
             tagsDisplayed: ["التطوير التقني", "التسويق الذكي", "الأمان والتشغيل الذكي"],
             description: "التقنية تتغيّر كل يوم وقراراتك لازم تواكبها.",
@@ -1340,7 +1340,7 @@ const services = {
     {
         "id": 11,
         "name": "IT Services",
-        "image": "/assets/images/services/technology-services.png",
+        "image": "/assets/images/services/IT.png",
         "tags": [1, 4],
         "tagsDisplayed": ["Technical Development", "Security and Smart Automation"],
         "description": "Technology is the foundation of your business and we maintain it to perform at its best.",
@@ -1398,7 +1398,7 @@ const services = {
     {
         "id": 12,
         "name": "UI/UX Design",
-        "image": "/assets/images/services/technology-services.png",
+        "image": "/assets/images/services/Ui-Ux.png",
         "tags": [2, 1],
         "tagsDisplayed": ["Digital Innovation", "Technical Development"],
         "description": "Because the first impression determines the entire experience.",
@@ -1456,7 +1456,7 @@ const services = {
     {
         "id": 13,
         "name": "Graphic Design and Visual Identity",
-        "image": "/assets/images/services/technology-services.png",
+        "image": "/assets/images/services/Graphic-design.png",
         "tags": [2, 3],
         "tagsDisplayed": ["Digital Innovation", "Smart Marketing"],
         "description": "The first impression doesn't repeat and our goal is to make it stick in the mind.",
@@ -1514,7 +1514,7 @@ const services = {
     {
         "id": 14,
         "name": "Computer Graphics (CGI)",
-        "image": "/assets/images/services/technology-services.png",
+        "image": "/assets/images/services/cgi.png",
         "tags": [2, 3],
         "tagsDisplayed": ["Digital Innovation", "Smart Marketing"],
         "description": "We turn your imagination into a scene full of life.",
@@ -1572,7 +1572,7 @@ const services = {
     {
         "id": 15,
         "name": "Technical Project Management",
-        "image": "/assets/images/services/technology-services.png",
+        "image": "/assets/images/services/Technical-Project-Management.png",
         "tags": [1, 4],
         "tagsDisplayed": ["Technical Development", "Security and Smart Automation"],
         "description": "Success doesn't happen by chance, it happens with a plan.",
@@ -1630,7 +1630,7 @@ const services = {
     {
         "id": 16,
         "name": "SaaS Platforms",
-        "image": "/assets/images/services/technology-services.png",
+        "image": "/assets/images/services/Saas.png",
         "tags": [1, 4],
         "tagsDisplayed": ["Technical Development", "Security and Smart Automation"],
         "description": "Smart solutions that work from anywhere and anytime.",
@@ -1688,7 +1688,7 @@ const services = {
     {
         "id": 17,
         "name": "Software and Technology Consulting",
-        "image": "/assets/images/services/technology-services.png",
+        "image": "/assets/images/services/Software-and-Technology-Consulting.png",
         "tags": [1, 3, 4],
         "tagsDisplayed": ["Technical Development", "Smart Marketing", "Security and Smart Automation"],
         "description": "Technology changes every day and your decisions must keep up with it.",
