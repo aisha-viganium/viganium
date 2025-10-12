@@ -23,7 +23,7 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
                 />
               </span>
 
-              <p className={`max-w-[864px] font-normal md:font-bold text-[12px] md:text-[24px] lg:text-[36px] leading-[100%] md:leading-[42px] lg:leading-[51px] ${isArabic ? "text-right" : "text-left"} text-secondry mt-3`}>
+              <p className={`max-w-[864px] font-normal md:font-bold text-[12px] md:text-[24px] lg:text-[36px] leading-auto md:leading-[42px] lg:leading-[51px] ${isArabic ? "text-right" : "text-left"} text-secondry mt-3`}>
                 {t("story.description")}
               </p>
             </div>
