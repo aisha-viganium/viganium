@@ -37,8 +37,8 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
           <h5
             className={`
               max-w-[260px] md:max-w-[876px]  
-              ${isArabic ? "text-right " : "text-left "} 
-              text-[16px] md:text-[40px] 2xl:text-[48px] 
+              ${isArabic ? "text-right 2xl:text-[48px]" : "text-left 2xl:text-[28px]"} 
+              text-[16px] md:text-[40px] 
               font-bold 
               text-[#FDFFFC] 
               my-2 2xl:mt-[45px] 2xl:mb-0

@@ -9,7 +9,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
         <section
             className="relative bg-[url('/assets/images/cover.png')] bg-cover bg-center overflow-hidden"
         >
-            <div className="flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-3 items-center justify-around md:pr-12 mx-auto h-[50vh] md:min-h-[100vh] overflow-hidden px-2 md:px-0 py-8 pb-0 lg:py-0">
+            <div className={`flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-3 items-center justify-around ${isArabic?"md:pr-12":"md:pl-12"}  mx-auto h-[50vh] md:min-h-[100vh] overflow-hidden px-2 md:px-0 py-8 pb-0 lg:py-0`}>
 
                 <AnimatedSection
                     variants={fadeInRight}
@@ -19,7 +19,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                         text-white pr-0 lg:pr-5 order-2 mt-[50px] md:mt-0`}
                 >
                     <span
-                        className="
+                        className={`
                             flex flex-row justify-center items-center 
                             px-[10px] md:px-[17.66px] 
                             py-[5px] md:py-[9px] 
@@ -28,13 +28,14 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             max-w-[50%] md:max-w-unset md:min-w-[342px] 2xl:w-[354px]
                             h-[27px] md:min-h-[50px] 
                             text-center 
-                            font-bold text-[10px] md:text-[16.07px] 2xl:text-[24px]
+                            font-bold text-[10px] md:text-[16.07px] ${isArabic ?"2xl:text-[24px]":"2xl:text-[14px]"} 
                             leading-[100%] md:leading-[32px] 
                             text-[#BD171D] 
                             bg-[#F8E8E8] 
                             border border-[#E4A0A2] 
                             rounded-[17.5px] md:rounded-[30.90px] md:mb-2 
-                        "
+                            
+                        `}
                     >
                         {t("HomePage.bestCompany")}
                     </span>
