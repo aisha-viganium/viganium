@@ -18,11 +18,10 @@ export default function CustomCursor({
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // detect if mobile
     const checkMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     setIsMobile(checkMobile);
 
-    if (checkMobile) return; // don't run the rest on mobile
+    if (checkMobile) return; 
 
     const mouse = { x: 0, y: 0 };
     const pos = { x: 0, y: 0 };

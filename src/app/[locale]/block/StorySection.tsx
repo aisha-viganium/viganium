@@ -15,11 +15,11 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
               <span className="font-semibold font-brando-semibold text-[14px] md:text-[24px] leading-[100%] md:leading-[34px] text-right text-[#F9C751] flex items-end gap-2">
                 <span>{t("story.title")}</span>
                 <Image
-                  src={isArabic?"/assets/icons/arrow-yellow.svg":"/assets/icons/arrow-yellow-en.svg"}
+                  src={isArabic ? "/assets/icons/arrow-yellow.svg" : "/assets/icons/arrow-yellow-en.svg"}
                   alt="line"
                   width={19}
                   height={19}
-                   className="w-[10px] h-[12px] md:w-[19px] md:h-[19px]"
+                  className="w-[10px] h-[12px] md:w-[19px] md:h-[19px]"
                 />
               </span>
 
@@ -70,19 +70,21 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
 
             <div className="flex items-center gap-4">
               <div className="flex">
-                <Image src="/assets/images/person1.jpg" alt="1" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] outline-[1.37px] outline-[#FDFFFC] rounded-full ml-[-25px]  ${isArabic ? "md:ml-[-45px]" : "md:mr-[-35px]"}`} />
-                <Image src="/assets/images/person2.jpg" alt="2" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] outline-[1.37px] outline-[#FDFFFC] rounded-full ml-[-25px]  ${isArabic ? "md:ml-[-45px]" : "md:mr-[-35px]"}`} />
-                <Image src="/assets/images/person3.jpg" alt="3" width={92} height={92} className={`w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] outline-[1.37px] border-[#FDFFFC] rounded-full `} />
+                <Image src="/assets/images/person1.jpg" alt="1" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full shadow-[0_4px_4px_0_#00000040]  ${isArabic ? "md:ml-[-24px]" : "md:mr-[-24px]"}`} />
+                <Image src="/assets/images/person2.jpg" alt="2" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full  shadow-[0_4px_4px_0_#00000040] ${isArabic ? "md:ml-[-24px]" : "md:mr-[-24px]"}`} />
+                <Image src="/assets/images/person1.jpg" alt="3" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full shadow-[0_4px_4px_0_#00000040]  ${isArabic ? "md:ml-[-24px]" : "md:mr-[-24px]"}`} />
+                <Image src="/assets/images/person2.jpg" alt="4" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full  shadow-[0_4px_4px_0_#00000040] ${isArabic ? "md:ml-[-24px]" : "md:mr-[-24px]"}`} />
+                <Image src="/assets/images/person1.jpg" alt="5" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] border-[#FDFFFC] rounded-full shadow-[0_4px_4px_0_#00000040]`} />
               </div>
 
               <button className="cursor-pointer flex items-center gap-1 md:gap-4">
-                <div className="w-[45px] md:w-[91.84px] h-[45px] md:h-[91.84px] bg-[#C83E43] border-2 border-[#414141] rounded-full flex items-center justify-center">
+                <div className="w-[45px] md:w-[50px] h-[45px] md:h-[50px] bg-[#C83E43] border-2 border-[#414141] rounded-full flex items-center justify-center">
                   <Image
                     src="/assets/icons/arrow-white.svg"
                     alt="arrow"
-                    width={32}
-                    height={32}
-                    className={`w-[18px] md:w-[32px] h-auto ${isArabic ?"rotate-180":""}`}
+                    width={17}
+                    height={13}
+                    className={`w-[17px] md:w-[17px] h-auto ${isArabic ? "rotate-180" : ""}`}
                   />
                 </div>
                 <span className="font-[600] text-[12px] md:text-[20px] leading-[29px] text-right text-black">
