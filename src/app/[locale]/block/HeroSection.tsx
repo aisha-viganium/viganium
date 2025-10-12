@@ -83,13 +83,13 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                 </AnimatedSection>
 
                 <div className="col-span-1 w-full h-full order-1 md:mb-6 lg:mb-0 lg:order-2 overflow-hidden">
-                    <div className="lg:hidden overflow-hidden h-[30vh] w-full flex justify-center">
+                    <div className="lg:hidden overflow-hidden h-[30vh] w-full flex justify-center ">
                         <Image
                             src="/assets/images/robot.png"
                             alt="Hero"
                             width={1710}
                             height={150}
-                            className="w-auto h-full object-cover object-top slide-up"
+                            className={`w-auto h-full object-cover object-top slide-up  ${isArabic ?"":"!rotate-y-180"}`}
                             priority
                         />
                     </div>
@@ -100,7 +100,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             width={1710}
                             height={150}
                             className={`absolute w-[38%] max-w-[1710px] h-auto 
-                                ${isArabic ? "left-[55px]" : "right-[15px]"} 
+                                ${isArabic ? "left-[55px] " : "right-[15px] !rotate-y-180"} 
                                 top-[37px] slide-up`}
                             priority
                         />
