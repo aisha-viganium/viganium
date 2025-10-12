@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 
 type Props = {
-  cursorImg?: string;   
-  pointerImg?: string; 
+  cursorImg?: string;
+  pointerImg?: string;
 };
 
 export default function CustomCursor({
@@ -15,8 +15,15 @@ export default function CustomCursor({
   const pointerRef = useRef<HTMLDivElement | null>(null);
   const [isPointer, setIsPointer] = useState(false);
   const [visible, setVisible] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // detect if mobile
+    const checkMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    setIsMobile(checkMobile);
+
+    if (checkMobile) return; // don't run the rest on mobile
+
     const mouse = { x: 0, y: 0 };
     const pos = { x: 0, y: 0 };
     const ease = 0.2;
@@ -31,7 +38,6 @@ export default function CustomCursor({
     const onLeave = () => setVisible(false);
     const onEnter = () => setVisible(true);
 
-    // hover detection
     const hoverableSelector =
       "a, button, input, textarea, select, [data-cursor='pointer'], .cursor-pointer";
 
@@ -46,7 +52,6 @@ export default function CustomCursor({
     };
 
     attachHoverEvents();
-
     const mo = new MutationObserver(() => attachHoverEvents());
     mo.observe(document.body, { childList: true, subtree: true });
 
@@ -77,7 +82,7 @@ export default function CustomCursor({
     };
   }, []);
 
-  if (!visible) return null;
+  if (!visible || isMobile) return null;
 
   return (
     <>

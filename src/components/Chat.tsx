@@ -68,7 +68,7 @@ export default function ChatCard() {
   return (
     <div className={`px-1 py-4 md:p-0 flex justify-center ${isArabic ? "text-right" : "text-left"}`}>
       {view === "card" && (
-        <div className="relative flex flex-col justify-between w-full max-w-[921px] h-[469px] md:h-[727px] rounded-[30px] md:rounded-[50px] bg-black p-6 md:p-10">
+        <div className="relative flex flex-col justify-between w-full max-w-[921px] min-h-[469px] md:h-[727px] rounded-[30px] md:rounded-[50px] bg-black p-6 md:p-10">
           <Image
             src="/assets/images/frame.png"
             alt={t("ChatCard.frameAlt") || "chat"}
