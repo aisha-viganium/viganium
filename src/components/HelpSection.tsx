@@ -9,6 +9,8 @@ export default function HelpSection() {
   return (
     <section
       className="bg-[#1A1A1A] my-5 py-20"
+     id="help-section"
+
     >
       <div className="grid grid-cols-1 lg:grid-cols-3 justify-between items-center px-2 md:px-16 gap-10">
 
