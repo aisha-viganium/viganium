@@ -29,7 +29,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                 className={`
                   mt-[30px] lg:mt-[50px] 
                   max-w-[1039.36px] 
-                  font-bold 
+                  font-bold font-brando-bold
                   ${isArabic ? "text-right" : "text-left"} 
                   text-[14px] leading-[20px]
                   md:text-5xl md:leading-[40px] 2xl:leading-[120px] 
