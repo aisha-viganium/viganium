@@ -49,7 +49,7 @@ export default function CardSlider() {
 
     const cardVariants = {
         enterNext: { y: 600, opacity: 0 },
-        center: { y: 10, x: 0, rotate: 0, scale: 1, opacity: 1},
+        center: { y: 10, x: 0, rotate: 0, scale: 1, opacity: 1, zIndex: 10 },
         exitNext: { y: -600, opacity: 1, rotate: 0, transition: { duration: 0.5 } },
     };
 

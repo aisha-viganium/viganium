@@ -28,12 +28,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={dir}>
-      
+
       <body>
 
         <I18nProvider locale={locale}>
           <ClientLayout>
-                        <CustomCursor cursorImg="/assets/cursor/cursor.png" pointerImg="/assets/cursor/pointer.png" />
+            <CustomCursor cursorImg="/assets/cursor/cursor.png" pointerImg="/assets/cursor/pointer.png" />
 
             <NavBar />
             {children}
