@@ -8,49 +8,62 @@
 html {
   direction: rtl;
 }
-html, body {
-  cursor: none !important;
-  
-}
-a,button{
+
+html,
+body {
   cursor: none !important;
 
 }
+
+button,
+a,
+a:hover,div {
+  cursor: none !important;
+
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'alfont_com_Brando' !important;
 }
+
 @font-face {
   font-family: 'alfont_com_Brando';
   src: url('../assets/fonts/alfont_com_Brando-Arabic-Regular.otf') format('opentype');
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'alfont_com_Brando_bold';
   src: url('../assets/fonts/fonnts.com-Brando_Arabic_Bold.otf') format('opentype');
   font-weight: bold;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'alfont_com_Brando_semibold';
   src: url('../assets/fonts/fonnts.com-Brando_Arabic_SemiBold.otf') format('opentype');
   font-weight: 600;
   font-display: swap;
 }
+
 .font-brando {
   font-family: 'alfont_com_Brando' !important;
 
 }
+
 .font-brando-bold {
   font-family: 'alfont_com_Brando_bold' !important;
 
 }
+
 .font-brando-semibold {
   font-family: 'alfont_com_Brando_semibold' !important;
 
 }
+
 @font-face {
   font-family: 'aileron_regular';
   src: url('../assets/fonts/aileron.regular.otf') format('opentype');
@@ -61,18 +74,22 @@ body {
 .font-aileron {
   font-family: 'aileron_regular' !important;
 }
+
 html[lang="en"] .font-brando {
   font-family: 'aileron_regular' !important;
 
 }
+
 html[lang="en"] .font-brando-bold {
   font-family: 'aileron_regular' !important;
 
 }
+
 html[lang="en"] .font-brando-semibold {
   font-family: 'aileron_regular' !important;
 
 }
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -150,6 +167,7 @@ html[lang="en"] body {
 
 
 }
+
 html[lang="en"] .clipPath-review {
   clip-path: polygon(100% 0, 100% 219px, 0 91px, 0 219px, 0 100%, 100% 100%);
 }
@@ -171,6 +189,7 @@ html[lang="en"] .clipPath-video {
         100% 90%);
   }
 }
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

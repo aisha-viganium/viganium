@@ -170,7 +170,7 @@ useEffect(() => {
           </div>
 
 
-          <div className="w-full md:w-2/3 mt-6 md:mt-0 flex flex-col justify-around">
+          <div className="w-full md:w-2/3 mt-6 md:mt-0 flex-col justify-around hidden md:flex">
             <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[359px]">
               <div className=" lg:w-1/3">
                 <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
