@@ -104,7 +104,7 @@ useEffect(() => {
           ${isOpen ? "translate-y-0" : "-translate-y-full"}
         `}
       >
-        <div className="flex justify-between items-center px-6 md:px-16 py-6">
+        <div className="flex col-span-1 justify-between items-center px-6 md:px-16 pt-4 pb-[102px]">
           <Image
             src="/assets/icons/logo-dark.svg"
             alt="Logo"
@@ -120,8 +120,8 @@ useEffect(() => {
           </button>
         </div>
 
-        <div className="flex flex-col md:flex-row h-auto md:h-[calc(100%-80px)]">
-          <div className="w-full md:w-1/3 px-6 md:pr-2 2xl:pr-16 flex flex-col py-8 space-y-2 gap-2 2xl:gap-10">
+        <div className="flex  flex-col md:flex-row h-auto md:h-[calc(100%-80px)]">
+          <div className="w-full md:w-1/2 px-6 flex flex-col gap-2 2xl:gap-[52px]">
             {navLinks.map((link, index) => (
               <Link
                 key={link.href}
@@ -153,12 +153,11 @@ useEffect(() => {
                 </div>
 
                 <span className={`
-                                font-semibold font-brando-semibold 
+                                font-bold font-brando-bold 
                                 text-[18px]
                                 md:text-[40px]  
                                 2xl:text-[64px] 
-                                leading-[21px]
-                                md:leading-[91px] 
+                                leading-auto
                                 text-center 
                                 capitalize 
                                  hover:text-primary
@@ -170,7 +169,7 @@ useEffect(() => {
           </div>
 
 
-          <div className="w-full md:w-2/3 mt-6 md:mt-0 flex-col justify-around hidden md:flex">
+          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex-col justify-around hidden md:flex">
             <div className="flex flex-col lg:flex-row gap-6 p-6 md:p-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[359px]">
               <div className=" lg:w-1/3">
                 <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
