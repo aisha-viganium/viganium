@@ -102,24 +102,24 @@ useEffect(() => {
           ${isOpen ? "translate-y-0" : "-translate-y-full"}
         `}
       >
-        <div className="flex col-span-1 justify-between items-center px-6 md:px-16 pt-4 ">
+        <div className="flex col-span-1 justify-between items-center px-4 md:px-8 pt-4 ">
           <Image
             src="/assets/icons/logo-dark.svg"
             alt="Logo"
             width={180}
             height={45}
-            className="h-auto w-[180px] md:w-[250px]"
+            className="h-auto w-[180px] md:w-[293px]"
           />
           <button
             onClick={() => setIsOpen(false)}
             className="text-secondry hover:text-primary text-xl cursor-pointer"
           >
-            <Image src="/assets/icons/close.svg" alt="Close" width={32} height={32} />
+            <Image src="/assets/icons/close.svg" alt="Close" width={50} height={50} />
           </button>
         </div>
 
-        <div className="flex  flex-col md:flex-row h-auto md:h-[calc(100%-80px)] ">
-          <div className="w-full 2xl:w-1/2 px-6 flex flex-col gap-2 2xl:gap-[52px] 2xl:pt-[102px]">
+        <div className="flex  flex-col md:flex-row h-auto justify-between">
+          <div className="w-full 2xl:w-1/2 flex flex-col gap-2 2xl:gap-[52px] 2xl:pt-[102px]">
             {navLinks.map((link, index) => (
               <Link
                 key={link.href}
@@ -153,8 +153,8 @@ useEffect(() => {
                 <span className={`
                                 font-bold font-brando-bold 
                                 text-[18px]
-                                md:text-[34px]  
-                                2xl:text-[64px] 
+                                md:text-[26px]  
+                                2xl:text-[48px] 
                                 leading-auto
                                 text-center 
                                 capitalize 
@@ -167,10 +167,10 @@ useEffect(() => {
           </div>
 
 
-          <div className="w-full 2xl:w-1/2 mt-6 md:mt-0 flex-col gap-[32px] hidden md:flex">
-            <div className="flex flex-col lg:flex-row gap-6 p-6 md:py-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[439px] md:w-[913px]">
+          <div className="w-full 2xl:w-1/2 md:mt-0 flex-col gap-[32px] hidden md:flex justify-end items-end px-8 2xl:pt-8">
+            <div className="flex flex-col lg:flex-row gap-6 p-6 md:py-8 bg-[#F4F6F9] rounded-lg md:h-[339px] md:w-[713px] 2xl:h-[439px] 2xl:w-[913px]">
               <div className="w-[296px]">
-                <h3 className="font-el-messiri group flex justify-center align-center gap-1 md:gap-2 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
+                <h3 className="font-el-messiri group flex justify-center align-center gap-1 md:gap-2 font-medium md:text-[26px] 2xl:text-[32px]  underline text-center text-secondry hover:text-primary mb-4">
                   <span>  {t("NavbarSection.Projects.title")} </span>
                   <ArrowUpBlack className="w-[12px] md:w-[28px] mt-0 md:mt-[10px] rotate-245 transition-transform duration-300  group-hover:rotate-[215deg] fill-[#1A1A1A] group-hover:fill-primary" />
                 </h3>
@@ -187,7 +187,7 @@ useEffect(() => {
                   ))}
                 </div>
               </div>
-              <div className=" flex items-center justify-center relative md:w-full h-[375px] overflow-hidden 2xl:w-[677px] shadow-[0_4px_44px_0_#BC6B6B40]">
+              <div className=" flex items-center justify-center relative md:w-full md:h-[275px] 2xl:h-[375px] overflow-hidden 2xl:w-[677px] shadow-[0_4px_44px_0_#BC6B6B40]">
                 <AnimatePresence>
                   <motion.div
                     key={activeSlide}
@@ -203,21 +203,21 @@ useEffect(() => {
                       alt={sliderItems[activeSlide].label}
                       width={500}
                       height={300}
-                      className="object-cover rounded-lg w-full h-[375px]"
+                      className="object-cover rounded-lg w-full md:h-[275px]  2xl:h-[375px] "
                     />
                   </motion.div>
                 </AnimatePresence>
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-6  align-center">
+            <div className="flex flex-col md:flex-row gap-6  align-center ">
               <Link href={`/${currentLocale}/contact-us`}  onClick={() => setIsOpen(false)}>
-                <div className="relative group h-[250px] md:h-[305px] 2xl:h-[375px] w-[612px] rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_44px_0_#00000040]">
+                <div className="relative group md:h-[250px] 2xl:h-[375px] md:w-[412px] 2xl:w-[612px] rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_44px_0_#00000040]">
                   <Image
                     src={`/assets/images/contact-us-nav.png`}
                     alt={`Contact`}
                     fill
-                    className="absolute object-cover rounded-[8px] h-[250px] md:h-[305px] 2xl:h-[375px] w-[612px]"
+                    className="absolute object-cover rounded-[8px]  md:h-[250px] 2xl:h-[375px] md:w-[412px] 2xl:w-[612px]"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                     <span className="text-white font-bold text-[62px]">التواصل معنا</span>
@@ -225,7 +225,7 @@ useEffect(() => {
                 </div>
               </Link>
               <div className="flex flex-col justify-center align-center gap-1 w-[276px]">
-                <h3 className="font-el-messiri group flex justify-center items-center gap-1 md:gap-2 font-medium text-xl md:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
+                <h3 className="font-el-messiri group flex justify-center items-center gap-1 md:gap-2 font-medium md:text-[26px] 2xl:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
                   <ArrowUpBlack
                     className=" w-[12px] md:w-[28px] h-auto transition-transform duration-300 group-hover:text-primary group-hover:rotate-[35deg] fill-[#1A1A1A] group-hover:fill-primary"
                   />
