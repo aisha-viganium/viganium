@@ -31,6 +31,18 @@ export default function SidebarNavbar() {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
+
   const navLinks = [
     { href: `/${currentLocale}`, label: t("NavbarSection.Navbar.home") },
     { href: `/${currentLocale}/services`, label: t("NavbarSection.Navbar.services") },
@@ -99,11 +111,8 @@ export default function SidebarNavbar() {
         />
       )}
 
-      <div
-        className={`overflow-y-auto md:overflow-y-hidden fixed top-0 ${isArabic ? "right-0" : "left-0"} w-[80%] sm:w-[70%] md:w-full h-full bg-white shadow-xl transform transition-transform duration-300 ease-in-out
-    ${isOpen ? "translate-x-0" : isArabic ? "translate-x-full" : "-translate-x-full"}
-  `}
-      >
+      <div className={`overflow-y-auto md:overflow-y-hidden fixed top-0 ${isArabic ? "right-0" : "left-0"} md:left-0  md: right-unset w-[80%] md:w-full h-full bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0 md:translate-y-0 md:translate-x-[unset]" : ` ${isArabic ? "translate-x-full" : "-translate-x-full"} md:translate-x-[unset] md:-translate-y-full`} `} >
+
         <div className="flex col-span-1  justify-end md:justify-between items-center px-4 md:px-8 pt-4 ">
           <Image
             src="/assets/icons/logo-dark.svg"
