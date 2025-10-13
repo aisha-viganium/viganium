@@ -63,10 +63,10 @@ export default function SidebarNavbar() {
   ];
 
   const socialLinks = [
-    { name: "snap", url: "https://www.snap.com/add/rentalgate", icon: <SnapNav className="w-[16px] h-[16px]" /> },
-    { name: "insta", url: "https://www.insta.com/add/rentalgate", icon: <InstaNav className="w-[16px] h-[16px]" /> },
-    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <FaceNav className="w-[16px] h-[16px]" /> },
-    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <LinkedinNav className="w-[16px] h-[16px]" /> }
+    { name: "snap", url: "https://www.snapchat.com/add/viganium", icon: <SnapNav className="w-[16px] h-[16px]" /> },
+    { name: "insta", url: "https://www.instagram.com/viganiumco/", icon: <InstaNav className="w-[16px] h-[16px]" /> },
+    { name: "facebook", url: "https://www.facebook.com/viganium", icon: <FaceNav className="w-[16px] h-[16px]" /> },
+    { name: "linkedin", url: "https://www.linkedin.com/company/viganiuminc", icon: <LinkedinNav className="w-[16px] h-[16px]" /> }
   ];
 
   const ballShapes = {

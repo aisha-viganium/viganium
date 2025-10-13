@@ -14,11 +14,11 @@ export default function Footer() {
   const isArabic = i18n.language === "ar";
 
   const socialLinks = [
-    { name: "youtube", url: "https://www.youtube.com/add/rentalgate", icon: <Youtube className="w-[32px] h-[32px] md:w-[50px] md:h-[32.5px] 2xl:w-[60px] 2xl:h-[42.5px]" /> },
-    { name: "tiktok", url: "https://www.tiktok.com/add/rentalgate", icon: <Tiktok className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
-    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <Facebook className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
-    { name: "snap", url: "https://www.snap.com/company/rental-gate", icon: <Snap className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
-    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <Linkedin className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
+    { name: "youtube", url: "https://www.youtube.com/@Viganium", icon: <Youtube className="w-[32px] h-[32px] md:w-[50px] md:h-[32.5px] 2xl:w-[60px] 2xl:h-[42.5px]" /> },
+    { name: "tiktok", url: "https://www.tiktok.com/@viganium", icon: <Tiktok className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
+    { name: "facebook", url: "https://www.facebook.com/viganium", icon: <Facebook className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
+    { name: "snap", url: "https://www.snapchat.com/add/viganium", icon: <Snap className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
+    { name: "linkedin", url: "https://www.linkedin.com/company/viganiuminc", icon: <Linkedin className="w-[32px] h-[32px] md:w-[38px] md:h-[38px] 2xl:w-[48px] 2xl:h-[48px]" /> },
   ];
 
   const Companies = [
@@ -82,7 +82,7 @@ export default function Footer() {
           <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]  mt-[32px] whitespace-pre-line">
             {t("Footer.partnersDescription")}
           </p>
-          <div className="flex gap-5 mt-[16px] md:mt-[60px]">
+          <div className="flex gap-5 mt-[16px] md:mt-[30px]">
             {Companies.map((c, idx) => (
               <Image
                 key={idx}
