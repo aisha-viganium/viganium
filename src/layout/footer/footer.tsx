@@ -28,10 +28,10 @@ export default function Footer() {
   ];
 
   return (
-    <div className="py-16 px-[10px] md:px-[64px] bg-[#1A1A1A]">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mx-auto">
+    <div className="py-8 px-4 md:px-16 bg-[#1A1A1A]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-[91px] items-start mx-auto">
 
-        <AnimatedSection variants={deckShuffle} custom={0} className={`flex flex-col gap-4 md:gap-8 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
+        <AnimatedSection variants={deckShuffle} custom={0} className={`flex flex-col ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
           <h3
             className="font-semibold font-brando-semibold text-[24px] md:text-[35px] leading-[35px] md:leading-[57px] text-[#D9D9D9]"
             style={{
@@ -45,12 +45,12 @@ export default function Footer() {
           >
             {t("Footer.contactTitle")}
           </h3>
-          <p className="text-[14px] md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
+          <p className="text-[14px] md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9] mt-[32px]">
             {t("Footer.contactDescription")}
           </p>
           <a
             href="mailto:Hello@viganuim.com"
-            className="flex flex-row items-center gap-3 transition-all duration-300 group hover:text-primary mt-5"
+            className="flex flex-row items-center gap-3 transition-all duration-300 group hover:text-primary mt-[32px] md:mt-[94px]"
           >
             <span className="font-aileron font-medium text-xl md:text-[24px] text-white group-hover:text-primary transition-colors duration-300">
               Hello@viganuim.com
@@ -59,14 +59,14 @@ export default function Footer() {
           </a>
         </AnimatedSection>
 
-        <AnimatedSection variants={deckShuffle} custom={1} className={`flex flex-col gap-4 md:gap-8 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
+        <AnimatedSection variants={deckShuffle} custom={1} className={`flex flex-col ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
           <h3 className="font-semibold font-brando-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
             {t("Footer.socialTitle")}
           </h3>
-          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
+          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]  mt-[32px]">
             {t("Footer.socialDescription")}
           </p>
-          <div className="flex flex-wrap gap-8 md:gap-5 2xl:gap-16">
+          <div className="flex flex-wrap gap-8 md:gap-5 2xl:gap-16  mt-[16px] md:mt-[94px]">
             {socialLinks.map((link, idx) => (
               <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer">
                 {link.icon}
@@ -75,14 +75,14 @@ export default function Footer() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection variants={deckShuffle} custom={2} className={`flex flex-col gap-4 md:gap-8 ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
+        <AnimatedSection variants={deckShuffle} custom={2} className={`flex flex-col ${isArabic ? "items-start text-right" : "items-start text-left"}`}>
           <h3 className="font-semibold font-brando-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
             {t("Footer.partnersTitle")}
           </h3>
-          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
+          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]  mt-[32px]">
             {t("Footer.partnersDescription")}
           </p>
-          <div className="flex gap-5">
+          <div className="flex gap-5 mt-[16px] md:mt-[60px]">
             {Companies.map((c, idx) => (
               <Image
                 key={idx}
