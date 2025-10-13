@@ -181,7 +181,7 @@ export default function SidebarNavbar() {
           </div>
 
 
-          <div className="w-full 2xl:w-1/2 md:mt-0 flex-col gap-[32px] hidden md:flex justify-end items-end px-8 2xl:pt-8">
+          <div className="w-full 2xl:w-1/2 md:mt-0 flex-col gap-[32px] hidden md:flex  px-8 2xl:pt-8">
             <div className="flex flex-col lg:flex-row gap-6 p-6 md:py-8 bg-[#F4F6F9] rounded-lg md:h-[339px] md:w-[713px] 2xl:h-[439px] 2xl:w-[913px]">
               <div className="w-[296px]">
                 <h3 className="font-el-messiri group flex justify-center align-center gap-1 md:gap-2 font-medium md:text-[26px] 2xl:text-[32px]  underline text-center text-secondry hover:text-primary mb-4">

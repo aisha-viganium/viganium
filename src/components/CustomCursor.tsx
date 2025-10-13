@@ -42,13 +42,9 @@ export default function CustomCursor({
 
     const setHover = (e: Event) => {
       const target = e.target as HTMLElement;
-      
-      // منع ظهور الـ pointer على الصور
       if (target.tagName === 'IMG') {
         return;
       }
-      
-      // منع ظهور الـ pointer على العناصر اللي فيها class بيمنع الـ pointer
       if (target.closest('.no-cursor-pointer')) {
         return;
       }
@@ -106,8 +102,8 @@ export default function CustomCursor({
           position: "fixed",
           left: 0,
           top: 0,
-          width: 55,
-          height: 55,
+          width: 35,
+          height: 35,
           pointerEvents: "none",
           backgroundImage: `url(${cursorImg})`,
           backgroundRepeat: "no-repeat",
@@ -125,8 +121,8 @@ export default function CustomCursor({
           position: "fixed",
           left: 0,
           top: 0,
-          width: 75,
-          height: 75,
+          width: 55,
+          height: 55,
           pointerEvents: "none",
           backgroundImage: `url(${pointerImg})`,
           backgroundRepeat: "no-repeat",
