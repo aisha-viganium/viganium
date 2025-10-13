@@ -61,6 +61,7 @@ export default function Advantages({ service, locale, t }: { service: Service; l
               leading-[33px] md:leading-[40px] lg:leading-[63px] 
               text-secondry my-6 md:my-8 lg:my-10
               max-w-[906px]
+              whitespace-pre-line
               ${isArabic ? "text-right" : "text-left"}
             `}
           >
@@ -75,6 +76,7 @@ export default function Advantages({ service, locale, t }: { service: Service; l
               leading-[26px] 
               text-secondry
               max-w-[864px]
+              whitespace-pre-line
               ${isArabic ? "text-right" : "text-left"}
             `}
           >
