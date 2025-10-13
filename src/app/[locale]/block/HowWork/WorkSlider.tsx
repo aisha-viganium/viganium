@@ -10,7 +10,7 @@ export default function CardSlider() {
     const [direction, setDirection] = useState<"next" | "prev">("next");
     const { t, i18n } = useTranslation();
     const isArabic = i18n.language === "ar";
-const [stopped, setStopped] = useState(false);
+    const [stopped, setStopped] = useState(false);
 
     const cards = t("howWork.cards", { returnObjects: true }) as {
         id: number;
@@ -21,18 +21,18 @@ const [stopped, setStopped] = useState(false);
 
     const basePositions = isArabic
         ? [
-            { rotate: 0, x: 10},
-            { rotate: 10, x: 10},
-            { rotate: 15, x: 10},
-            { rotate: 20, x: 10},
-            { rotate: 25, x: 10},
+            { rotate: 0, x: 10 },
+            { rotate: 10, x: 10 },
+            { rotate: 15, x: 10 },
+            { rotate: 20, x: 10 },
+            { rotate: 25, x: 10 },
         ]
         : [
-            { rotate: 0, x: 10},
-            { rotate: 10, x: 10},
-            { rotate: 15, x: 10},
-            { rotate: 20, x: 10},
-            { rotate: 25, x: 10},
+            { rotate: 0, x: 10 },
+            { rotate: 10, x: 10 },
+            { rotate: 15, x: 10 },
+            { rotate: 20, x: 10 },
+            { rotate: 25, x: 10 },
         ];
     const nextCard = () => {
         if (index < cards.length - 1) {
@@ -53,41 +53,41 @@ const [stopped, setStopped] = useState(false);
         center: { y: 10, x: 0, rotate: 0, scale: 1, opacity: 1, zIndex: 10 },
         exitNext: { y: -600, opacity: 1, rotate: 0, transition: { duration: 0.5 } },
     };
-useEffect(() => {
-  if (stopped) return; // لو المستخدم وقف، نخرج فورًا
+    useEffect(() => {
+        if (stopped) return;
 
-  let count = 0;
-  let interval: NodeJS.Timeout | null = null;
-  let hasStopped = false;
+        let count = 0;
+        let interval: NodeJS.Timeout | null = null;
+        let hasStopped = false;
 
-  interval = setInterval(() => {
-    if (count < 5 && !hasStopped) {
-      if (isArabic) nextCard();
-      else nextCard();
-      count++;
-    } else {
-      if (interval) clearInterval(interval);
-    }
-  }, 0);
+        interval = setInterval(() => {
+            if (count < 5 && !hasStopped) {
+                if (isArabic) nextCard();
+                else nextCard();
+                count++;
+            } else {
+                if (interval) clearInterval(interval);
+            }
+        }, 0);
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      if (entries[0].isIntersecting) {
-        hasStopped = true;
-        if (interval) clearInterval(interval);
-      }
-    },
-    { threshold: 0.2 }
-  );
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    hasStopped = true;
+                    if (interval) clearInterval(interval);
+                }
+            },
+            { threshold: 0.2 }
+        );
 
-  const section = document.querySelector("#how-work-section");
-  if (section) observer.observe(section);
+        const section = document.querySelector("#how-work-section");
+        if (section) observer.observe(section);
 
-  return () => {
-    if (interval) clearInterval(interval);
-    observer.disconnect();
-  };
-}, [isArabic,index, stopped]);
+        return () => {
+            if (interval) clearInterval(interval);
+            observer.disconnect();
+        };
+    }, [isArabic, index, stopped]);
 
 
     return (
@@ -97,10 +97,10 @@ useEffect(() => {
         >
             <div className="flex gap-4 md:gap-12 mt-2 items-center">
                 <button
-                     onClick={() => {
-    setStopped(true); 
-    isArabic ? prevCard() : nextCard();
-  }}
+                    onClick={() => {
+                        setStopped(true);
+                        isArabic ? prevCard() : nextCard();
+                    }}
                     disabled={isArabic ? index === 0 : index === cards.length - 1}
                     className={`cursor-pointer flex justify-center items-center w-[20px] h-[20px] md:w-[48px] md:h-[48px] bg-[#FDFFFC] rounded-[3px] md:rounded-[10px] transition-all ${(isArabic ? index === 0 : index === cards.length - 1)
                         ? "cursor-not-allowed bg-[#FDFFFC] opacity-30"
@@ -168,11 +168,11 @@ useEffect(() => {
                         })}
                     </AnimatePresence>
                 </div>
-             <button
-                   onClick={() => {
-    setStopped(true);
-    isArabic ? nextCard() : prevCard();
-  }}
+                <button
+                    onClick={() => {
+                        setStopped(true);
+                        isArabic ? nextCard() : prevCard();
+                    }}
                     disabled={isArabic ? index === cards.length - 1 : index === 0}
                     className={`cursor-pointer flex justify-center items-center w-[20px] h-[20px] md:w-[48px] md:h-[48px] bg-[#FDFFFC] rounded-[3px] md:rounded-[10px] transition-all ${(isArabic ? index === cards.length - 1 : index === 0)
                         ? "cursor-not-allowed bg-[#FDFFFC] opacity-30"
