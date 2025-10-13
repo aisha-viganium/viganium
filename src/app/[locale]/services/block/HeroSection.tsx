@@ -60,7 +60,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                 
                 <span
                   className="
-                              font-bold text-[10px] leading-[14px] text-center text-secondry
+                              font-bold text-[8px] leading-[14px] text-center text-secondry
                               md:text-lg md:leading-[26px]
                               lg:text-[20px] lg:leading-[29px]
                               

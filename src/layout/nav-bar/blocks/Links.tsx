@@ -10,6 +10,7 @@ import FaceNav from "@/assets/SVG/social/FaceNav";
 import LinkedinNav from "@/assets/SVG/social/LinkedinNav";
 import InstaNav from "@/assets/SVG/social/InstaNav";
 import { motion, AnimatePresence } from "framer-motion";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function SidebarNavbar() {
   const { t, i18n } = useTranslation();
@@ -19,17 +20,17 @@ export default function SidebarNavbar() {
   const [activeBall, setActiveBall] = useState<number | null>(null);
   const currentLocale = i18n.language;
 
-useEffect(() => {
-  if (isOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-  return () => {
-    document.body.style.overflow = "auto";
-  };
-}, [isOpen]);
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
   const navLinks = [
     { href: `/${currentLocale}`, label: t("NavbarSection.Navbar.home") },
     { href: `/${currentLocale}/services`, label: t("NavbarSection.Navbar.services") },
@@ -81,6 +82,7 @@ useEffect(() => {
   const handleMouseLeave = () => {
     setActiveBall(null);
   };
+
   return (
     <div className="relative">
       <button
@@ -98,28 +100,28 @@ useEffect(() => {
       )}
 
       <div
-        className={`overflow-y-auto md:overflow-y-hidden fixed top-0 left-0 w-full h-full bg-white shadow-xl transform transition-transform duration-300 ease-in-out
-          ${isOpen ? "translate-y-0" : "-translate-y-full"}
-        `}
+        className={`overflow-y-auto md:overflow-y-hidden fixed top-0 ${isArabic ? "right-0" : "left-0"} w-[80%] sm:w-[70%] md:w-full h-full bg-white shadow-xl transform transition-transform duration-300 ease-in-out
+    ${isOpen ? "translate-x-0" : isArabic ? "translate-x-full" : "-translate-x-full"}
+  `}
       >
-        <div className="flex col-span-1 justify-between items-center px-4 md:px-8 pt-4 ">
+        <div className="flex col-span-1  justify-end md:justify-between items-center px-4 md:px-8 pt-4 ">
           <Image
             src="/assets/icons/logo-dark.svg"
             alt="Logo"
             width={180}
             height={45}
-            className="h-auto w-[180px] md:w-[293px]"
+            className="hidden md:block h-auto w-[180px] md:w-[293px]"
           />
           <button
             onClick={() => setIsOpen(false)}
             className="text-secondry hover:text-primary text-xl cursor-pointer"
           >
-            <Image src="/assets/icons/close.svg" alt="Close" width={50} height={50} />
+            <Image src="/assets/icons/close.svg" alt="Close" width={50} height={50} className="w-[31px] h-[31px] md:w-[50px] md:h-[50px]" />
           </button>
         </div>
 
         <div className="flex  flex-col md:flex-row h-auto justify-between">
-          <div className="w-full 2xl:w-1/2 flex flex-col gap-2 2xl:gap-[52px] 2xl:pt-[102px]">
+          <div className="w-full 2xl:w-1/2 flex flex-col gap-[32px] 2xl:gap-[52px] pt-[32px] 2xl:pt-[102px]">
             {navLinks.map((link, index) => (
               <Link
                 key={link.href}
@@ -151,8 +153,8 @@ useEffect(() => {
                 </div>
 
                 <span className={`
-                                font-bold font-brando-bold 
-                                text-[18px]
+                                text-[24px]
+                                md:font-bold md:font-brando-bold 
                                 md:text-[26px]  
                                 2xl:text-[48px] 
                                 leading-auto
@@ -164,6 +166,9 @@ useEffect(() => {
                 </span>
               </Link>
             ))}
+            <div className="block md:hidden">
+              <LanguageSwitcher />
+            </div>
           </div>
 
 
@@ -211,7 +216,7 @@ useEffect(() => {
             </div>
 
             <div className="flex flex-col md:flex-row gap-6  align-center ">
-              <Link href={`/${currentLocale}/contact-us`}  onClick={() => setIsOpen(false)}>
+              <Link href={`/${currentLocale}/contact-us`} onClick={() => setIsOpen(false)}>
                 <div className="relative group md:h-[250px] 2xl:h-[375px] md:w-[412px] 2xl:w-[612px] rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_44px_0_#00000040]">
                   <Image
                     src={`/assets/images/contact-us-nav.png`}

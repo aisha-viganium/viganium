@@ -9,7 +9,7 @@ export default function OurTeam({ locale, t }: { locale: string; t: (key: string
     <section className="py-4 md:py-8 px-2 md:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
         <AnimatedSection
-          className="col-span-1 pt-[60px]"
+          className="col-span-1 pt-[16px] md:pt-[60px]"
           variants={slideFromRightBounce}
         >
           <div>

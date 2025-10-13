@@ -5,41 +5,32 @@ import { usePathname, useRouter } from "next/navigation";
 export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname(); 
-
   const currentLocale = pathname.split("/")[1] || "en";
-
   const toggleLocale = () => {
     const newLocale = currentLocale === "ar" ? "en" : "ar";
-
     const segments = pathname.split("/");
     segments[1] = newLocale;
     const newPath = segments.join("/");
-
     router.push(newPath);
   };
-
   return (
     <>
 
-      <div  style={{
-                    backgroundColor: "#FFF",
-                    border: `2px solid #FFF`,
-                    outline: `2px solid #FFF`,
-
-                }}
+      <div
                 className="
                 cursor-pointer flex flex-row justify-center items-center my-5
-                px-[6.46px] py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[10px] leading-[14px]
+                px-[6.46px] py-[2px] gap-[6.24px] rounded-[4px] font-bold text-[16px] leading-[14px]
                 md:py-[17px] md:gap-[10px] md:w-[170.92px] md:h-[63px] 
                 md:rounded-[16px] md:text-[20px] md:leading-[29px]
-                w-[50px] h-[30px] 
+                w-[170px] h-[63px] 
                 text-center 
                 transition-all duration-300 ease-in-out
                 hover:outline-offset-4
+                bg-[#F3F3F3] md:bg-[#FFF] mx-4 md:mx-0
             ">
         <button
           onClick={() => toggleLocale()}
-          className={` cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold font-brando-semibold ${
+          className={` cursor-pointer w-[75px] h-[50px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold font-brando-semibold ${
             currentLocale === "ar"
               ? "bg-[#BD171D] text-white"
               : "bg-transparent text-[#414141]"
@@ -49,7 +40,7 @@ export default function LanguageSwitcher() {
         </button>
         <button
           onClick={() => toggleLocale()}
-          className={`!font-aileron cursor-pointer w-[75px] h-[30px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
+          className={`!font-aileron cursor-pointer w-[75px] h-[50px] md:h-[50px] flex items-center justify-center rounded-lg font-semibold ${
             currentLocale === "en"
               ? "bg-[#BD171D] text-white"
               : "bg-transparent text-[#414141]"
