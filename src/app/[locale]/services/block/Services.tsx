@@ -12,8 +12,6 @@ export default function Services({ locale, t }: { locale: string; t: (key: strin
     <>
       <section className="py-5 md:py-16 px-2 md:px-16 bg-[#1A1A1A]">
         <div>
-
-
           <ServicesFilter services={servicesData} locale={locale} />
         </div>
       </section>

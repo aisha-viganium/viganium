@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import Chat from "@/components/Chat";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import "@/i18n/client";
 
 export default function HeroSection() {
     const [open, setOpen] = useState(false);

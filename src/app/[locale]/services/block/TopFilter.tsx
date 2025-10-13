@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
 interface TopFilterProps {
@@ -10,6 +10,8 @@ interface TopFilterProps {
 
 export default function TopFilter({ onFilterChange }: TopFilterProps) {
   const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const router = useRouter();
   const filterFromUrl = searchParams.get("filter") || "0";
   const [activeFilter, setActiveFilter] = useState<string>(filterFromUrl);
   const { i18n } = useTranslation();
@@ -28,16 +30,26 @@ export default function TopFilter({ onFilterChange }: TopFilterProps) {
     { label_ar: "الأمان والتشغيل الذكي", label_en: "Security & Smart Operations", value: "4" },
   ];
 
-  const handleClick = (value: string) => {
+const handleClick = (value: string) => {
     setActiveFilter(value);
     onFilterChange(value);
-  };
 
+    const currentParams = new URLSearchParams(Array.from(searchParams.entries()));
+    if (value === "0") {
+      currentParams.delete("filter");
+    } else {
+      currentParams.set("filter", value);
+    }
+
+    const queryString = currentParams.toString();
+    const newUrl = queryString ? `${pathname}?${queryString}` : pathname;
+    router.push(newUrl, { scroll: false });
+  };
   return (
     <div className="mb-2 flex flex-wrap gap-2">
       {navLinks.map((link) => (
         <button
-          onClick={() => handleClick(link.value)}
+        onClick={() => handleClick(link.value)}
           key={link.value}
           className={`font-semibold font-brando-semibold 
             md:text-[20px] md:leading-[29px] md:text-right 
