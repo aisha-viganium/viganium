@@ -45,7 +45,7 @@ export default function Footer() {
           >
             {t("Footer.contactTitle")}
           </h3>
-          <p className="text-[14px] md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9] mt-[32px]">
+          <p className="text-[14px] md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9] mt-[32px] whitespace-pre-line">
             {t("Footer.contactDescription")}
           </p>
           <a
@@ -63,7 +63,7 @@ export default function Footer() {
           <h3 className="font-semibold font-brando-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
             {t("Footer.socialTitle")}
           </h3>
-          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]  mt-[32px]">
+          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]  mt-[32px] whitespace-pre-line">
             {t("Footer.socialDescription")}
           </p>
           <div className="flex flex-wrap gap-8 md:gap-5 2xl:gap-16  mt-[16px] md:mt-[94px]">
@@ -79,7 +79,7 @@ export default function Footer() {
           <h3 className="font-semibold font-brando-semibold text-[24px] md:text-[40px] text-[#D9D9D9]">
             {t("Footer.partnersTitle")}
           </h3>
-          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]  mt-[32px]">
+          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]  mt-[32px] whitespace-pre-line">
             {t("Footer.partnersDescription")}
           </p>
           <div className="flex gap-5 mt-[16px] md:mt-[60px]">

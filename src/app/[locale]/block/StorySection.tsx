@@ -23,7 +23,7 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
                 />
               </span>
 
-              <p className={`max-w-[864px] font-normal md:font-bold text-[12px] md:text-[24px] lg:text-[36px] leading-auto md:leading-[42px] lg:leading-[51px] ${isArabic ? "text-right" : "text-left"} text-secondry mt-3`}>
+              <p className={`whitespace-pre-line max-w-[864px] font-normal md:font-bold text-[12px] md:text-[24px] lg:text-[36px] leading-auto md:leading-[42px] lg:leading-[51px] ${isArabic ? "text-right" : "text-left"} text-secondry mt-3`}>
                 {t("story.description")}
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
               </div>
             </div>
 
-            <p className={`max-w-[864px] font-normal md:font-semibold text-[14px] md:text-[18px] lg:text-[24px] leading-[18px] md:leading-[34px] ${isArabic ? "text-right" : "text-left"} text-secondry-200`}>
+            <p className={`whitespace-pre-line max-w-[864px] font-normal md:font-semibold text-[14px] md:text-[18px] lg:text-[24px] leading-[18px] md:leading-[34px] ${isArabic ? "text-right" : "text-left"} text-secondry-200`}>
               {t("story.details")}
             </p>
 

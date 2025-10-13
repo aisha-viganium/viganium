@@ -61,6 +61,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             text-[12px] md:text-[16px]  2xl:text-[24px] 
                             leading-[normal] md:leading-7 lg:leading-[38px] 
                             ${isArabic ? "text-right" : "text-left"} text-[#FDFFFC]
+                            whitespace-pre-line
                         `}
                     >
                         {t("HomePage.description")}
