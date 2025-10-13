@@ -59,6 +59,7 @@ export function ServiceCard({ service, locale }: { service: Service; locale: str
                             min-h-[40px] md:min-h-[47px] 
                             border-2 border-[#1A1A1A] rounded-[37px] 
                             font-semibold font-brando-semibold  text-secondry-200
+                          duration-300  hover:bg-[#414141] hover:outline-1 hover:outline-[#1A1A1A] hover:text-[#F3F3F3] hover:outline-offset-6
                           `}
                 >
                   {tag}
