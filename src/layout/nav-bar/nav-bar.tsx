@@ -21,7 +21,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`fixed top-0 px-2 md:px-16 w-full flex flex-row justify-between items-center p-2 gap-4 h-[50px] md:h-[121px] z-[100] transition-all duration-300 ${scrolled ? "bg-black/90" : "bg-transparent"
+      className={`fixed z-500 top-0 px-2 md:px-16 w-full flex flex-row justify-between items-center p-2 gap-4 h-[50px] md:h-[121px] transition-all duration-300 ${scrolled ? "bg-black/90" : "bg-transparent"
         }`}
     >
       <div className="hidden md:flex">

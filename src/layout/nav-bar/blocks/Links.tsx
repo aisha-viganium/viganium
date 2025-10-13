@@ -82,7 +82,7 @@ useEffect(() => {
     setActiveBall(null);
   };
   return (
-    <div className="relative z-100">
+    <div className="relative">
       <button
         onClick={() => setIsOpen(true)}
         className="p-3 text-gray-700 hover:text-primary focus:outline-none cursor-pointer"
@@ -119,7 +119,7 @@ useEffect(() => {
         </div>
 
         <div className="flex  flex-col md:flex-row h-auto md:h-[calc(100%-80px)] ">
-          <div className="w-full md:w-1/2 px-6 flex flex-col gap-2 2xl:gap-[52px] md:pt-[102px]">
+          <div className="w-full 2xl:w-1/2 px-6 flex flex-col gap-2 2xl:gap-[52px] 2xl:pt-[102px]">
             {navLinks.map((link, index) => (
               <Link
                 key={link.href}
@@ -153,7 +153,7 @@ useEffect(() => {
                 <span className={`
                                 font-bold font-brando-bold 
                                 text-[18px]
-                                md:text-[40px]  
+                                md:text-[34px]  
                                 2xl:text-[64px] 
                                 leading-auto
                                 text-center 
@@ -167,7 +167,7 @@ useEffect(() => {
           </div>
 
 
-          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex-col gap-[32px] hidden md:flex">
+          <div className="w-full 2xl:w-1/2 mt-6 md:mt-0 flex-col gap-[32px] hidden md:flex">
             <div className="flex flex-col lg:flex-row gap-6 p-6 md:py-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[439px] md:w-[913px]">
               <div className="w-[296px]">
                 <h3 className="font-el-messiri group flex justify-center align-center gap-1 md:gap-2 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
@@ -239,7 +239,7 @@ useEffect(() => {
                   Hello@viganium.com
                 </a>
 
-                <div className="flex gap-[32px] mt-2 justify-center md:justify-center">
+                <div className="flex gap-[32px] mt-4 justify-center md:justify-center">
                   {socialLinks.map((link, idx) => (
                     <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer">
                       {link.icon}
