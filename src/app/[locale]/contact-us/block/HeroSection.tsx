@@ -36,7 +36,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                   text-[#FDFFFC]
                 `}
               >
-                {t("ContactUsPage.HeroSection.title")}{" "}
+                {t("ContactUsPage.HeroSection.title")}
        
               </h1>
             </AnimatedSection>

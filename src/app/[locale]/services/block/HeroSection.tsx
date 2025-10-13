@@ -55,6 +55,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                             md:static md:w-[350px] md:h-[65px]  md:max-w-[unset]
                             2xl:w-[693px]
                             font-bold font-brando-bold 
+                            group
                           "
               >
                 
@@ -75,7 +76,7 @@ export default function HeroSection({ locale, t }: { locale: string; t: (key: st
                   alt="Hero"
                   width={24}
                   height={24}
-                  className={`ms-[6px] w-[10px] h-[10px] md:w-[24px] md:h-[24px]  ${isArabic ? "" : "rotate-y-180"}
+                  className={`ms-[6px] w-[10px] h-[10px] md:w-[24px] md:h-[24px]  duration-300 ${isArabic ? "group-hover:-translate-x-5" : "rotate-y-180 group-hover:translate-x-5"}
 `}
                 />
               </button>
