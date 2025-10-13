@@ -21,9 +21,9 @@
     "watchIntro": "Watch Intro"
   },
   "howWork": {
-    "title": "How We Work",
-    "subtitle": "Your journey begins with your voice, so don’t deprive us of hearing about your great project.",
-    "description": "At Viganium, we don’t offer ready-made solutions — every journey starts from one place: the client’s voice.",
+    "title": "How Do We Work?",
+    "subtitle": "Our journey is a complete cycle that goes through several stages.",
+    "subtitle2": "At Veganium, we don’t deliver ready-made solutions — we always start from one place: you and your choice.",
     "cards": [
       {
         "id": 1,
@@ -86,7 +86,7 @@
   },
   "ChatCard": {
     "welcome": "Hello! How can I assist you today?",
-     "customSoftware": "Custom Software Development",
+    "customSoftware": "Custom Software Development",
     "mobileApps": "Mobile App Development",
     "webDev": "Website Development",
     "uiuxDesign": "UI/UX Design",

@@ -36,26 +36,37 @@ export default function HowWork({ locale, t }: { locale: string; t: (key: string
 
           <h5
             className={`
+              mt-[32px] md:mt-[90px]
               max-w-[260px] md:max-w-[876px]  
-              ${isArabic ? "text-right 2xl:text-[48px]" : "text-left 2xl:text-[28px]"} 
+              ${isArabic ? "text-right 2xl:text-[40px]" : "text-left 2xl:text-[28px]"} 
               text-[16px] md:text-[40px] 
-              font-bold 
+              font-bold font-brando-bold
               text-[#FDFFFC] 
-              my-2 2xl:mt-[45px] 2xl:mb-0
+               
             `}
           >
             {t("howWork.subtitle")}
           </h5>
-
+          <h6
+            className={`
+             my-4 md:my-8
+              max-w-[260px] md:max-w-[876px]  
+              ${isArabic ? "text-right 2xl:text-[24px]" : "text-left 2xl:text-[24px]"} 
+              text-[16px] md:text-[24px] 
+              font-semibold font-brando-semibold
+              text-[#FDFFFC] 
+            `}
+          >
+            {t("howWork.subtitle2")}
+          </h6>
           <p
             className={`
-              my-3 md:mt-[32px] md:mb-[32px]
+              mb-4 md:mb-8
               max-w-[359px] md:max-w-[847px] 
               ${isArabic ? "text-right" : "text-left"} 
-              text-[12px] md:text-[16px] lg:text-[20px] xl:text-[24px] 
-              leading-[17px] md:leading-[24px] lg:leading-[30px] xl:leading-[34px] 
-              font-normal md:font-semibold md:font-brando-semibold 
+              text-[12px] md:text-[16px] lg:text-[14px] 2xl:text-[16px] 
               text-[#FDFFFC]
+              font-[400]
             `}
           >
             {t("howWork.description")}
