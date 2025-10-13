@@ -22,7 +22,6 @@ export default function HeroSection({ service, locale }: { service: Service; loc
               <h1
                 className={`
                         mt-[30px] lg:mt-[50px] 
-                        max-w-[1039.36px] 
                         font-bold 
                         ${isArabic ? "text-right" : "text-left"} 
                         text-[14px] 
@@ -34,7 +33,7 @@ export default function HeroSection({ service, locale }: { service: Service; loc
               </h1>
               <p
                 className={`
-                        max-w-[763.7px] 
+                      
                         ${isArabic ? "text-right" : "text-left"} 
                         text-[#FDFFFC] 
                         font-normal text-[12px] leading-[17px] my-6 
