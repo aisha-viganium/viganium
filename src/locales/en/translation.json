@@ -24,44 +24,44 @@
     "title": "How Do We Work?",
     "subtitle": "Our journey is a complete cycle that goes through several stages.",
     "subtitle2": "At Veganium, we don’t deliver ready-made solutions — we always start from one place: you and your choice.",
-    "cards": [
-      {
-        "id": 1,
-        "title": "Listening",
-        "description": "We carefully listen to understand our clients’ needs before any step.",
-        "image": "/assets/images/work/hear.png"
-      },
-      {
-        "id": 2,
-        "title": "Research",
-        "description": "We conduct research and analysis to discover the best possible solutions.",
-        "image": "/assets/images/work/search.png"
-      },
-      {
-        "id": 3,
-        "title": "Analysis",
-        "description": "We analyze data and insights to reach accurate decisions.",
-        "image": "/assets/images/work/analysing.png"
-      },
-      {
-        "id": 4,
-        "title": "Discussion",
-        "description": "We exchange ideas and perspectives with our team and clients.",
-        "image": "/assets/images/work/discussion.png"
-      },
-      {
-        "id": 5,
-        "title": "Execution",
-        "description": "We turn plans into reality with well-structured steps.",
-        "image": "/assets/images/work/working.png"
-      },
-      {
-        "id": 6,
-        "title": "Testing",
-        "description": "We test the results to ensure quality and success.",
-        "image": "/assets/images/work/test.png"
-      }
-    ]
+  "cards": [
+    {
+      "id": 1,
+      "title": "Listen",
+      "description": "We understand the details of your business, its challenges, and ambitions, because any successful solution starts with genuine understanding.",
+      "image": "/assets/images/work/en/hear.png"
+    },
+    {
+      "id": 2,
+      "title": "Analyze",
+      "description": "We dive into your audience's behavior and understand the competition so we can identify where to add real value for you.",
+      "image": "/assets/images/work/en/analysing.png"
+    },
+    {
+      "id": 3,
+      "title": "Plan",
+      "description": "We connect the dots and build a technical and strategic plan that suits you.",
+      "image": "/assets/images/work/en/planning.png"
+    },
+    {
+      "id": 4,
+      "title": "Define",
+      "description": "We draw a clear map of stages and timelines so that work proceeds with confidence and organization.",
+      "image": "/assets/images/work/en/discussion.png"
+    },
+    {
+      "id": 5,
+      "title": "Execute",
+      "description": "From programming to design and marketing, every detail is carefully crafted... and the results are amazing.",
+      "image": "/assets/images/work/en/working.png"
+    },
+    {
+      "id": 6,
+      "title": "Review",
+      "description": "We review the results with you, develop and iterate the process, because for us, success is not an end but continuous improvement.",
+      "image": "/assets/images/work/en/test.png"
+    }
+  ]
   },
   "Services": {
     "title": "Services",

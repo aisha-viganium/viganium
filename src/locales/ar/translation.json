@@ -31,18 +31,19 @@
         "title": "نسمعك",
         "description": " نفهم تفاصيل عملك وتحدياتك وطموحاتك، لأن أي حل ناجح يبدأ من فهم حقيقي.",
         "image": "/assets/images/work/hear.png"
+
       },
       {
         "id": 2,
         "title": "نحلّل ",
         "description": " نغوص في سلوك جمهورك، ونفهم المنافسة عشان نعرف وين نقدر نضيف لك قيمة حقيقية.",
-        "image": "/assets/images/work/search.png"
+        "image": "/assets/images/work/analysing.png"
       },
       {
         "id": 3,
         "title": "نخطط",
-        "description": " نربط النقاط ونبني خطة تقنية واستراتيجية تناسبك.",
-        "image": "/assets/images/work/analysing.png"
+        "description": " نشاركك الرؤية والخطوات القادمة، نراجع التفاصيل سوا، ونتأكد إن كل قرار يمشي في الاتجاه الصحيح قبل التنفيذ.",
+        "image": "/assets/images/work/planning.png"
       },
       {
         "id": 4,

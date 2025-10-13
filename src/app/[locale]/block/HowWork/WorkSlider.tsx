@@ -17,6 +17,8 @@ export default function CardSlider() {
         title: string;
         description: string;
         image: string;
+        imageEn: string;
+
     }[];
 
     const basePositions = isArabic
