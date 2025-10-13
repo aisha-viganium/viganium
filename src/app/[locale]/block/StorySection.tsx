@@ -70,10 +70,10 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
 
             <div className="flex items-center gap-4">
               <div className="flex">
-                <Image src="/assets/images/person1.jpg" alt="1" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full shadow-[0_4px_4px_0_#00000040]  ${isArabic ? "md:ml-[-24px]" : "md:mr-[-24px]"}`} />
-                <Image src="/assets/images/person2.jpg" alt="2" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full  shadow-[0_4px_4px_0_#00000040] ${isArabic ? "md:ml-[-24px]" : "md:mr-[-24px]"}`} />
-                <Image src="/assets/images/person1.jpg" alt="3" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full shadow-[0_4px_4px_0_#00000040]  ${isArabic ? "md:ml-[-24px]" : "md:mr-[-24px]"}`} />
-                <Image src="/assets/images/person2.jpg" alt="4" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full  shadow-[0_4px_4px_0_#00000040] ${isArabic ? "md:ml-[-24px]" : "md:mr-[-24px]"}`} />
+                <Image src="/assets/images/person1.jpg" alt="1" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full shadow-[0_4px_4px_0_#00000040]  ${isArabic ? "ml-[-24px]" : "mr-[-24px]"}`} />
+                <Image src="/assets/images/person2.jpg" alt="2" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full  shadow-[0_4px_4px_0_#00000040] ${isArabic ? "ml-[-24px]" : "mr-[-24px]"}`} />
+                <Image src="/assets/images/person1.jpg" alt="3" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full shadow-[0_4px_4px_0_#00000040]  ${isArabic ? "ml-[-24px]" : "mr-[-24px]"}`} />
+                <Image src="/assets/images/person2.jpg" alt="4" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] outline-[#FDFFFC] rounded-full  shadow-[0_4px_4px_0_#00000040] ${isArabic ? "ml-[-24px]" : "mr-[-24px]"}`} />
                 <Image src="/assets/images/person1.jpg" alt="5" width={50} height={50} className={`w-[45px] md:w-[50px] h-[45px] object-cover md:h-[50px] outline-[1.37px] border-[#FDFFFC] rounded-full shadow-[0_4px_4px_0_#00000040]`} />
               </div>
 
