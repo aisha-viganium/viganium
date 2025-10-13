@@ -121,7 +121,8 @@
       "services": "Services",
       "teamWork": "Team & Work",
       "blogs": "Blogs",
-      "contact": "Contact Us"
+      "contact": "Contact Us",
+      "previousWork":"Previous Work"
     },
     "Projects": {
       "title": "Our Projects",

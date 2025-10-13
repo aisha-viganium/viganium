@@ -11,6 +11,7 @@ import LinkedinNav from "@/assets/SVG/social/LinkedinNav";
 import InstaNav from "@/assets/SVG/social/InstaNav";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import previousWork from "@/data/previousWork";
 
 export default function SidebarNavbar() {
   const { t, i18n } = useTranslation();
@@ -56,11 +57,8 @@ export default function SidebarNavbar() {
     exit: { y: -100, opacity: 0 },
   };
 
-  const sliderItems = [
-    { label: t("NavbarSection.Projects.item1"), image: "/assets/images/previous-work/Ghazal.png" },
-    { label: t("NavbarSection.Projects.item2"), image: "/assets/images/previous-work/Rental-gate.png" },
-    { label: t("NavbarSection.Projects.item3"), image: "/assets/images/previous-work/Clean-Technique.png" },
-  ];
+
+  const previousWorkData = previousWork[isArabic ? "ar" : "en"];
 
   const socialLinks = [
     { name: "snap", url: "https://www.snapchat.com/add/viganium", icon: <SnapNav className="w-[16px] h-[16px]" /> },
@@ -176,6 +174,24 @@ export default function SidebarNavbar() {
               </Link>
             ))}
             <div className="block md:hidden">
+              <Link
+                href={`/${currentLocale}/previous-work`}
+                onClick={() => setIsOpen(false)}
+                className={`group text-secondry hover:text-primary relative flex items-center transition-all duration-800 hover:translate-x-2 overflow-hidden h-auto md:h-[100px]`}
+              >
+                           <span className={`
+                                text-[24px]
+                                md:font-bold md:font-brando-bold 
+                                md:text-[26px]  
+                                2xl:text-[48px] 
+                                leading-auto
+                                text-center 
+                                capitalize 
+                                 hover:text-primary
+                                transition-colors duration-300 ${isArabic ? "mr-10" : "ml-5"} `}>
+                {t("NavbarSection.Navbar.previousWork")}
+                </span>
+              </Link>
               <LanguageSwitcher />
             </div>
           </div>
@@ -189,14 +205,14 @@ export default function SidebarNavbar() {
                   <ArrowUpBlack className="w-[12px] md:w-[28px] mt-0 md:mt-[10px] rotate-245 transition-transform duration-300  group-hover:rotate-[215deg] fill-[#1A1A1A] group-hover:fill-primary" />
                 </h3>
                 <div className="flex flex-col items-center gap-5 mt-5 md:mt-10 ">
-                  {sliderItems.map((item, index) => (
+                  {previousWorkData.map((item, index) => (
                     <button
                       key={index}
                       onClick={() => setActiveSlide(index)}
                       className={`cursor-pointer font-semibold font-brando-semibold text-sm md:text-[16px] lg:text-lg transition-colors ${activeSlide === index ? "text-primary font-bold" : ""
                         }`}
                     >
-                      {item.label}
+                      {item.title}
                     </button>
                   ))}
                 </div>
@@ -213,8 +229,8 @@ export default function SidebarNavbar() {
                     className="absolute w-full h-full"
                   >
                     <Image
-                      src={sliderItems[activeSlide].image}
-                      alt={sliderItems[activeSlide].label}
+                      src={previousWorkData[activeSlide].image}
+                      alt={previousWorkData[activeSlide].title}
                       width={500}
                       height={300}
                       className="object-cover rounded-lg w-full md:h-[275px]  2xl:h-[375px] "
