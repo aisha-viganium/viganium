@@ -46,14 +46,14 @@ useEffect(() => {
   const sliderItems = [
     { label: t("NavbarSection.Projects.item1"), image: "/assets/images/previous-work/Ghazal.png" },
     { label: t("NavbarSection.Projects.item2"), image: "/assets/images/previous-work/Rental-gate.png" },
-    { label: t("NavbarSection.Projects.item3"), image: "/assets/images/previous-work/Rental-gate.png" },
+    { label: t("NavbarSection.Projects.item3"), image: "/assets/images/previous-work/Clean-Technique.png" },
   ];
 
   const socialLinks = [
-    { name: "snap", url: "https://www.snap.com/add/rentalgate", icon: <SnapNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> },
-    { name: "insta", url: "https://www.insta.com/add/rentalgate", icon: <InstaNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> },
-    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <FaceNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> },
-    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <LinkedinNav className="w-[20px] h-[20px] md:w-[32px] md:h-[32px]" /> }
+    { name: "snap", url: "https://www.snap.com/add/rentalgate", icon: <SnapNav className="w-[16px] h-[16px]" /> },
+    { name: "insta", url: "https://www.insta.com/add/rentalgate", icon: <InstaNav className="w-[16px] h-[16px]" /> },
+    { name: "facebook", url: "https://www.facebook.com/rentalgate", icon: <FaceNav className="w-[16px] h-[16px]" /> },
+    { name: "linkedin", url: "https://www.linkedin.com/company/rental-gate", icon: <LinkedinNav className="w-[16px] h-[16px]" /> }
   ];
 
   const ballShapes = {
@@ -167,10 +167,10 @@ useEffect(() => {
           </div>
 
 
-          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex-col gap-[64px] hidden md:flex">
-            <div className="flex flex-col lg:flex-row gap-6 p-6 md:py-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[439px] md:max-w-[913px]">
-              <div className=" lg:w-1/3">
-                <h3 className="group flex justify-center align-center gap-1 md:gap-4 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
+          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex-col gap-[32px] hidden md:flex">
+            <div className="flex flex-col lg:flex-row gap-6 p-6 md:py-8 bg-[#F4F6F9] rounded-lg min-h-[559px] md:min-h-[439px] md:w-[913px]">
+              <div className="w-[296px]">
+                <h3 className="font-el-messiri group flex justify-center align-center gap-1 md:gap-2 font-medium text-xl md:text-2xl lg:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
                   <span>  {t("NavbarSection.Projects.title")} </span>
                   <ArrowUpBlack className="w-[12px] md:w-[28px] mt-0 md:mt-[10px] rotate-245 transition-transform duration-300  group-hover:rotate-[215deg] fill-[#1A1A1A] group-hover:fill-primary" />
                 </h3>
@@ -179,7 +179,7 @@ useEffect(() => {
                     <button
                       key={index}
                       onClick={() => setActiveSlide(index)}
-                      className={`cursor-pointer text-sm md:text-base lg:text-lg transition-colors ${activeSlide === index ? "text-primary font-bold" : ""
+                      className={`cursor-pointer font-semibold font-brando-semibold text-sm md:text-[16px] lg:text-lg transition-colors ${activeSlide === index ? "text-primary font-bold" : ""
                         }`}
                     >
                       {item.label}
@@ -187,7 +187,7 @@ useEffect(() => {
                   ))}
                 </div>
               </div>
-              <div className="flex-1 flex items-center justify-center relative w-full max-h-[375px] overflow-hidden max-w-[677px]">
+              <div className=" flex items-center justify-center relative md:w-full h-[375px] overflow-hidden 2xl:w-[677px] shadow-[0_4px_44px_0_#BC6B6B40]">
                 <AnimatePresence>
                   <motion.div
                     key={activeSlide}
@@ -203,38 +203,38 @@ useEffect(() => {
                       alt={sliderItems[activeSlide].label}
                       width={500}
                       height={300}
-                      className="object-cover rounded-lg w-full max-h-[375px]"
+                      className="object-cover rounded-lg w-full h-[375px]"
                     />
                   </motion.div>
                 </AnimatePresence>
               </div>
             </div>
 
-            <div className="p-4 flex flex-col md:flex-row gap-6 justify-center align-center">
-              <Link href={`/${currentLocale}/contact-us`} className="flex-2" onClick={() => setIsOpen(false)}>
-                <div className="relative group w-full h-[250px] md:max-h-[305px] 2xl:h-[375px] rounded-lg overflow-hidden cursor-pointer">
+            <div className="flex flex-col md:flex-row gap-6  align-center">
+              <Link href={`/${currentLocale}/contact-us`}  onClick={() => setIsOpen(false)}>
+                <div className="relative group h-[250px] md:h-[305px] 2xl:h-[375px] w-[612px] rounded-lg overflow-hidden cursor-pointer shadow-[0_4px_44px_0_#00000040]">
                   <Image
                     src={`/assets/images/contact-us-nav.png`}
                     alt={`Contact`}
                     fill
-                    className="absolute object-cover rounded-[8px] h-[250px] md:max-h-[305px] 2xl:h-[375px]"
+                    className="absolute object-cover rounded-[8px] h-[250px] md:h-[305px] 2xl:h-[375px] w-[612px]"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                     <span className="text-white font-bold text-[62px]">التواصل معنا</span>
                   </div>
                 </div>
               </Link>
-              <div className="flex-1 flex flex-col justify-center align-center gap-4">
-                <h3 className="group flex justify-center items-center gap-1 md:gap-4 font-medium text-xl md:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
+              <div className="flex flex-col justify-center align-center gap-1 w-[276px]">
+                <h3 className="font-el-messiri group flex justify-center items-center gap-1 md:gap-2 font-medium text-xl md:text-[32px] underline text-center text-secondry hover:text-primary mb-4">
                   <ArrowUpBlack
-                    className="w-[12px] md:w-[28px] h-auto transition-transform duration-300 group-hover:text-primary group-hover:rotate-[35deg] fill-[#1A1A1A] group-hover:fill-primary"
+                    className=" w-[12px] md:w-[28px] h-auto transition-transform duration-300 group-hover:text-primary group-hover:rotate-[35deg] fill-[#1A1A1A] group-hover:fill-primary"
                   />
                   <span> {t("NavbarSection.Contact.title")}</span>
                 </h3>
 
                 <a
                   href="mailto:Hello@viganium.com"
-                  className="font-aileron mt-0 md:mt-5 font-200 text-sm md:text-[24px] text-center"
+                  className="font-aileron mt-0 md:mt-10 font-400 text-sm md:text-[16px] text-center"
                 >
                   Hello@viganium.com
                 </a>

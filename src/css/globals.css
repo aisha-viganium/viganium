@@ -1,5 +1,6 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
 
+@import "tailwindcss";
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -64,6 +65,12 @@ body {
 
 }
 
+.font-el-messiri{
+  font-family: "El Messiri", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 @font-face {
   font-family: 'aileron_regular';
   src: url('../assets/fonts/aileron.regular.otf') format('opentype');
@@ -75,20 +82,11 @@ body {
   font-family: 'aileron_regular' !important;
 }
 
-html[lang="en"] .font-brando {
+html[lang="en"] .font-brando,html[lang="en"] .font-brando-semibold,html[lang="en"] .font-brando-bold ,html[lang="en"] .font-el-messiri {
   font-family: 'aileron_regular' !important;
 
 }
 
-html[lang="en"] .font-brando-bold {
-  font-family: 'aileron_regular' !important;
-
-}
-
-html[lang="en"] .font-brando-semibold {
-  font-family: 'aileron_regular' !important;
-
-}
 
 @theme inline {
   --color-background: var(--background);
