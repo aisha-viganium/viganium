@@ -161,22 +161,22 @@ export default function ReviewSlider({
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="hidden md:flex custom-prev absolute left-[1%] 2xl:left-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[100px] md:h-[100px] 2xl:w-[120px] 2xl:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
+        <div className="hidden md:flex custom-prev absolute left-[1%] 2xl:left-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[100px] md:h-[100px] 2xl:w-[150px] 2xl:h-[150px] 2xl:p-[30px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
           <Image
             src="/assets/icons/arrow-white.svg"
             alt="prev"
             width={25}
             height={25}
-            className="md:w-[48px] md:h-[48px] rotate-180"
+            className="rotate-180 md:w-[48px] md:h-[48px] 2xl:w-[88px] 2xl:h-[88px] -translate-x-2"
           />
         </div>
-        <div className="hidden md:flex custom-next absolute right-[1%] 2xl:right-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[100px] md:h-[100px] 2xl:w-[120px] 2xl:h-[120px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
+        <div className="hidden md:flex custom-next absolute right-[1%] 2xl:right-[10%] top-[95%] md:top-1/2 -translate-y-1/2 w-[50px] h-[50px] md:w-[100px] md:h-[100px] 2xl:w-[150px] 2xl:h-[150px] 2xl:p-[30px] bg-gradient-to-b from-[#BD171D] to-[#5B1517] rounded-full items-center justify-center z-50 cursor-pointer">
           <Image
             src="/assets/icons/arrow-white.svg"
             alt="next"
-            width={25}
-            height={25}
-            className="md:w-[48px] md:h-[48px]"
+            width={88}
+            height={88}
+            className="md:w-[48px] md:h-[48px] 2xl:w-[88px] 2xl:h-[88px] translate-x-2"
           />
         </div>
       </AnimatedSection>
