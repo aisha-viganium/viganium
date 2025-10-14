@@ -1,0 +1,21 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_5177_20845)">
+<mask id="mask0_5177_20845" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="34">
+<path d="M0 3.8147e-06H34V34H0V3.8147e-06Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_5177_20845)">
+<path d="M27.7194 9.09766H31.0117C32.1119 9.09766 33.0039 9.98956 33.0039 11.0898L32.9375 31.0117C32.9375 32.1119 32.1119 33.0039 31.0117 33.0039H2.98828C1.88806 33.0039 0.996094 32.1119 0.996094 31.0117V11.0898C0.996094 9.98956 1.88806 9.09766 2.98828 9.09766H21.9756" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.735 13.082H29.0195V29.0195H8.96484V13.082H17.9912" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5161 15.6665L14.1074 19.8926L18.3335 18.4838L32.4204 4.39695C33.1984 3.619 33.1984 2.35754 32.4204 1.57959C31.6424 0.801578 30.3811 0.801578 29.6031 1.57959L15.5161 15.6665Z" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.7861 4.39554L29.6036 7.21289" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.97656 29.0195C5.97656 29.5697 5.53058 30.0156 4.98047 30.0156C4.43036 30.0156 3.98438 29.5697 3.98438 29.0195C3.98438 28.4694 4.43036 28.0234 4.98047 28.0234C5.53058 28.0234 5.97656 28.4694 5.97656 29.0195Z" fill="#BD171D"/>
+<path d="M5.97656 25.0352C5.97656 25.5853 5.53058 26.0312 4.98047 26.0312C4.43036 26.0312 3.98438 25.5853 3.98438 25.0352C3.98438 24.485 4.43036 24.0391 4.98047 24.0391C5.53058 24.0391 5.97656 24.485 5.97656 25.0352Z" fill="#BD171D"/>
+<path d="M5.97656 21.0508C5.97656 21.601 5.53058 22.0469 4.98047 22.0469C4.43036 22.0469 3.98438 21.601 3.98438 21.0508C3.98438 20.5007 4.43036 20.0547 4.98047 20.0547C5.53058 20.0547 5.97656 20.5007 5.97656 21.0508Z" fill="#BD171D"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_5177_20845">
+<rect width="34" height="34" fill="white"/>
+</clipPath>
+</defs>
+</svg>

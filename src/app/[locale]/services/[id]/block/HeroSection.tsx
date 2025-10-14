@@ -69,6 +69,7 @@ export default function HeroSection({ service, locale }: { service: Service; loc
                     alt="Service"
                     fill
                     className="object-cover rounded-[2px] md:rounded-[8px]"
+                    unoptimized
                   />
                 </div>
                 <div className="absolute w-14 h-14 left-[25%] top-[18%]">

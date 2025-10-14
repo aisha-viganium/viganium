@@ -229,10 +229,11 @@ export default function SidebarNavbar() {
                     className="absolute w-full h-full"
                   >
                     <Image
+                    unoptimized
                       src={previousWorkData[activeSlide].image}
                       alt={previousWorkData[activeSlide].title}
                       width={500}
-                      height={300}
+                      height={375}
                       className="object-cover rounded-lg w-full md:h-[275px]  2xl:h-[375px] "
                     />
                   </motion.div>

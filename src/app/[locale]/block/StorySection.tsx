@@ -47,6 +47,7 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
                   alt="1"
                   width={350}
                   height={200}
+                  unoptimized
                   className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
                 />
                 <div className="absolute inset-0 rounded-[4px] md:rounded-[16px] bg-[linear-gradient(183deg,rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_97.51%)]"></div>
@@ -58,6 +59,7 @@ export default function StorySection({ locale, t }: { locale: string; t: (key: s
                   alt="2"
                   width={350}
                   height={200}
+                  unoptimized
                   className="object-cover w-full h-[128px] md:h-auto rounded-[4px] md:rounded-[16px]"
                 />
                 <div className="absolute inset-0 rounded-[4px] md:rounded-[16px] bg-[linear-gradient(183deg,rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_97.51%)]"></div>

@@ -1,0 +1,29 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_5175_21879)">
+<path d="M15.0049 14.0117V19.9883L19.826 17L15.0049 14.0117Z" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10"/>
+<path d="M13.0127 29.0195H20.9814" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10"/>
+<mask id="mask0_5175_21879" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="0" width="35" height="34">
+<path d="M-0.00488281 3.8147e-06H33.9951V34H-0.00488281V3.8147e-06Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_5175_21879)">
+<path d="M0.990234 17H3.04883" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M30.9395 17H32.998" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="square"/>
+</g>
+<path d="M5.72754 28.2695L7.13621 26.8609" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M26.8604 7.13867L28.269 5.73" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M28.269 28.2695L26.8604 26.8609" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M7.13621 7.13867L5.72754 5.73" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="square"/>
+<mask id="mask1_5175_21879" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="0" width="35" height="34">
+<path d="M-0.00488281 3.8147e-06H33.9951V34H-0.00488281V3.8147e-06Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_5175_21879)">
+<path d="M16.9941 3.05469V0.996094" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M13.0098 33.0039V26.101C9.42522 24.5398 7.0332 20.9912 7.0332 17C7.0332 11.5079 11.502 7.03907 16.9941 7.03907C22.4863 7.03907 26.9551 11.5079 26.9551 17C26.9551 20.9912 24.5631 24.5398 20.9785 26.101V33.0039H13.0098Z" stroke="#BD171D" stroke-width="1.99219" stroke-miterlimit="10"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_5175_21879">
+<rect width="34" height="34" fill="white"/>
+</clipPath>
+</defs>
+</svg>
