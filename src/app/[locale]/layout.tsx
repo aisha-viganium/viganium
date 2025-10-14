@@ -4,7 +4,6 @@ import Footer from "@/layout/footer/footer";
 import I18nProvider from "@/providers/i18n-provider";
 import "../../css/globals.css";
 import ClientLayout from "./client-layout";
-import CustomCursor from "@/components/CustomCursor";
 
 export const metadata: Metadata = {
   title: "Viganium",
@@ -33,7 +32,6 @@ export default async function RootLayout({
 
         <I18nProvider locale={locale}>
           <ClientLayout>
-            <CustomCursor cursorImg="/assets/cursor/cursor.png" pointerImg="/assets/cursor/pointer.png" />
 
             <NavBar />
             {children}

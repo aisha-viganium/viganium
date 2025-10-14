@@ -27,7 +27,7 @@ export default function HeroSection() {
                 className={`
                     fixed z-[100] 
                     w-[70px] h-[70px] ${isArabic ? "right-[-3%]" : "left-[4%]"} bottom-[50%] 
-                    md:w-[150px] md:h-[150px] ${isArabic ? "md:right-[1.2%]" : "md:left-[8%]"} md:bottom-[4%]  
+                    md:w-[150px] md:h-[150px] ${isArabic ? "md:right-[1.2%]" : "md:left-[8.3%]"} md:bottom-[4%]  
                 `}
                 onClick={() => setOpen(true)}
             >

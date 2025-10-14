@@ -10,18 +10,7 @@ html {
   direction: rtl;
 }
 
-html,
-body {
-  cursor: none !important;
 
-}
-
-button,
-a,
-a:hover,div {
-  cursor: none !important;
-
-}
 
 body {
   background: var(--background);
