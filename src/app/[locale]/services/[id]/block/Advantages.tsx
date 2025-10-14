@@ -7,6 +7,7 @@ export interface Service {
   list: {
     title: string;
     description: string;
+    image: string;
   }[];
 }
 export default function Advantages({ service, locale, t }: { service: Service; locale: string; t: (key: string) => string }) {
@@ -99,7 +100,7 @@ export default function Advantages({ service, locale, t }: { service: Service; l
                 className={`flex flex-col items-start ${isArabic ? "text-right" : "text-left"}`}
               >
                 <Image
-                  src="/assets/images/ICON-BACKGROUND.png"
+                  src={item.image}
                   alt="Advantages"
                   width={58}
                   height={58}

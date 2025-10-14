@@ -86,38 +86,38 @@ const services = {
                 {
                     title: "تجربة مستخدم",
                     description: " نرسم واجهات سهلة وجذّابة تخلّي التفاعل طبيعي وممتع للمستخدم.",
-                    image: "/assets/images/services/tools/mobile-applications-developmentmanagement-access/user-experince.svg"
+                    image: "/assets/images/services/tools/mobile-applications-development/user-experince.svg"
 
                 },
                 {
                     title: "أداء مستقر",
                     description: " نضمن سرعة التطبيق وثباته على كل الأجهزة عبر اختبارات دقيقة.",
-                    image: "/assets/images/services/tools/mobile-applications-developmentmanagement-access/continuous-performance.svg"
+                    image: "/assets/images/services/tools/mobile-applications-development/continuous-performance.svg"
 
                 },
                 {
                     title: "تكامل ذكي",
                     description: " نربط التطبيق بقواعد البيانات وواجهات الـAPI لتشغيل فعّال ومتصل.",
-                    image: "/assets/images/services/tools/mobile-applications-developmentmanagement-access/samrt-implemen.svg"
+                    image: "/assets/images/services/tools/mobile-applications-development/samrt-implemen.svg"
 
                 },
                 {
                     title: "دفع إلكتروني",
                     description: " نوفّر أنظمة دفع آمنة وسريعة تدعم جميع الوسائل المحلية والعالمية.",
-                    image: "/assets/images/services/tools/mobile-applications-developmentmanagement-access/payment.svg"
+                    image: "/assets/images/services/tools/mobile-applications-development/payment.svg"
 
 
                 },
                 {
                     title: "تنبيهات فورية",
                     description: " نضيف نظام إشعارات مخصص يحافظ على تفاعل المستخدم مع التطبيق.",
-                    image: "/assets/images/services/tools/mobile-applications-developmentmanagement-access/notifications.svg"
+                    image: "/assets/images/services/tools/mobile-applications-development/notifications.svg"
 
                 },
                 {
                     title: "دعم مستمر",
                     description: "بعد الإطلاق، نتابع الأداء ونقدّم تحديثات وتحسينات مستمرة للتطبيق.",
-                    image: "/assets/images/services/tools/mobile-applications-developmentmanagement-access/support.svg"
+                    image: "/assets/images/services/tools/mobile-applications-development/support.svg"
 
                 }
             ],
@@ -284,30 +284,33 @@ const services = {
                 {
                     title: "استراتيجية ذكية",
                     description: "نبني خطة تسويق متكاملة بناءً على تحليل السوق والمنافسين.",
-                    image: "/assets/images/services/tools/ai-agent/security.svg"
+                    image: "/assets/images/services/tools/integrated-digital-marketing/marketing-strategy.svg"
                 },
                 {
                     title: "حملات إعلانية",
                     description: " ندير إعلانات فعّالة على Google وTikTok وMeta وسناب",
-                    image: "/assets/images/services/tools/ai-agent/security.svg"
+                    image: "/assets/images/services/tools/integrated-digital-marketing/marketing-campaign.svg"
                 },
                 {
                     title: "تحسين أداء",
                     description: "نراقب النتائج ونطوّر الحملات للوصول لأفضل تكلفة تحويل.",
-                    image: "/assets/images/services/tools/ai-agent/security.svg"
+                    image: "/assets/images/services/tools/integrated-digital-marketing/performance.svg"
                 },
                 {
                     title: "صناعة محتوى",
-                    description: "ننتج محتوى بصري ونصي يعبّر عن هويتك ويجذب جمهورك."
+                    description: "ننتج محتوى بصري ونصي يعبّر عن هويتك ويجذب جمهورك.",
+                    image: "/assets/images/services/tools/integrated-digital-marketing/content-creator.svg"
 
                 },
                 {
                     title: "تحليل بيانات",
-                    description: " نستخدم أدوات مثل Google Analytics وMeta Pixel لفهم النتائج."
+                    description: " نستخدم أدوات مثل Google Analytics وMeta Pixel لفهم النتائج.",
+                    image: "/assets/images/services/tools/integrated-digital-marketing/data-analysis.svg"
                 },
                 {
                     title: "تحسين SEO",
-                    description: "نرفع ترتيب موقعك بمحركات البحث لاستمرار التواجد الرقمي."
+                    description: "نرفع ترتيب موقعك بمحركات البحث لاستمرار التواجد الرقمي.",
+                    image: "/assets/images/services/tools/integrated-digital-marketing/seo.svg"
                 }
             ],
             tools: [
@@ -350,28 +353,34 @@ const services = {
             list: [
                 {
                     title: "تحليل عمليات",
-                    description: "نراجع دورة العمل ونحدد فرص الأتمتة بدقة."
+                    description: "نراجع دورة العمل ونحدد فرص الأتمتة بدقة.",
+                    image: "/assets/images/services/tools/smart-AI-powered-automation/operations-analysis.svg"
                 },
                 {
                     title: "روبوتات برمجية",
-                    description: "نصمم RPA تنفّذ المهام الروتينية بسرعة وكفاءة."
+                    description: "نصمم RPA تنفّذ المهام الروتينية بسرعة وكفاءة.",
+                    image: "/assets/images/services/tools/smart-AI-powered-automation/programming-robot.svg"
                 },
                 {
                     title: "تكامل أنظمة",
-                    description: " نربط الأنظمة الداخلية (ERP، CRM) لتشغيل موحّد وسلس."
+                    description: " نربط الأنظمة الداخلية (ERP، CRM) لتشغيل موحّد وسلس.",
+                    image: "/assets/images/services/tools/smart-AI-powered-automation/software-implement.svg"
                 },
                 {
                     title: "تقرير لحظي",
-                    description: "نوفر لوحات تفاعلية تعرض الأداء لحظة بلحظة."
+                    description: "نوفر لوحات تفاعلية تعرض الأداء لحظة بلحظة.",
+                    image: "/assets/images/services/tools/smart-AI-powered-automation/content-creator.svg"
 
                 },
                 {
                     title: "تحسين مستمر",
-                    description: "نحلل النتائج ونعدّل الخوارزميات باستمرار لرفع الكفاءة."
+                    description: "نحلل النتائج ونعدّل الخوارزميات باستمرار لرفع الكفاءة.",
+                    image: "/assets/images/services/tools/smart-AI-powered-automation/continues-performance.svg"
                 },
                 {
                     title: "موثوقية عالية",
-                    description: "كل عملية مصممة بمعايير دقة واستقرار مؤسسي."
+                    description: "كل عملية مصممة بمعايير دقة واستقرار مؤسسي.",
+                    image: "/assets/images/services/tools/smart-AI-powered-automation/more-reliability.svg"
                 }
             ],
             tools: [
@@ -406,28 +415,34 @@ const services = {
             list: [
                 {
                     title: "اختبار وظيفي",
-                    description: "نتحقق إن كل ميزة تعمل حسب المتطلبات بدقة."
+                    description: "نتحقق إن كل ميزة تعمل حسب المتطلبات بدقة.",
+                    image: "/assets/images/services/tools/software-testing/working-testing.svg"
                 },
                 {
                     title: "اختبار أداء",
-                    description: "نقيس تحمّل الضغط وكفاءة التشغيل في البيئات المختلفة."
+                    description: "نقيس تحمّل الضغط وكفاءة التشغيل في البيئات المختلفة.",
+                    image: "/assets/images/services/tools/software-testing/performance-testing.svg"
                 },
                 {
                     title: "اختبار أمان",
-                    description: "نكشف الثغرات ونقفلها قبل وصول أي خطر."
+                    description: "نكشف الثغرات ونقفلها قبل وصول أي خطر.",
+                    image: "/assets/images/services/tools/software-testing/security-testing.svg"
                 },
                 {
                     title: "اختبار واجهة",
-                    description: "نراجع واجهات الاستخدام لضمان تجربة مريحة وسهلة."
+                    description: "نراجع واجهات الاستخدام لضمان تجربة مريحة وسهلة.",
+                    image: "/assets/images/services/tools/software-testing/ui-testing.svg"
 
                 },
                 {
                     title: "اختبار تلقائي",
-                    description: "نستخدم أدوات مثل Selenium وJUnit لتسريع المراجعة."
+                    description: "نستخدم أدوات مثل Selenium وJUnit لتسريع المراجعة.",
+                    image: "/assets/images/services/tools/software-testing/automation-testing.svg"
                 },
                 {
                     title: "تقارير تحليلية",
-                    description: " نوثّق النتائج ونقترح تحسينات مبنية على البيانات."
+                    description: " نوثّق النتائج ونقترح تحسينات مبنية على البيانات.",
+                    image: "/assets/images/services/tools/software-testing/analysis-rebort.svg"
                 }
             ],
             tools: [
@@ -470,28 +485,34 @@ const services = {
             list: [
                 {
                     title: "تحويل نصوص",
-                    description: " نحول النصوص إلى فيديوهات تفاعلية خلال وقت قياسي."
+                    description: " نحول النصوص إلى فيديوهات تفاعلية خلال وقت قياسي.",
+                    image: "/assets/images/services/tools/AI-powered-video-production/text-convert.svg"
                 },
                 {
                     title: "تعليق صوتي",
-                    description: " أصوات واقعية متعددة اللغات بتقنيات Text-to-Speech."
+                    description: " أصوات واقعية متعددة اللغات بتقنيات Text-to-Speech.",
+                    image: "/assets/images/services/tools/AI-powered-video-production/voice-over.svg"
                 },
                 {
                     title: "تصميم بصري",
-                    description: " تخصيص الألوان، الشعار، وأنماط العرض لهويتك."
+                    description: " تخصيص الألوان، الشعار، وأنماط العرض لهويتك.",
+                    image: "/assets/images/services/tools/AI-powered-video-production/visual-identity.svg"
                 },
                 {
                     title: "تحرير ذكي",
-                    description: " نستخدم أدوات AI لتقطيع وتنسيق المشاهد تلقائيًا."
+                    description: " نستخدم أدوات AI لتقطيع وتنسيق المشاهد تلقائيًا.",
+                    image: "/assets/images/services/tools/AI-powered-video-production/smart-content.svg"
 
                 },
                 {
                     title: "محتوى تسويقي",
-                    description: "فيديوهات إعلانية تجذب الانتباه وتزيد التحويل."
+                    description: "فيديوهات إعلانية تجذب الانتباه وتزيد التحويل.",
+                    image: "/assets/images/services/tools/AI-powered-video-production/marketing-plan.svg"
                 },
                 {
                     title: "فيديوهات تعليمية",
-                    description: "محتوى تدريبي احترافي يسهل الفهم ويوصل الرسالة بسرعة."
+                    description: "محتوى تدريبي احترافي يسهل الفهم ويوصل الرسالة بسرعة.",
+                    image: "/assets/images/services/tools/AI-powered-video-production/video-learning.svg"
                 }
             ],
             tools: [
@@ -530,27 +551,33 @@ const services = {
             list: [
                 {
                     title: "تخزين لامركزي",
-                    description: "توزيع البيانات على خوادم آمنة غير قابلة للاختراق."
+                    description: "توزيع البيانات على خوادم آمنة غير قابلة للاختراق.",
+                    image: "/assets/images/services/tools/blockchain-data-storage/server-storage.svg"
                 },
                 {
                     title: "تشفير متقدّم",
-                    description: "حماية شاملة باستخدام خوارزميات Hash قوية."
+                    description: "حماية شاملة باستخدام خوارزميات Hash قوية.",
+                    image: "/assets/images/services/tools/blockchain-data-storage/advanced-encryption.svg"
                 },
                 {
                     title: "سجلات شفافة",
-                    description: "كل تعديل محفوظ بسلسلة زمنية دقيقة يمكن تتبعها."
+                    description: "كل تعديل محفوظ بسلسلة زمنية دقيقة يمكن تتبعها.",
+                    image: "/assets/images/services/tools/blockchain-data-storage/auto-save.svg"
                 },
                 {
                     title: "عقود ذكية",
-                    description: "نربط التطبيقات بعمليات تلقائية موثوقة وآمنة."
+                    description: "نربط التطبيقات بعمليات تلقائية موثوقة وآمنة.",
+                    image: "/assets/images/services/tools/blockchain-data-storage/smart-contract.svg"
                 },
                 {
                     title: "تكامل ذكي",
-                    description: "ربط البلوك تشين بأنظمتك الداخلية دون تعقيد."
+                    description: "ربط البلوك تشين بأنظمتك الداخلية دون تعقيد.",
+                    image: "/assets/images/services/tools/blockchain-data-storage/smart-integration.svg"
                 },
                 {
                     title: "خفض تكاليف",
-                    description: "بنية اقتصادية تقلل المصاريف وتحافظ على الأداء العالي."
+                    description: "بنية اقتصادية تقلل المصاريف وتحافظ على الأداء العالي.",
+                    image: "/assets/images/services/tools/blockchain-data-storage/low-cost.svg"
                 }
             ],
             tools: [
@@ -587,12 +614,30 @@ const services = {
             serviceDescriptionParagraph:
                 "الأمان ما يبدأ لما تحصل المشكلة، يبدأ قبلها. \nنحلل أنظمتك، نختبر الثغرات، ونصمم حماية تناسب طبيعة عملك. \nهدفنا نحمي بياناتك قبل ما تكون هدف لأي هجوم.",
             list: [
-                { title: "تحليل مخاطر", description: "نكشف الثغرات الأمنية ونقيّم درجة الخطورة بدقة." },
-                { title: "مراجعة سياسات", description: "نحدّث السياسات والإجراءات وفقًا لمعايير ISO وNIST." },
-                { title: "اختبار اختراق", description: "نحاكي الهجمات الفعلية لاكتشاف الثغرات قبل المهاجمين." },
-                { title: "تصميم أمان", description: "نبني هيكل أمني متين يحمي الشبكات والأنظمة." },
-                { title: "امتثال قانوني", description: "نضمن توافقك مع GDPR وSAMA والمعايير المحلية." },
-                { title: "مراقبة دائمة", description: "أدوات تحليل وتنبيه مستمر لحماية البيانات على مدار الساعة." }
+                {
+                    title: "تحليل مخاطر", description: "نكشف الثغرات الأمنية ونقيّم درجة الخطورة بدقة.",
+                    image: "/assets/images/services/tools/security/risk-analysis.svg"
+                },
+                {
+                    title: "مراجعة سياسات", description: "نحدّث السياسات والإجراءات وفقًا لمعايير ISO وNIST.",
+                    image: "/assets/images/services/tools/security/revision-policy.svg"
+                },
+                {
+                    title: "اختبار اختراق", description: "نحاكي الهجمات الفعلية لاكتشاف الثغرات قبل المهاجمين.",
+                    image: "/assets/images/services/tools/security/hack-testing.svg"
+                },
+                {
+                    title: "تصميم أمان", description: "نبني هيكل أمني متين يحمي الشبكات والأنظمة.",
+                    image: "/assets/images/services/tools/security/design-security.svg"
+                },
+                {
+                    title: "امتثال قانوني", description: "نضمن توافقك مع GDPR وSAMA والمعايير المحلية.",
+                    image: "/assets/images/services/tools/security/policy-review.svg"
+                },
+                {
+                    title: "مراقبة دائمة", description: "أدوات تحليل وتنبيه مستمر لحماية البيانات على مدار الساعة.",
+                    image: "/assets/images/services/tools/security/video-learning.svg"
+                }
             ],
             tools: [
                 { title: "Security Audit", image: "/assets/icons/html.svg" },
@@ -615,12 +660,30 @@ const services = {
             serviceDescriptionParagraph:
                 "التقنية أساس شغلك، وإحنا نحافظ عليها تشتغل بأعلى أداء. \nنراقب البنية التحتية لحظيًا، نحل المشاكل قبل ما تظهر، وندير الأنظمة بثبات. \nوجودنا يعني إنك مطمئن إن كل شيء شغال بدون توقف.",
             list: [
-                { title: "إدارة شبكات", description: "تصميم وصيانة شبكات مؤسسية آمنة وسريعة." },
-                { title: "خوادم سحابية", description: "إعداد وإدارة بيئات AWS وAzure بكفاءة عالية." },
-                { title: "أمان متقدّم", description: "حماية الأجهزة والبيانات من الهجمات الرقمية." },
-                { title: "دعم فني", description: "فريق متاح 24/7 لحل الأعطال ومتابعة الأنظمة." },
-                { title: "مراقبة أداء", description: "أدوات تراقب الشبكة وتكشف المشكلات قبل وقوعها." },
-                { title: "استشارات تقنية", description: "نساعدك تختار الحلول الأنسب لتوسيع أو تحديث بنيتك الرقمية." }
+                {
+                    title: "إدارة شبكات", description: "تصميم وصيانة شبكات مؤسسية آمنة وسريعة.",
+                    image: "/assets/images/services/tools/it/network-management.svg"
+                },
+                {
+                    title: "خوادم سحابية", description: "إعداد وإدارة بيئات AWS وAzure بكفاءة عالية.",
+                    image: "/assets/images/services/tools/it/server-cloud.svg"
+                },
+                {
+                    title: "أمان متقدّم", description: "حماية الأجهزة والبيانات من الهجمات الرقمية.",
+                    image: "/assets/images/services/tools/it/advanced-encryption.svg"
+                },
+                {
+                    title: "دعم فني", description: "فريق متاح 24/7 لحل الأعطال ومتابعة الأنظمة.",
+                    image: "/assets/images/services/tools/it/technical-support.svg"
+                },
+                {
+                    title: "مراقبة أداء", description: "أدوات تراقب الشبكة وتكشف المشكلات قبل وقوعها.",
+                    image: "/assets/images/services/tools/it/mentoring-performance.svg"
+                },
+                {
+                    title: "استشارات تقنية", description: "نساعدك تختار الحلول الأنسب لتوسيع أو تحديث بنيتك الرقمية.",
+                    image: "/assets/images/services/tools/it/technical-consulting.svg"
+                }
             ],
             tools: [
                 { title: "IT Infrastructure", image: "/assets/icons/html.svg" },
@@ -643,12 +706,30 @@ const services = {
             serviceDescriptionParagraph:
                 "نرسم تجربة تخلي المستخدم يبتسم مو يتوتر. \nكل تفصيلة محسوبة: الألوان، المسافات، النصوص. \nهدفنا تصميم يخدم الفكرة، مو يزاحمها.",
             list: [
-                { title: "تحليل سلوك", description: "ندرس تجربة المستخدم لتحديد نقاط التحسين بدقة." },
-                { title: "تصميم تفاعلي", description: "واجهات جذابة وسريعة التفاعل عبر مختلف الأجهزة." },
-                { title: "نظام تصميم", description: "إعداد دليل مرئي يضمن اتساق الهوية في كل صفحة." },
-                { title: "نماذج أولية", description: "نصمم Prototype تفاعلي قبل البدء في التطوير." },
-                { title: "اختبار تجربة", description: "نحلل استخدام الواجهة فعليًا لتصحيح أي تعقيد." },
-                { title: "تحديث مستمر", description: "نطوّر التصميم باستمرار ليتناسب مع التغيّرات السوقية." }
+                {
+                    title: "تحليل سلوك", description: "ندرس تجربة المستخدم لتحديد نقاط التحسين بدقة.",
+                    image: "/assets/images/services/tools/ui-ux/behavior-analysis.svg"
+                },
+                {
+                    title: "تصميم تفاعلي", description: "واجهات جذابة وسريعة التفاعل عبر مختلف الأجهزة.",
+                    image: "/assets/images/services/tools/ui-ux/design-interaction.svg"
+                },
+                {
+                    title: "نظام تصميم", description: "إعداد دليل مرئي يضمن اتساق الهوية في كل صفحة.",
+                    image: "/assets/images/services/tools/ui-ux/design-system.svg"
+                },
+                {
+                    title: "نماذج أولية", description: "نصمم Prototype تفاعلي قبل البدء في التطوير.",
+                    image: "/assets/images/services/tools/ui-ux/design-testing.svg"
+                },
+                {
+                    title: "اختبار تجربة", description: "نحلل استخدام الواجهة فعليًا لتصحيح أي تعقيد.",
+                    image: "/assets/images/services/tools/ui-ux/prototype.svg"
+                },
+                {
+                    title: "تحديث مستمر", description: "نطوّر التصميم باستمرار ليتناسب مع التغيّرات السوقية.",
+                    image: "/assets/images/services/tools/ui-ux/updating.svg"
+                }
             ],
             tools: [
                 { title: "Wireframing", image: "/assets/icons/html.svg" },
@@ -671,12 +752,30 @@ const services = {
             serviceDescriptionParagraph:
                 "من التصميم الرقمي إلى الإعلانات الخارجية، نحرص على الاتساق والجمال في كل تفصيلة. \nما نصمم شعار، نصمم قصة. \nنخلق هوية بصرية تخلّي علامتك تُعرف من أول نظرة.",
             list: [
-                { title: "تصميم شعار", description: "نبتكر شعار احترافي يعكس جوهر العلامة التجارية بوضوح." },
-                { title: "هوية متكاملة", description: "نحدد ألوانك وخطوك ونمطك البصري في دليل شامل." },
-                { title: "مواد دعائية", description: "نصمم مطبوعات ولوحات إعلانية تعزز وجودك البصري." },
-                { title: "تصميم رقمي", description: "صور ومنشورات جاهزة للسوشيال ميديا بجودة احترافية." },
-                { title: "اتساق بصري", description: "نوحّد العناصر عبر كل قنوات التسويق الرقمية والمطبوعة." },
-                { title: "تسليم مرن", description: "ملفاتك الجاهزة بكل الصيغ للطباعة والاستخدام الرقمي." }
+                {
+                    title: "تصميم شعار", description: "نبتكر شعار احترافي يعكس جوهر العلامة التجارية بوضوح.",
+                    image: "/assets/images/services/tools/graphic-design/log-design.svg"
+                },
+                {
+                    title: "هوية متكاملة", description: "نحدد ألوانك وخطوك ونمطك البصري في دليل شامل.",
+                    image: "/assets/images/services/tools/graphic-design/visual-identity.svg"
+                },
+                {
+                    title: "مواد دعائية", description: "نصمم مطبوعات ولوحات إعلانية تعزز وجودك البصري.",
+                    image: "/assets/images/services/tools/graphic-design/advertising.svg"
+                },
+                {
+                    title: "تصميم رقمي", description: "صور ومنشورات جاهزة للسوشيال ميديا بجودة احترافية.",
+                    image: "/assets/images/services/tools/graphic-design/digital-design.svg"
+                },
+                {
+                    title: "اتساق بصري", description: "نوحّد العناصر عبر كل قنوات التسويق الرقمية والمطبوعة.",
+                    image: "/assets/images/services/tools/graphic-design/visual-consistency.svg"
+                },
+                {
+                    title: "تسليم مرن", description: "ملفاتك الجاهزة بكل الصيغ للطباعة والاستخدام الرقمي.",
+                    image: "/assets/images/services/tools/graphic-design/design-deliver.svg"
+                }
             ],
             tools: [
                 { title: "Logo Design", image: "/assets/icons/html.svg" },
@@ -699,12 +798,30 @@ const services = {
             serviceDescriptionParagraph:
                 "نحول الخيال إلى مشهد واقعي ينبض بالحياة. \nنستخدم تقنيات ثلاثية الأبعاد دقيقة تخدم المشاريع السكنية والإعلانية. \nهدفنا إن الصورة تحكي قبل ما أحد يشرح.",
             list: [
-                { title: "تصميم ثلاثي", description: "من الفكرة للنموذج النهائي بخامات وإضاءة واقعية." },
-                { title: "مشاهد معمارية", description: "عروض احترافية للمشاريع السكنية والتجارية بجودة سينمائية." },
-                { title: "تحريك بصري", description: "مؤثرات واقعية ومشاهد متحركة تخدم حملاتك الدعائية." },
-                { title: "دمج تسويقي", description: "ندمج CGI في الحملات الإعلانية والمحتوى التفاعلي." },
-                { title: "تحكم دقيق", description: "ضبط كامل للإضاءة والخامات والانعكاسات بدقة عالية." },
-                { title: "تسليم سريع", description: "جودة إنتاج مرتفعة مع سرعة في التنفيذ والتسليم." }
+                {
+                    title: "تصميم ثلاثي", description: "من الفكرة للنموذج النهائي بخامات وإضاءة واقعية.",
+                    image: "/assets/images/services/tools/cgi/3d-design.svg"
+                },
+                {
+                    title: "مشاهد معمارية", description: "عروض احترافية للمشاريع السكنية والتجارية بجودة سينمائية.",
+                    image: "/assets/images/services/tools/cgi/visual-architecture.svg"
+                },
+                {
+                    title: "تحريك بصري", description: "مؤثرات واقعية ومشاهد متحركة تخدم حملاتك الدعائية.",
+                    image: "/assets/images/services/tools/cgi/motion-graphics.svg"
+                },
+                {
+                    title: "دمج تسويقي", description: "ندمج CGI في الحملات الإعلانية والمحتوى التفاعلي.",
+                    image: "/assets/images/services/tools/cgi/video-advertising.svg"
+                },
+                {
+                    title: "تحكم دقيق", description: "ضبط كامل للإضاءة والخامات والانعكاسات بدقة عالية.",
+                    image: "/assets/images/services/tools/cgi/good-control.svg"
+                },
+                {
+                    title: "تسليم سريع", description: "جودة إنتاج مرتفعة مع سرعة في التنفيذ والتسليم.",
+                    image: "/assets/images/services/tools/cgi/fast-deliver.svg"
+                }
             ],
             tools: [
                 { title: "3D Modeling", image: "/assets/icons/html.svg" },
@@ -727,12 +844,30 @@ const services = {
             serviceDescriptionParagraph:
                 "نشتغل بخطة، مو صدفة. \nنراقب كل خطوة، نقيس الأداء، ونبقي المشروع ماشي بثقة. \nهدفنا نسلم الجودة في الوقت المحدد بدون مفاجآت.",
             list: [
-                { title: "تخطيط مشروع", description: "نرسم خارطة طريق واضحة بالأهداف والموارد والمواعيد." },
-                { title: "إدارة مهام", description: "تنظيم سير العمل وتوزيع المسؤوليات بكفاءة." },
-                { title: "مراقبة أداء", description: "نرصد التقدم ونقيس الإنتاجية عبر لوحات تحكم دقيقة." },
-                { title: "إدارة مخاطر", description: "نحلل المخاطر ونعالجها قبل ما تؤثر على النتيجة." },
-                { title: "تنسيق الفرق", description: "نضمن تواصل فعال بين فرق التطوير، التصميم، والتسويق." },
-                { title: "تقارير ذكية", description: "تقارير تحليلية دورية تعرض الحالة والتوصيات بوضوح." }
+                {
+                    title: "تخطيط مشروع", description: "نرسم خارطة طريق واضحة بالأهداف والموارد والمواعيد.",
+                    image: "/assets/images/services/tools/management/project-plan.svg"
+                },
+                {
+                    title: "إدارة مهام", description: "تنظيم سير العمل وتوزيع المسؤوليات بكفاءة.",
+                    image: "/assets/images/services/tools/management/task-management.svg"
+                },
+                {
+                    title: "مراقبة أداء", description: "نرصد التقدم ونقيس الإنتاجية عبر لوحات تحكم دقيقة.",
+                    image: "/assets/images/services/tools/management/mentor-progress.svg"
+                },
+                {
+                    title: "إدارة مخاطر", description: "نحلل المخاطر ونعالجها قبل ما تؤثر على النتيجة.",
+                    image: "/assets/images/services/tools/management/risk-management.svg"
+                },
+                {
+                    title: "تنسيق الفرق", description: "نضمن تواصل فعال بين فرق التطوير، التصميم، والتسويق.",
+                    image: "/assets/images/services/tools/management/team-comunication.svg"
+                },
+                {
+                    title: "تقارير ذكية", description: "تقارير تحليلية دورية تعرض الحالة والتوصيات بوضوح.",
+                    image: "/assets/images/services/tools/management/smart-report.svg"
+                }
             ],
             tools: [
                 { title: "Project Planning", image: "/assets/icons/html.svg" },
@@ -755,12 +890,30 @@ const services = {
             serviceDescriptionParagraph:
                 "نبني منصات سحابية تشتغل بثبات وتكبر معك. \nتصميم مرن، أداء عالي، وتجربة استخدام خفيفة. \nتقدر تدير شركتك من أي مكان، بثقة كاملة في النظام.",
             list: [
-                { title: "بنية قابلة", description: "أنظمة Scalable Architecture تنمو مع توسّعك." },
-                { title: "أداء مستقر", description: "تشغيل سريع وآمن بنسبة توافر عالية." },
-                { title: "تعدد مستخدمين", description: "دعم Multi-Tenant لإدارة مؤسسات متعددة بكفاءة." },
-                { title: "حماية بيانات", description: "تشفير كامل وضمان أمان المعلومات الحساسة." },
-                { title: "تكامل ذكي", description: "ربط الأنظمة بالدفع الإلكتروني والتحليلات بسلاسة." },
-                { title: "إدارة سهلة", description: "واجهات استخدام مرنة ولوحات تحكم مبسطة للمشرفين." }
+                {
+                    title: "بنية قابلة", description: "أنظمة Scalable Architecture تنمو مع توسّعك.",
+                    image: "/assets/images/services/tools/saas-platforms/scalable-architecture.svg"
+                },
+                {
+                    title: "أداء مستقر", description: "تشغيل سريع وآمن بنسبة توافر عالية.",
+                    image: "/assets/images/services/tools/saas-platforms/continuous-performance.svg"
+                },
+                {
+                    title: "تعدد مستخدمين", description: "دعم Multi-Tenant لإدارة مؤسسات متعددة بكفاءة.",
+                    image: "/assets/images/services/tools/saas-platforms/multi-tanent.svg"
+                },
+                {
+                    title: "حماية بيانات", description: "تشفير كامل وضمان أمان المعلومات الحساسة.",
+                    image: "/assets/images/services/tools/saas-platforms/data-security.svg"
+                },
+                {
+                    title: "تكامل ذكي", description: "ربط الأنظمة بالدفع الإلكتروني والتحليلات بسلاسة.",
+                    image: "/assets/images/services/tools/saas-platforms/samrt-implemen.svg"
+                },
+                {
+                    title: "إدارة سهلة", description: "واجهات استخدام مرنة ولوحات تحكم مبسطة للمشرفين.",
+                    image: "/assets/images/services/tools/saas-platforms/easy-management.svg"
+                }
             ],
             tools: [
                 { title: "SaaS Architecture", image: "/assets/icons/html.svg" },
@@ -783,12 +936,30 @@ const services = {
             serviceDescriptionParagraph:
                 "التقنية تتغير كل يوم، وقراراتك لازم تواكبها. \nنساعدك تختار الأدوات المناسبة، وتخطط بخارطة طريق واقعية. \nهدفنا نضمن إن كل قرار تقني يخدم هدفك التجاري فعلاً.",
             list: [
-                { title: "تقييم بنية", description: "نفحص البنية التقنية ونحدد نقاط التحسين بدقة." },
-                { title: "اختيار أدوات", description: "نرشّح التقنيات والمنصات المناسبة لهدفك وميزانيتك." },
-                { title: "خطة تحوّل", description: "نضع خارطة طريق للتحوّل الرقمي والتوسع السحابي." },
-                { title: "تحليل أداء", description: "نقيّم سرعة الأنظمة واستقرارها ونوصي بالحلول." },
-                { title: "مراجعة عقود", description: "نراجع الاتفاقيات التقنية ونحمي مصالحك مع المزوّدين." },
-                { title: "رؤية مستقبلية", description: "نرسم اتجاه واضح لتطوير أعمالك التقنية على المدى البعيد." }
+                {
+                    title: "تقييم بنية", description: "نفحص البنية التقنية ونحدد نقاط التحسين بدقة.",
+                    image: "/assets/images/services/tools/software-technology-consulting/structure-audit.svg"
+                },
+                {
+                    title: "اختيار أدوات", description: "نرشّح التقنيات والمنصات المناسبة لهدفك وميزانيتك.",
+                    image: "/assets/images/services/tools/software-technology-consulting/tools-selection.svg"
+                },
+                {
+                    title: "خطة تحوّل", description: "نضع خارطة طريق للتحوّل الرقمي والتوسع السحابي.",
+                    image: "/assets/images/services/tools/software-technology-consulting/switch-plan.svg"
+                },
+                {
+                    title: "تحليل أداء", description: "نقيّم سرعة الأنظمة واستقرارها ونوصي بالحلول.",
+                    image: "/assets/images/services/tools/software-technology-consulting/performance-analysis.svg"
+                },
+                {
+                    title: "مراجعة عقود", description: "نراجع الاتفاقيات التقنية ونحمي مصالحك مع المزوّدين.",
+                    image: "/assets/images/services/tools/software-technology-consulting/contract-review.svg"
+                },
+                {
+                    title: "رؤية مستقبلية", description: "نرسم اتجاه واضح لتطوير أعمالك التقنية على المدى البعيد.",
+                    image: "/assets/images/services/tools/software-technology-consulting/future-vision.svg"
+                }
             ],
             tools: [
                 { title: "IT Strategy", image: "/assets/icons/html.svg" },
@@ -799,40 +970,47 @@ const services = {
             ]
         }
     ],
-    en: [
+    en:[
         {
             "id": 1,
             "name": "Custom Software Development",
             "image": "/assets/images/services/customized-programming.png",
             "tags": [1, 2],
             "tagsDisplayed": ["Technical Development", "Digital Innovation"],
-            "description": "Every project has its signature, and we program it to fit you perfectly.",
+            "description": "Every project has its fingerprint, and we program it to fit you perfectly.",
             "serviceDescriptionTitle": "As a Saudi programming company, we understand market needs and develop flexible software solutions that serve your business and facilitate your daily operations.",
-            "serviceDescriptionParagraph": "We design and develop systems that understand your way of working and adapt to it. \n From internal enterprise systems to smart web applications, we build carefully designed software to simplify management and increase efficiency. \n We ensure technology works to serve you, with clear steps and secure performance that keeps pace with your business growth confidently.",
+            "serviceDescriptionParagraph": "We design and develop systems that understand your way of working and adapt to it. \n From internal enterprise systems to smart web applications, we build carefully designed software to ease management and increase efficiency. \n We care that technology works to serve you, with clear steps and secure performance that keeps pace with your business growth confidently.",
             "list": [
                 {
                     "title": "Resource Systems",
-                    "description": "We develop integrated ERP systems that connect all work departments in one platform, facilitating management and increasing efficiency."
+                    "description": "We develop integrated ERP systems that connect all work departments in one platform, facilitating management and increasing efficiency.",
+                    "image": "/assets/images/services/tools/custom-software-development/software-erb.svg"
                 },
                 {
                     "title": "Data Analysis",
-                    "description": "We turn numbers into decisions through interactive dashboards that display performance visually and intelligently."
+                    "description": "We turn numbers into decisions through interactive dashboards that display performance visually and intelligently.",
+                    "image": "/assets/images/services/tools/custom-software-development/data-analysis.svg"
                 },
                 {
                     "title": "Programming Interfaces",
-                    "description": "We build secure and fast APIs that ensure seamless communication between your different systems and applications."
+                    "description": "We build secure and fast APIs that ensure seamless communication between your different systems and applications.",
+                    "image": "/assets/images/services/tools/custom-software-development/api.svg"
                 },
                 {
                     "title": "Cloud Integration",
-                    "description": "We connect your systems to the cloud for easy access and work continuity anytime, anywhere."
+                    "description": "We connect your systems to the cloud for easy access and business continuity anytime, anywhere.",
+                    "image": "/assets/images/services/tools/custom-software-development/cloud.svg"
+
                 },
                 {
                     "title": "Microservices",
-                    "description": "We design flexible and scalable Microservices solutions that enhance performance and facilitate updates."
+                    "description": "We design flexible and scalable Microservices solutions that enhance performance and facilitate updates.",
+                    "image": "/assets/images/services/tools/custom-software-development/micro-service.svg"
                 },
                 {
                     "title": "Permissions Management",
-                    "description": "We provide precise user control systems that ensure security and organization within the work environment."
+                    "description": "We provide precise user control systems that ensure security and organization within the work environment.",
+                    "image": "/assets/images/services/tools/custom-software-development/management-access.svg"
                 }
             ],
             "tools": [
@@ -860,7 +1038,7 @@ const services = {
                     "title": "Microservices Architecture",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
+            ],
         },
         {
             "id": 2,
@@ -868,33 +1046,46 @@ const services = {
             "image": "/assets/images/services/mobile-development.png",
             "tags": [1, 2],
             "tagsDisplayed": ["Technical Development", "Digital Innovation"],
-            "description": "Your app is not just an idea - we turn it into a real experience in the user's hand.",
-            "serviceDescriptionTitle": "At Viganium, we develop professional mobile applications for iOS and Android systems with attractive design and stable performance. \n We ensure the app is fast, smooth, and built on effective user experience that meets your needs.",
-            "serviceDescriptionParagraph": "We work on every project as a unique experience that deserves mastery. \n We start by studying the app idea and user behavior, design an attractive and smooth experience, then develop code with the highest standards of performance and security. \n Our goal is not just a 'working app', but a digital product that serves you, reflects your identity, and stands confidently in the market.",
+            "description": "Your app is not just an idea; we turn it into a real experience in the user's hand.",
+            "serviceDescriptionTitle": "At Viganium, we develop professional mobile applications for iOS and Android systems with attractive design and stable performance. \n We care that the app is fast, smooth, and built on an effective user experience that meets your needs.",
+            "serviceDescriptionParagraph": "We work on every project as a unique experience that deserves mastery. \n We start by studying the app idea and user behavior, design an attractive and smooth experience, then develop the code with the highest standards of performance and security. \n Our goal is not just a 'working app', but a digital product that serves you, reflects your identity, and stands confidently in the market.",
             "list": [
                 {
                     "title": "User Experience",
-                    "description": "We design easy and attractive interfaces that make interaction natural and enjoyable for the user."
+                    "description": "We design easy and attractive interfaces that make interaction natural and enjoyable for the user.",
+                    "image": "/assets/images/services/tools/mobile-applications-development/user-experince.svg"
+
                 },
                 {
                     "title": "Stable Performance",
-                    "description": "We ensure app speed and stability on all devices through precise testing."
+                    "description": "We ensure the app's speed and stability on all devices through precise testing.",
+                    "image": "/assets/images/services/tools/mobile-applications-development/continuous-performance.svg"
+
                 },
                 {
                     "title": "Smart Integration",
-                    "description": "We connect the app to databases and APIs for effective and connected operation."
+                    "description": "We connect the app to databases and APIs for effective and connected operation.",
+                    "image": "/assets/images/services/tools/mobile-applications-development/samrt-implemen.svg"
+
                 },
                 {
                     "title": "Electronic Payment",
-                    "description": "We provide secure and fast payment systems that support all local and global methods."
+                    "description": "We provide secure and fast payment systems that support all local and global methods.",
+                    "image": "/assets/images/services/tools/mobile-applications-development/payment.svg"
+
+
                 },
                 {
                     "title": "Instant Notifications",
-                    "description": "We add a customized notification system that maintains user interaction with the app."
+                    "description": "We add a custom notification system that maintains user interaction with the app.",
+                    "image": "/assets/images/services/tools/mobile-applications-development/notifications.svg"
+
                 },
                 {
                     "title": "Continuous Support",
-                    "description": "After launch, we monitor performance and provide continuous updates and improvements to the app."
+                    "description": "After launch, we monitor performance and provide continuous updates and improvements for the app.",
+                    "image": "/assets/images/services/tools/mobile-applications-development/support.svg"
+
                 }
             ],
             "tools": [
@@ -918,41 +1109,53 @@ const services = {
                     "title": "Geolocation Services",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
-        },
-        {
+            ],
+        }, {
             "id": 3,
             "name": "Website Development",
             "image": "/assets/images/services/web-development.png",
             "tags": [1, 2, 3],
             "tagsDisplayed": ["Technical Development", "Digital Innovation", "Smart Marketing"],
-            "description": "Your website is your first interface and our experience makes it tell your story in the best way.",
-            "serviceDescriptionTitle": "At Viganium, we develop websites that combine speed, beauty, and technology. \n We care about designing websites that highlight your project's identity, turn visitors into actual customers, with full compatibility with search engines and smart user experience on all devices.",
-            "serviceDescriptionParagraph": "Your website is the first impression about you, and we care that the impression sticks. \n We start from your project's identity, and build a website that expresses you visually and works fast on all devices. \n We ensure the visitor reaches what they want in three clicks or less - a smart experience that reflects your professionalism and increases your customers' trust.",
+            "description": "Your website is your first interface, and our experience makes it tell your story in the best way.",
+            "serviceDescriptionTitle": "At Viganium, we develop websites that combine speed, beauty, and technology. \n We care about designing websites that highlight your project's identity, turn visitors into actual clients, with full compatibility with search engines and a smart user experience on all devices.",
+            "serviceDescriptionParagraph": "Your website is the first impression about you, and our concern is that the impression sticks. \n We start from your project's identity, and build a website that expresses you visually and works fast on all devices. \n We care that the visitor reaches what they want in three clicks or less - a smart experience that reflects your professionalism and increases your clients' trust.",
             "list": [
                 {
                     "title": "Interface Design",
-                    "description": "We design modern interfaces that reflect your project's identity and provide an enjoyable and smooth browsing experience."
+                    "description": "We design modern interfaces that reflect your project's identity and provide a smooth and enjoyable browsing experience.",
+                    "image": "/assets/images/services/tools/website-development/ui.svg"
+
                 },
                 {
                     "title": "Modern Programming",
-                    "description": "We use the latest development languages and frameworks to ensure fast and stable performance."
+                    "description": "We use the latest development languages and frameworks to ensure fast and stable performance.",
+                    "image": "/assets/images/services/tools/website-development/programming.svg"
+
                 },
                 {
                     "title": "SEO Optimization",
-                    "description": "We prepare your website for search engines to increase visibility and reach new customers."
+                    "description": "We prepare your website for search engines to increase visibility and reach new clients.",
+                    "image": "/assets/images/services/tools/website-development/seo.svg"
+
                 },
                 {
                     "title": "Smart Integration",
-                    "description": "We connect the website with analytics, electronic payment, and databases easily."
+                    "description": "We connect the website with analytics, electronic payment, and databases easily.",
+                    "image": "/assets/images/services/tools/website-development/samrt-implemen.svg"
+
+
                 },
                 {
                     "title": "Content Management",
-                    "description": "We provide a flexible content management system that lets you control every detail yourself."
+                    "description": "We provide a flexible content management system that lets you control every detail yourself.",
+                    "image": "/assets/images/services/tools/website-development/content-management.svg"
+
                 },
                 {
                     "title": "Continuous Maintenance",
-                    "description": "We monitor website performance and provide security updates and periodic improvements."
+                    "description": "We monitor website performance and provide security updates and periodic improvements.",
+                    "image": "/assets/images/services/tools/website-development/maintance.svg"
+
                 }
             ],
             "tools": [
@@ -972,41 +1175,47 @@ const services = {
                     "title": "Blogs",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
-        },
-        {
+            ],
+        }, {
             "id": 4,
             "name": "AI Agent",
             "image": "/assets/images/services/AI-agent.png",
             "tags": [2, 3],
             "tagsDisplayed": ["Digital Innovation", "Smart Marketing"],
-            "description": "AI is not a luxury anymore, it's a necessity for any business that wants to develop.",
-            "serviceDescriptionTitle": "Viganium's AI Agent is a smart assistant that works 24 hours a day, understands your customers, responds to them, and learns from them. \n We use the latest NLP and Machine Learning technologies to improve user experience and increase operational efficiency.",
-            "serviceDescriptionParagraph": "We don't program a robot that responds, we develop an agent that understands. \n We train AI on your language, products, and way of communicating with your customers. \n Our goal is to create a digital assistant that knows when to answer, when to suggest, and when to learn - like a real member of your team.",
+            "description": "AI is not a luxury; it has become a necessity for any business that wants to develop.",
+            "serviceDescriptionTitle": "The AI Agent from Viganium is a smart assistant that works 24 hours a day, understands your clients, responds to them, and learns from them. \n We use the latest NLP and Machine Learning technologies to improve user experience and raise operational efficiency.",
+            "serviceDescriptionParagraph": "We don't program a robot that responds; we develop an agent that understands. \n We train the AI on your language, products, and way of communicating with your clients. \n Our goal is to create a digital assistant that knows when to answer, when to suggest, and when to learn - like a real member of your team.",
             "list": [
                 {
                     "title": "Smart Interaction",
-                    "description": "The agent talks to customers and understands context accurately with instant response."
+                    "description": "The agent talks with clients and understands context accurately with instant response.",
+                    "image": "/assets/images/services/tools/ai-agent/smart-interaction.svg"
                 },
                 {
                     "title": "Continuous Learning",
-                    "description": "It automatically develops itself from every conversation to improve experience over time."
+                    "description": "It develops itself automatically from every conversation to improve the experience over time.",
+                    "image": "/assets/images/services/tools/ai-agent/continues-learning.svg"
                 },
                 {
                     "title": "Easy Integration",
-                    "description": "It connects to your existing systems like CRM, website, and social media easily."
+                    "description": "It connects to your existing systems like CRM, website, and social media easily.",
+                    "image": "/assets/images/services/tools/ai-agent/easy-integration.svg"
                 },
                 {
                     "title": "Multiple Languages",
-                    "description": "It deals with your customers in any language your business supports, with accuracy and natural understanding."
+                    "description": "It deals with your clients in any language your business supports, with accuracy and natural understanding.",
+                    "image": "/assets/images/services/tools/ai-agent/several-language.svg"
+
                 },
                 {
                     "title": "Performance Analysis",
-                    "description": "A dashboard that monitors conversations and suggests continuous improvements."
+                    "description": "A dashboard that monitors conversations and suggests continuous improvements.",
+                    "image": "/assets/images/services/tools/ai-agent/performance-analysis.svg"
                 },
                 {
                     "title": "High Security",
-                    "description": "We protect customer data and conversations with strict security standards."
+                    "description": "We protect client data and conversations with strict security standards.",
+                    "image": "/assets/images/services/tools/ai-agent/security.svg"
                 }
             ],
             "tools": [
@@ -1022,41 +1231,47 @@ const services = {
                     "title": "User Behavior Analytics Tools",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
-        },
-        {
+            ],
+        }, {
             "id": 5,
             "name": "Integrated Digital Marketing",
             "image": "/assets/images/services/marketing.png",
             "tags": [3, 2],
             "tagsDisplayed": ["Smart Marketing", "Digital Innovation"],
             "description": "Technology without marketing is like a sweet idea no one heard about.",
-            "serviceDescriptionTitle": "At Viganium, we blend analytical intelligence with visual creativity. \n We design studied marketing campaigns based on market analysis and digital audience behavior, \n to reach your real customers with the lowest cost and highest return.",
-            "serviceDescriptionParagraph": "We merge analysis with innovation, and let numbers tell your story. \n We study the market, draw the strategy, and design campaigns that touch your audience correctly. \n Our goal is not just 'interaction', but tangible results that raise awareness and sales together.",
+            "serviceDescriptionTitle": "At Viganium, we blend analytical intelligence with visual creativity. \n We design studied marketing campaigns based on market analysis and digital audience behavior, \n to reach your real clients with the lowest cost and highest return.",
+            "serviceDescriptionParagraph": "We merge analysis with innovation, and let the numbers tell your story. \n We study the market, draw the strategy, and design campaigns that touch your audience correctly. \n Our goal is not just 'interaction', but tangible results that raise awareness and sales together.",
             "list": [
                 {
                     "title": "Smart Strategy",
-                    "description": "We build an integrated marketing plan based on market and competitor analysis."
+                    "description": "We build an integrated marketing plan based on market and competitor analysis.",
+                    "image": "/assets/images/services/tools/integrated-digital-marketing/marketing-strategy.svg"
                 },
                 {
                     "title": "Advertising Campaigns",
-                    "description": "We manage effective ads on Google, TikTok, Meta, and Snapchat."
+                    "description": "We manage effective ads on Google, TikTok, Meta, and Snapchat.",
+                    "image": "/assets/images/services/tools/integrated-digital-marketing/marketing-campaign.svg"
                 },
                 {
                     "title": "Performance Optimization",
-                    "description": "We monitor results and develop campaigns to reach the best conversion cost."
+                    "description": "We monitor results and develop campaigns to reach the best conversion cost.",
+                    "image": "/assets/images/services/tools/integrated-digital-marketing/performance.svg"
                 },
                 {
-                    "title": "Content Production",
-                    "description": "We produce visual and textual content that expresses your identity and attracts your audience."
+                    "title": "Content Creation",
+                    "description": "We produce visual and textual content that expresses your identity and attracts your audience.",
+                    "image": "/assets/images/services/tools/integrated-digital-marketing/content-creator.svg"
+
                 },
                 {
                     "title": "Data Analysis",
-                    "description": "We use tools like Google Analytics and Meta Pixel to understand results."
+                    "description": "We use tools like Google Analytics and Meta Pixel to understand results.",
+                    "image": "/assets/images/services/tools/integrated-digital-marketing/data-analysis.svg"
                 },
                 {
                     "title": "SEO Optimization",
-                    "description": "We raise your website's search engine ranking for continuous digital presence."
+                    "description": "We raise your website's ranking in search engines for continuous digital presence.",
+                    "image": "/assets/images/services/tools/integrated-digital-marketing/seo.svg"
                 }
             ],
             "tools": [
@@ -1084,41 +1299,47 @@ const services = {
                     "title": "Conversion Optimization",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
-        },
-        {
+            ],
+        }, {
             "id": 6,
             "name": "Smart AI-Powered Automation",
             "image": "/assets/images/services/automation.png",
             "tags": [1, 4, 2],
-            "tagsDisplayed": ["Technical Development", "Security and Smart Automation", "Digital Innovation"],
-            "description": "Speed today is not an advantage, it's a necessity, and smart automation achieves it.",
-            "serviceDescriptionTitle": "We provide automation solutions powered by AI that help your organization accomplish more in less time. We use Machine Learning algorithms to simplify processes and reduce human errors, so you can focus on growth instead of routine tasks.",
-            "serviceDescriptionParagraph": "We don't provide tools, we create a system that works by itself. \n We analyze processes step by step and build smart solutions that save time and reduce errors. \n We believe speed is not a luxury, it's the standard for success in today's market.",
+            "tagsDisplayed": ["Technical Development", "Security & Smart Operations", "Digital Innovation"],
+            "description": "Speed today is not an advantage; it's a necessity, and smart automation achieves it.",
+            "serviceDescriptionTitle": "We provide operational solutions powered by AI that help your organization accomplish more in less time. We use Machine Learning algorithms to simplify processes and reduce human errors, so you can focus on growth instead of routine tasks.",
+            "serviceDescriptionParagraph": "We don't provide tools; we create a system that works by itself. \n We analyze processes step by step and build smart solutions that save time and reduce errors. \n We believe speed is not a luxury; it's the standard for success in today's market.",
             "list": [
                 {
                     "title": "Process Analysis",
-                    "description": "We review the work cycle and identify automation opportunities accurately."
+                    "description": "We review the work cycle and identify automation opportunities accurately.",
+                    "image": "/assets/images/services/tools/smart-AI-powered-automation/operations-analysis.svg"
                 },
                 {
                     "title": "Software Robots",
-                    "description": "We design RPA that executes routine tasks with speed and efficiency."
+                    "description": "We design RPA that executes routine tasks with speed and efficiency.",
+                    "image": "/assets/images/services/tools/smart-AI-powered-automation/programming-robot.svg"
                 },
                 {
                     "title": "System Integration",
-                    "description": "We connect internal systems (ERP, CRM) for unified and smooth operation."
+                    "description": "We connect internal systems (ERP, CRM) for unified and smooth operation.",
+                    "image": "/assets/images/services/tools/smart-AI-powered-automation/software-implement.svg"
                 },
                 {
                     "title": "Real-time Reporting",
-                    "description": "We provide interactive dashboards that display performance moment by moment."
+                    "description": "We provide interactive dashboards that display performance moment by moment.",
+                    "image": "/assets/images/services/tools/smart-AI-powered-automation/content-creator.svg"
+
                 },
                 {
                     "title": "Continuous Improvement",
-                    "description": "We analyze results and adjust algorithms continuously to increase efficiency."
+                    "description": "We analyze results and adjust algorithms continuously to raise efficiency.",
+                    "image": "/assets/images/services/tools/smart-AI-powered-automation/continues-performance.svg"
                 },
                 {
                     "title": "High Reliability",
-                    "description": "Every process is designed with accuracy and organizational stability standards."
+                    "description": "Every process is designed with accuracy and institutional stability standards.",
+                    "image": "/assets/images/services/tools/smart-AI-powered-automation/more-reliability.svg"
                 }
             ],
             "tools": [
@@ -1138,41 +1359,47 @@ const services = {
                     "title": "AI Workflow Optimization",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
-        },
-        {
+            ],
+        }, {
             "id": 7,
             "name": "Software Testing",
             "image": "/assets/images/services/testing.png",
             "tags": [1, 4],
-            "tagsDisplayed": ["Technical Development", "Security and Smart Automation"],
-            "description": "Because quality is not an option, it's a commitment.",
-            "serviceDescriptionTitle": "At Viganium, we provide comprehensive software testing that ensures your technical product works steadily and accurately in all circumstances.\n We care about the small details that create an error-free user experience.",
-            "serviceDescriptionParagraph": "We review every detail as if we were the end user. \n We test performance, security, experience, and correct before the customer discovers it.\n Quality for us is not a 'final phase', it's a principle in every line of code.",
+            "tagsDisplayed": ["Technical Development", "Security & Smart Operations"],
+            "description": "Because quality is not an option; it's a commitment.",
+            "serviceDescriptionTitle": "At Viganium, we provide comprehensive software testing that ensures your technical product works steadily and accurately in all conditions.\n We care about the small details that create an error-free user experience.",
+            "serviceDescriptionParagraph": "We review every detail as if we are the end user. \n  We test performance, security, experience, and correct before the client discovers it.\n  Quality for us is not a 'final phase'; it's a principle in every line of code.",
             "list": [
                 {
                     "title": "Functional Testing",
-                    "description": "We verify that every feature works according to requirements accurately."
+                    "description": "We verify that every feature works according to requirements accurately.",
+                    "image": "/assets/images/services/tools/software-testing/working-testing.svg"
                 },
                 {
                     "title": "Performance Testing",
-                    "description": "We measure stress tolerance and operational efficiency in different environments."
+                    "description": "We measure stress tolerance and operational efficiency in different environments.",
+                    "image": "/assets/images/services/tools/software-testing/performance-testing.svg"
                 },
                 {
                     "title": "Security Testing",
-                    "description": "We detect vulnerabilities and close them before any risk occurs."
+                    "description": "We detect vulnerabilities and close them before any risk reaches.",
+                    "image": "/assets/images/services/tools/software-testing/security-testing.svg"
                 },
                 {
                     "title": "Interface Testing",
-                    "description": "We review user interfaces to ensure comfortable and easy experience."
+                    "description": "We review user interfaces to ensure a comfortable and easy experience.",
+                    "image": "/assets/images/services/tools/software-testing/ui-testing.svg"
+
                 },
                 {
                     "title": "Automated Testing",
-                    "description": "We use tools like Selenium and JUnit to speed up review."
+                    "description": "We use tools like Selenium and JUnit to speed up review.",
+                    "image": "/assets/images/services/tools/software-testing/automation-testing.svg"
                 },
                 {
                     "title": "Analytical Reports",
-                    "description": "We document results and suggest improvements based on data."
+                    "description": " We document results and suggest improvements based on data.",
+                    "image": "/assets/images/services/tools/software-testing/analysis-rebort.svg"
                 }
             ],
             "tools": [
@@ -1200,41 +1427,47 @@ const services = {
                     "title": "UAT",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
-        },
-        {
+            ],
+        }, {
             "id": 8,
             "name": "AI-Powered Video Production",
             "image": "/assets/images/services/video-AI.png",
             "tags": [2, 3],
             "tagsDisplayed": ["Digital Innovation", "Smart Marketing"],
-            "description": "Let your idea speak and we'll execute it in seconds.",
-            "serviceDescriptionTitle": "In the age of speed, video is the language everyone understands. \n At Viganium, we transform ideas and data into attractive visual content using modern AI tools. \n Whether marketing, educational, or internal corporate videos, we guarantee professional content that shows your identity in the best way.",
-            "serviceDescriptionParagraph": "We transform ideas into real scenes that address the eye and mind. \n We use the latest AI tools to convert text into realistic video within minutes. \n Our goal is to deliver your message quickly, with quality, and with a voice that expresses your identity.",
+            "description": "Let your idea speak, and we implement it in seconds.",
+            "serviceDescriptionTitle": "In the age of speed, video is the language everyone understands. \n At Viganium, we transform ideas and data into attractive visual content using modern AI tools. \n Whether marketing, educational, or internal corporate videos, we ensure professional content that shows your identity in the best way.",
+            "serviceDescriptionParagraph": "We turn ideas into real scenes that address the eye and mind. \n We use the latest AI tools to convert text into realistic video within minutes. \n Our goal is to deliver your message quickly, with quality, and with a voice that expresses your identity.",
             "list": [
                 {
                     "title": "Text Conversion",
-                    "description": "We convert texts into interactive videos in record time."
+                    "description": "We convert texts into interactive videos in record time.",
+                    "image": "/assets/images/services/tools/AI-powered-video-production/text-convert.svg"
                 },
                 {
                     "title": "Voice Over",
-                    "description": "Realistic multi-language voices with Text-to-Speech technologies."
+                    "description": "Realistic multi-language voices with Text-to-Speech technologies.",
+                    "image": "/assets/images/services/tools/AI-powered-video-production/voice-over.svg"
                 },
                 {
                     "title": "Visual Design",
-                    "description": "Customization of colors, logo, and display styles for your identity."
+                    "description": "Customization of colors, logo, and display styles for your identity.",
+                    "image": "/assets/images/services/tools/AI-powered-video-production/visual-identity.svg"
                 },
                 {
                     "title": "Smart Editing",
-                    "description": "We use AI tools to cut and format scenes automatically."
+                    "description": "We use AI tools to cut and format scenes automatically.",
+                    "image": "/assets/images/services/tools/AI-powered-video-production/smart-content.svg"
+
                 },
                 {
                     "title": "Marketing Content",
-                    "description": "Advertising videos that attract attention and increase conversion."
+                    "description": "Advertising videos that attract attention and increase conversion.",
+                    "image": "/assets/images/services/tools/AI-powered-video-production/marketing-plan.svg"
                 },
                 {
                     "title": "Educational Videos",
-                    "description": "Professional training content that facilitates understanding and delivers the message quickly."
+                    "description": "Professional training content that facilitates understanding and delivers the message quickly.",
+                    "image": "/assets/images/services/tools/AI-powered-video-production/video-learning.svg"
                 }
             ],
             "tools": [
@@ -1258,41 +1491,46 @@ const services = {
                     "title": "Marketing Videos",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
-        },
-        {
+            ],
+        }, {
             "id": 9,
             "name": "Blockchain Data Storage",
             "image": "/assets/images/services/block-chain.png",
             "tags": [1, 4],
-            "tagsDisplayed": ["Technical Development", "Security and Smart Automation"],
+            "tagsDisplayed": ["Technical Development", "Security & Smart Operations"],
             "description": "Your data deserves the security of the future.",
-            "serviceDescriptionTitle": "In a world that relies on information, data protection has become a necessity. \n At Viganium, we provide decentralized storage solutions based on blockchain technology to ensure security, transparency, and risk reduction. \n Our solutions don't just save your data, but protect it and give you full control over it.",
-            "serviceDescriptionParagraph": "We provide security solutions that aren't affected by time. \n We use blockchain technologies to store your data in a secure and transparent decentralized way. \n Your data remains yours, not with any external server, and that's what differentiates us.",
+            "serviceDescriptionTitle": "In a world that relies on information, data protection has become a necessity. \n At Viganium, we provide decentralized storage solutions based on blockchain technology to ensure security, transparency, and risk reduction. \n Our solutions don't just save your data; they protect it and give you full control over it.",
+            "serviceDescriptionParagraph": "We provide security solutions that aren't affected by time. \n We use blockchain technologies to store your data in a secure, transparent, and decentralized way. \n Your data remains yours, not with any external server, and that's what sets us apart.",
             "list": [
                 {
                     "title": "Decentralized Storage",
-                    "description": "Distributing data across secure servers that are immune to hacking."
+                    "description": "Distributing data on secure servers that are impervious to hacking.",
+                    "image": "/assets/images/services/tools/blockchain-data-storage/server-storage.svg"
                 },
                 {
                     "title": "Advanced Encryption",
-                    "description": "Comprehensive protection using strong Hash algorithms."
+                    "description": "Comprehensive protection using strong Hash algorithms.",
+                    "image": "/assets/images/services/tools/blockchain-data-storage/advanced-encryption.svg"
                 },
                 {
                     "title": "Transparent Records",
-                    "description": "Every modification is saved in an accurate chronological chain that can be tracked."
+                    "description": "Every modification is saved in an accurate time chain that can be tracked.",
+                    "image": "/assets/images/services/tools/blockchain-data-storage/auto-save.svg"
                 },
                 {
                     "title": "Smart Contracts",
-                    "description": "We connect applications with reliable and secure automatic processes."
+                    "description": "We connect applications with reliable and secure automatic processes.",
+                    "image": "/assets/images/services/tools/blockchain-data-storage/smart-contract.svg"
                 },
                 {
                     "title": "Smart Integration",
-                    "description": "Connecting blockchain to your internal systems without complexity."
+                    "description": "Connecting blockchain to your internal systems without complexity.",
+                    "image": "/assets/images/services/tools/blockchain-data-storage/smart-integration.svg"
                 },
                 {
                     "title": "Cost Reduction",
-                    "description": "An economic structure that reduces expenses and maintains high performance."
+                    "description": "An economic structure that reduces costs and maintains high performance.",
+                    "image": "/assets/images/services/tools/blockchain-data-storage/low-cost.svg"
                 }
             ],
             "tools": [
@@ -1316,124 +1554,95 @@ const services = {
                     "title": "Secure File Systems",
                     "image": "/assets/icons/html.svg"
                 }
-            ]
-        },
-        {
+            ],
+        }, {
             "id": 10,
-            "name": "Cybersecurity Consulting Services",
+            "name": "Cybersecurity Consulting",
             "image": "/assets/images/services/cyber-security.png",
             "tags": [4, 1],
-            "tagsDisplayed": ["Security and Smart Automation", "Technical Development"],
-            "description": "Because protecting your data is not a luxury, it's a priority.",
-            "serviceDescriptionTitle": "At Viganium, we protect you from digital threats with smart security plans and realistic analysis. \n We provide cybersecurity consulting based on experience and advanced technologies to ensure the security of your information and business continuity.",
-            "serviceDescriptionParagraph": "Security doesn't start when a problem occurs, it starts before. \n We analyze your systems, test vulnerabilities, and design protection that suits your business nature. \n Our goal is to protect your data before it becomes a target for any attack.",
+            "tagsDisplayed": ["Security & Smart Operations", "Technical Development"],
+            "description": "Because protecting your data is not a luxury; it's a priority.",
+            "serviceDescriptionTitle": "At Viganium, we protect you from digital threats with smart security plans and realistic analysis. \nWe provide cyber consultations based on experience and advanced technologies to ensure the security of your information and business continuity.",
+            "serviceDescriptionParagraph": "Security doesn't start when a problem occurs; it starts before it. \nWe analyze your systems, test vulnerabilities, and design protection that suits your business nature. \nOur goal is to protect your data before it becomes a target for any attack.",
             "list": [
                 {
-                    "title": "Risk Analysis",
-                    "description": "We detect security vulnerabilities and assess risk level accurately."
+                    "title": "Risk Analysis", "description": "We detect security vulnerabilities and assess the degree of risk accurately.",
+                    "image": "/assets/images/services/tools/security/risk-analysis.svg"
                 },
                 {
-                    "title": "Policy Review",
-                    "description": "We update policies and procedures according to ISO and NIST standards."
+                    "title": "Policy Review", "description": "We update policies and procedures according to ISO and NIST standards.",
+                    "image": "/assets/images/services/tools/security/revision-policy.svg"
                 },
                 {
-                    "title": "Penetration Testing",
-                    "description": "We simulate actual attacks to discover vulnerabilities before attackers."
+                    "title": "Penetration Testing", "description": "We simulate actual attacks to discover vulnerabilities before attackers.",
+                    "image": "/assets/images/services/tools/security/hack-testing.svg"
                 },
                 {
-                    "title": "Security Design",
-                    "description": "We build a solid security structure that protects networks and systems."
+                    "title": "Security Design", "description": "We build a solid security structure that protects networks and systems.",
+                    "image": "/assets/images/services/tools/security/design-security.svg"
                 },
                 {
-                    "title": "Legal Compliance",
-                    "description": "We ensure your compliance with GDPR, SAMA, and local standards."
+                    "title": "Legal Compliance", "description": "We ensure your compliance with GDPR, SAMA, and local standards.",
+                    "image": "/assets/images/services/tools/security/policy-review.svg"
                 },
                 {
-                    "title": "Continuous Monitoring",
-                    "description": "Analysis tools and continuous alerts to protect data 24/7."
+                    "title": "Continuous Monitoring", "description": "Analysis and alert tools for continuous data protection 24/7.",
+                    "image": "/assets/images/services/tools/security/video-learning.svg"
                 }
             ],
             "tools": [
-                {
-                    "title": "Security Audit",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Threat Modeling",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Incident Response",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Compliance Consulting",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Vulnerability Assessment",
-                    "image": "/assets/icons/html.svg"
-                }
+                { "title": "Security Audit", "image": "/assets/icons/html.svg" },
+                { "title": "Threat Modeling", "image": "/assets/icons/html.svg" },
+                { "title": "Incident Response", "image": "/assets/icons/html.svg" },
+                { "title": "Compliance Consulting", "image": "/assets/icons/html.svg" },
+                { "title": "Vulnerability Assessment", "image": "/assets/icons/html.svg" }
             ]
         },
+
         {
             "id": 11,
             "name": "IT Services",
             "image": "/assets/images/services/IT.png",
             "tags": [1, 4],
-            "tagsDisplayed": ["Technical Development", "Security and Smart Automation"],
-            "description": "Technology is the foundation of your business and we maintain it to perform at its best.",
-            "serviceDescriptionTitle": "At Viganium, we provide comprehensive management of your organization's technical infrastructure. \n From servers to networks and security, we ensure stable operation, high performance, and continuous support.",
-            "serviceDescriptionParagraph": "Technology is the foundation of your work, and we maintain it to perform at its best. \n We monitor infrastructure moment by moment, solve problems before they appear, and manage systems steadily. \n Our presence means you're assured that everything works without interruption.",
+            "tagsDisplayed": ["Technical Development", "Security & Smart Operations"],
+            "description": "Technology is the foundation of your work, and we maintain it to perform at the highest level.",
+            "serviceDescriptionTitle": "At Viganium, we provide comprehensive management of the technical infrastructure for your organization. \nFrom servers to networks and security, we ensure stable operation, high performance, and continuous support.",
+            "serviceDescriptionParagraph": "Technology is the foundation of your work, and we maintain it to perform at the highest level. \nWe monitor the infrastructure in real-time, solve problems before they appear, and manage systems steadily. \nOur presence means you are assured that everything is working without interruption.",
             "list": [
                 {
-                    "title": "Network Management",
-                    "description": "Design and maintenance of secure and fast corporate networks."
+                    "title": "Network Management", "description": "Design and maintenance of secure and fast corporate networks.",
+                    "image": "/assets/images/services/tools/it/network-management.svg"
                 },
                 {
-                    "title": "Cloud Servers",
-                    "description": "Setup and management of AWS and Azure environments with high efficiency."
+                    "title": "Cloud Servers", "description": "Setting up and managing AWS and Azure environments with high efficiency.",
+                    "image": "/assets/images/services/tools/it/server-cloud.svg"
                 },
                 {
-                    "title": "Advanced Security",
-                    "description": "Protection of devices and data from digital attacks."
+                    "title": "Advanced Security", "description": "Protecting devices and data from digital attacks.",
+                    "image": "/assets/images/services/tools/it/advanced-encryption.svg"
                 },
                 {
-                    "title": "Technical Support",
-                    "description": "Team available 24/7 to solve malfunctions and monitor systems."
+                    "title": "Technical Support", "description": "A team available 24/7 to solve malfunctions and monitor systems.",
+                    "image": "/assets/images/services/tools/it/technical-support.svg"
                 },
                 {
-                    "title": "Performance Monitoring",
-                    "description": "Tools that monitor the network and detect problems before they occur."
+                    "title": "Performance Monitoring", "description": "Tools that monitor the network and detect problems before they occur.",
+                    "image": "/assets/images/services/tools/it/mentoring-performance.svg"
                 },
                 {
-                    "title": "Technical Consulting",
-                    "description": "We help you choose the most suitable solutions for expanding or updating your digital structure."
+                    "title": "Technical Consultations", "description": "We help you choose the most suitable solutions to expand or update your digital structure.",
+                    "image": "/assets/images/services/tools/it/technical-consulting.svg"
                 }
             ],
             "tools": [
-                {
-                    "title": "IT Infrastructure",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Network Management",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Endpoint Security",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Help Desk",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Cloud Migration",
-                    "image": "/assets/icons/html.svg"
-                }
+                { "title": "IT Infrastructure", "image": "/assets/icons/html.svg" },
+                { "title": "Network Management", "image": "/assets/icons/html.svg" },
+                { "title": "Endpoint Security", "image": "/assets/icons/html.svg" },
+                { "title": "Help Desk", "image": "/assets/icons/html.svg" },
+                { "title": "Cloud Migration", "image": "/assets/icons/html.svg" }
             ]
         },
+
         {
             "id": 12,
             "name": "UI/UX Design",
@@ -1441,345 +1650,260 @@ const services = {
             "tags": [2, 1],
             "tagsDisplayed": ["Digital Innovation", "Technical Development"],
             "description": "Because the first impression determines the entire experience.",
-            "serviceDescriptionTitle": "We care about designing interfaces that combine beauty and ease. \n We design modern UI/UX that makes the user live a comfortable and smooth experience that serves your business goal and expresses your brand clearly.",
-            "serviceDescriptionParagraph": "We design an experience that makes the user smile, not stress. \n Every detail is calculated: colors, spaces, texts. \n Our goal is design that serves the idea, not overwhelms it.",
+            "serviceDescriptionTitle": "We care about designing interfaces that combine beauty and ease. \nWe design modern UI/UX that makes the user live a comfortable and smooth experience that serves your commercial goal and expresses your brand clearly.",
+            "serviceDescriptionParagraph": "We design an experience that makes the user smile, not get tense. \nEvery detail is calculated: colors, spaces, texts. \nOur goal is design that serves the idea, not overwhelms it.",
             "list": [
                 {
-                    "title": "Behavior Analysis",
-                    "description": "We study user experience to identify improvement points accurately."
+                    "title": "Behavior Analysis", "description": "We study user experience to identify improvement points accurately.",
+                    "image": "/assets/images/services/tools/ui-ux/behavior-analysis.svg"
                 },
                 {
-                    "title": "Interactive Design",
-                    "description": "Attractive and fast-responsive interfaces across different devices."
+                    "title": "Interactive Design", "description": "Attractive and fast-interacting interfaces across various devices.",
+                    "image": "/assets/images/services/tools/ui-ux/design-interaction.svg"
                 },
                 {
-                    "title": "Design System",
-                    "description": "Preparation of a visual guide that ensures identity consistency on every page."
+                    "title": "Design System", "description": "Preparing a visual guide that ensures identity consistency on every page.",
+                    "image": "/assets/images/services/tools/ui-ux/design-system.svg"
                 },
                 {
-                    "title": "Prototypes",
-                    "description": "We design interactive Prototype before starting development."
+                    "title": "Prototypes", "description": "We design an interactive Prototype before starting development.",
+                    "image": "/assets/images/services/tools/ui-ux/design-testing.svg"
                 },
                 {
-                    "title": "Experience Testing",
-                    "description": "We analyze actual interface usage to correct any complexity."
+                    "title": "Experience Testing", "description": "We analyze actual interface usage to correct any complexity.",
+                    "image": "/assets/images/services/tools/ui-ux/prototype.svg"
                 },
                 {
-                    "title": "Continuous Updates",
-                    "description": "We continuously develop the design to match market changes."
+                    "title": "Continuous Updates", "description": "We continuously develop the design to suit market changes.",
+                    "image": "/assets/images/services/tools/ui-ux/updating.svg"
                 }
             ],
             "tools": [
-                {
-                    "title": "Wireframing",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Prototyping",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Interaction Design",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Design Systems",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Web & App UI",
-                    "image": "/assets/icons/html.svg"
-                }
+                { "title": "Wireframing", "image": "/assets/icons/html.svg" },
+                { "title": "Prototyping", "image": "/assets/icons/html.svg" },
+                { "title": "Interaction Design", "image": "/assets/icons/html.svg" },
+                { "title": "Design Systems", "image": "/assets/icons/html.svg" },
+                { "title": "Web & App UI", "image": "/assets/icons/html.svg" }
             ]
         },
+
         {
             "id": 13,
-            "name": "Graphic Design and Visual Identity",
+            "name": "Graphic Design & Visual Identity",
             "image": "/assets/images/services/Graphic-design.png",
             "tags": [2, 3],
             "tagsDisplayed": ["Digital Innovation", "Smart Marketing"],
-            "description": "The first impression doesn't repeat and our goal is to make it stick in the mind.",
-            "serviceDescriptionTitle": "At Viganium, we believe that strong visual identity is the foundation of any success. \n We design logos and integrated identity that express you, and make your brand speak visually on all platforms.",
-            "serviceDescriptionParagraph": "From digital design to outdoor advertisements, we care about consistency and beauty in every detail. \n We don't design a logo, we design a story. \n We create a visual identity that makes your brand recognized at first glance.",
+            "description": "The first impression doesn't repeat, and our goal is to make it stick in the mind.",
+            "serviceDescriptionTitle": "At Viganium, we believe that a strong visual identity is the foundation of any success. \nWe design logos and integrated identity that express you, and make your brand speak visually on all platforms.",
+            "serviceDescriptionParagraph": "From digital design to outdoor advertisements, we ensure consistency and beauty in every detail. \nWe don't design a logo; we design a story. \nWe create a visual identity that makes your brand recognized at first glance.",
             "list": [
                 {
-                    "title": "Logo Design",
-                    "description": "We create professional logos that clearly reflect the essence of the brand."
+                    "title": "Logo Design", "description": "We create a professional logo that reflects the essence of the brand clearly.",
+                    "image": "/assets/images/services/tools/graphic-design/log-design.svg"
                 },
                 {
-                    "title": "Integrated Identity",
-                    "description": "We define your colors, fonts, and visual style in a comprehensive guide."
+                    "title": "Integrated Identity", "description": "We determine your colors, fonts, and visual style in a comprehensive guide.",
+                    "image": "/assets/images/services/tools/graphic-design/visual-identity.svg"
                 },
                 {
-                    "title": "Promotional Materials",
-                    "description": "We design prints and advertising boards that enhance your visual presence."
+                    "title": "Promotional Materials", "description": "We design prints and advertising boards that enhance your visual presence.",
+                    "image": "/assets/images/services/tools/graphic-design/advertising.svg"
                 },
                 {
-                    "title": "Digital Design",
-                    "description": "Ready images and posts for social media with professional quality."
+                    "title": "Digital Design", "description": "Ready-made images and posts for social media with professional quality.",
+                    "image": "/assets/images/services/tools/graphic-design/digital-design.svg"
                 },
                 {
-                    "title": "Visual Consistency",
-                    "description": "We unify elements across all digital and print marketing channels."
+                    "title": "Visual Consistency", "description": "We unify elements across all digital and print marketing channels.",
+                    "image": "/assets/images/services/tools/graphic-design/visual-consistency.svg"
                 },
                 {
-                    "title": "Flexible Delivery",
-                    "description": "Your files ready in all formats for printing and digital use."
+                    "title": "Flexible Delivery", "description": "Your ready files in all formats for printing and digital use.",
+                    "image": "/assets/images/services/tools/graphic-design/design-deliver.svg"
                 }
             ],
             "tools": [
-                {
-                    "title": "Logo Design",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Brand Identity",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Outdoor Advertising",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Print Design",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Marketing Materials",
-                    "image": "/assets/icons/html.svg"
-                }
+                { "title": "Logo Design", "image": "/assets/icons/html.svg" },
+                { "title": "Brand Identity", "image": "/assets/icons/html.svg" },
+                { "title": "Outdoor Advertising", "image": "/assets/icons/html.svg" },
+                { "title": "Print Design", "image": "/assets/icons/html.svg" },
+                { "title": "Marketing Materials", "image": "/assets/icons/html.svg" }
             ]
         },
+
         {
             "id": 14,
             "name": "Computer Graphics (CGI)",
             "image": "/assets/images/services/cgi.png",
             "tags": [2, 3],
             "tagsDisplayed": ["Digital Innovation", "Smart Marketing"],
-            "description": "We turn your imagination into a scene full of life.",
-            "serviceDescriptionTitle": "We use advanced CGI technologies to produce realistic 3D designs that serve architectural, industrial, and creative fields. \n Our goal is that every scene we tell with pixels becomes a visual experience that leaves an impact.",
-            "serviceDescriptionParagraph": "We turn imagination into a realistic scene full of life. \n We use precise 3D technologies that serve residential and advertising projects. \n Our goal is for the image to speak before anyone explains.",
+            "description": "Your imagination, we turn it into a scene pulsating with life.",
+            "serviceDescriptionTitle": "We use advanced CGI technologies to produce realistic 3D designs that serve architectural, industrial, and creative fields. \nOur goal is that every scene we tell with pixels becomes a visual experience that leaves an impact.",
+            "serviceDescriptionParagraph": "We turn imagination into a realistic scene pulsating with life. \nWe use precise 3D technologies that serve residential and advertising projects. \nOur goal is for the image to speak before anyone explains.",
             "list": [
                 {
-                    "title": "3D Design",
-                    "description": "From idea to final model with realistic materials and lighting."
+                    "title": "3D Design", "description": "From idea to final model with realistic materials and lighting.",
+                    "image": "/assets/images/services/tools/cgi/3d-design.svg"
                 },
                 {
-                    "title": "Architectural Scenes",
-                    "description": "Professional presentations for residential and commercial projects with cinematic quality."
+                    "title": "Architectural Scenes", "description": "Professional presentations for residential and commercial projects with cinematic quality.",
+                    "image": "/assets/images/services/tools/cgi/visual-architecture.svg"
                 },
                 {
-                    "title": "Visual Animation",
-                    "description": "Realistic effects and animated scenes that serve your advertising campaigns."
+                    "title": "Visual Animation", "description": "Realistic effects and animated scenes that serve your advertising campaigns.",
+                    "image": "/assets/images/services/tools/cgi/motion-graphics.svg"
                 },
                 {
-                    "title": "Marketing Integration",
-                    "description": "We integrate CGI into advertising campaigns and interactive content."
+                    "title": "Marketing Integration", "description": "We integrate CGI into advertising campaigns and interactive content.",
+                    "image": "/assets/images/services/tools/cgi/video-advertising.svg"
                 },
                 {
-                    "title": "Precise Control",
-                    "description": "Full adjustment of lighting, materials, and reflections with high accuracy."
+                    "title": "Precise Control", "description": "Full control of lighting, materials, and reflections with high accuracy.",
+                    "image": "/assets/images/services/tools/cgi/good-control.svg"
                 },
                 {
-                    "title": "Fast Delivery",
-                    "description": "High production quality with speed in execution and delivery."
+                    "title": "Fast Delivery", "description": "High production quality with speed in execution and delivery.",
+                    "image": "/assets/images/services/tools/cgi/fast-deliver.svg"
                 }
             ],
             "tools": [
-                {
-                    "title": "3D Modeling",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Rendering",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Motion Graphics",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "VFX",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Visualization",
-                    "image": "/assets/icons/html.svg"
-                }
+                { "title": "3D Modeling", "image": "/assets/icons/html.svg" },
+                { "title": "Rendering", "image": "/assets/icons/html.svg" },
+                { "title": "Motion Graphics", "image": "/assets/icons/html.svg" },
+                { "title": "VFX", "image": "/assets/icons/html.svg" },
+                { "title": "Visualization", "image": "/assets/icons/html.svg" }
             ]
         },
+
         {
             "id": 15,
             "name": "Technical Project Management",
             "image": "/assets/images/services/Technical-Project-Management.png",
             "tags": [1, 4],
-            "tagsDisplayed": ["Technical Development", "Security and Smart Automation"],
-            "description": "Success doesn't happen by chance, it happens with a plan.",
-            "serviceDescriptionTitle": "We believe every project needs smart planning and organized execution. \n We manage your technical projects from start to finish, and ensure every step goes according to plan and expected quality.",
-            "serviceDescriptionParagraph": "We work with a plan, not by chance. \n We monitor every step, measure performance, and keep the project going confidently. \n Our goal is to deliver quality on time without surprises.",
+            "tagsDisplayed": ["Technical Development", "Security & Smart Operations"],
+            "description": "Success doesn't happen by chance; it happens with a plan.",
+            "serviceDescriptionTitle": "We believe that every project needs smart planning and organized execution. \nWe manage your technical projects from start to finish, and ensure that every step goes according to plan and expected quality.",
+            "serviceDescriptionParagraph": "We work with a plan, not by chance. \nWe monitor every step, measure performance, and keep the project going confidently. \nOur goal is to deliver quality on time without surprises.",
             "list": [
                 {
-                    "title": "Project Planning",
-                    "description": "We draw a clear roadmap with objectives, resources, and deadlines."
+                    "title": "Project Planning", "description": "We draw a clear roadmap with objectives, resources, and deadlines.",
+                    "image": "/assets/images/services/tools/management/project-plan.svg"
                 },
                 {
-                    "title": "Task Management",
-                    "description": "Organizing workflow and distributing responsibilities efficiently."
+                    "title": "Task Management", "description": "Organizing workflow and distributing responsibilities efficiently.",
+                    "image": "/assets/images/services/tools/management/task-management.svg"
                 },
                 {
-                    "title": "Performance Monitoring",
-                    "description": "We track progress and measure productivity through precise dashboards."
+                    "title": "Performance Monitoring", "description": "We track progress and measure productivity through precise dashboards.",
+                    "image": "/assets/images/services/tools/management/mentor-progress.svg"
                 },
                 {
-                    "title": "Risk Management",
-                    "description": "We analyze risks and treat them before they affect the outcome."
+                    "title": "Risk Management", "description": "We analyze risks and treat them before they affect the outcome.",
+                    "image": "/assets/images/services/tools/management/risk-management.svg"
                 },
                 {
-                    "title": "Team Coordination",
-                    "description": "We ensure effective communication between development, design, and marketing teams."
+                    "title": "Team Coordination", "description": "We ensure effective communication between development, design, and marketing teams.",
+                    "image": "/assets/images/services/tools/management/team-comunication.svg"
                 },
                 {
-                    "title": "Smart Reports",
-                    "description": "Periodic analytical reports that show status and recommendations clearly."
+                    "title": "Smart Reports", "description": "Periodic analytical reports that show the status and recommendations clearly.",
+                    "image": "/assets/images/services/tools/management/smart-report.svg"
                 }
             ],
             "tools": [
-                {
-                    "title": "Project Planning",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Risk Management",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Progress Tracking",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Stakeholder Communication",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Resource Management",
-                    "image": "/assets/icons/html.svg"
-                }
+                { "title": "Project Planning", "image": "/assets/icons/html.svg" },
+                { "title": "Risk Management", "image": "/assets/icons/html.svg" },
+                { "title": "Progress Tracking", "image": "/assets/icons/html.svg" },
+                { "title": "Stakeholder Communication", "image": "/assets/icons/html.svg" },
+                { "title": "Resource Management", "image": "/assets/icons/html.svg" }
             ]
         },
+
         {
             "id": 16,
             "name": "SaaS Platforms",
             "image": "/assets/images/services/Saas.png",
             "tags": [1, 4],
-            "tagsDisplayed": ["Technical Development", "Security and Smart Automation"],
-            "description": "Smart solutions that work from anywhere and anytime.",
-            "serviceDescriptionTitle": "We develop integrated SaaS platforms that help companies work easily and expand their operations without complexity. \n We build flexible, fast, and secure cloud systems that suit your needs and grow with your business.",
-            "serviceDescriptionParagraph": "We build cloud platforms that work steadily and grow with you. \n Flexible design, high performance, and lightweight user experience. \n You can manage your company from anywhere, with full confidence in the system.",
+            "tagsDisplayed": ["Technical Development", "Security & Smart Operations"],
+            "description": "Smart solutions that work from anywhere and at any time.",
+            "serviceDescriptionTitle": "We develop integrated SaaS platforms that help companies work easily and expand their operations without complexity. \nWe build flexible, fast, and secure cloud systems that suit your needs and grow with your business.",
+            "serviceDescriptionParagraph": "We build cloud platforms that work steadily and grow with you. \nFlexible design, high performance, and lightweight user experience. \nYou can manage your company from anywhere, with full confidence in the system.",
             "list": [
                 {
-                    "title": "Scalable Architecture",
-                    "description": "Scalable Architecture systems that grow with your expansion."
+                    "title": "Scalable Architecture", "description": "Scalable Architecture systems that grow with your expansion.",
+                    "image": "/assets/images/services/tools/saas-platforms/scalable-architecture.svg"
                 },
                 {
-                    "title": "Stable Performance",
-                    "description": "Fast and secure operation with high availability rate."
+                    "title": "Stable Performance", "description": "Fast and secure operation with high availability rate.",
+                    "image": "/assets/images/services/tools/saas-platforms/continuous-performance.svg"
                 },
                 {
-                    "title": "Multi-User Support",
-                    "description": "Multi-Tenant support for efficient management of multiple organizations."
+                    "title": "Multi-User Support", "description": "Multi-Tenant support for efficient management of multiple organizations.",
+                    "image": "/assets/images/services/tools/saas-platforms/multi-tanent.svg"
                 },
                 {
-                    "title": "Data Protection",
-                    "description": "Complete encryption and guarantee of sensitive information security."
+                    "title": "Data Protection", "description": "Full encryption and ensuring the security of sensitive information.",
+                    "image": "/assets/images/services/tools/saas-platforms/data-security.svg"
                 },
                 {
-                    "title": "Smart Integration",
-                    "description": "Seamlessly connecting systems with electronic payment and analytics."
+                    "title": "Smart Integration", "description": "Connecting systems with electronic payment and analytics smoothly.",
+                    "image": "/assets/images/services/tools/saas-platforms/samrt-implemen.svg"
                 },
                 {
-                    "title": "Easy Management",
-                    "description": "Flexible user interfaces and simplified dashboards for administrators."
+                    "title": "Easy Management", "description": "Flexible user interfaces and simplified control panels for administrators.",
+                    "image": "/assets/images/services/tools/saas-platforms/easy-management.svg"
                 }
             ],
             "tools": [
-                {
-                    "title": "SaaS Architecture",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Cloud Hosting",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "User Management",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Billing Integration",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "API Connectivity",
-                    "image": "/assets/icons/html.svg"
-                }
+                { "title": "SaaS Architecture", "image": "/assets/icons/html.svg" },
+                { "title": "Cloud Hosting", "image": "/assets/icons/html.svg" },
+                { "title": "User Management", "image": "/assets/icons/html.svg" },
+                { "title": "Billing Integration", "image": "/assets/icons/html.svg" },
+                { "title": "API Connectivity", "image": "/assets/icons/html.svg" }
             ]
         },
+
         {
             "id": 17,
             "name": "Software and Technology Consulting",
             "image": "/assets/images/services/Software-and-Technology-Consulting.png",
             "tags": [1, 3, 4],
-            "tagsDisplayed": ["Technical Development", "Smart Marketing", "Security and Smart Automation"],
-            "description": "Technology changes every day and your decisions must keep up with it.",
-            "serviceDescriptionTitle": "At Viganium, we help you make smart technical decisions based on accurate analysis and practical experience. \n We provide strategic consulting that helps you build a sustainable technical structure and plan your digital transformation confidently.",
-            "serviceDescriptionParagraph": "Technology changes every day, and your decisions must keep up with it. \n We help you choose the right tools, and plan with a realistic roadmap. \n Our goal is to ensure that every technical decision actually serves your business goal.",
+            "tagsDisplayed": ["Technical Development", "Smart Marketing", "Security & Smart Operations"],
+            "description": "Technology changes every day, and your decisions must keep up with it.",
+            "serviceDescriptionTitle": "At Viganium, we help you make smart technical decisions based on accurate analysis and practical experience. \nWe provide strategic consultations that help you build a sustainable technical structure and plan your digital transformation confidently.",
+            "serviceDescriptionParagraph": "Technology changes every day, and your decisions must keep up with it. \nWe help you choose the right tools and plan with a realistic roadmap. \nOur goal is to ensure that every technical decision actually serves your business goal.",
             "list": [
                 {
-                    "title": "Structure Assessment",
-                    "description": "We examine the technical structure and identify improvement points accurately."
+                    "title": "Structure Assessment", "description": "We examine the technical structure and identify improvement points accurately.",
+                    "image": "/assets/images/services/tools/software-technology-consulting/structure-audit.svg"
                 },
                 {
-                    "title": "Tool Selection",
-                    "description": "We recommend suitable technologies and platforms for your goal and budget."
+                    "title": "Tools Selection", "description": "We recommend suitable technologies and platforms for your goal and budget.",
+                    "image": "/assets/images/services/tools/software-technology-consulting/tools-selection.svg"
                 },
                 {
-                    "title": "Transformation Plan",
-                    "description": "We set a roadmap for digital transformation and cloud expansion."
+                    "title": "Transformation Plan", "description": "We set a roadmap for digital transformation and cloud expansion.",
+                    "image": "/assets/images/services/tools/software-technology-consulting/switch-plan.svg"
                 },
                 {
-                    "title": "Performance Analysis",
-                    "description": "We evaluate system speed and stability and recommend solutions."
+                    "title": "Performance Analysis", "description": "We evaluate system speed and stability and recommend solutions.",
+                    "image": "/assets/images/services/tools/software-technology-consulting/performance-analysis.svg"
                 },
                 {
-                    "title": "Contract Review",
-                    "description": "We review technical agreements and protect your interests with providers."
+                    "title": "Contract Review", "description": "We review technical agreements and protect your interests with providers.",
+                    "image": "/assets/images/services/tools/software-technology-consulting/contract-review.svg"
                 },
                 {
-                    "title": "Future Vision",
-                    "description": "We draw a clear direction for developing your technical business in the long term."
+                    "title": "Future Vision", "description": "We draw a clear direction for developing your technical business in the long term.",
+                    "image": "/assets/images/services/tools/software-technology-consulting/future-vision.svg"
                 }
             ],
             "tools": [
-                {
-                    "title": "IT Strategy",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Technology Roadmap",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Software Selection",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Digital Transformation",
-                    "image": "/assets/icons/html.svg"
-                },
-                {
-                    "title": "Architecture Consulting",
-                    "image": "/assets/icons/html.svg"
-                }
+                { "title": "IT Strategy", "image": "/assets/icons/html.svg" },
+                { "title": "Technology Roadmap", "image": "/assets/icons/html.svg" },
+                { "title": "Software Selection", "image": "/assets/icons/html.svg" },
+                { "title": "Digital Transformation", "image": "/assets/icons/html.svg" },
+                { "title": "Architecture Consulting", "image": "/assets/icons/html.svg" }
             ]
         }
     ]
